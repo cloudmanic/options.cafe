@@ -1,0 +1,38 @@
+version: '2.1'
+
+services:
+
+  # App
+  web:
+
+    hostname: options.dev
+
+    container_name: options.dev
+
+    build:
+      context: ./build
+      dockerfile: Dockerfile
+      args:
+        P_UID: 501
+        P_GID: 20        
+    
+    image: options.dev/nginx-php70
+
+    # restart: always
+
+    environment:   
+      VIRTUAL_HOST: options.dev
+  
+    volumes:
+      - ../www:/www:ro
+      - ../www/storage:/www/storage:rw
+      - ../www/public/cpresources:/www/public/cpresources:rw
+      - ./logs:/logs:rw
+      
+    networks:
+      - shared
+  
+networks:
+  shared:
+    external:
+      name: shared         
