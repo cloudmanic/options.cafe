@@ -1,0 +1,9 @@
+<p>
+  {% if block.imageUrl %}
+  <a href="{{ block.imageUrl }}">  
+  {% else %}
+  <a href="{{ block.image[0].getUrl() }}">
+  {% endif %}
+    <img src="{{ block.image[0].getUrl('width1000') }}" style="width: {{ block.width }}; float: none; display: block; margin: 0px auto;" alt="{{ block.image[0].title }}" />
+  </a>  
+</p>

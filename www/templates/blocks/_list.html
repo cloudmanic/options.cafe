@@ -1,0 +1,11 @@
+<ul>
+  {% for row in block.listItems %}
+  <li>
+    {% if row.url %}
+    <a href="{{ row.url }}">{{ row.name }}</a>
+    {% else %}
+    {{ row.name }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
