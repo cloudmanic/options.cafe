@@ -1,0 +1,15 @@
+{% extends "layouts/_main" %}
+
+{% paginate craft.entries.section('blog').order('postDate desc').limit(5) as pageInfo, entries %}
+
+{% set title = "The Options Cafe Blog | Learn About Options Trading" %}
+{% set description = "Options Cafe is the best place for online options trading advice. Learn everything from trading vertical credit spreads to advance stock trades." %}
+{% set page_image = craft.assets.filename('woot_20.png').first().url() %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+  {% include "blog/_modules/blogList" %}
+{% endblock %}

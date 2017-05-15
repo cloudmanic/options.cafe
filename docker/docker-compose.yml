@@ -18,7 +18,7 @@ services:
     
     image: options.dev/nginx-php70
 
-    # restart: always
+    restart: always
 
     environment:   
       VIRTUAL_HOST: options.dev

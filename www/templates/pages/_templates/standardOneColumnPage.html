@@ -1,0 +1,23 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ " | Options Cafe Learn About Options Trading" %}
+{% set description = entry.pageDescription %}
+{% set page_image = entry.pageImage.first().url('width800') %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="offset1 span10 zone-content">  
+  {% for block in entry.pageBuilder %}
+    
+    {% if block.summary %}
+      {% include "blocks/_" ~ block.type %}
+    {% endif %}
+  
+  {% endfor %}
+</div>
+  
+{% endblock %}
