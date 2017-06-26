@@ -2,7 +2,7 @@
 
 {% set title = entry.title ~ " | Options Cafe Learn About Options Trading" %}
 {% set description = entry.blogDescription %}
-{% set page_image = entry.blogImage.first().url('width800') %}
+{% set page_image = entry.blogImage.one().url('width800') %}
 
 {% block head %}
   {% include "modules/_head" %}
