@@ -5,23 +5,25 @@ services:
   # App
   web:
 
-    hostname: options.dev
+    hostname: ${VIRTUAL_HOST}
 
-    container_name: options.dev
+    container_name: ${VIRTUAL_HOST}
 
     build:
       context: ./build
       dockerfile: Dockerfile
       args:
-        P_UID: 501
-        P_GID: 20        
+        P_UID: ${P_UID}
+        P_GID: ${P_GID}       
     
-    image: options.dev/nginx-php70
+    image: ${VIRTUAL_HOST}/nginx-php70
 
     restart: always
 
     environment:   
-      VIRTUAL_HOST: options.dev
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}      
   
     volumes:
       - ../www:/www:ro
