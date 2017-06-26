@@ -68,14 +68,26 @@
 	<script src="https://stocktwits.com/addon/button/share.min.js"></script>
  
  <script type="text/javascript">
+  {% if entry.blogCloudcmsBlogId | length and entry.blogCloudcmsBlogId > 0 %}
  	var disqus_shortname = 'stockpeer';
- 	var disqus_identifier = '{{ entry.slug }}';
+ 	var disqus_identifier = '{{ entry.blogCloudcmsBlogId }}';
  	
  	(function() {
  	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
  	    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
  	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
  	})();
+ 	
+ 	{% else %}
+   var disqus_identifier = '{{ entry.slug }}';
+   
+   (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://options-cafe.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+   })();
+ 	{% endif %}
  </script>	
 </div>
 
