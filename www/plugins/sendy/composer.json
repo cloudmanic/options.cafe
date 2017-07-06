@@ -1,0 +1,43 @@
+{
+    "name": "cloudmanic/craft-sendy",
+    "description": "A plugin to engage with Sendy.co",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "broker finder"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cloudmanic Labs, LLC",
+            "homepage": "https://cloudmanic.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.1"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "cloudmanic\\sendy\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft Sendy",
+        "handle": "sendy",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-sendy/master/CHANGELOG.md",
+        "class": "cloudmanic\\sendy\\Sendy"
+    }
+}

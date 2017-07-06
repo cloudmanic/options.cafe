@@ -14,14 +14,17 @@ return [
     'defaultWeekStartDay' => 0,
 
     // Enable CSRF Protection (recommended, will be enabled by default in Craft 3)
-    'enableCsrfProtection' => true,
+    'enableCsrfProtection' => false,
 
     // Whether "index.php" should be visible in URLs (true, false, "auto")
     'omitScriptNameInUrls' => true,
 
     // Control Panel trigger word
-    'cpTrigger' => 'admin',
+    'cpTrigger' => 'centcom',
 
     // Dev Mode (see https://craftcms.com/support/dev-mode)
     'devMode' => getenv('DEV_MODE'),
+    
+    // No need to tell people we are using Craft.
+    'sendPoweredByHeader' => false
 ];

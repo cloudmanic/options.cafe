@@ -30,10 +30,17 @@
   <link href="{{ url() }}assets/css/colors/color-red.css" rel="stylesheet" id="colorcss" />
   <link href="{{ url() }}assets/css/style.css" rel="stylesheet" />
   
+	<script>
+		var site = {
+			devMode: {{ craft.config.devMode }}
+		}
+	</script>  
+  
   <script src="{{ url() }}assets/js/modernizr.js"></script>
   <script src="{{ url() }}assets/js/jquery-1.9.1.js"></script>
   <script src="{{ url() }}assets/js/bootstrap.min.js"></script>   
   <script src="{{ url() }}assets/js/bootstrap.js"></script>
+	<script src="{{ url() }}assets/vendor/angular/angular.min.js"></script>  
   <script src="{{ url() }}assets/js/tinynav.js"></script>
-  <script src="{{ url() }}assets/js/template.js"></script>  
-</head>  
+  <script src="{{ url() }}assets/js/app.js"></script>   
+</head>
