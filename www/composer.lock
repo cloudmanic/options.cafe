@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb0a959a0d02a5304de3527cfe9a1a8a",
-    "content-hash": "1dcf1d48932b44eea69e3e0b17dbcc79",
+    "hash": "d8840dde479d4846dc7cd51b092772fa",
+    "content-hash": "b3c50c7e253a3149c0d793e23920983e",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.30.2",
+            "version": "3.31.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "20539a38dc643a2700f80ae8647dbd1a05d3f7a9"
+                "reference": "9829a8183016df800110148b467179d67c434f90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/20539a38dc643a2700f80ae8647dbd1a05d3f7a9",
-                "reference": "20539a38dc643a2700f80ae8647dbd1a05d3f7a9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9829a8183016df800110148b467179d67c434f90",
+                "reference": "9829a8183016df800110148b467179d67c434f90",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2017-06-23 18:54:40"
+            "time": "2017-07-20 22:22:05"
         },
         {
             "name": "borucreative/craft3-ses",
@@ -154,7 +154,10 @@
             "require": {
                 "bower-asset/jquery": ">=1.9.1,<4.0"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/d3",
@@ -218,36 +221,42 @@
                 "reference": "ed7827e182bdfe6a0549fdd0694fc7071d64ae6e",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/fabric",
-            "version": "v1.7.13",
+            "version": "v1.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kangax/fabric.js.git",
-                "reference": "17ad6c6a0aff7b9081fa28a23448c1ca4b976810"
+                "reference": "7cc16fb080fceb8efc5125bbb982a0263fae9a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kangax/fabric.js/zipball/17ad6c6a0aff7b9081fa28a23448c1ca4b976810",
-                "reference": "17ad6c6a0aff7b9081fa28a23448c1ca4b976810",
+                "url": "https://api.github.com/repos/kangax/fabric.js/zipball/7cc16fb080fceb8efc5125bbb982a0263fae9a57",
+                "reference": "7cc16fb080fceb8efc5125bbb982a0263fae9a57",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/garnishjs",
-            "version": "0.1.18",
+            "version": "0.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelandtonic/garnishjs.git",
-                "reference": "ce4973fa4c9e001194a79bc1108b3082bfa010a0"
+                "reference": "c358df35c9776de347ee8fd5399146c2356cd859"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/garnishjs/zipball/ce4973fa4c9e001194a79bc1108b3082bfa010a0",
-                "reference": "ce4973fa4c9e001194a79bc1108b3082bfa010a0",
+                "url": "https://api.github.com/repos/pixelandtonic/garnishjs/zipball/c358df35c9776de347ee8fd5399146c2356cd859",
+                "reference": "c358df35c9776de347ee8fd5399146c2356cd859",
                 "shasum": null
             },
             "require": {
@@ -255,7 +264,10 @@
                 "bower-asset/jquery-touch-events": ">=1.0.5,<2.0.0",
                 "bower-asset/velocity": ">=1.2.3,<2.0.0"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/jquery",
@@ -271,7 +283,10 @@
                 "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/jquery-touch-events",
@@ -309,7 +324,10 @@
             "require": {
                 "bower-asset/jquery": ">=1.7"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "http://opensource.org/licenses/mit-license.php"
+            ]
         },
         {
             "name": "bower-asset/jquery.payment",
@@ -344,7 +362,10 @@
                 "reference": "d8671e6cc769938648f8735610534427cdeeaf67",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "Apache License, Version 2.0"
+            ]
         },
         {
             "name": "bower-asset/picturefill",
@@ -360,7 +381,10 @@
                 "reference": "ba62a7dfc0530d9d4e9c0287facf5edb77e96193",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/punycode",
@@ -397,7 +421,10 @@
                 "bower-asset/microplugin": "dev-0.0.x|0.0.x",
                 "bower-asset/sifter": "dev-0.5.x|0.5.x"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "Apache License, Version 2.0"
+            ]
         },
         {
             "name": "bower-asset/sifter",
@@ -413,7 +440,10 @@
                 "reference": "4ba7422542bf188c1fdb4bbc341fc4fcc1ff0680",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "Apache License, Version 2.0"
+            ]
         },
         {
             "name": "bower-asset/timepicker",
@@ -432,7 +462,10 @@
             "require": {
                 "bower-asset/jquery": ">=1.7"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "http://opensource.org/licenses/MIT"
+            ]
         },
         {
             "name": "bower-asset/velocity",
@@ -448,7 +481,10 @@
                 "reference": "9f4aacdacd9eff5a4abbd5154b8d367dcda2f047",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/yii2-pjax",
@@ -467,20 +503,23 @@
             "require": {
                 "bower-asset/jquery": ">=1.8"
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "cebe/markdown",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cebe/markdown.git",
-                "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166"
+                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
-                "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/25b28bae8a6f185b5030673af77b32e1163d5c6e",
+                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e",
                 "shasum": ""
             },
             "require": {
@@ -527,7 +566,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2016-09-14 20:40:20"
+            "time": "2017-07-16 21:13:23"
         },
         {
             "name": "clue/stream-filter",
@@ -751,16 +790,16 @@
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.4.0",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/plugin-installer.git",
-                "reference": "d7acf13656e37082696c5d44c748fa7074e7f57b"
+                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/d7acf13656e37082696c5d44c748fa7074e7f57b",
-                "reference": "d7acf13656e37082696c5d44c748fa7074e7f57b",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/2b75646ce7091d24ef053e8d0b45f89cab04b16f",
+                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f",
                 "shasum": ""
             },
             "require": {
@@ -788,20 +827,20 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2017-06-19 17:28:38"
+            "time": "2017-07-25 13:26:24"
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.0.16",
+            "version": "1.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "c9de3ca9c16defc1bcd60c69ebf67abbfa169dfe"
+                "reference": "8dfa94cb48ef4531bea21c91511821469a6f8c7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/c9de3ca9c16defc1bcd60c69ebf67abbfa169dfe",
-                "reference": "c9de3ca9c16defc1bcd60c69ebf67abbfa169dfe",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/8dfa94cb48ef4531bea21c91511821469a6f8c7e",
+                "reference": "8dfa94cb48ef4531bea21c91511821469a6f8c7e",
                 "shasum": ""
             },
             "type": "library",
@@ -822,7 +861,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2017-06-19 19:18:39"
+            "time": "2017-06-29 20:23:11"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -977,16 +1016,16 @@
         },
         {
             "name": "dolphiq/redirect",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dolphiq/craft3-plugin-redirect.git",
-                "reference": "5dff2a78c712e7dc39e9ac811d6d0bf15851ea73"
+                "reference": "4257db600cef3136bddfc5267525ea93134bb9b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/5dff2a78c712e7dc39e9ac811d6d0bf15851ea73",
-                "reference": "5dff2a78c712e7dc39e9ac811d6d0bf15851ea73",
+                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/4257db600cef3136bddfc5267525ea93134bb9b6",
+                "reference": "4257db600cef3136bddfc5267525ea93134bb9b6",
                 "shasum": ""
             },
             "require": {
@@ -996,7 +1035,7 @@
             "extra": {
                 "name": "Redirect",
                 "handle": "redirect",
-                "schemaVersion": "1.0.1",
+                "schemaVersion": "1.0.2",
                 "developer": "Dolphiq",
                 "developerUrl": "https://dolphiq.nl/",
                 "description": "Redirect plugin for Craft3 CMS",
@@ -1032,7 +1071,7 @@
                 "redirect",
                 "seo"
             ],
-            "time": "2017-06-02 10:29:44"
+            "time": "2017-07-07 21:33:40"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1481,16 +1520,16 @@
         },
         {
             "name": "mikehaertl/php-shellcommand",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikehaertl/php-shellcommand.git",
-                "reference": "b0c0bf3ce49a01bd7ddbe07a9bed4ba85b869fa4"
+                "reference": "35a81f344bd771b0b1c1ae3f4dc986dddfd234b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/b0c0bf3ce49a01bd7ddbe07a9bed4ba85b869fa4",
-                "reference": "b0c0bf3ce49a01bd7ddbe07a9bed4ba85b869fa4",
+                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/35a81f344bd771b0b1c1ae3f4dc986dddfd234b9",
+                "reference": "35a81f344bd771b0b1c1ae3f4dc986dddfd234b9",
                 "shasum": ""
             },
             "type": "library",
@@ -1513,7 +1552,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2017-02-09 18:28:47"
+            "time": "2017-06-30 06:21:01"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -2200,12 +2239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0b18b6bbeed070fb900ad78e81ffa1182a57a752"
+                "reference": "fa53c38b02d1ec883f4ea2b2c05492da0c7611cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0b18b6bbeed070fb900ad78e81ffa1182a57a752",
-                "reference": "0b18b6bbeed070fb900ad78e81ffa1182a57a752",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fa53c38b02d1ec883f4ea2b2c05492da0c7611cf",
+                "reference": "fa53c38b02d1ec883f4ea2b2c05492da0c7611cf",
                 "shasum": ""
             },
             "conflict": {
@@ -2219,7 +2258,8 @@
                 "codeigniter/framework": "<=3.0.6",
                 "composer/composer": "<=1.0.0-alpha11",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
-                "contao/core": ">=2.11,<3.5.15",
+                "contao/core": ">=2,<3.5.28",
+                "contao/core-bundle": ">=4,<4.4.1",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
                 "doctrine/common": ">=2,<2.4.3|>=2.5,<2.5.1",
@@ -2270,11 +2310,11 @@
                 "symfony/http-foundation": ">=2,<2.3.27|>=2.4,<2.5.11|>=2.6,<2.6.6",
                 "symfony/http-kernel": ">=2,<2.3.29|>=2.4,<2.5.12|>=2.6,<2.6.8",
                 "symfony/routing": ">=2,<2.0.19",
-                "symfony/security": ">=2.3,<2.3.37|>=2.4,<2.6.13|>=2.7,<2.7.9|>=2,<2.0.25|>=2.1,<2.1.13|>=2.2,<2.2.9",
-                "symfony/security-core": ">=2.8,<2.8.6|>=3,<3.0.6|>=2.4,<2.6.13|>=2.7,<2.7.9",
+                "symfony/security": ">=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.3,<2.3.37|>=2.4,<2.6.13|>=2.7,<2.7.9|>=2,<2.0.25|>=2.1,<2.1.13|>=2.2,<2.2.9",
+                "symfony/security-core": ">=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.8,<2.8.6|>=3,<3.0.6|>=2.4,<2.6.13|>=2.7,<2.7.9",
                 "symfony/security-http": ">=2.4,<2.7.13|>=2.3,<2.3.41|>=2.8,<2.8.6|>=3,<3.0.6",
                 "symfony/serializer": ">=2,<2.0.11",
-                "symfony/symfony": ">=2,<2.3.41|>=2.4,<2.7.13|>=2.8,<2.8.6|>=3,<3.0.6",
+                "symfony/symfony": ">=2,<2.3.41|>=2.4,<2.7.13|>=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.8,<2.8.6|>=3,<3.0.6",
                 "symfony/translation": ">=2,<2.0.17",
                 "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
@@ -2328,7 +2368,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-06-22 16:43:17"
+            "time": "2017-07-18 08:09:10"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2386,16 +2426,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "986a633c92220ecb22ad06820a1df126c7a4f9eb"
+                "reference": "761e51a86f35f5b3e213e9b7f554fd91f9bffae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/986a633c92220ecb22ad06820a1df126c7a4f9eb",
-                "reference": "986a633c92220ecb22ad06820a1df126c7a4f9eb",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/761e51a86f35f5b3e213e9b7f554fd91f9bffae4",
+                "reference": "761e51a86f35f5b3e213e9b7f554fd91f9bffae4",
                 "shasum": ""
             },
             "require": {
@@ -2452,11 +2492,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-20 14:01:46"
+            "time": "2017-07-17 14:07:10"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
