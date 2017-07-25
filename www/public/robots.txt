@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /centcom/
-#Sitemap: http://basecamp.com/sitemap.xml
+Sitemap: https://options.cafe/sitemap.xml
