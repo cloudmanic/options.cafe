@@ -26,6 +26,9 @@ RUN set -x \
   && chown -R www-data:www-data /logs \
   && chown -R www-data:www-data /nginx-cache  
 
+# Copy nginx config
+COPY default.conf /etc/nginx/conf.d/default.conf
+
 # This needs to be at the bottom. (back from root)
 USER www-data
 
