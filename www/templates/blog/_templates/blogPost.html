@@ -12,7 +12,7 @@
 
 <div class="offset1 span10 zone-content">
 	<div class="blog-posts cont">
-		<div class="published">{{ entry.postDate.atom|date("F d, Y") }}</div> 
+		<div class="published">{{ entry.postDate|date("F d, Y") }}</div> 
 		
 		<h1>{{ entry.title }}</h1>
 		
@@ -27,7 +27,7 @@
 			<ul class="clearfix">
 				<li class="first">
 
-					<div class="fb-share-button" data-href="{{ url(craft.request.path) }}" data-layout="button"></div>
+					<div class="fb-share-button" data-href="{{ url(craft.app.request.pathInfo) }}" data-layout="button"></div>
 				</li>
 				
 				<li>
