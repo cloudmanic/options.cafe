@@ -1,0 +1,45 @@
+<div class="offset1 span10 zone-content">
+
+  <ul class="blog-posts">
+  	
+  	{% for row in entries %}
+  	<li class="{% if loop.first %}first{% endif %} {% if loop.last %}last{% endif %}">
+  		<article class="blog-post cont">
+    		
+  			<div class="published">{{ row.postDate.atom|date("F d, Y") }}</div>     
+  			<h1>
+  				<a href="{{ row.url }}">{{ row.title }}</a>
+  			</h1>
+  			
+        {% for block in row.pageBuilder %}
+          
+          {% if block.summary %}
+            {% include "blocks/_" ~ block.type %}
+          {% endif %}
+        
+        {% endfor %}  			
+  			
+  			<p>
+  				<a href="{{ row.url }}">Read More...</a>
+  			</p>
+  		</article>
+  	</li>
+  	{% endfor %}
+  	
+  </ul>
+
+  <div class="blog-pagination">
+    {% if pageInfo.prevUrl %}
+    <div class="newer">
+      <a href="{{ pageInfo.prevUrl }}">« Newer posts</a>
+    </div>
+    {% endif %}
+    
+    {% if pageInfo.nextUrl %}
+    <div class="older">
+      <a href="{{ pageInfo.nextUrl }}">Older posts »</a>
+    </div>
+    {% endif %}		
+  </div>
+
+</div>

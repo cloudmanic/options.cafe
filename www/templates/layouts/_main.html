@@ -6,56 +6,139 @@
 {% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
 
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="app">
-
-{% block head %}{% endblock %}
-
-<body ng-controller="SiteWideCtrl">
-
-<div class="container">
-
-	<div class="masthead clearfix">
-		<a href="{{ url() }}">
-			<img id="logo" src="{{ url() }}assets/img/wwlogo_oc@2x.png" alt="Stockpeer">
+<html lang="en">
+  {% block head %}{% endblock %}
+<body>
+<div class="wrapper wrapper--padding">
+	<div class="bar">
+		<a href="{{ url('') }}" class="bar__close">
+			<i class="ico-cross"></i>
 		</a>
-		<ul id="nav" class="nav ww-nav pull-right hidden-phone">
-		  <li class="active">
-		  	<a href="{{ url() }}">Home</a>
-			</li>
-			
-		  <li>
-				<a href="{{ url('options-broker-finder') }}">Broker Finder</a>
-			</li>
-		  
-		  <li>
-				<a href="{{ url('about') }}">About</a>
-			</li>
-		</ul>
-	</div>
 
-	<hr>
-	
-	<div class="row main-content">
-		{% block content %}{% endblock %}
-    {% include "modules/_newsletter" %}
-	</div>
-	
+		<div class="subscribe-secondary subscribe-secondary--alt">
+			<form action="?" method="post">
+				<label for="mail1" class="subscribe__label">Join our newsletter today for free.</label>
 
-	<div class="row well">	
-		<div class="copyright span8">
-			A <a href="https://cloudmanic.com/?utm_campaign=options.cafe">Cloudmanic Labs</a> Company
-		</div>
-				
-		<div class="pull-right">
-			<a href="{{ url('blog/rss') }}"><i class="smicon-rss"></i></a>
-			<a href="http://twitter.com/options_cafe"><i class="smicon-twitter"></i></a>
-			<a href="https://www.facebook.com/optionscafetrading"><i class="smicon-facebook"></i></a>
-		</div>
-		
-			
-	</div>
-	
-</div>
+				<input type="email" id="mail1" name="mail1" value="" class="subscribe__field">
+
+				<input type="submit" value="Subscribe" class="btn subscribe__btn">
+			</form>
+		</div><!-- /.subscribe-secondary -->
+	</div><!-- /.bar -->
+
+	<header class="header">
+		<div class="shell">
+			<div class="header__inner">
+				<a href="{{ url('') }}" class="logo">O/C Options Cafe</a>
+
+				<a href="{{ url('') }}" class="btn-menu visible-xs-inline-block">
+					<span></span>
+
+					<span></span>
+
+					<span></span>
+				</a>
+
+				<nav class="nav">
+					<ul>
+						<li class="current">
+							<a href="{{ url('') }}">Home</a>
+						</li>
+
+						<li>
+							<a href="{{ url('about') }}">Our Story</a>
+						</li>
+
+						<li>
+							<a href="{{ url('options-broker-finder') }}">Broker Finder</a>
+						</li>
+
+						<li>
+							<a href="{{ url('trading') }}">Trading</a>
+						</li>
+					</ul>
+				</nav><!-- /.nav -->
+			</div><!-- /.header__inner -->
+		</div><!-- /.shell -->
+	</header><!-- /.header -->
+
+	<div class="container">
+		<div class="shell">
+
+      {% block content %}{% endblock %}
+
+			<div class="subscribe">
+				<div class="subscribe__content">
+					<img src="css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111">
+
+					<h1>Options Cafe Newsletter</h1>
+
+					<p>Get our latest news delivered to your inbox.</p>
+				</div><!-- /.subscribe__content -->
+
+				<aside class="subscribe__aside">
+					<form action="?" method="post">
+						<label for="mail2" class="subscribe__label">Email</label>
+
+						<input type="email" id="mail2" name="mail2" value="" class="subscribe__field">
+
+						<input type="submit" value="Subscribe" class="btn btn--medium subscribe__btn">
+					</form>
+				</aside><!-- /.subscribe__aside -->
+			</div><!-- /.subscribe -->
+		</div><!-- /.shell -->
+	</div><!-- /.container -->
+
+	<footer class="footer">
+		<div class="shell">
+			<div class="footer__inner">
+				<div class="footer__content">
+					<a href="#" class="footer__logo">O/C</a>
+
+					<p class="copyright">© 2017. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com">Cloudmanic Labs</a> company</p><!-- /.copyright -->
+				</div><!-- /.footer__content -->
+
+				<aside class="footer__aside">
+					<nav class="footer__nav">
+						<ul>
+							<li>
+								<a href="#">Support</a>
+							</li>
+
+							<li>
+								<a href="#">Terms of Service</a>
+							</li>
+
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+
+							<li>
+								<a href="#">Refunds</a>
+							</li>
+						</ul>
+					</nav><!-- /.footer__nav -->
+
+					<div class="socials">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="ico-facebook-circle"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<i class="ico-twitter-circle"></i>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.socials -->
+				</aside><!-- /.footer__aside -->
+			</div><!-- /.footer__inner -->
+		</div><!-- /.shell -->
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
 
 <!-- Start of Async Drift Code -->
 <script>
