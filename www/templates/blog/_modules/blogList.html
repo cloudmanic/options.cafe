@@ -19,16 +19,16 @@
 
   				<div class="article__content">
   					<div class="article__head">
-  						<h1>{{ row.title }}</h1>
+  						<a href="{{ row.url }}"><h1>{{ row.title }}</h1></a>
 
   						<div class="article__meta">
-  							<span>Company News</span>
+  							<a href="{{ row.blogCategory.one().url }}">{{ row.blogCategory.one().title }}</a>
   							<em>{{ row.postDate.atom|date("F d, Y") }}</em>
   						</div>
   					</div>
 
   					<div class="article__body">
-  						<p>{{ row.blogExcerpt }}</p>
+  						{{ row.blogExcerpt }}
   					</div>
 
   					<div class="article__actions">

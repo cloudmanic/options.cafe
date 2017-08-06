@@ -1,5 +1,7 @@
 {% extends "layouts/_main" %}
 
+{% paginate craft.entries.section('blog').order('postDate desc').limit(15) as pageInfo, entries %}
+
 {% set title = entry.pageTitle ~ " | Options Cafe Learn About Options Trading" %}
 {% set description = entry.pageDescription %}
 {% set page_image = entry.pageImage.first().url('width800') %}
@@ -9,15 +11,5 @@
 {% endblock %}
 
 {% block content %}
-
-<div class="container__inner container__inner--secondary container__inner--white">  
-  {% for block in entry.pageBuilder %}
-    
-    {% if block.summary %}
-      {% include "blocks/_" ~ block.type %}
-    {% endif %}
-  
-  {% endfor %}
-</div>
-  
+  {% include "blog/_modules/blogList" %}
 {% endblock %}

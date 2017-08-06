@@ -5,6 +5,8 @@
 {% header "Pragma: cache" %}
 {% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
 
+{% set mainNav = craft.entries.section('pages') %}
+
 <!DOCTYPE html>
 <html lang="en">
   {% block head %}{% endblock %}
@@ -41,21 +43,12 @@
 
 				<nav class="nav">
 					<ul>
-						<li class="current">
-							<a href="{{ url('') }}">Home</a>
+  					
+  					{% for row in mainNav %}
+						<li class="currentIIII">
+							<a href="{{ row.url }}">{{ row.title }}</a>
 						</li>
-
-						<li>
-							<a href="{{ url('about') }}">Our Story</a>
-						</li>
-
-						<li>
-							<a href="{{ url('options-broker-finder') }}">Broker Finder</a>
-						</li>
-
-						<li>
-							<a href="{{ url('trading') }}">Trading</a>
-						</li>
+						{% endfor %}
 					</ul>
 				</nav><!-- /.nav -->
 			</div><!-- /.header__inner -->
