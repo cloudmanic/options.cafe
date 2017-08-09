@@ -42,7 +42,7 @@ class Sendy extends Plugin
       
       Craft::info(
           Craft::t(
-              'sendy',
+              'craft-sendy',
               '{name} plugin loaded',
               ['name' => $this->name]
           ),

@@ -1,6 +1,6 @@
 {
-    "name": "cloudmanic/sitemap",
-    "description": "An easy way to add a sitemap to the CMS.",
+    "name": "cloudmanic/craft-sendy",
+    "description": "A plugin to engage with Sendy.co",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
@@ -8,7 +8,7 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "sitemap"
+        "broker finder"
     ],
     "license": "MIT",
     "authors": [
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-beta.19"
+        "craftcms/cms": "~3.0.0-beta.20"
     },
     "repositories": [
         {
@@ -28,16 +28,16 @@
     ],
     "autoload": {
         "psr-4": {
-          "cloudmanic\\sitemap\\": "src/"
+          "cloudmanic\\sendy\\": "src/"
         }
     },
     "extra": {
-        "name": "Sitemap",
-        "handle": "sitemap",
+        "name": "Craft Sendy",
+        "handle": "craft-sendy",
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/sitemap/master/CHANGELOG.md",
-        "class": "cloudmanic\\sitemap\\Sitemap"
+        "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-sendy/master/CHANGELOG.md",
+        "class": "cloudmanic\\sendy\\Sendy"
     }
 }

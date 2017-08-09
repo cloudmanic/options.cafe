@@ -29,7 +29,9 @@
         "borucreative/craft3-ses": "^1.0",
         "craftcms/mailgun": "1.0.0.1",
         "dolphiq/redirect": "^1.0",
-        "cloudmanic/broker-finder": "^1.0"
+        "cloudmanic/craft-sendy": "^1.0",
+        "cloudmanic/craft-sitemap": "^1.0",
+        "cloudmanic/craft-broker-finder": "^1.0"
     },
     "scripts": {
         "post-root-package-install": [
@@ -43,15 +45,15 @@
       },      
       {
         "type": "path",
-        "url": "./plugins/broker-finder"
+        "url": "./plugins/craft-broker-finder"
       },
       {
         "type": "path",
-        "url": "./plugins/sendy"
+        "url": "./plugins/craft-sendy"
       },
       {
         "type": "path",
-        "url": "./plugins/sitemap"
-      },                                
+        "url": "./plugins/craft-sitemap"
+      }                                
     ]
 }

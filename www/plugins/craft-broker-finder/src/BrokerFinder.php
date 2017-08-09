@@ -77,7 +77,7 @@ class BrokerFinder extends Plugin
  */
         Craft::info(
             Craft::t(
-                'brokerfinder',
+                'craft-broker-finder',
                 '{name} plugin loaded',
                 ['name' => $this->name]
             ),

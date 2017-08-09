@@ -1,5 +1,5 @@
 {
-    "name": "cloudmanic/broker-finder",
+    "name": "cloudmanic/craft-broker-finder",
     "description": "An easy way to figure out the prices of all options brokers.",
     "type": "craft-plugin",
     "version": "1.0.0",
@@ -33,11 +33,11 @@
     },
     "extra": {
         "name": "Broker Finder",
-        "handle": "broker-finder",
+        "handle": "craft-broker-finder",
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/broker-finder/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-broker-finder/master/CHANGELOG.md",
         "class": "cloudmanic\\brokerfinder\\BrokerFinder"
     }
 }
