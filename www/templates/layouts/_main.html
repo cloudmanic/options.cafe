@@ -33,7 +33,7 @@
 					<ul>
   					
   					{% for row in mainNav %}
-						<li class="currentIIII">
+						<li class="{% if craft.request.firstSegment == row.slug %}current{% endif %} {% if craft.request.firstSegment == '' and row.slug == '__home__' %}current{% endif %}">
 							<a href="{{ row.url }}">{{ row.title }}</a>
 						</li>
 						{% endfor %}
