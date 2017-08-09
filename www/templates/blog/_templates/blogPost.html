@@ -4,6 +4,9 @@
 {% set description = entry.blogDescription %}
 {% set page_image = entry.blogImage.one().url('width800') %}
 
+{% set query = craft.request.getParam('q') %}
+{% set newsletterHeader = true %}
+
 {% block head %}
   {% include "modules/_head" %}
 {% endblock %}

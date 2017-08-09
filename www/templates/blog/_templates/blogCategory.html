@@ -1,5 +1,7 @@
 {% extends "layouts/_main" %}
 
+{% set query = craft.request.getParam('q') %}
+
 {% set category = craft.categories.group('blogCategory').slug(craft.request.segment(2)).first() %}
 {% paginate craft.entries.section('blog').relatedTo(category).order('postDate desc').limit(15) as pageInfo, entries %}
 

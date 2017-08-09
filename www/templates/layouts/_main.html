@@ -11,22 +11,10 @@
 <html lang="en">
   {% block head %}{% endblock %}
 <body>
-<div class="wrapper wrapper--padding">
-	<div class="bar">
-		<a href="{{ url('') }}" class="bar__close">
-			<i class="ico-cross"></i>
-		</a>
-
-		<div class="subscribe-secondary subscribe-secondary--alt">
-			<form action="?" method="post">
-				<label for="mail1" class="subscribe__label">Join our newsletter today for free.</label>
-
-				<input type="email" id="mail1" name="mail1" value="" class="subscribe__field">
-
-				<input type="submit" value="Subscribe" class="btn subscribe__btn">
-			</form>
-		</div><!-- /.subscribe-secondary -->
-	</div><!-- /.bar -->
+<div class="wrapper {% if newsletterHeader is defined %}wrapper--padding{% endif %}">
+  {% if newsletterHeader is defined %}
+    {% include "modules/_newsletterHeader" %}
+  {% endif %}
 
 	<header class="header">
 		<div class="shell">
@@ -62,7 +50,7 @@
 
 			<div class="subscribe">
 				<div class="subscribe__content">
-					<img src="css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111">
+					<img src="/assets/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111">
 
 					<h1>Options Cafe Newsletter</h1>
 
@@ -86,7 +74,7 @@
 		<div class="shell">
 			<div class="footer__inner">
 				<div class="footer__content">
-					<a href="#" class="footer__logo">O/C</a>
+					<a href="{{ url('') }}" class="footer__logo">O/C</a>
 
 					<p class="copyright">© 2017. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com">Cloudmanic Labs</a> company</p><!-- /.copyright -->
 				</div><!-- /.footer__content -->
@@ -95,7 +83,7 @@
 					<nav class="footer__nav">
 						<ul>
 							<li>
-								<a href="#">Support</a>
+								<a href="http://help.options.cafe">Support</a>
 							</li>
 
 							<li>
@@ -115,13 +103,13 @@
 					<div class="socials">
 						<ul>
 							<li>
-								<a href="#">
+								<a href="{{ siteDetails.siteFacebookUrl }}">
 									<i class="ico-facebook-circle"></i>
 								</a>
 							</li>
 
 							<li>
-								<a href="#">
+								<a href="{{ siteDetails.siteTwitterUrl }}">
 									<i class="ico-twitter-circle"></i>
 								</a>
 							</li>
