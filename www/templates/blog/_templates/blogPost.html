@@ -1,6 +1,6 @@
 {% extends "layouts/_main" %}
 
-{% set title = entry.title ~ " | Options Cafe Learn About Options Trading" %}
+{% set title = entry.title ~ siteDetails.siteMetaTitleAppend %}
 {% set description = entry.blogDescription %}
 {% set page_image = entry.blogImage.one().url('width800') %}
 
@@ -56,8 +56,10 @@
   					</div><!-- /.widget__head -->
 
   					<div class="widget__body">
-              {% include "modules/_socialShare" %}
-  					</div>
+    					<div class="socials">
+                {% include "modules/_socialShare" %}
+    					</div>  
+            </div>
   				</div>
   			</div>
 
