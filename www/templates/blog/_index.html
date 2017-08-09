@@ -1,6 +1,12 @@
 {% extends "layouts/_main" %}
 
-{% paginate craft.entries.section('blog').order('postDate desc').limit(15) as pageInfo, entries %}
+{% set query = craft.request.getParam('q') %}
+
+{% if query is not empty %}
+  {% paginate craft.entries.section('blog').search(query).order('postDate desc').limit(1000) as pageInfo, entries %}  
+{% else %}
+  {% paginate craft.entries.section('blog').order('postDate desc').limit(15) as pageInfo, entries %}
+{% endif %}
 
 {% set title = entry.pageTitle ~ " | Options Cafe Learn About Options Trading" %}
 {% set description = entry.pageDescription %}

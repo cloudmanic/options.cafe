@@ -1,7 +1,7 @@
 {% extends "layouts/_main" %}
 
 {% set category = craft.categories.group('blogCategory').slug(craft.request.segment(2)).first() %}
-{% paginate craft.entries.section('blog').relatedTo(category).order('postDate desc').limit(5) as pageInfo, entries %}
+{% paginate craft.entries.section('blog').relatedTo(category).order('postDate desc').limit(15) as pageInfo, entries %}
 
 {% set title = category.title ~ " Blog | Options Cafe Learn About Options Trading" %}
 {% set description = "Options Cafe is the best place for online options trading advice. Learn everything from trading vertical credit spreads to advance stock trades." %}
@@ -12,7 +12,5 @@
 {% endblock %}
 
 {% block content %}
-  
   {% include "blog/_modules/blogList" %}
-  
 {% endblock %}

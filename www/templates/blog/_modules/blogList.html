@@ -1,12 +1,17 @@
 <div class="container__inner">
-  <div class="intro">
-  	<img src="/assets/css/images/temp/blog-image.png" alt="" class="intro__image" width="189" height="107">
-
-  	<p>We like to share ideas involving business, software development, design, our <br>products, and more. We build software to make your small business better.</p>
-  </div><!-- /.intro -->
+  {% include "blog/_modules/blogIntro" %}
 
   <div class="main main--flex">
   	<div class="content">
+    	{% if category is defined %}
+    	<h3 class="content__title">{{ category.title }}</h3>
+    	{% endif %}
+
+    	{% if query is not empty %}
+    	<h3 class="content__title">Search: {{ query }}</h3>
+    	{% endif %}
+    	
+    	{% if entries|length %}
   		<ol class="articles">
        		
     		{% for row in entries %}
@@ -38,7 +43,10 @@
   			</li>
   			{% endfor %}
   			
-  		</ol><!-- /.articles -->
+  		</ol>
+  		{% else %}
+  		  <p>Your search for "{{ query }}" didn’t return any results.</p>
+  		{% endif %}
 
   		<div class="paging">
     		{% if pageInfo.prevUrl %}
@@ -59,94 +67,7 @@
   		</div><!-- /.paging -->
   	</div><!-- /.content -->
 
-  	<div class="sidebar">
-  		<ul class="widgets">
-  			<li class="widget widget--categories">
-  				<div class="widget__head">
-  					<h2 class="widget__title">Categories</h2><!-- /.widget__title -->
-  				</div><!-- /.widget__head -->
+    {% include "blog/_modules/blogSideBar" %}
 
-  				<div class="widget__body">
-  					<ul class="list-links">
-  						<li>
-  							<a href="#">All Posts</a>
-  						</li>
-
-  						<li>
-  							<a href="#">Education</a>
-  						</li>
-
-  						<li>
-  							<a href="#">Company News</a>
-  						</li>
-
-  						<li>
-  							<a href="#">Spicer's Trades</a>
-  						</li>
-
-  						<li>
-  							<a href="#">Spicer’s Soapbox</a>
-  						</li>
-  					</ul><!-- /.list-links -->
-
-  					<div class="search">
-  						<form action="?" method="get">
-  							<label for="q" class="hidden">Search</label>
-
-  							<input type="search" name="q" id="q" value="" class="search__field">
-
-  							<button type="submit" class="btn btn--xsmall search__btn">
-  								<i class="ico-search"></i>
-  							</button>
-  						</form>
-  					</div><!-- /.search -->
-  				</div><!-- /.widget__body -->
-  			</li><!-- /.widget -->
-
-  			<li class="widget widget--ad">
-  				<div class="widget__head">
-  					<h2 class="widget__title">
-  						<span>Options Cafe</span>
-
-  						Trading
-  					</h2><!-- /.widget__title -->
-  				</div><!-- /.widget__head -->
-
-  				<figure class="widget__image">
-  					<img src="/assets/css/images/temp/trading.jpg" alt="">
-  				</figure><!-- /.widget__image -->
-
-  				<div class="widget__actions">
-  					<a href="#">Learn More <i class="ico-arrow-right-light"></i></a>
-  				</div><!-- /.widget__actions -->
-  			</li><!-- /.widget -->
-
-  			<li class="widget widget--socials">
-  				<div class="widget__head">
-  					<h3 class="widget__title">Follow us!</h3><!-- /.widget__title -->
-
-  					<h4>On social media</h4>
-  				</div><!-- /.widget__head -->
-
-  				<div class="widget__body">
-  					<div class="socials">
-  						<ul>
-  							<li>
-  								<a href="#">
-  									<i class="ico-twitter"></i>
-  								</a>
-  							</li>
-
-  							<li>
-  								<a href="#">
-  									<i class="ico-facebook"></i>
-  								</a>
-  							</li>
-  						</ul>
-  					</div><!-- /.socials -->
-  				</div><!-- /.widget__body -->
-  			</li><!-- /.widget -->
-  		</ul><!-- /.widgets -->
-  	</div><!-- /.sidebar -->
   </div><!-- /.main main-/-flex -->
 </div><!-- /.container__inner -->

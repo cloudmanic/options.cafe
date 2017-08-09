@@ -1,0 +1,80 @@
+{% set categories = craft.categories.group('blogCategory') %}
+
+<div class="sidebar">
+  <ul class="widgets">
+  	<li class="widget widget--categories">
+  		<div class="widget__head">
+  			<h2 class="widget__title">Categories</h2>
+  		</div>
+
+  		<div class="widget__body">
+  			<ul class="list-links">
+  				<li>
+  					<a href="{{ url('/blog') }}">All Posts</a>
+  				</li>
+
+          {% for row in categories %}
+  				<li>
+  					<a href="{{ row.url }}">{{ row.title }}</a>
+  				</li>
+  				{% endfor %}
+  			</ul>
+
+  			<div class="search">
+  				<form action="{{ url('blog') }}" method="get">
+  					<label for="q" class="hidden">Search</label>
+  					<input type="search" name="q" id="q" value="{{ query }}" class="search__field" />
+  					<button type="submit" class="btn btn--xsmall search__btn">
+  						<i class="ico-search"></i>
+  					</button>
+  				</form>
+  			</div>
+  			
+  		</div><!-- /.widget__body -->
+  	</li><!-- /.widget -->
+
+  	<li class="widget widget--ad">
+  		<div class="widget__head">
+  			<h2 class="widget__title">
+  				<span>Options Cafe</span>
+
+  				Trading
+  			</h2><!-- /.widget__title -->
+  		</div><!-- /.widget__head -->
+
+  		<figure class="widget__image">
+  			<img src="/assets/css/images/temp/trading.jpg" alt="">
+  		</figure><!-- /.widget__image -->
+
+  		<div class="widget__actions">
+  			<a href="#">Learn More <i class="ico-arrow-right-light"></i></a>
+  		</div><!-- /.widget__actions -->
+  	</li><!-- /.widget -->
+
+  	<li class="widget widget--socials">
+  		<div class="widget__head">
+  			<h3 class="widget__title">Follow us!</h3><!-- /.widget__title -->
+
+  			<h4>On social media</h4>
+  		</div><!-- /.widget__head -->
+
+  		<div class="widget__body">
+  			<div class="socials">
+  				<ul>
+  					<li>
+  						<a href="#">
+  							<i class="ico-twitter"></i>
+  						</a>
+  					</li>
+
+  					<li>
+  						<a href="#">
+  							<i class="ico-facebook"></i>
+  						</a>
+  					</li>
+  				</ul>
+  			</div><!-- /.socials -->
+  		</div><!-- /.widget__body -->
+  	</li><!-- /.widget -->
+  </ul><!-- /.widgets -->
+</div><!-- /.sidebar -->

@@ -539,6 +539,7 @@ blockquote:last-child { margin-bottom: 0; }
 .article--single blockquote { font-size: 16px; line-height: 1.75; font-style: italic; color: rgba(62,65,69,.6); margin: 7px 40px; }
 .article--single .article__meta p { margin: 0; position: relative; padding-top: 6px; }
 .article--single .article__meta span,
+.article--single .article__meta a,
 .article--single .article__meta em { margin-right: 27px; }
 .article--single .article__head { margin-bottom: 23px; }
 .article--single .article__image { margin-bottom: 22px; text-align: center; }
