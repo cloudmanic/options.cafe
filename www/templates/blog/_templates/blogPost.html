@@ -7,6 +7,13 @@
 {% set query = craft.request.getParam('q') %}
 {% set newsletterHeader = true %}
 
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries.section('blog') %}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
 {% block head %}
   {% include "modules/_head" %}
 {% endblock %}
@@ -69,17 +76,21 @@
   		</article>
 
   		<div class="paging">
-  			<a href="#" class="paging__prev">
+    		{% if prevEntry %}
+  			<a href="{{ prevEntry.url }}" class="paging__prev">
   				<i class="ico-arrow-left"></i>
-
   				Prev
   			</a>
+  			{% else %}
+  			&nbsp;
+        {% endif %}
 
-  			<a href="#" class="paging__next">
+        {% if nextEntry %}
+  			<a href="{{ nextEntry.url }}" class="paging__next">
   				Next
-
   				<i class="ico-arrow-right"></i>
   			</a>
+  			{% endif %}
   		</div><!-- /.paging -->
   	</div><!-- /.content -->
 
