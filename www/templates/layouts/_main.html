@@ -48,25 +48,8 @@
 
       {% block content %}{% endblock %}
 
-			<div class="subscribe">
-				<div class="subscribe__content">
-					<img src="/assets/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111">
+      {% include "modules/_newsletter" %}
 
-					<h1>Options Cafe Newsletter</h1>
-
-					<p>Get our latest news delivered to your inbox.</p>
-				</div><!-- /.subscribe__content -->
-
-				<aside class="subscribe__aside">
-					<form action="?" method="post">
-						<label for="mail2" class="subscribe__label">Email</label>
-
-						<input type="email" id="mail2" name="mail2" value="" class="subscribe__field">
-
-						<input type="submit" value="Subscribe" class="btn btn--medium subscribe__btn">
-					</form>
-				</aside><!-- /.subscribe__aside -->
-			</div><!-- /.subscribe -->
 		</div><!-- /.shell -->
 	</div><!-- /.container -->
 

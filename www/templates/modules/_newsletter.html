@@ -1,12 +1,18 @@
-<div class="row newsletter" ng-controller="NewsletterCtrl">
-  <h1>Newsletter</h1>
-  <p ng-hide="done">Get our latest breaking news delivered to your inbox.</p>
-  
-  <h3 ng-show="done">Thanks! Your subscription to our newsletter has been confirmed.</h3>
-  <p ng-show="done">You will now receive our latest breaking updates delivered to your inbox.</p>
-  
-  <form ng-submit="subscribe()" ng-hide="done">
-  	<input type="text" placeholder="Email address" ng-model="email" />
-  	<a href="" class="button-link" ng-click="subscribe()" ng-bind="btn_text">Subscribe</a>
-  </form>
-</div>
+<div class="subscribe">
+  <div class="subscribe__content">
+  	<img src="/assets/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111">
+
+  	<h1>Options Cafe Newsletter</h1>
+
+  	<p>Get our latest news delivered to your inbox.</p>
+  </div><!-- /.subscribe__content -->
+
+  <aside class="subscribe__aside">
+  	<form action="" method="post" class="newsletter-form">
+  		<label for="mail2" class="subscribe__label">Email</label>
+  		<span class="subscribe__alert" style="display: none;">Thanks! You won't regret it!</span>
+  		<input type="email" id="mail2" name="email" value="" class="subscribe__field">
+  		<input type="submit" name="subscribe" value="Subscribe" class="btn btn--medium subscribe__btn">
+  	</form>
+  </aside><!-- /.subscribe__aside -->
+</div><!-- /.subscribe -->
