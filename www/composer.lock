@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1dd45ab4b489b321428b53adfa6ab94e",
-    "content-hash": "bba6cccdc2153eeb21c1c85dca2b188c",
+    "hash": "06d83d98b69b42fa9d19d2c6751132c7",
+    "content-hash": "92a52e6de62bf4af7710267adad33aa9",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -297,6 +297,51 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16 21:13:23"
+        },
+        {
+            "name": "cloudmanic/broker-finder",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/broker-finder",
+                "reference": "cb5b65269a4f555809c97e14f7f022a310cbe90d",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.20"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Broker Finder",
+                "handle": "broker-finder",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/broker-finder/master/CHANGELOG.md",
+                "class": "cloudmanic\\brokerfinder\\BrokerFinder"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cloudmanic\\brokerfinder\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudmanic Labs, LLC",
+                    "homepage": "https://cloudmanic.com"
+                }
+            ],
+            "description": "An easy way to figure out the prices of all options brokers.",
+            "keywords": [
+                "broker finder",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
         },
         {
             "name": "clue/stream-filter",
