@@ -81,7 +81,7 @@
 	 */
   ocApp.homePageClick = function() {
 		$('.widget .home-page-click').on('click', function(event) {
-  		_paq.push(['trackEvent', 'Ad', 'Click', 'Blog']);
+  		_paq.push(['trackEvent', 'Ad', 'Click', 'Ad Click Blog Sidebar']);
       window.location = site.baseUrl;
 			event.preventDefault();
 		});    
