@@ -58,7 +58,7 @@ class Sitemap extends Plugin
         
         // Site routes 
         Event::on(UrlManager::class, UrlManager::EVENT_REGISTER_SITE_URL_RULES, function(RegisterUrlRulesEvent $event) {
-          $event->rules['sitemap.xml'] = 'sitemap/map';
+          $event->rules['sitemap.xml'] = 'craft-sitemap/map';
         });        
     }
 
