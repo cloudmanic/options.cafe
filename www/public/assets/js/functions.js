@@ -98,7 +98,7 @@
   		$this = $(this);
   		var btn = $this.find('[name="subscribe"]');
       var btn_val = btn.val();
-      var entry_type = $this.find('[name="entry_type"]');
+      var entry_type = $this.find('[name="entry_type"]').val();
       var success = $this.find('.subscribe__alert');
       var email = $this.find('[name="email"]').val();
       var hide_on_success = $this.find('.hide-on-success');
