@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bba6cccdc2153eeb21c1c85dca2b188c",
+    "content-hash": "30cd85164494a426927cddace6388fe0",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -296,6 +296,141 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16T21:13:23+00:00"
+        },
+        {
+            "name": "cloudmanic/craft-broker-finder",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/craft-broker-finder",
+                "reference": "e84ab69e8a99f64db167bf88c738a35f796bebfb",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.20"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Broker Finder",
+                "handle": "craft-broker-finder",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-broker-finder/master/CHANGELOG.md",
+                "class": "cloudmanic\\brokerfinder\\BrokerFinder"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cloudmanic\\brokerfinder\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudmanic Labs, LLC",
+                    "homepage": "https://cloudmanic.com"
+                }
+            ],
+            "description": "An easy way to figure out the prices of all options brokers.",
+            "keywords": [
+                "broker finder",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
+        },
+        {
+            "name": "cloudmanic/craft-sendy",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/craft-sendy",
+                "reference": "a50d5e6b96a66226980c1ec640889fc113aaac01",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.20"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Craft Sendy",
+                "handle": "craft-sendy",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-sendy/master/CHANGELOG.md",
+                "class": "cloudmanic\\sendy\\Sendy"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cloudmanic\\sendy\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudmanic Labs, LLC",
+                    "homepage": "https://cloudmanic.com"
+                }
+            ],
+            "description": "A plugin to engage with Sendy.co",
+            "keywords": [
+                "broker finder",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
+        },
+        {
+            "name": "cloudmanic/craft-sitemap",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/craft-sitemap",
+                "reference": "a4fe8ac47adaae419d6d0191da1a12d0b042895c",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.19"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Sitemap",
+                "handle": "craft-sitemap",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-sitemap/master/CHANGELOG.md",
+                "class": "cloudmanic\\sitemap\\Sitemap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cloudmanic\\sitemap\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudmanic Labs, LLC",
+                    "homepage": "https://cloudmanic.com"
+                }
+            ],
+            "description": "An easy way to add a sitemap to the CMS.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "sitemap"
+            ]
         },
         {
             "name": "clue/stream-filter",
