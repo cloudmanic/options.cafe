@@ -1,0 +1,31 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set description = "Options Cafe 404 Page" %}
+{% set page_image = url('') ~ "assets/css/images/temp/404.png" %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container__inner  container__inner--white">
+  <section class="section-404">
+  	<div class="section__content">
+  		<img src="/assets/css/images/temp/404.png" alt="" class="section__image">
+
+  		<div class="section__content-inner">
+  			<h2>Oops! Something went wrong!</h2>
+
+  			<p>The page you're looking for doesn't exist.</p>
+
+  			<p>Maybe read our blog?</p>
+
+  			<a href="{{ url('blog') }}" class="btn btn--medium">Options Cafe Blog</a>
+  		</div><!-- /.section__content-inner -->
+  	</div><!-- /.section__content -->
+  </section><!-- /.section-404 -->
+</div><!-- /.container__inner -->
+
+{% endblock %}

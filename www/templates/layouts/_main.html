@@ -1,54 +1,105 @@
+{# Tell the browser to cache this page for 30 days #}
+{% set expiry = now|date_modify('+30 days') %}
+
+{% header "Cache-Control: max-age=" ~ expiry.timestamp %}
+{% header "Pragma: cache" %}
+{% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
+
+{# https://github.com/craftcms/cms/issues/1887 #}
+{# set mainNav = craft.entries.section('pages').pagesHeaderNavigation(true) #}
+{% set mainNav = craft.entries.section('pages') %}
+
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="app">
+<html lang="en">
+  {% block head %}{% endblock %}
+<body>
+<div class="wrapper {% if newsletterHeader is defined %}wrapper--padding{% endif %}">
+  {% if newsletterHeader is defined %}
+    {% include "modules/_newsletterHeader" %}
+  {% endif %}
 
-{% block head %}{% endblock %}
+	<header class="header">
+		<div class="shell">
+			<div class="header__inner">
+				<a href="{{ url('') }}" class="logo">O/C Options Cafe</a>
 
-<body ng-controller="SiteWideCtrl">
+				<a href="{{ url('') }}" class="btn-menu visible-xs-inline-block">
+					<span></span>
 
-<div class="container">
+					<span></span>
 
-	<div class="masthead clearfix">
-		<a href="{{ url() }}">
-			<img id="logo" src="{{ url() }}assets/img/wwlogo_oc@2x.png" alt="Stockpeer">
-		</a>
-		<ul id="nav" class="nav ww-nav pull-right hidden-phone">
-		  <li class="active">
-		  	<a href="{{ url() }}">Home</a>
-			</li>
-			
-		  <li>
-				<a href="{{ url('options-broker-finder') }}">Broker Finder</a>
-			</li>
-		  
-		  <li>
-				<a href="{{ url('about') }}">About</a>
-			</li>
-		</ul>
-	</div>
+					<span></span>
+				</a>
 
-	<hr>
-	
-	<div class="row main-content">
-		{% block content %}{% endblock %}
-    {% include "modules/_newsletter" %}
-	</div>
-	
+				<nav class="nav">
+					<ul>
+  					{% for row in mainNav %}
+  					  {% if row.pagesHeaderNavigation %}
+              <li class="{% if craft.request.firstSegment == row.slug %}current{% endif %} {% if craft.request.firstSegment == '' and row.slug == '__home__' %}current{% endif %}">
+							  <a href="{{ row.url }}">{{ row.title }}</a>
+              </li>
+              {% endif %}
+						{% endfor %}
+					</ul>
+				</nav><!-- /.nav -->
+			</div><!-- /.header__inner -->
+		</div><!-- /.shell -->
+	</header><!-- /.header -->
 
-	<div class="row well">	
-		<div class="copyright span8">
-			A <a href="https://cloudmanic.com/?utm_campaign=options.cafe">Cloudmanic Labs</a> Company
-		</div>
-				
-		<div class="pull-right">
-			<a href="{{ url('blog/rss') }}"><i class="smicon-rss"></i></a>
-			<a href="http://twitter.com/options_cafe"><i class="smicon-twitter"></i></a>
-			<a href="https://www.facebook.com/optionscafetrading"><i class="smicon-facebook"></i></a>
-		</div>
-		
-			
-	</div>
-	
-</div>
+	<div class="container">
+		<div class="shell">
+
+      {% block content %}{% endblock %}
+
+      {% include "modules/_newsletter" %}
+
+		</div><!-- /.shell -->
+	</div><!-- /.container -->
+
+	<footer class="footer">
+		<div class="shell">
+			<div class="footer__inner">
+				<div class="footer__content">
+					<a href="{{ url('') }}" class="footer__logo">O/C</a>
+
+					<p class="copyright">© 2017. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</p><!-- /.copyright -->
+				</div><!-- /.footer__content -->
+
+				<aside class="footer__aside">
+					<nav class="footer__nav">
+						<ul>
+
+              {% for row in mainNav %}
+                {% if row.pagesFooterNavigation %}
+                <li>
+                  <a href="{{ row.url }}">{{ row.title }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
+              
+						</ul>
+					</nav><!-- /.footer__nav -->
+
+					<div class="socials">
+						<ul>
+							<li>
+								<a href="{{ siteDetails.siteFacebookUrl }}">
+									<i class="ico-facebook-circle"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="{{ siteDetails.siteTwitterUrl }}">
+									<i class="ico-twitter-circle"></i>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.socials -->
+				</aside><!-- /.footer__aside -->
+			</div><!-- /.footer__inner -->
+		</div><!-- /.shell -->
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
 
 <!-- Start of Async Drift Code -->
 <script>
@@ -74,7 +125,7 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('8xwphrg9zkcy');
 </script>
 
-{% if craft.config.devMode == 'true' %}
+{% if craft.app.config.general.devMode == 'true' %}
 
 <!-- Start of Mixpanel Code -->
 <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
