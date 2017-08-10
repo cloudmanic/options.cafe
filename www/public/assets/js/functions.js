@@ -98,6 +98,7 @@
   		$this = $(this);
   		var btn = $this.find('[name="subscribe"]');
       var btn_val = btn.val();
+      var entry_type = $this.find('[name="entry_type"]');
       var success = $this.find('.subscribe__alert');
       var email = $this.find('[name="email"]').val();
       var hide_on_success = $this.find('.hide-on-success');
@@ -136,6 +137,8 @@
           {
           	clicky.goal('5193');
           	_paq.push(['trackGoal', 1]);
+          	_paq.push(['trackEvent', 'Newsletter', 'Subscribe', entry_type]);
+          	ga('send', 'event', 'Newsletter', 'Subscribe', entry_type);
           }
         }
       });		
