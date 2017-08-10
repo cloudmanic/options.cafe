@@ -30,7 +30,8 @@
   
 	<script>
 		var site = {
-			devMode: {{ craft.app.config.general.devMode }}
+			devMode: {{ craft.app.config.general.devMode }},
+			baseUrl: '{{ url('') }}'
 		}
 	</script>  
 </head>

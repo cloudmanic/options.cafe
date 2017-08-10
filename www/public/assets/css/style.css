@@ -354,6 +354,9 @@ blockquote:last-child { margin-bottom: 0; }
 	.visible-lg-inline { display: inline !important; }
 	.visible-lg-inline-block { display: inline-block !important; }
 }
+
+.home-page-click { cursor: pointer; }
+
 /* ------------------------------------------------------------ *\
 	II.  Regions
 \* ------------------------------------------------------------ */

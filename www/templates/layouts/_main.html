@@ -5,6 +5,8 @@
 {% header "Pragma: cache" %}
 {% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
 
+{# https://github.com/craftcms/cms/issues/1887 #}
+{# set mainNav = craft.entries.section('pages').pagesHeaderNavigation(true) #}
 {% set mainNav = craft.entries.section('pages') %}
 
 <!DOCTYPE html>
@@ -31,11 +33,12 @@
 
 				<nav class="nav">
 					<ul>
-  					
   					{% for row in mainNav %}
-						<li class="{% if craft.request.firstSegment == row.slug %}current{% endif %} {% if craft.request.firstSegment == '' and row.slug == '__home__' %}current{% endif %}">
-							<a href="{{ row.url }}">{{ row.title }}</a>
-						</li>
+  					  {% if row.pagesHeaderNavigation %}
+              <li class="{% if craft.request.firstSegment == row.slug %}current{% endif %} {% if craft.request.firstSegment == '' and row.slug == '__home__' %}current{% endif %}">
+							  <a href="{{ row.url }}">{{ row.title }}</a>
+              </li>
+              {% endif %}
 						{% endfor %}
 					</ul>
 				</nav><!-- /.nav -->
@@ -65,21 +68,15 @@
 				<aside class="footer__aside">
 					<nav class="footer__nav">
 						<ul>
-							<li>
-								<a href="http://help.options.cafe">Support</a>
-							</li>
 
-							<li>
-								<a href="#">Terms of Service</a>
-							</li>
-
-							<li>
-								<a href="#">Privacy Policy</a>
-							</li>
-
-							<li>
-								<a href="#">Refunds</a>
-							</li>
+              {% for row in mainNav %}
+                {% if row.pagesFooterNavigation %}
+                <li>
+                  <a href="{{ row.url }}">{{ row.title }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
+              
 						</ul>
 					</nav><!-- /.footer__nav -->
 

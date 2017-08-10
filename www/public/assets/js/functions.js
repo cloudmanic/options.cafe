@@ -6,6 +6,7 @@
 		this.manageBar();
 		this.manageNav();
 		this.manageForm();
+		this.homePageClick();
 		this.initDetectMobileBrowser();
 		this.newsletterSubscribe();
 	};
@@ -73,6 +74,17 @@
 	ocApp.initDetectMobileBrowser = function() {
 		$('html').addClass($.browser.mobile ? 'touch' : 'no-touch');
 	};
+
+	/**
+	 * home-page-click
+	 *
+	 */
+  ocApp.homePageClick = function() {
+		$('.widget .home-page-click').on('click', function(event) {
+      window.location = site.baseUrl;
+			event.preventDefault();
+		});    
+  }
 
 	/**
 	 * Newsletter subscribe
