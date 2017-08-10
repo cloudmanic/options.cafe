@@ -847,7 +847,6 @@ input:-webkit-autofill { -webkit-text-fill-color: inherit; -webkit-box-shadow: 0
 .section .section__title { text-align: center; margin-bottom: 16px; }
 .section .section__content { padding: 0 155px 216px; }
 .section .section__content img { display: block; margin: 0 auto; }
-.section .section__content p { margin-bottom: 51px; }
 .section .section__foot { background: #F9F9F9; border-top: 1px solid  #E6E7E7; padding: 0 155px 52px; }
 .section .section__foot img { display: block; margin: -176px -19px -8px; max-width: none; }
 /* Small Desktop */

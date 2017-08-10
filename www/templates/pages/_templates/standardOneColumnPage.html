@@ -14,11 +14,7 @@
   <section class="section">
   	<div class="section__content"> 
       {% for block in entry.pageBuilder %}
-        
-        {% if block.summary %}
-          {% include "blocks/_" ~ block.type %}
-        {% endif %}
-      
+        {% include "blocks/_" ~ block.type %}
       {% endfor %}
   	</div>
   </section>
