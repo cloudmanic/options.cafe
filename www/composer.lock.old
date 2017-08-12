@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4775df67de66174f535f86920b2822a8",
-    "content-hash": "6683aecd2191157cab75826b83e4a31b",
+    "content-hash": "30cd85164494a426927cddace6388fe0",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.32.7",
+            "version": "3.32.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9e2ad0ee0a1269190e411b7409e9b64361626e0a"
+                "reference": "6d9a29bd750c50e491a4f458bf5e24f2adb35a5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e2ad0ee0a1269190e411b7409e9b64361626e0a",
-                "reference": "9e2ad0ee0a1269190e411b7409e9b64361626e0a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6d9a29bd750c50e491a4f458bf5e24f2adb35a5f",
+                "reference": "6d9a29bd750c50e491a4f458bf5e24f2adb35a5f",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2017-08-11 21:16:28"
+            "time": "2017-08-09T18:19:19+00:00"
         },
         {
             "name": "borucreative/craft3-ses",
@@ -135,7 +134,7 @@
                 "craft-plugin",
                 "craftcms"
             ],
-            "time": "2017-03-03 04:07:38"
+            "time": "2017-03-03T04:07:38+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -296,7 +295,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2017-07-16 21:13:23"
+            "time": "2017-07-16T21:13:23+00:00"
         },
         {
             "name": "cloudmanic/craft-broker-finder",
@@ -344,57 +343,12 @@
             ]
         },
         {
-            "name": "cloudmanic/craft-nginx",
-            "version": "1.0.0",
-            "dist": {
-                "type": "path",
-                "url": "./plugins/craft-nginx",
-                "reference": "d228caad84e0129f3d1c25a0be9d35bf3c8e939a",
-                "shasum": null
-            },
-            "require": {
-                "craftcms/cms": "~3.0.0-beta.19"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Nginx",
-                "handle": "craft-nginx",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/cloudmanic/craft-nginx/master/CHANGELOG.md",
-                "class": "cloudmanic\\nginx\\nginx"
-            },
-            "autoload": {
-                "psr-4": {
-                    "cloudmanic\\nginx\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cloudmanic Labs, LLC",
-                    "homepage": "https://cloudmanic.com"
-                }
-            ],
-            "description": "Manage nginx from craft.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "nginx"
-            ]
-        },
-        {
             "name": "cloudmanic/craft-sendy",
             "version": "1.0.0",
             "dist": {
                 "type": "path",
                 "url": "./plugins/craft-sendy",
-                "reference": null,
+                "reference": "a50d5e6b96a66226980c1ec640889fc113aaac01",
                 "shasum": null
             },
             "require": {
@@ -439,7 +393,7 @@
             "dist": {
                 "type": "path",
                 "url": "./plugins/craft-sitemap",
-                "reference": null,
+                "reference": "a4fe8ac47adaae419d6d0191da1a12d0b042895c",
                 "shasum": null
             },
             "require": {
@@ -525,7 +479,7 @@
                 "stream_filter_append",
                 "stream_filter_register"
             ],
-            "time": "2015-11-08 23:41:30"
+            "time": "2015-11-08T23:41:30+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -584,7 +538,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-03-06 11:59:08"
+            "time": "2017-03-06T11:59:08+00:00"
         },
         {
             "name": "composer/composer",
@@ -661,7 +615,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2017-08-06 13:00:25"
+            "time": "2017-08-06T13:00:25+00:00"
         },
         {
             "name": "composer/semver",
@@ -723,7 +677,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30 16:08:34"
+            "time": "2016-08-30T16:08:34+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -784,7 +738,7 @@
                 "spdx",
                 "validator"
             ],
-            "time": "2017-04-03 19:08:52"
+            "time": "2017-04-03T19:08:52+00:00"
         },
         {
             "name": "craftcms/aws-s3",
@@ -835,7 +789,7 @@
                 "s3",
                 "yii2"
             ],
-            "time": "2017-07-31 21:11:04"
+            "time": "2017-07-31T21:11:04+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -903,7 +857,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-07-28 19:28:32"
+            "time": "2017-07-28T19:28:32+00:00"
         },
         {
             "name": "craftcms/mailgun",
@@ -954,7 +908,7 @@
                 "mailgun",
                 "yii2"
             ],
-            "time": "2017-01-31 20:14:48"
+            "time": "2017-01-31T20:14:48+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -995,7 +949,7 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2017-07-25 13:26:24"
+            "time": "2017-07-25T13:26:24+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1029,7 +983,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2017-06-29 20:23:11"
+            "time": "2017-06-29T20:23:11+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1069,7 +1023,7 @@
                 "nested sets",
                 "yii2"
             ],
-            "time": "2015-01-27 10:53:51"
+            "time": "2015-01-27T10:53:51+00:00"
         },
         {
             "name": "cspoo/swiftmailer-mailgun-bundle",
@@ -1124,7 +1078,7 @@
                 "mailgun",
                 "swiftmailer"
             ],
-            "time": "2016-07-12 10:28:31"
+            "time": "2016-07-12T10:28:31+00:00"
         },
         {
             "name": "danielstjules/stringy",
@@ -1180,7 +1134,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2017-04-12 15:20:39"
+            "time": "2017-04-12T15:20:39+00:00"
         },
         {
             "name": "dolphiq/redirect",
@@ -1239,7 +1193,7 @@
                 "redirect",
                 "seo"
             ],
-            "time": "2017-07-07 21:33:40"
+            "time": "2017-07-07T21:33:40+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -1276,7 +1230,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2017-06-11 23:08:25"
+            "time": "2017-06-11T23:08:25+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1323,7 +1277,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-06-03 02:28:16"
+            "time": "2017-06-03T02:28:16+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1385,7 +1339,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-02-28 22:50:30"
+            "time": "2017-02-28T22:50:30+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1436,7 +1390,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20 10:07:11"
+            "time": "2016-12-20T10:07:11+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1501,7 +1455,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20 17:10:46"
+            "time": "2017-03-20T17:10:46+00:00"
         },
         {
             "name": "jmhobbs/swiftmailer-transport-aws-ses",
@@ -1544,7 +1498,7 @@
                 "ses",
                 "swiftmailer"
             ],
-            "time": "2014-11-12 23:51:28"
+            "time": "2014-11-12T23:51:28+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1611,7 +1565,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-05-16 21:06:09"
+            "time": "2017-05-16T21:06:09+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1694,7 +1648,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-08-06 17:41:04"
+            "time": "2017-08-06T17:41:04+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -1741,7 +1695,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2016-06-21 21:34:35"
+            "time": "2016-06-21T21:34:35+00:00"
         },
         {
             "name": "mailgun/mailgun-php",
@@ -1788,7 +1742,7 @@
                 }
             ],
             "description": "The Mailgun SDK provides methods for all API functions.",
-            "time": "2017-06-20 19:56:09"
+            "time": "2017-06-20T19:56:09+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -1824,7 +1778,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2017-06-30 06:21:01"
+            "time": "2017-06-30T06:21:01+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -1879,7 +1833,7 @@
                 "json",
                 "jsonpath"
             ],
-            "time": "2016-12-03 22:08:25"
+            "time": "2016-12-03T22:08:25+00:00"
         },
         {
             "name": "php-http/client-common",
@@ -1940,7 +1894,7 @@
                 "http",
                 "httplug"
             ],
-            "time": "2017-03-30 12:50:04"
+            "time": "2017-03-30T12:50:04+00:00"
         },
         {
             "name": "php-http/discovery",
@@ -2002,7 +1956,7 @@
                 "message",
                 "psr7"
             ],
-            "time": "2017-08-03 10:12:53"
+            "time": "2017-08-03T10:12:53+00:00"
         },
         {
             "name": "php-http/guzzle6-adapter",
@@ -2062,7 +2016,7 @@
                 "Guzzle",
                 "http"
             ],
-            "time": "2016-05-10 06:13:32"
+            "time": "2016-05-10T06:13:32+00:00"
         },
         {
             "name": "php-http/httplug",
@@ -2118,7 +2072,7 @@
                 "client",
                 "http"
             ],
-            "time": "2016-08-31 08:30:17"
+            "time": "2016-08-31T08:30:17+00:00"
         },
         {
             "name": "php-http/message",
@@ -2190,7 +2144,7 @@
                 "message",
                 "psr-7"
             ],
-            "time": "2017-07-05 06:40:53"
+            "time": "2017-07-05T06:40:53+00:00"
         },
         {
             "name": "php-http/message-factory",
@@ -2240,7 +2194,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-12-19 14:08:53"
+            "time": "2015-12-19T14:08:53+00:00"
         },
         {
             "name": "php-http/multipart-stream-builder",
@@ -2297,7 +2251,7 @@
                 "multipart stream",
                 "stream"
             ],
-            "time": "2017-05-21 17:45:25"
+            "time": "2017-05-21T17:45:25+00:00"
         },
         {
             "name": "php-http/promise",
@@ -2347,7 +2301,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-01-26 13:27:02"
+            "time": "2016-01-26T13:27:02+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -2405,7 +2359,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2017-06-02 21:08:52"
+            "time": "2017-06-02T21:08:52+00:00"
         },
         {
             "name": "psr/container",
@@ -2454,7 +2408,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14 16:28:37"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -2504,7 +2458,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -2551,7 +2505,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -2688,7 +2642,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-08-08 18:44:50"
+            "time": "2017-08-08T18:44:50+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -2736,7 +2690,7 @@
                 "input",
                 "prompt"
             ],
-            "time": "2017-03-18 11:32:45"
+            "time": "2017-03-18T11:32:45+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -2785,7 +2739,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2017-06-18 15:11:04"
+            "time": "2017-06-18T15:11:04+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -2829,7 +2783,7 @@
             "keywords": [
                 "phra"
             ],
-            "time": "2015-10-13 18:44:15"
+            "time": "2015-10-13T18:44:15+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2883,7 +2837,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-05-01 15:54:03"
+            "time": "2017-05-01T15:54:03+00:00"
         },
         {
             "name": "symfony/console",
@@ -2952,7 +2906,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29 21:27:59"
+            "time": "2017-07-29T21:27:59+00:00"
         },
         {
             "name": "symfony/debug",
@@ -3008,7 +2962,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-28 15:27:31"
+            "time": "2017-07-28T15:27:31+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -3078,7 +3032,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-28 15:27:31"
+            "time": "2017-07-28T15:27:31+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -3127,7 +3081,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-11 07:17:58"
+            "time": "2017-07-11T07:17:58+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3176,7 +3130,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01 21:01:25"
+            "time": "2017-06-01T21:01:25+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -3230,7 +3184,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2017-04-12 14:14:56"
+            "time": "2017-04-12T14:14:56+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3289,7 +3243,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09 14:24:12"
+            "time": "2017-06-09T14:24:12+00:00"
         },
         {
             "name": "symfony/process",
@@ -3338,7 +3292,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-13 13:05:09"
+            "time": "2017-07-13T13:05:09+00:00"
         },
         {
             "name": "twig/twig",
@@ -3401,7 +3355,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-04-21 00:13:02"
+            "time": "2017-04-21T00:13:02+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3451,7 +3405,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
+            "time": "2016-09-01T10:05:43+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -3501,7 +3455,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23 20:04:58"
+            "time": "2016-11-23T20:04:58+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -3601,7 +3555,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-06-05 14:33:41"
+            "time": "2017-06-05T14:33:41+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -3651,7 +3605,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2016-03-17 03:29:28"
+            "time": "2016-03-17T03:29:28+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -3701,7 +3655,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20 13:26:02"
+            "time": "2016-12-20T13:26:02+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3748,7 +3702,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-02-19 16:48:01"
+            "time": "2017-02-19T16:48:01+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -3798,7 +3752,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2017-05-01 08:29:00"
+            "time": "2017-05-01T08:29:00+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -3842,7 +3796,7 @@
                 "escaper",
                 "zf2"
             ],
-            "time": "2016-06-30 19:48:38"
+            "time": "2016-06-30T19:48:38+00:00"
         },
         {
             "name": "zendframework/zend-feed",
@@ -3903,7 +3857,7 @@
                 "feed",
                 "zf2"
             ],
-            "time": "2017-04-01 15:03:14"
+            "time": "2017-04-01T15:03:14+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -3948,7 +3902,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2016-09-13 14:38:50"
+            "time": "2016-09-13T14:38:50+00:00"
         }
     ],
     "packages-dev": [],

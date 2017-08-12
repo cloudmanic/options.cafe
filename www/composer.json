@@ -31,7 +31,8 @@
         "dolphiq/redirect": "^1.0",
         "cloudmanic/craft-sendy": "^1.0",
         "cloudmanic/craft-sitemap": "^1.0",
-        "cloudmanic/craft-broker-finder": "^1.0"
+        "cloudmanic/craft-broker-finder": "^1.0",
+        "cloudmanic/craft-nginx": "^1.0"
     },
     "scripts": {
         "post-root-package-install": [
@@ -54,6 +55,10 @@
       {
         "type": "path",
         "url": "./plugins/craft-sitemap"
-      }                                
+      },
+      {
+        "type": "path",
+        "url": "./plugins/craft-nginx"
+      }                                 
     ]
 }
