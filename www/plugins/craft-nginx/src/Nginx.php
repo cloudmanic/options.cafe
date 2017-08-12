@@ -36,7 +36,6 @@ class Nginx extends Plugin
 
   //
   // Add CP navigration 
-  // Seems like a bug. No idea why I have to call this below.
   // It should auto call this. See vendor/craftcms/cms/src/web/twig/variables/Cp.php
   //
   public function getCpNavItem()
@@ -64,13 +63,5 @@ class Nginx extends Plugin
         self::$plugin = $this;
 
         Craft::info('craft-nginx plugin loaded', __METHOD__);
-     
-        // Add CP navigration
-        Event::on(Cp::class, Cp::EVENT_REGISTER_CP_NAV_ITEMS, function(RegisterCpNavItemsEvent $event) {
-          if(\Craft::$app->user->identity->admin) 
-          {
-            $event->navItems['craft-nginx'] = $this->getCpNavItem();
-          }
-        });
     }
 }
