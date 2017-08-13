@@ -30,3 +30,8 @@ do
   ssh -t -p $SSH_PORT $server "cd $REMOTE_DIR/docker && docker-compose up -d"
                             
 done
+
+# Rebuilt site cache.
+echo "## Rebuilding site cache ##"
+
+curl -H "Content-Type: application/json" -X POST -d '{"token": "FMHpSGP52WcrKZOvAkx2","sitemap": "https://options.cafe/sitemap.xml"}' https://cache-warm.cloudmanic.com
