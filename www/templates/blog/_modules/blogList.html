@@ -10,7 +10,11 @@
     	{% if query is not empty %}
     	<h3 class="content__title">Search: {{ query }}</h3>
     	{% endif %}
-    	
+
+    	{% if tag is defined %}
+    	<h3 class="content__title">Related To: {{ tag.title }}</h3>
+    	{% endif %}
+
     	{% if entries|length %}
   		<ol class="articles">
        		

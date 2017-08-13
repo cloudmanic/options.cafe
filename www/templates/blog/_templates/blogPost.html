@@ -54,6 +54,13 @@
           {% for block in entry.pageBuilder %}
             {% include "blocks/_" ~ block.type %}
           {% endfor %}
+          
+          <p>
+            <b>Related Topics: </b>
+            {% for tag in entry.blogTags %}
+              <a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
+            {% endfor %}                      
+          </p>
   			</div>
   			
   			<div class="article__actions">

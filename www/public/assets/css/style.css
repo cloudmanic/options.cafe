@@ -317,6 +317,9 @@ blockquote:last-child { margin-bottom: 0; }
 .cols:after { }
 .col { float: left; width: 100%; padding: 0 15px; }
 .col-1of2 { width: 50%; }
+
+.capitalize { text-transform: capitalize; }
+
 /*  Responsive Helpers  */
 .visible-xs-block,
 .visible-xs-inline,
