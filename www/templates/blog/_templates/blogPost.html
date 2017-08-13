@@ -55,12 +55,27 @@
             {% include "blocks/_" ~ block.type %}
           {% endfor %}
           
+          {% if entry.blogMustReads | length %}
+          <div class="blog-must-reads">
+            <b>Enjoyed this post? Here are some must reads.</b>
+            <ul>
+              {% for row in entry.blogMustReads %}
+              <li>
+                <a href="{{ row.url }}">{{ row.title }}</a>
+              </li>
+              {% endfor %}                          
+            </ul>
+          </div>
+          {% endif %}
+          
+          {% if entry.blogMustReads | length %}
           <p>
             <b>Related Topics: </b>
             {% for tag in entry.blogTags %}
               <a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
             {% endfor %}                      
           </p>
+          {% endif %}
   			</div>
   			
   			<div class="article__actions">

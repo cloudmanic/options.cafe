@@ -575,6 +575,21 @@ blockquote:last-child { margin-bottom: 0; }
 @media (max-width: 767px) {
 	.article--single .article__body ul { padding-left: 0; }
 }
+
+/* ------------------------------------------------------------ *\
+	Must Reads
+\* ------------------------------------------------------------ */
+.article--single .blog-must-reads { margin-top: 20px; margin-bottom: 5px; }
+.article--single .blog-must-reads ul { list-style: none; margin: 10px 0 20px; padding-left: 20px; line-height: 1.25; }
+.article--single .blog-must-reads ul li { padding-left: 0; position: relative;  }
+.article--single .blog-must-reads ul li:before { content: ''; display: inline-block; position: absolute; top: 1px; left: 0; }
+.article--single .blog-must-reads ul li + li { margin-top: 11px; }
+
+/* Mobile */
+@media (max-width: 767px) {
+	.article--single .blog-must-reads ul { padding-left: 0; }
+}
+
 /* ------------------------------------------------------------ *\
 	List Ordered
 \* ------------------------------------------------------------ */
