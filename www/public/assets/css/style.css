@@ -320,6 +320,7 @@ blockquote:last-child { margin-bottom: 0; }
 
 /* Margin */
 .mt-mb-10 { margin-top: 10px !important; margin-bottom: 10px !important; }
+figure { margin: 10px 0; }
 
 .capitalize { text-transform: capitalize; }
 
