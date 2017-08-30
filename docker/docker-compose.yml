@@ -26,10 +26,10 @@ services:
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}      
   
     volumes:
-      - ../www:/www:ro
-      - ../www/storage:/www/storage:rw
-      - ../www/public/cpresources:/www/public/cpresources:rw
-      - ./logs:/logs:rw
+      - ../www:/www:cached,ro
+      - ../www/storage:/www/storage:cached,rw
+      - ../www/public/cpresources:/www/public/cpresources:cached,rw
+      - ./logs:/logs:cached,rw
       
     networks:
       - shared

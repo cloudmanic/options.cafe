@@ -1,9 +1,10 @@
+{% set version = 5 %}
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="{{ url(craft.request.path) }}" />
-  <link rel="shortcut icon" type="image/png" href="{{ url() }}app/images/favicon.png" />  
+  <link rel="canonical" href="{{ url(craft.app.request.pathInfo) }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ url('assets/css/images/favicon.ico') }}" />  
   <meta name="description" content="{{ description }}" />
   
   <meta name="twitter:card" content="summary" />
@@ -14,34 +15,24 @@
   
   <meta name="og:site_name" content="{{ siteName }} - Best Place For Options Trading" />    
   <meta name="og:title" content="{{ title }}" />  
-  <meta name="og:url" content="{{ craft.request.getUrl() }}" />
+  <meta name="og:url" content="{{ url(craft.app.request.pathInfo) }}" />
   <meta name="og:description" content="{{ description }}" />
   <meta name="og:image" content="{{ page_image }}" /> 
   <meta property="og:type" content="article" />
   <meta name="fb:app_id" content="1512164148794908" />
   
-  <link rel="alternate" type="application/rss+xml" title="Stockpeer Feed" href="{{ url('blog/rss') }}" />
-  <link href='//fonts.googleapis.com/css?family=Poiret+One|PT+Serif|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link href="{{ url() }}assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/socialicons.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/glyphicons.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/halflings.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/template.css" rel="stylesheet" />
-  <link href="{{ url() }}assets/css/colors/color-red.css" rel="stylesheet" id="colorcss" />
-  <link href="{{ url() }}assets/css/style.css" rel="stylesheet" />
+  <link rel="alternate" type="application/rss+xml" title="Options Cafe" href="{{ url('blog/rss') }}" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url('assets/css/style.css?v=' ~ version) }}" />
+  
+	<script src="{{ url('assets/vendor/jquery-1.12.4.min.js') }}"></script>
+	<script src="{{ url('assets/vendor/detectmobilebrowser.js') }}"></script>  
+	<script src="{{ url('assets/js/functions.js?v=' ~ version) }}"></script>
   
 	<script>
 		var site = {
-			devMode: {{ craft.config.devMode }}
+			devMode: {{ craft.app.config.general.devMode }},
+			baseUrl: '{{ url('') }}'
 		}
 	</script>  
-  
-  <script src="{{ url() }}assets/js/modernizr.js"></script>
-  <script src="{{ url() }}assets/js/jquery-1.9.1.js"></script>
-  <script src="{{ url() }}assets/js/bootstrap.min.js"></script>   
-  <script src="{{ url() }}assets/js/bootstrap.js"></script>
-	<script src="{{ url() }}assets/vendor/angular/angular.min.js"></script>  
-  <script src="{{ url() }}assets/js/tinynav.js"></script>
-  <script src="{{ url() }}assets/js/app.js"></script>   
 </head>
