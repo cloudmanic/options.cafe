@@ -1,4 +1,4 @@
-{% set version = 12 %}
+{% set version = 13 %}
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
@@ -25,9 +25,9 @@
   <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="{{ url('assets/css/style.css?v=' ~ version) }}" />
   
-	<script src="{{ url('assets/vendor/jquery-1.12.4.min.js') }}"></script>
-	<script src="{{ url('assets/vendor/detectmobilebrowser.js') }}"></script>  
-	<script src="{{ url('assets/js/app.js?v=' ~ version) }}"></script>
+	<script src="{{ url('assets/vendor/jquery-1.12.4.min.js') }}" defer></script>
+	<script src="{{ url('assets/vendor/detectmobilebrowser.js') }}" defer></script>  
+	<script src="{{ url('assets/js/app.js?v=' ~ version) }}" defer></script>
   
 	<script>
 		var site = {
