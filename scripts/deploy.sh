@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Setup settings
-SSH_PORT='9022'
+SSH_PORT='22'
 BRANCH='master'
 CODE_SERVERS=("optionscafe@web3.cloudmanic.com")
 DOCKER_SERVERS=("deploy@web3.cloudmanic.com")
