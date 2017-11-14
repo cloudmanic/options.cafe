@@ -4,7 +4,7 @@
 SSH_PORT='22'
 BRANCH='master'
 CODE_SERVERS=("optionscafe@web3.cloudmanic.com")
-DOCKER_SERVERS=("deploy@web3.cloudmanic.com")
+DOCKER_SERVERS=("spicer@web3.cloudmanic.com")
 DOCKER_IMAGE="options.cafe/nginx-php70"
 REMOTE_DIR="/sites/optionscafe/options.cafe"
 
