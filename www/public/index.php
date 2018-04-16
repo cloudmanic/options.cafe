@@ -7,15 +7,15 @@
 $root = dirname(__DIR__);
 
 // Composer autoloader
-require_once $root.'/vendor/autoload.php';
+require_once $root . '/vendor/autoload.php';
 
 // dotenv?
-if (file_exists($root.'/.env')) {
-    $dotenv = new Dotenv\Dotenv($root);
-    $dotenv->load();
+if (file_exists($root . '/.env')) {
+	$dotenv = new Dotenv\Dotenv($root);
+	$dotenv->load();
 }
 
 // Craft
 define('CRAFT_BASE_PATH', $root);
-$app = require $root.'/vendor/craftcms/cms/bootstrap/web.php';
+$app = require $root . '/vendor/craftcms/cms/bootstrap/web.php';
 $app->run();
