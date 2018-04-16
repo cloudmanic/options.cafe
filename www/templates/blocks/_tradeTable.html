@@ -22,7 +22,7 @@
   		<td>{{ row.closedDate }}</td>
   		<td>{{ row.openCredit }}</td>
   		<td>{{ row.closedDebit }}</td>
-  		<td><strong>{{ row.profitLoss }}</strong></td>
+  		<td><strong {% if(row.profitLoss < 0) %} style="color: #D64561;" {% endif%}>{{ row.profitLoss }}</strong></td>
   	</tr>
   	{% endfor %}
   </table>
