@@ -10,11 +10,7 @@ use yii\web\Response;
 
 class CacheController extends Controller
 {
-  protected $allowAnonymous = [];
-
-  //
-  // Show UI to clear cache
-  //
+  protected $allowAnonymous = ['clear'];
 
   //
   // Clear Nginx Cache
@@ -61,12 +57,12 @@ class CacheController extends Controller
     
     if(! $json['status'])
     {
-      echo $response;
+      return $response;
       die();
     }
 
     // Send notice the cache clear went well.    
-    Craft::$app->getSession()->setNotice(Craft::t('redirect', 'Nginx Cache Cleared.'));
+    Craft::$app->getSession()->setNotice('Nginx Cache Cleared.');
     
     return $this->redirect('centcom/cloudmanic-craft-nginx');
   } 
