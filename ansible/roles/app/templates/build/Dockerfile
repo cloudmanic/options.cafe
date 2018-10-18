@@ -27,6 +27,7 @@ RUN set -x \
   && chown -R www-data:www-data /nginx-cache  
 
 # Copy over custom nginx config
+COPY php.ini /etc/php7/php.ini
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx_default.conf /etc/nginx/conf.d/default.conf
 

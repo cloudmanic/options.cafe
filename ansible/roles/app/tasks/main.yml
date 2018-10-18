@@ -28,6 +28,10 @@
 - name: Install nginx_default.conf
   template: src=build/nginx_default.conf dest={{ site_path }}/docker/build/nginx_default.conf owner=optionscafe group=optionscafe mode=0644  
 
+# Install php.ini
+- name: Install php.ini
+  template: src=build/php.ini dest={{ site_path }}/docker/build/php.ini owner=optionscafe group=optionscafe mode=0644 
+
 # Install ENV File
 - name: Install Docker ENV File
   template: src=docker-env dest={{ site_path }}/docker/.env owner=optionscafe group=optionscafe mode=0644
