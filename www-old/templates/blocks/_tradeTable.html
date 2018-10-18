@@ -1,0 +1,29 @@
+<div class="table">
+  <table>
+  	<tr>
+  		<th width="59"><span>Ticker</span></th>
+  		<th width="50"><span>Type</span></th>
+  		<th width="109"><span>Spread</span></th>
+  		<th width="85"><span>Expire Date</span></th>
+  		<th width="79"><span>Open Date</span></th>
+  		<th width="90"><span>Closed Date</span></th>
+  		<th width="87"><span>Open Credit</span></th>
+  		<th width="94"><span>Closed Debit</span></th>
+  		<th width="78"><span>Profit / Loss</span></th>
+  	</tr>
+
+    {% for row in block.trades %}
+  	<tr>
+  		<td>{{ row.ticker }}</td>
+  		<td>{{ row.type }}</td>
+  		<td>{{ row.spread }}</td>
+  		<td>{{ row.expireDate }}</td>
+  		<td>{{ row.openDate }}</td>
+  		<td>{{ row.closedDate }}</td>
+  		<td>{{ row.openCredit }}</td>
+  		<td>{{ row.closedDebit }}</td>
+  		<td><strong {% if(row.profitLoss < 0) %} style="color: #D64561;" {% endif%}>{{ row.profitLoss }}</strong></td>
+  	</tr>
+  	{% endfor %}
+  </table>
+</div>

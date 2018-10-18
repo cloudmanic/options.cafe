@@ -1,0 +1,75 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set description = entry.pageDescription %}
+{% set page_image = entry.pageImage.first().url('width800') %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container__inner container__inner--secondary container__inner--white">
+  <section class="section section--alt">
+  	<div class="section__content">
+  		<h2 class="section__title">Options Cafe Trading... Coming Soon!</h2><!-- /.section__title -->
+
+  		<p>A trading platform that takes an entirely different approach: to excel in one area of trading—options trading. Built to accommodate advanced multi-leg trades (think put credit spreads, iron condors, and more).</p>
+
+  		<span class="badge">Launching early 2018</span>
+  	</div><!-- /.section__content -->
+
+  	<footer class="section__foot">
+  		<img src="/assets/css/images/temp/stock-app2.png" alt="Options Cafe Trading">
+
+  		<div class="widget widget--teritary">
+  			<div class="widget__head">
+  				<h4>Be the first to know when we launch!</h4>
+  			</div><!-- /.widget__head -->
+
+  			<div class="widget__body">
+    			
+  				<div class="subscribe-secondary">
+  					<form action="" method="post" class="newsletter-form">
+  						<label for="mail" class="subscribe__label">Email</label>
+  						<span class="subscribe__alert" style="display: none;">Thanks! You won't regret it!</span>
+  						<input type="email" id="mail" name="email" value="" class="subscribe__field" />
+  						<input type="hidden" name="entry_type" value="Newsletter Coming Soon Subscribe" />
+  						<input type="submit" name="subscribe" value="Submit" class="btn subscribe__btn">
+  					</form> 					
+  				</div>
+  		
+  			</div><!-- /.widget__body -->
+  		</div><!-- /.widget widget-/-teritary -->
+
+  		<h4 class="section__foot-title">Can you help us spread the word?</h4>
+
+  		<div class="socials socials--medium">
+        {% include "modules/_socialShare" %}
+  		</div><!-- /.socials -->
+  	</footer><!-- /.section__foot -->
+  </section><!-- /.section -->
+
+  <section class="section-group">
+  	<div class="section__group">
+  		<h3>Group Trades By Strategy</h3>
+  		<p>Never again look at a big list of options and try to figure out how your trade is doing. At anytime visually see how your complex option trade is doing. </p>
+  		<img src="/assets/css/images/temp/chart1.jpg" alt="Options Cafe Charting Postions" />
+  	</div><!-- /.section__group -->
+
+  	<div class="section__group">
+  		<h3>Monitor Your Performance</h3>
+  		<p>Options Cafe has built tools to monitor your completed trades. Learn from the past so you can profit more in the future. Say goodbye to tracking your performance in excel.</p>
+  		<img src="/assets/css/images/temp/chart2.jpg" alt="Options Cafe Charting Returns" />
+  	</div><!-- /.section__group -->
+
+  	<div class="section__group">
+  		<h3>Find and Place Trades</h3>
+  		<p>Use Options Cafe to find the trades the fit your strategy. Place your trades with only a few clicks.</p>
+  		<img src="/assets/css/images/temp/chart3.jpg" alt="Options Cafe Screening Trades" />
+  	</div><!-- /.section__group -->
+  </section><!-- /.section-group -->
+</div><!-- /.container__inner -->
+
+{% endblock %}

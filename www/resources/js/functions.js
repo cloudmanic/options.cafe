@@ -109,7 +109,7 @@
 		
       $.ajax({
         type: 'POST',
-        url: '/actions/craft-sendy/newsletter/subscribe',
+        url: '/actions/cloudmanic-craft-sendy/subscribe',
         data: JSON.stringify({ email: email }),
         contentType: "application/json",
         dataType: 'json',        

@@ -1,0 +1,64 @@
+{
+    "name": "craftcms/craft",
+    "description": "Craft CMS",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "project"
+    ],
+    "license": "MIT",
+    "homepage": "https://craftcms.com/",
+    "type": "project",
+    "support": {
+        "email": "support@craftcms.com",
+        "issues": "https://github.com/craftcms/cms/issues?state=open",
+        "forum": "https://craftcms.stackexchange.com/",
+        "source": "https://github.com/craftcms/cms",
+        "docs": "https://craftcms.com/docs",
+        "rss": "https://craftcms.com/changelog.rss"
+    },
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=7.0.0",
+        "craftcms/cms": "3.0.27.1",
+        "craftcms/plugin-installer": "^1.0.0",
+        "vlucas/phpdotenv": "^2.4.0",
+        "roave/security-advisories": "dev-master",
+        "craftcms/aws-s3": "1.0.8",
+        "borucreative/craft3-ses": "^1.0",
+        "craftcms/mailgun": "1.0.0.1",
+        "dolphiq/redirect": "1.0.18",
+        "cloudmanic/craft-sendy": "^1.0",
+        "cloudmanic/craft-sitemap": "^1.0",
+        "cloudmanic/craft-broker-finder": "^1.0",
+        "cloudmanic/craft-nginx": "^1.0"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "repositories": [
+      {
+          "type": "composer",
+          "url": "https://asset-packagist.org"
+      },      
+      {
+        "type": "path",
+        "url": "./plugins/craft-broker-finder"
+      },
+      {
+        "type": "path",
+        "url": "./plugins/craft-sendy"
+      },
+      {
+        "type": "path",
+        "url": "./plugins/craft-sitemap"
+      },
+      {
+        "type": "path",
+        "url": "./plugins/craft-nginx"
+      }                                 
+    ]
+}

@@ -1,0 +1,77 @@
+<div class="container__inner">
+  {% include "blog/_modules/blogIntro" %}
+
+  <div class="main main--flex">
+  	<div class="content">
+    	{% if category is defined %}
+    	<h3 class="content__title">{{ category.title }}</h3>
+    	{% endif %}
+
+    	{% if query is not empty %}
+    	<h3 class="content__title">Search: {{ query }}</h3>
+    	{% endif %}
+
+    	{% if tag is defined %}
+    	<h3 class="content__title">Related To: {{ tag.title }}</h3>
+    	{% endif %}
+
+    	{% if entries|length %}
+  		<ol class="articles">
+       		
+    		{% for row in entries %}
+  			<li class="article article--small">
+  				<figure class="article__image">
+  					<a href="{{ row.url }}">
+  						<img src="{{ row.blogImage.one().url('crop700x700') }}" alt="{{ row.blogImage.one().title }}">
+  					</a>
+  				</figure>
+
+  				<div class="article__content">
+  					<div class="article__head">
+  						<a href="{{ row.url }}"><h1>{{ row.title }}</h1></a>
+
+  						<div class="article__meta">
+  							<a href="{{ row.blogCategory.one().url }}">{{ row.blogCategory.one().title }}</a>
+  							<em>{{ row.postDate.atom|date("F d, Y") }}</em>
+  						</div>
+  					</div>
+
+  					<div class="article__body">
+  						{{ row.blogExcerpt }}
+  					</div>
+
+  					<div class="article__actions">
+  						<a href="{{ row.url }}">Read More</a>
+  					</div>
+  				</div>
+  			</li>
+  			{% endfor %}
+  			
+  		</ol>
+  		{% else %}
+  		  <p>Your search for "{{ query }}" didn’t return any results.</p>
+  		{% endif %}
+
+  		<div class="paging">
+    		{% if pageInfo.prevUrl %}
+  			<a href="{{ pageInfo.prevUrl }}" class="paging__prev">
+  				<i class="ico-arrow-left"></i>
+  				Prev Posts
+  			</a>
+  			{% else %}
+  			&nbsp;
+        {% endif %}
+
+        {% if pageInfo.nextUrl %}
+  			<a href="{{ pageInfo.nextUrl }}" class="paging__next">
+  				Next Posts
+  				<i class="ico-arrow-right"></i>
+  			</a>
+  			{% endif %}
+  		</div><!-- /.paging -->
+  	</div><!-- /.content -->
+
+    {% include "blog/_modules/blogSideBar" %}
+
+  </div><!-- /.main main-/-flex -->
+</div><!-- /.container__inner -->
