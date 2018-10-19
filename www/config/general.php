@@ -34,26 +34,8 @@ return [
 
         // Are we in dev mode?
         'devMode' => getenv('DEV_MODE'),
-    ],
 
-    // Dev environment settings
-    'dev' => [
-        // Base site URL
-        'siteUrl' => null,
-
-        // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => true,
-    ],
-
-    // Staging environment settings
-    'staging' => [
-        // Base site URL
-        'siteUrl' => null,
-    ],
-
-    // Production environment settings
-    'production' => [
-        // Base site URL
-        'siteUrl' => null,
-    ],
+        // lets not tell the world about our App.
+        'sendPoweredByHeader' => false,
+    ]
 ];

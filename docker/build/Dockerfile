@@ -31,6 +31,15 @@ COPY php.ini /etc/php7/php.ini
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx_default.conf /etc/nginx/conf.d/default.conf
 
+# forward request and error logs to docker log collector
+RUN set -x \
+  && mkdir /var/log/nginx \
+  && touch /var/log/nginx/access.log \
+  && touch /var/log/nginx/error.log \  
+  && ln -sf /dev/stdout /var/log/nginx/access.log \
+  && ln -sf /dev/stderr /var/log/nginx/error.log \
+  && chown -R www-data:www-data /var/log/nginx
+
 # This needs to be at the bottom. (back from root)
 USER www-data
 
