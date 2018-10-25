@@ -16,104 +16,110 @@
 
 {% block content %}
 
-<div class="container__inner container__inner--secondary container__inner--white">
-  <div class="form form--broker">
-  	<form action="/options-broker-finder" method="get">
-  		<div class="form__head">
-  			<h2>Find the Best Options Broker for Your Strategy</h2>
+<div class="shell">
 
-  			<p>Optimizing your broker's commissions to your trading strategy is important. We are in this to make money right?</p>
-  		</div><!-- /.form__head -->
+  <div class="container__inner container__inner--secondary container__inner--white">
+    <div class="form form--broker">
+    	<form action="/options-broker-finder" method="get">
+    		<div class="form__head">
+    			<h2>Find the Best Options Broker for Your Strategy</h2>
 
-  		<div class="form__body">
-  			<div class="form__inner">
-  				<div class="form__row">
-  					<label for="field-options" class="form__label">What options strategy do you trade?</label>
+    			<p>Optimizing your broker's commissions to your trading strategy is important. We are in this to make money right?</p>
+    		</div><!-- /.form__head -->
 
-  					<div class="form__controls">
-  						<div class="select select--medium">
-  							<select name="strategy" id="field-options">
-                  <option value="buy-options" {% if strategy == 'buy-options' %}selected{% endif %}>Buy Options</option>
-                  <option value="write-options" {% if strategy == 'write-options' %}selected{% endif %}>Write Options</option>					
-                  <option value="vertical-spread" {% if strategy == 'vertical-spread' %}selected{% endif %}>Vertical Spreads</option>
-                  <option value="iron-condor" {% if strategy == 'iron-condor' %}selected{% endif %}>Iron Condors</option>
-  							</select>
-  						</div><!-- /.select -->
-  					</div><!-- /.form__controls -->
-  				</div><!-- /.form__row -->
+    		<div class="form__body">
+    			<div class="form__inner">
+    				<div class="form__row">
+    					<label for="field-options" class="form__label">What options strategy do you trade?</label>
 
-  				<div class="form__row">
-  					<a href="#" class="form__help">
-  						<i class="ico-question"></i>
+    					<div class="form__controls">
+    						<div class="select select--medium">
+    							<select name="strategy" id="field-options">
+                    <option value="buy-options" {% if strategy == 'buy-options' %}selected{% endif %}>Buy Options</option>
+                    <option value="write-options" {% if strategy == 'write-options' %}selected{% endif %}>Write Options</option>					
+                    <option value="vertical-spread" {% if strategy == 'vertical-spread' %}selected{% endif %}>Vertical Spreads</option>
+                    <option value="iron-condor" {% if strategy == 'iron-condor' %}selected{% endif %}>Iron Condors</option>
+    							</select>
+    						</div><!-- /.select -->
+    					</div><!-- /.form__controls -->
+    				</div><!-- /.form__row -->
 
-  						<div class="tooltip">
-  							<div class="tooltip__head">
-  								<h4>What is a lot size?</h4>
-  							</div><!-- /.tooltip__head -->
+    				<div class="form__row">
+    					<a href="#" class="form__help">
+    						<i class="ico-question"></i>
 
-  							<div class="tooltip__body">
-  								<p>A lot is the quanity of the trade you are putting on. For example a vertical spread with a lot of 4 is selling 4 contracts and buying 4 contracts for a total of 8 contracts. An Iron Condor with a lot size of 2 is buying 4 contracts and selling 4 more for a total of 8 contracts. If you are just buying or selling an option your lot size will be the number of contracts you are trading.</p>
-  							</div><!-- /.tooltip__body -->
-  						</div><!-- /.tooltip -->
-  					</a>
+    						<div class="tooltip">
+    							<div class="tooltip__head">
+    								<h4>What is a lot size?</h4>
+    							</div><!-- /.tooltip__head -->
 
-  					<label for="field-lots" class="form__label">How many lots per trade?</label>
+    							<div class="tooltip__body">
+    								<p>A lot is the quanity of the trade you are putting on. For example a vertical spread with a lot of 4 is selling 4 contracts and buying 4 contracts for a total of 8 contracts. An Iron Condor with a lot size of 2 is buying 4 contracts and selling 4 more for a total of 8 contracts. If you are just buying or selling an option your lot size will be the number of contracts you are trading.</p>
+    							</div><!-- /.tooltip__body -->
+    						</div><!-- /.tooltip -->
+    					</a>
 
-  					<div class="form__controls">
-  						<div class="select select--small">
-  							<select name="lots" id="field-lots">
-                  {% for i in 1..500 %}
-                  <option value="{{ i }}" {% if lots == i %}selected{% endif %}>{{ i }}</option>
-                  {% endfor %}
-  							</select>
-  						</div><!-- /.select -->
-  					</div><!-- /.form__controls -->
-  				</div><!-- /.form__row -->
-  			</div><!-- /.form__inner -->
+    					<label for="field-lots" class="form__label">How many lots per trade?</label>
 
-  			<div class="form__actions">
-  				<input type="submit" value="Find The Best Broker For Me" class="btn btn--large form__btn">
-  			</div><!-- /.form__actions -->
-  		</div><!-- /.form__body -->
+    					<div class="form__controls">
+    						<div class="select select--small">
+    							<select name="lots" id="field-lots">
+                    {% for i in 1..500 %}
+                    <option value="{{ i }}" {% if lots == i %}selected{% endif %}>{{ i }}</option>
+                    {% endfor %}
+    							</select>
+    						</div><!-- /.select -->
+    					</div><!-- /.form__controls -->
+    				</div><!-- /.form__row -->
+    			</div><!-- /.form__inner -->
 
-      {% if brokersTable | length %}
-  		<div class="form__foot">
-  			<div class="table-secondary table-secondary--alt">
-  				<table>
-  					<tr>
-  						<th width="201">Broker</th>
+    			<div class="form__actions">
+    				<input type="submit" value="Find The Best Broker For Me" class="btn btn--large form__btn">
+    			</div><!-- /.form__actions -->
+    		</div><!-- /.form__body -->
 
-  						<th width="131">Base Charge</th>
+        {% if brokersTable | length %}
+    		<div class="form__foot">
+    			<div class="table-secondary table-secondary--alt">
+    				<table>
+    					<tr>
+    						<th width="201">Broker</th>
 
-  						<th width="141">Option Charge</th>
+    						<th width="131">Base Charge</th>
 
-  						<th width="163">Total Commission</th>
-  					</tr>
+    						<th width="141">Option Charge</th>
 
-            {% for row in brokersTable %}
-            <tr>
-              <td>
-  							<strong>
-  								<span><a href="{{ row.url }}" target="_blank">{{ row.name }}</a></span>
-  							</strong>
-              </td>
-              <td>${{ row.ticket_charge }}</td>
-              <td>${{ row.per_option }}</td>	
-              <td>${{ row.total_cost }}</td>											
-            </tr>
-            {% endfor %}
+    						<th width="163">Total Commission</th>
+    					</tr>
 
-  				</table>
+              {% for row in brokersTable %}
+              <tr>
+                <td>
+    							<strong>
+    								<span><a href="{{ row.url }}" target="_blank">{{ row.name }}</a></span>
+    							</strong>
+                </td>
+                <td>${{ row.ticket_charge }}</td>
+                <td>${{ row.per_option }}</td>	
+                <td>${{ row.total_cost }}</td>											
+              </tr>
+              {% endfor %}
 
-  				<p><small>* Tastyworks does not charge for closing trades. We assume you close your trade so we show their commission at $0.50 instead of $1.00 for a fair comparable. </small></p>
+    				</table>
 
-  				<p><small>** Tradier Brokerage has a minimum charge of $5 per single legs and $7 for multi legs.</small></p>
-  			</div><!-- /.table-secondary -->
-  		</div><!-- /.form__foot -->
-  		{% endif %}
-  		
-  	</form>
-  </div><!-- /.form form-/-broker -->
-</div><!-- /.container__inner -->
+    				<p><small>* Tastyworks does not charge for closing trades. We assume you close your trade so we show their commission at $0.50 instead of $1.00 for a fair comparable. </small></p>
+
+    				<p><small>** Tradier Brokerage has a minimum charge of $5 per single legs and $7 for multi legs.</small></p>
+    			</div><!-- /.table-secondary -->
+    		</div><!-- /.form__foot -->
+    		{% endif %}
+    		
+    	</form>
+    </div><!-- /.form form-/-broker -->
+  </div><!-- /.container__inner -->
+
+  {% include "modules/_newsletter" %}
+
+</div>
   
 {% endblock %}

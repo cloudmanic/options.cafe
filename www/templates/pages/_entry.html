@@ -1,1 +1,9 @@
-{% include "pages/_templates/" ~ entry.type %}
+{% switch entry.type %}
+
+  {% case "homePage" %}
+    {% include "pages/_templates/homePageA"%}
+
+  {% default %}
+    {% include "pages/_templates/" ~ entry.type %}
+
+{% endswitch %}

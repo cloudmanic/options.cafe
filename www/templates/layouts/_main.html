@@ -40,14 +40,10 @@
 	</header><!-- /.header -->
 
 	<div class="container">
-		<div class="shell">
+		
+    {% block content %}{% endblock %}
 
-      {% block content %}{% endblock %}
-
-      {% include "modules/_newsletter" %}
-
-		</div><!-- /.shell -->
-	</div><!-- /.container -->
+	</div>
 
 	<footer class="footer">
 		<div class="shell">

@@ -10,22 +10,26 @@
 
 {% block content %}
 
-<div class="container__inner  container__inner--white">
-  <section class="section-404">
-  	<div class="section__content">
-  		<img src="/assets/css/images/temp/404.png" alt="" class="section__image">
+<div class="shell">
 
-  		<div class="section__content-inner">
-  			<h2>Oops! Something went wrong!</h2>
+  <div class="container__inner  container__inner--white">
+    <section class="section-404">
+    	<div class="section__content">
+    		<img src="/assets/css/images/temp/404.png" alt="" class="section__image">
 
-  			<p>The page you're looking for doesn't exist.</p>
+    		<div class="section__content-inner">
+    			<h2>Oops! Something went wrong!</h2>
 
-  			<p>Maybe read our blog?</p>
+    			<p>The page you're looking for doesn't exist.</p>
 
-  			<a href="{{ url('blog') }}" class="btn btn--medium">Options Cafe Blog</a>
-  		</div><!-- /.section__content-inner -->
-  	</div><!-- /.section__content -->
-  </section><!-- /.section-404 -->
-</div><!-- /.container__inner -->
+    			<p>Maybe read our blog?</p>
+
+    			<a href="{{ url('blog') }}" class="btn btn--medium">Options Cafe Blog</a>
+    		</div><!-- /.section__content-inner -->
+    	</div><!-- /.section__content -->
+    </section><!-- /.section-404 -->
+  </div><!-- /.container__inner -->
+
+</div>
 
 {% endblock %}

@@ -1,0 +1,226 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set description = entry.pageDescription %}
+{% set page_image = entry.pageImage.first().url('width800') %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="intro-public">
+  <div class="intro__media" style="background-image: url({{ siteUrl }}assets/css/images/temp/intro-public.jpg);"></div><!-- /.intro__media -->
+  
+  <div class="shell">
+    <div class="intro__content">
+      <h1>options <span>cafe</span></h1>
+    
+      <h4>a trading platform built for the options trader</h4>
+    
+      <div class="form-login">
+        <form action="?" method="post">
+          <div class="form__head">
+            <p class="form__required">Password Required</p>
+
+            <h3>Try Options Cafe for 30 days free!</h3>
+          </div><!-- /.form__head -->
+    
+          <div class="form__body">
+            <div class="form__row">
+              <label class="form__label hidden" for="subscribe-mail" >email</label>
+              
+              <div class="form__controls">
+                <input type="text" class="subscribe__field field" name="subscribe-mail" id="subscribe-mail" placeholder="Email"/>
+              </div><!-- /.form__controls -->
+            </div><!-- /.form-row -->
+    
+            <div class="form__row">
+              <label class="form__label hidden" for="subscribe-password" >password</label>
+              
+              <div class="form__controls">
+                <input type="text" class="subscribe__field field" name="subscribe-password" id="subscribe-password" placeholder="Password"/>
+              </div><!-- /.form__controls -->
+            </div><!-- /.form-row -->
+    
+            <div class="form__actions">
+              <input type="submit" value="GET STARTED" class="btn btn--medium subscribe__btn">
+            </div><!-- /.form__actions -->
+          </div><!-- /.form__body -->
+    
+          <div class="form__foot">
+            <h3>Only $20/month, or $200/year</h3>
+          </div><!-- /.form__foot -->
+        </form>
+      </div><!-- /.subscribe -->
+    </div><!-- /.intro__content -->
+  </div><!-- /.shell -->
+</div><!-- /.intro -->
+
+<div class="section-trades">
+  <div class="section__title">
+    <h3><span>Works with </span><img src="{{ siteUrl }}assets/css/images/temp/tradier.png" alt="tradier"> <span>or try it out with our free paper trader.</span></h3>
+  </div><!-- /.section__title -->
+
+  <div class="section__content">
+    <div class="shell">
+      <article class="article-trades">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Find and Place Trades</h2>
+
+            <p>Use Options Cafe to find the trades the fit your strategy. Place your trades with only a few clicks.</p>
+          </div><!-- /.article__title -->
+
+          <div class="support">
+            <div class="support__head">
+              <p>Snappy allows us to get rid of all of the problems of email.</p>
+            </div><!-- /.support__head -->
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/temp/avatar.png" alt="avatar">
+              </div><!-- /.support__avatar -->
+
+              <p>Grant MacManus</p>
+            </div><!-- /.support__body -->
+          </div><!-- /support -->
+        </div><!-- /.article__content -->
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier.png" alt="img">
+        </div><!-- /.article__media -->
+      </article><!-- /.article -->
+
+      <article class="article-trades article-trades--reverse">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Group Trades By Strategy</h2>
+
+            <p>Never again look at a big list of options and try to figure out how your trade is doing. Visually see how your complex option trade is doing. </p>
+          </div><!-- /.article__title -->
+
+          <div class="support">
+            <div class="support__head">
+              <p>Snappy allows us to get rid of all of the problems of email.</p>
+            </div><!-- /.support__head -->
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/temp/avatar.png" alt="avatar">
+              </div><!-- /.support__avatar -->
+
+              <p>Grant MacManus</p>
+            </div><!-- /.support__body -->
+          </div><!-- /support -->
+        </div><!-- /.article__content -->
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-2.png" alt="img">
+        </div><!-- /.article__media -->
+      </article><!-- /.article -->
+
+      <article class="article-trades">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Monitor Your Performance</h2>
+
+            <p>Options Cafe has built tools to monitor your completed trades. Learn from the past so you can profit more in the future. </p>
+          </div><!-- /.article__title -->
+
+          <div class="support">
+            <div class="support__head">
+              <p>We switched over to Snappy for support at Dribbble a couple weeks ago and have been thrilled with it."</p>
+            </div><!-- /.support__head -->
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/temp/avatar.png" alt="avatar">
+              </div><!-- /.support__avatar -->
+
+              <p>Grant MacManus</p>
+            </div><!-- /.support__body -->
+          </div><!-- /support -->
+        </div><!-- /.article__content -->
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-3.png" alt="img">
+        </div><!-- /.article__media -->
+      </article><!-- /.article -->
+
+      <article class="article-trades article-trades--reverse">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Reports, Reports, Reports</h2>
+
+            <p>Never again look at a big list of options and try to figure out how your trade is doing. Visually see how your complex option trade is doing. </p>
+          </div><!-- /.article__title -->
+
+          <div class="support">
+            <div class="support__head">
+              <p>Snappy allows us to get rid of all of the problems of email.</p>
+            </div><!-- /.support__head -->
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/temp/avatar.png" alt="avatar">
+              </div><!-- /.support__avatar -->
+
+              <p>Grant MacManus</p>
+            </div><!-- /.support__body -->
+          </div><!-- /support -->
+        </div><!-- /.article__content -->
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-4.png" alt="img">
+        </div><!-- /.article__media -->
+      </article><!-- /.article -->
+    </div><!-- /.shell -->
+  </div><!-- /.section__content -->
+</div><!-- /.section -->
+
+<div class="section-registration">
+  <div class="shell" style="background-image: url({{ siteUrl }}assets/css/images/temp/section-img.png);">
+    <div class="form-login">
+        <form action="?" method="post">
+          <div class="form__head">
+            <p class="form__required">Password Required</p>
+
+            <h3>Try Options Cafe for 30 days free!</h3>
+          </div><!-- /.form__head -->
+    
+          <div class="form__body">
+            <div class="form__row">
+              <label class="form__label hidden" for="subscribe-mail" >email</label>
+              
+              <div class="form__controls">
+                <input type="text" class="subscribe__field field" name="subscribe-mail-1" id="subscribe-mail-1" placeholder="Email"/>
+              </div><!-- /.form__controls -->
+            </div><!-- /.form-row -->
+    
+            <div class="form__row">
+              <label class="form__label hidden" for="subscribe-password" >password</label>
+              
+              <div class="form__controls">
+                <input type="text" class="subscribe__field field" name="subscribe-password-1" id="subscribe-password-1" placeholder="Password"/>
+              </div><!-- /.form__controls -->
+            </div><!-- /.form-row -->
+    
+            <div class="form__actions">
+              <input type="submit" value="GET STARTED" class="btn btn--medium subscribe__btn">
+            </div><!-- /.form__actions -->
+          </div><!-- /.form__body -->
+    
+          <div class="form__foot">
+            <h3>Only $20/month, or $200/year</h3>
+          </div><!-- /.form__foot -->
+        </form>
+      </div><!-- /.subscribe -->
+  </div><!-- /.shell -->
+</div><!-- /.section-registration -->
+
+
+
+{% endblock %}

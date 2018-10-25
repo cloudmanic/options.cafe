@@ -10,14 +10,20 @@
 
 {% block content %}
 
-<div class="container__inner container__inner--secondary container__inner--white">
-  <section class="section">
-  	<div class="section__content"> 
-      {% for block in entry.pageBuilder %}
-        {% include "blocks/_" ~ block.type %}
-      {% endfor %}
-  	</div>
-  </section>
-</div>
+<div class="shell">
+
+  <div class="container__inner container__inner--secondary container__inner--white">
+    <section class="section">
+    	<div class="section__content"> 
+        {% for block in entry.pageBuilder %}
+          {% include "blocks/_" ~ block.type %}
+        {% endfor %}
+    	</div>
+    </section>
+  </div>
   
+  {% include "modules/_newsletter" %}
+  
+</div>
+
 {% endblock %}

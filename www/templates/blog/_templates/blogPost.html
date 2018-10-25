@@ -20,106 +20,111 @@
 
 {% block content %}
 
-<div class="container__inner">
-  {% include "blog/_modules/blogIntro" %}
+<div class="shell">
 
-  <div class="main main--flex">
-  	<div class="content">
-  		<article class="article article--single">
-  			<header class="article__head">
-  				<h1>{{ entry.title }}</h1>
+  <div class="container__inner">
+    {% include "blog/_modules/blogIntro" %}
 
-  				<div class="article__meta">
-  					<p>
-  						<a href="{{ entry.blogCategory.one().url }}">{{ entry.blogCategory.one().title }}</a>
+    <div class="main main--flex">
+    	<div class="content">
+    		<article class="article article--single">
+    			<header class="article__head">
+    				<h1>{{ entry.title }}</h1>
 
-  						<em>{{ entry.postDate|date("F d, Y") }}</em>
+    				<div class="article__meta">
+    					<p>
+    						<a href="{{ entry.blogCategory.one().url }}">{{ entry.blogCategory.one().title }}</a>
 
-  						<em>{{ entry.author.fullName }}</em>
-  					</p>
+    						<em>{{ entry.postDate|date("F d, Y") }}</em>
 
-  					<div class="socials socials--small">
-              {% include "modules/_socialShare" %}
-  					</div>
-  				</div>
-  			</header>
+    						<em>{{ entry.author.fullName }}</em>
+    					</p>
 
-{#
-  			<figure class="article__image">
-  				<img src="/assets/css/images/temp/article-single-image.jpg" alt="">
-  			</figure>
-#}
-
-  			<div class="article__body">
-          {% for block in entry.pageBuilder %}
-            {% include "blocks/_" ~ block.type %}
-          {% endfor %}
-          
-          {% if entry.blogMustReads | length %}
-          <div class="blog-must-reads">
-            <b>Enjoyed this post? Here are some must reads.</b>
-            <ul>
-              {% for row in entry.blogMustReads %}
-              <li>
-                <a href="{{ row.url }}">{{ row.title }}</a>
-              </li>
-              {% endfor %}                          
-            </ul>
-          </div>
-          {% endif %}
-          
-          {% if entry.blogTags | length %}
-          <p>
-            <b>Related Topics: </b>
-            {% for tag in entry.blogTags %}
-              <a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
-            {% endfor %}                      
-          </p>
-          {% endif %}
-  			</div>
-  			
-  			<div class="article__actions">
-  				<div class="widget widget--socials widget--secondary">
-  					<div class="widget__head">
-  						<h5 class="widget__title">Like what you read? Please Share!</h5><!-- /.widget__title -->
-  					</div><!-- /.widget__head -->
-
-  					<div class="widget__body">
-    					<div class="socials">
+    					<div class="socials socials--small">
                 {% include "modules/_socialShare" %}
-    					</div>  
+    					</div>
+    				</div>
+    			</header>
+
+  {#
+    			<figure class="article__image">
+    				<img src="/assets/css/images/temp/article-single-image.jpg" alt="">
+    			</figure>
+  #}
+
+    			<div class="article__body">
+            {% for block in entry.pageBuilder %}
+              {% include "blocks/_" ~ block.type %}
+            {% endfor %}
+            
+            {% if entry.blogMustReads | length %}
+            <div class="blog-must-reads">
+              <b>Enjoyed this post? Here are some must reads.</b>
+              <ul>
+                {% for row in entry.blogMustReads %}
+                <li>
+                  <a href="{{ row.url }}">{{ row.title }}</a>
+                </li>
+                {% endfor %}                          
+              </ul>
             </div>
-  				</div>
-  			</div>
+            {% endif %}
+            
+            {% if entry.blogTags | length %}
+            <p>
+              <b>Related Topics: </b>
+              {% for tag in entry.blogTags %}
+                <a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
+              {% endfor %}                      
+            </p>
+            {% endif %}
+    			</div>
+    			
+    			<div class="article__actions">
+    				<div class="widget widget--socials widget--secondary">
+    					<div class="widget__head">
+    						<h5 class="widget__title">Like what you read? Please Share!</h5><!-- /.widget__title -->
+    					</div><!-- /.widget__head -->
 
-  			<footer class="article__foot">
-  				<div id="disqus_thread"></div>
-  			</footer>
-  		</article>
+    					<div class="widget__body">
+      					<div class="socials">
+                  {% include "modules/_socialShare" %}
+      					</div>  
+              </div>
+    				</div>
+    			</div>
 
-  		<div class="paging">
-    		{% if prevEntry %}
-  			<a href="{{ prevEntry.url }}" class="paging__prev">
-  				<i class="ico-arrow-left"></i>
-  				Prev
-  			</a>
-  			{% else %}
-  			&nbsp;
-        {% endif %}
+    			<footer class="article__foot">
+    				<div id="disqus_thread"></div>
+    			</footer>
+    		</article>
 
-        {% if nextEntry %}
-  			<a href="{{ nextEntry.url }}" class="paging__next">
-  				Next
-  				<i class="ico-arrow-right"></i>
-  			</a>
-  			{% endif %}
-  		</div><!-- /.paging -->
-  	</div><!-- /.content -->
+    		<div class="paging">
+      		{% if prevEntry %}
+    			<a href="{{ prevEntry.url }}" class="paging__prev">
+    				<i class="ico-arrow-left"></i>
+    				Prev
+    			</a>
+    			{% else %}
+    			&nbsp;
+          {% endif %}
 
-    {% include "blog/_modules/blogSideBar" %}
-    
-  </div><!-- /.main main-/-flex -->
-</div><!-- /.container__inner -->
+          {% if nextEntry %}
+    			<a href="{{ nextEntry.url }}" class="paging__next">
+    				Next
+    				<i class="ico-arrow-right"></i>
+    			</a>
+    			{% endif %}
+    		</div><!-- /.paging -->
+    	</div><!-- /.content -->
+
+      {% include "blog/_modules/blogSideBar" %}
+      
+    </div><!-- /.main main-/-flex -->
+  </div><!-- /.container__inner -->
+
+  {% include "modules/_newsletter" %}
+</div>
  
 <script type="text/javascript">
 {% if entry.blogCloudcmsBlogId | length and entry.blogCloudcmsBlogId > 0 %}
