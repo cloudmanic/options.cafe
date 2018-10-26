@@ -2,7 +2,7 @@
 
 {% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
 {% set description = entry.pageDescription %}
-{% set page_image = entry.pageImage.first().url('width1200') %}
+{% set page_image = entry.pageImage.first().url() %}
 
 {% block head %}
   {% include "modules/_head" %}
