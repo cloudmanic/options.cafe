@@ -1,0 +1,6 @@
+/* ------------ Override CSS -------------- */
+
+.footer .copyright { padding-top: 6px; }
+.broker-statement { margin-top: 5px; }
+.cloudmanic-copyright { display: inline-block; margin-top: 10px; }
+.footer .footer__aside { padding-top: 0; }

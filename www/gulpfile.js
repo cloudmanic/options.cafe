@@ -6,7 +6,7 @@ var imagemin = require('gulp-imagemin');
 
 // Build CSS
 gulp.task('css', function() {
-   gulp.src('resources/css/*.css')
+   gulp.src([ 'resources/css/style.css', 'resources/css/app.css' ] )
    .pipe(concat('style.css'))
    .pipe(minify())
    .pipe(gulp.dest('public/assets/css/'));
@@ -41,4 +41,4 @@ gulp.task('images', function() {
 });
 
 // Default task
-gulp.task('default',['js','css','images'], function() {});
+gulp.task('default',['js','css'], function() {});
