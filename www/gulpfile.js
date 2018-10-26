@@ -37,8 +37,12 @@ gulp.task('images', function() {
 
   gulp.src('resources/css/images/people/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('public/assets/css/images/people/'));     			
+    .pipe(gulp.dest('public/assets/css/images/people/')); 
+
+  gulp.src('resources/css/images/logos/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('public/assets/css/images/logos/'));         			
 });
 
 // Default task
-gulp.task('default',['js','css'], function() {});
+gulp.task('default',['js','css', 'images'], function() {});
