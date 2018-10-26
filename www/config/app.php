@@ -19,12 +19,14 @@
 
 return [
     'modules' => [
+      'options-cafe' => \modules\OptionsCafe\Module::class,
       'cloudmanic-craft-nginx' => \modules\CloudmanicCraftNginx\Module::class,
       'cloudmanic-craft-sendy' => \modules\CloudmanicCraftSendy\Module::class,
       'cloudmanic-craft-broker-finder' => \modules\CloudmanicCraftBrokerFinder\Module::class,
     ],
     
     'bootstrap' => [
+      'options-cafe',
       'cloudmanic-craft-nginx',
       'cloudmanic-craft-sendy',
       'cloudmanic-craft-broker-finder'

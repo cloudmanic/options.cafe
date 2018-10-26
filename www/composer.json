@@ -11,9 +11,10 @@
   "autoload": {
     "psr-4": {
       "modules\\": "modules/",
+      "OptionsCafe\\": "modules/options-cafe/",
       "CloudmanicCraftNginx\\": "modules/cloudmanic-craft-nginx/",
       "CloudmanicCraftSendy\\": "modules/cloudmanic-craft-sendy/",
-       "CloudmanicCraftBrokerFinder\\": "modules/cloudmanic-craft-broker-finder/"     
+      "CloudmanicCraftBrokerFinder\\": "modules/cloudmanic-craft-broker-finder/"     
     }
   },
   "config": {

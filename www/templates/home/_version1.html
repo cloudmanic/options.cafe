@@ -1,0 +1,167 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set description = entry.pageDescription %}
+{% set page_image = entry.pageImage.first().url('width800') %}
+
+{% block head %}
+  {% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="intro-public">
+  <div class="intro__media" style="background-image: url({{ siteUrl }}assets/css/images/temp/intro-public.jpg);"></div><!-- /.intro__media -->
+  
+  <div class="shell">
+    <div class="intro__content">
+      <h1>options <span>cafe</span></h1>
+    
+      <h4>a trading platform built for the options trader</h4>
+    
+      <div class="form-login">
+        {% include "modules/_signupForm1" %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section-trades">
+  <div class="section__title">
+    <h3>
+      <span>Options Cafe works with </span><img src="{{ siteUrl }}assets/css/images/temp/tradier.png" alt="tradier"> 
+      <span>a leader in options trading.</span>
+    </h3>
+  </div>
+  
+  <div class="section__content">
+    <div class="shell">
+      <article class="article-trades">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Find and Place Trades</h2>
+            <p>Use Options Cafe to find the trades that fits your strategy. Place your trades with only a few clicks.</p>
+          </div>
+
+          <div class="support">
+            <div class="support__head">
+              <p><i>"The Options Cafe screener has saved me hours. Trying to find iron condor trades by hand takes forever!"</i></p>
+            </div>
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/people/larry-wilson.png" alt="avatar" />
+              </div>
+
+              <p>Larry Wilson</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier.png" alt="options screener" />
+        </div>
+      </article>
+
+      <article class="article-trades article-trades--reverse">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Group Trades By Strategy</h2>
+
+            <p>Never again look at a big list of options and try to figure out how your trade is doing. Visually see how your complex option trade is doing. </p>
+          </div>
+
+          <div class="support">
+            <div class="support__head">
+              <p><i>"I have saved so much money just being able to visualize my multi-leg options trades in a better way."</i></p>
+            </div>
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/people/steven-chu.png" alt="avatar" />
+              </div>
+
+              <p>Steven Chu</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-2.png" alt="img">
+        </div>
+      </article>
+
+      <article class="article-trades">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Monitor Your Performance</h2>
+
+            <p>Options Cafe has built tools to monitor your completed trades. Learn from the past so you can profit more in the future. </p>
+          </div>
+
+          <div class="support">
+            <div class="support__head">
+              <p><i>"Trade Groups are a game changer. With traditional broker software I can never figure out how much money I made with my credit spread trades."</i></p>
+            </div>
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/people/mike-dean.png" alt="avatar" />
+              </div>
+
+              <p>Mike Dean</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-3.png" alt="img">
+        </div><!-- /.article__media -->
+      </article><!-- /.article -->
+
+      <article class="article-trades article-trades--reverse">
+        <div class="article__content">
+          <div class="article__title">
+            <h2>Reports, Reports, Reports</h2>
+
+            <p>Never again look at a big list of options and try to figure out how your trade is doing. Visually see how your complex option trade is doing. </p>
+          </div><!-- /.article__title -->
+
+          <div class="support">
+            <div class="support__head">
+              <p><i>"As a new options trader the reports within Options Cafe has really given me the feedback I need to improve."</i></p>
+            </div>
+
+            <div class="support__body">
+              <div class="support__avatar">
+                <img src="{{ siteUrl }}assets/css/images/people/tim-savage.png" alt="avatar" />
+              </div>
+
+              <p>Tim Savage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__media">
+          <img src="{{ siteUrl }}assets/css/images/temp/article-tradier-4.png" alt="img">
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div class="section-registration">
+  <div class="shell" style="background-image: url({{ siteUrl }}assets/css/images/temp/section-img.png);">
+    <div class="form-login">
+      {% include "modules/_signupForm1" %}
+    </div>
+  </div>
+
+  <div class="shell">
+    {% include "modules/_newsletter" %}
+  </div>
+</div>
+
+{% endblock %}
