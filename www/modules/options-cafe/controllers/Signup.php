@@ -4,7 +4,7 @@
 // Date: 2018-10-18
 // Author: Spicer Matthews (spicer@cloudmanic.com)
 // Last Modified by: Spicer Matthews
-// Last Modified: 2018-10-25
+// Last Modified: 2018-11-21
 // Copyright: 2017 Cloudmanic Labs, LLC. All rights reserved.
 //
 
@@ -25,6 +25,13 @@ class SignupController extends Controller
   public function actionIndex()
   {
     $email = Craft::$app->request->getBodyParam('email');
+    $name = Craft::$app->request->getBodyParam('name');
+
+    // Honeypot trap
+    if(strlen($name) > 0)
+    {
+      return $this->redirect('');
+    }
 
     // Validate email
     if(filter_var($email, FILTER_VALIDATE_EMAIL)) 
