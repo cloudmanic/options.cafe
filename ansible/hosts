@@ -1,2 +1,2 @@
-[production]
-web3.cloudmanic.com ansible_ssh_user=optionscafe
+[web-servers]
+web1.options.cafe ansible_user=spicer
