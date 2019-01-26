@@ -47,7 +47,7 @@
 		</div>
 	</header>
 
-	<div class="container">
+	<div class="{% if craft.request.getPath() %} container {% endif %}">
 		
     {% block content %}{% endblock %}
 
