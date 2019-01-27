@@ -2,8 +2,8 @@
 
 # Setup settings
 SSH_PORT='22'
-CODE_SERVERS=("optionscafe@web3.cloudmanic.com")
-DOCKER_SERVERS=("spicer@web3.cloudmanic.com")
+CODE_SERVERS=("optionscafe@web1.options.cafe")
+DOCKER_SERVERS=("spicer@web1.options.cafe")
 DOCKER_IMAGE="options.cafe/nginx-php70"
 REMOTE_DIR="/sites/optionscafe/options.cafe"
 
