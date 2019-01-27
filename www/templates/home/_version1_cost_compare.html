@@ -1,0 +1,132 @@
+<div class="section-tradings" id="cost-compare">
+  <div class="shell">
+    <div class="section__inner">
+      <div class="section__head">
+        <h2>Unlimited commission-free stocks & options trading</h2>
+      </div>
+
+      <div class="section__body">
+        <div class="table-trading-filters">
+          <div class="table">
+            <table>
+              <tr>
+                <th>Trade Type</th>
+              
+                <th>Open/Close</th>
+          
+                <th>Trade Size</th>
+              </tr>
+          
+              <tr>
+                <td>
+                  <span class="visible-xs-block">Trade Type</span>
+          
+                  <div class="form-select">
+                    <div class="form__row">
+                      <label for="field-1#" class="form__label hidden">1#</label>
+                      
+                      <div class="form__controls">
+                        <div class="select">
+                          <select name="field-1#" id="field-1#" v-model="tradeType">
+                            <option v-for="row in tradeTypes" v-bind:value="row">${ row.name }</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+          
+                <td>
+                  <span class="visible-xs-block">Open/Close</span>
+          
+                  <div class="form-select form--size-2">
+                    <div class="form__row">
+                      <div class="form__controls">
+                        <div class="select">
+                          <select name="field-2#" id="field-2#" v-model="tradePerMonth">
+                            <option v-for="row in tradesPerMonth">${ row }</option>
+                          </select>
+                        </div>
+                      </div>
+          
+                      <label for="field-2#" class="form__label">trades / mo.</label>
+                    </div>
+                  </div>
+                </td>
+          
+                <td>
+                  <span class="visible-xs-block">Trade Size</span>
+                  <div class="form-select form--size-3">
+                    <div class="form__row">
+                      <div class="form__controls">
+                        <div class="select">
+                          <select name="field-3#" id="field-3#" v-model="lotSize">
+                            <option v-for="row in lotSizes">${ row }</option>
+                          </select>
+                        </div>
+                      </div>
+          
+                      <label for="field-3#" class="form__label">lots</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="table-platforms">
+          <div class="table">
+
+            <table>
+              <tr>
+                <th>Platform</th>
+              
+                <th>
+                  <span>Cost / Year</span>
+
+                  <a href="https://cloudmanic.groovehq.com/knowledge_base/topics/commission-free-trading-costs-per-year" target="_blank">
+                    <i class="ico-help"></i>
+                  </a>
+                </th>
+              
+                <th>
+                  <span>Dedicated options platform?</span>
+
+                  <a href="https://cloudmanic.groovehq.com/knowledge_base/topics/commission-free-trading-costs-per-year" target="_blank">
+                    <i class="ico-help"></i>
+                  </a>
+                </th>
+              </tr>
+
+              <tr>
+                <td>Options Cafe</td>
+                <td>$600</td>
+                <td><i class="ico-check"></i></td>
+              </tr>
+
+              <tr v-for="row in brokers">
+                <td>${row.name}</td>
+                <td>$${ getBrokerCost(row, true) }</td>
+                <td>
+                  <i v-if="row.platform" class="ico-check"></i>
+                  <i v-if="! row.platform" class="ico-x"></i>                  
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="section__foot">
+        <h4>You can save up to $${ getSavings() } a year switching to Options Cafe!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{# We did this as we might have more than one version of this. #}
+{% include "home/_js_cost_compare" %}
