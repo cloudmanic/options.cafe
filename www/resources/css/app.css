@@ -1,6 +1,6 @@
 /* ------------ Override CSS -------------- */
 
-.red-text { color: red !important; }
+.red-text { color: #D64561 !important; }
 .footer .copyright { padding-top: 6px; }
 .broker-statement { margin-top: 5px; }
 .cloudmanic-copyright { display: inline-block; margin-top: 10px; }
