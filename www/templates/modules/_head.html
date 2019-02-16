@@ -1,40 +1,47 @@
-{% set version = 17 %}
+{% set version = 18 %}
+
 <head>
-  <meta charset="UTF-8">
-  <title>{{ title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="{{ url(craft.app.request.pathInfo) }}" />
-  <link rel="shortcut icon" type="image/png" href="{{ url('assets/css/images/favicon.ico') }}" />  
-  <meta name="description" content="{{ description }}" />
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@optionscafe" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ description }}" />
-  <meta name="twitter:image" content="{{ page_image }}" />
-  
-  <meta name="og:site_name" content="{{ siteName }} - Best Place For Options Trading" />    
-  <meta name="og:title" content="{{ title }}" />  
-  <meta name="og:url" content="{{ url(craft.app.request.pathInfo) }}" />
-  <meta name="og:description" content="{{ description }}" />
-  <meta name="og:image" content="{{ page_image }}" /> 
-  <meta property="og:type" content="article" />
-  <meta name="fb:app_id" content="1512164148794908" />
-  <meta property="fb:pages" content="730529083708603" />
-  
-  <link rel="alternate" type="application/rss+xml" title="Options Cafe" href="{{ url('blog/rss') }}" />
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url('assets/css/style.css?v=' ~ version) }}" />
-  
-  <script src="{{ url('assets/vendor/vue.min.js') }}"></script>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="canonical" href="{{ url(craft.app.request.pathInfo) }}" />
+	<link rel="shortcut icon" type="image/png" href="{{ url('assets/css/images/favicon.ico') }}" />
+	<meta name="description" content="{{ description }}" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@optionscafe" />
+	<meta name="twitter:title" content="{{ title }}" />
+	<meta name="twitter:description" content="{{ description }}" />
+	<meta name="twitter:image" content="{{ page_image }}" />
+
+	<meta name="og:site_name" content="{{ siteName }} - Best Place For Options Trading" />
+	<meta name="og:title" content="{{ title }}" />
+	<meta name="og:url" content="{{ url(craft.app.request.pathInfo) }}" />
+	<meta name="og:description" content="{{ description }}" />
+	<meta name="og:image" content="{{ page_image }}" />
+	<meta property="og:type" content="article" />
+	<meta name="fb:app_id" content="1512164148794908" />
+	<meta property="fb:pages" content="730529083708603" />
+
+	<link rel="alternate" type="application/rss+xml" title="Options Cafe" href="{{ url('blog/rss') }}" />
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url('assets/css/style.css?v=' ~ version) }}" />
+
+	<script src="{{ url('assets/vendor/vue.min.js') }}"></script>
 	<script src="{{ url('assets/vendor/jquery-1.12.4.min.js') }}" defer></script>
-	<script src="{{ url('assets/vendor/detectmobilebrowser.js') }}" defer></script>  
+	<script src="{{ url('assets/vendor/detectmobilebrowser.js') }}" defer></script>
 	<script src="{{ url('assets/js/app.js?v=' ~ version) }}" defer></script>
-  
+
 	<script>
 		var site = {
-			devMode: {{ craft.app.config.general.devMode }},
-			baseUrl: '{{ url('') }}'
+			devMode: {
+				{
+					craft.app.config.general.devMode
+				}
+			},
+			baseUrl: '{{ url('
+			') }}'
 		}
-	</script>  
+
+	</script>
 </head>
