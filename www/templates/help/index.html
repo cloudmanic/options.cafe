@@ -17,13 +17,20 @@
 	<div class="container__inner container__inner--secondary container__inner--white">
 		<section class="section">
 			<div class="section__content">
-				<h2 class="section__title">What can we help you with today?</h2>
+				<div style="">
+					<h2 class="section__title">What can we help you with today?</h2>
+
+					<form>
+						<input type="text" class="search-field" placeholder="Enter a question, keyword or topic..." />
+					</form>
+				</div>
+
 
 				<div class="grid">
 
 					{% for row in categories %}
 					<div class="item">
-						<h2>{{ row.title }}</h2>
+						<h3>{{ row.title }}</h3>
 						<ul>
 							{% for row2 in craft.entries.relatedTo(row).all() %}
 							<li>
