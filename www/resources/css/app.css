@@ -1,3 +1,10 @@
+/* ------------ Help Section -------------- */
+.help-page .section__content { padding: 0 75px 216px; }
+.help-page .grid { width: 950px; margin-left: 50px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; }
+.help-page .grid .item { width: 400px; padding: 15px 0; }
+.help-page .grid .item ul { list-style: none; }
+.help-page .grid .item ul li { margin-bottom: 5px; }
+
 /* ------------ Override CSS -------------- */
 
 .red-text { color: #D64561 !important; }

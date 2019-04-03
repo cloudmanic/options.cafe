@@ -1,0 +1,29 @@
+{% extends "layouts/_main" %}
+
+{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set description = entry.pageDescription %}
+{% set page_image = entry.pageImage.first().url('width800') %}
+
+{% block head %}
+{% include "modules/_head" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="shell">
+
+	<div class="container__inner container__inner--secondary container__inner--white">
+		<section class="section">
+			<div class="section__content">
+				<h2 class="section__title">{{ entry.title }}</h2>
+				{{ entry.helpBody }}
+			</div>
+		</section>
+
+	</div>
+
+	{% include "modules/_newsletter" %}
+
+</div>
+
+{% endblock %}
