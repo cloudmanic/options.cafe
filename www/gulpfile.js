@@ -26,23 +26,28 @@ gulp.task('images', function() {
 	gulp.src('resources/css/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('public/assets/css/images/'));
-		
+
 	gulp.src('resources/css/images/sprite/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('public/assets/css/images/sprite/'));
-		
+
 	gulp.src('resources/css/images/temp/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('public/assets/css/images/temp/'));	
+		.pipe(gulp.dest('public/assets/css/images/temp/'));
 
   gulp.src('resources/css/images/people/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('public/assets/css/images/people/')); 
+    .pipe(gulp.dest('public/assets/css/images/people/'));
 
   gulp.src('resources/css/images/logos/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('public/assets/css/images/logos/'));         			
+    .pipe(gulp.dest('public/assets/css/images/logos/'));
 });
+
+// // Watch
+// gulp.task('watch', function () {
+//   gulp.watch('resources/css/*.css', ['css']);
+// });
 
 // Default task
 gulp.task('default',['js','css', 'images'], function() {});

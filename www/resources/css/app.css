@@ -24,3 +24,7 @@
 .footer .footer__aside { padding-top: 0; }
 .home-tradier-logo-top { width: 200px; margin-top: -18px !important; }
 .table-platforms tr.oc td { background-color: rgba(248,231,28,0.2); }
+
+/* Hide GooveHq stuff */
+iframe.grv-widget-tag { display: none !important; }
+iframe.grv-widget-app { display: block !important; }

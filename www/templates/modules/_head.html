@@ -34,13 +34,8 @@
 
 	<script>
 		var site = {
-			devMode: {
-				{
-					craft.app.config.general.devMode
-				}
-			},
-			baseUrl: '{{ url('
-			') }}'
+			devMode: "{{ craft.app.config.general.devMode }}",
+			baseUrl: "{{ url('') }}"
 		}
 
 	</script>

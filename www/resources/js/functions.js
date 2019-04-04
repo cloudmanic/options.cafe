@@ -16,10 +16,10 @@
 	 *
 	 */
 	ocApp.manageBar = function() {
-  	
+
   	if($('.newsletter-header').length)
   	{
-      if(typeof(Storage) !== "undefined") 
+      if(typeof(Storage) !== "undefined")
       {
         if(localStorage.getItem("newsletter") == "yes")
         {
@@ -27,13 +27,13 @@
           $('.wrapper').removeClass('wrapper--padding');
         }
       }
-    }  	
-  	
+    }
+
 		$('.bar .bar__close').on('click', function(event) {
 			$('.wrapper').removeClass('wrapper--padding');
 			$(this).parent().slideUp();
 
-      if(typeof(Storage) !== "undefined") 
+      if(typeof(Storage) !== "undefined")
       {
         localStorage.setItem("newsletter", "yes");
       }
@@ -84,7 +84,7 @@
   		_paq.push(['trackEvent', 'Ad', 'Click', 'Ad Click Blog Sidebar']);
       window.location = site.baseUrl;
 			event.preventDefault();
-		});    
+		});
   }
 
 	/**
@@ -95,7 +95,7 @@
 
 		$('.newsletter-form').on('submit', function(event) {
   		event.preventDefault();
-  		
+
   		$this = $(this);
   		var btn = $this.find('[name="subscribe"]');
       var btn_val = btn.val();
@@ -104,20 +104,20 @@
       var email = $this.find('[name="email"]').val();
       var hide_on_success = $this.find('.hide-on-success');
       var show_on_success = $this.find('.show-on-success');
-		
+
       btn.val('Saving...');
-		
+
       $.ajax({
         type: 'POST',
         url: '/actions/cloudmanic-craft-sendy/subscribe',
         data: JSON.stringify({ email: email }),
         contentType: "application/json",
-        dataType: 'json',        
-        success: function(json) { 
+        dataType: 'json',
+        success: function(json) {
           btn.val(btn_val);
           btn.hide();
           success.show();
-          
+
           if(hide_on_success.length)
           {
             hide_on_success.hide();
@@ -127,12 +127,12 @@
           {
             show_on_success.show();
           }
-          
-          if(typeof(Storage) !== "undefined") 
+
+          if(typeof(Storage) !== "undefined")
           {
             localStorage.setItem("newsletter", "yes");
-          }          
-          
+          }
+
           // Log events.
           if(json.status && (! site.devMode))
           {
@@ -142,12 +142,12 @@
           	ga('send', 'event', 'Newsletter', 'Subscribe', entry_type);
           }
         }
-      });		
-		
+      });
+
 		});
 
 	};
-	
+
 })(window, document, window.jQuery, window.ocApp || {});
 
 ;(function(window, document, jQuery, ocApp) {
