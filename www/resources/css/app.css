@@ -1,11 +1,16 @@
 /* ------------ Help Section -------------- */
 .help-page form { padding: 25px 0; }
+.help-page .breadcrumb { width: 950px; padding-bottom: 15px; margin-left: 80px; font-size: 16px; margin-top: 10px; }
 .help-page .search-field { margin-left: 80px; width: 80%; height: 40px; font-size: 18px; padding: 5px 5px 5px 10px; border-radius: 15px; border: 2px #efefef solid; }
 .help-page .section__content { padding: 0 75px 216px; }
 .help-page .grid { width: 950px; margin-left: 50px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; }
 .help-page .grid .item { width: 400px; padding: 15px 0; }
 .help-page .grid .item ul { list-style: none; }
 .help-page .grid .item ul li { margin-bottom: 5px; }
+.help-page .section__content { margin-top: 30px; }
+.help-page .post ul { margin-left: 50px; }
+.help-page .post-header { display: flex; flex-direction: row; justify-content: space-between; }
+.help-page .post-header .btn { height: 38px; margin-right: 30px; width: 150px; };
 
 /* ------------ Override CSS -------------- */
 

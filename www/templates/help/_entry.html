@@ -1,6 +1,6 @@
 {% extends "layouts/_main" %}
 
-{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set title = entry.pageTitle ~ " " ~ siteDetails.siteMetaTitleAppend %}
 {% set description = entry.pageDescription %}
 {% set page_image = entry.pageImage.first().url('width800') %}
 
@@ -10,13 +10,25 @@
 
 {% block content %}
 
-<div class="shell">
+<div class="help-page shell">
 
 	<div class="container__inner container__inner--secondary container__inner--white">
 		<section class="section">
+			<div class="post-header">
+				<div class="breadcrumb">
+					<a href="{{ url('help') }}">Knowledge Base</a> :
+					{{ entry.helpCategory[0].title }} >
+					<span>{{ entry.title }}</span>
+				</div>
+
+				<a href="" class="btn">Contact Us</a>
+			</div>
+
 			<div class="section__content">
 				<h2 class="section__title">{{ entry.title }}</h2>
-				{{ entry.helpBody }}
+				<div class="post">
+					{{ entry.helpBody }}
+				</div>
 			</div>
 		</section>
 
