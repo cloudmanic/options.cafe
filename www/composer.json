@@ -6,7 +6,8 @@
     "craftcms/redactor": "2.1.6",
     "dolphiq/sitemap": "v1.0.9",
     "craftcms/aws-s3": "1.0.8",
-    "itscoding/facebook-connector": "v1.3.0"
+    "itscoding/facebook-connector": "v1.3.0",
+    "craftcms/contact-form": "^2.2"
   },
   "autoload": {
     "psr-4": {

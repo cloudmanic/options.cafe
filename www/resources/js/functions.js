@@ -6,6 +6,7 @@
 		this.manageBar();
 		this.manageNav();
 		this.manageForm();
+		this.contactUs();
 		this.homePageClick();
 		this.initDetectMobileBrowser();
 		this.newsletterSubscribe();
@@ -85,7 +86,73 @@
       window.location = site.baseUrl;
 			event.preventDefault();
 		});
-  }
+  };
+
+	/**
+	 * Contact us page
+	 *
+	 */
+	ocApp.contactUs = function() {
+		$('.contact-us .submit').on('submit', function(event) {
+			event.preventDefault();
+
+			var $this = $(this);
+			var error = false;
+			var email = $this.find("#email").val();
+			var subject = $this.find("#subject").val();
+			var body = $this.find("#body").val();
+
+			if(email.length <= 0) {
+				error = true;
+				$this.find("#email").parent().addClass('has-error');
+				$this.find("#email").parent().find("p").html("Email address is required.");
+			} else {
+				$this.find("#email").parent().removeClass('has-error');
+				$this.find("#email").parent().find("p").html("");
+			}
+
+			if(subject.length <= 0) {
+				error = true;
+				$this.find("#subject").parent().addClass('has-error');
+				$this.find("#subject").parent().find("p").html("Subject is required.");
+			} else {
+				$this.find("#subject").parent().removeClass('has-error');
+				$this.find("#subject").parent().find("p").html("");
+			}
+
+			if(body.length <= 0) {
+				error = true;
+				$this.find("#body").parent().addClass('has-error');
+				$this.find("#body").parent().find("p").html("Body is required.");
+			} else {
+				$this.find("#body").parent().removeClass('has-error');
+				$this.find("#body").parent().find("p").html("");
+			}
+
+			// If we have error do not continue.
+			if(error) {
+				return false;
+			}
+
+			// Send it to the server
+	    $.post({
+	        url: '/',
+	        dataType: 'json',
+	        data: $this.serialize(),
+	        success: function(response) {
+	          if (response.success) {
+							$this.hide();
+							$('.help-page .section__title').hide();
+							$('.contact-us .success').fadeIn();
+	          } else {
+							// response.error will be an object containing any validation errors that occurred, indexed by field name
+							// e.g. response.error.fromName => ['From Name is required']
+							alert('An error occurred. Please try again.');
+	          }
+	        }
+	    });
+		});
+	};
 
 	/**
 	 * Newsletter subscribe

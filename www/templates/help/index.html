@@ -22,7 +22,7 @@
 					<span>Support Articles</span>
 				</div>
 
-				<button class="btn" onclick="groove.widget('open');">Contact Us</button>
+				<a href="{{ url('help/contact') }}" class="btn">Contact Us</a>
 			</div>
 
 			<div class="spacer">&nbsp;</div>
@@ -62,7 +62,5 @@
 	{% include "modules/_newsletter" %}
 
 </div>
-
-{{ siteDetails.grooveJsCode | raw }}
 
 {% endblock %}

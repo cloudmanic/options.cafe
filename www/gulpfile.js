@@ -44,10 +44,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest('public/assets/css/images/logos/'));
 });
 
-// // Watch
-// gulp.task('watch', function () {
-//   gulp.watch('resources/css/*.css', ['css']);
-// });
+// Watch
+gulp.task('watch', function () {
+  gulp.watch('resources/js/*.js', ['js']);  
+  gulp.watch('resources/css/*.css', ['css']);
+});
 
 // Default task
 gulp.task('default',['js','css', 'images'], function() {});
