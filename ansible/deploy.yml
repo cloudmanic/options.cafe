@@ -2,12 +2,8 @@
 
 - name: Deploys the site to production
 
-  hosts: web-servers
+  hosts: app-servers
 
-  become: yes
-
-  become_user: optionscafe
-  
   roles:
     - app
 

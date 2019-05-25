@@ -14,7 +14,7 @@
 
 # Install docker-compose file
 - name: set up remote docker-compose file
-  template: src=docker-compose.yml dest="{{ site_path }}/docker/docker-compose.yml" mode=0644
+  template: src=docker-compose.yml dest="{{ site_path }}/docker/docker-compose.yml" mode=0644 owner=optionscafe group=optionscafe
 
 # Install Dockerfile
 - name: Install Dockerfile
