@@ -1,2 +1,2 @@
 [web-servers]
-web1.options.cafe ansible_user=optionscafe
+web1.options.cafe ansible_user=spicer 
