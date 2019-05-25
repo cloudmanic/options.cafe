@@ -1,5 +1,5 @@
 /* ------------ Help Section -------------- */
-.help-page form { padding: 25px 0; }
+.help-page .submit { padding: 25px 0; }
 .help-page .breadcrumb { width: 950px; padding-bottom: 15px; margin-left: 80px; font-size: 16px; margin-top: 10px; }
 .help-page .spacer { height: 10px; border-bottom: 1px solid #e5e5e5; }
 .help-page .search-field { margin-left: 80px; width: 80%; height: 40px; font-size: 18px; padding: 5px 5px 5px 10px; border-radius: 15px; border: 2px #efefef solid; }
