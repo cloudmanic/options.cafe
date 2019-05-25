@@ -1,11 +1,11 @@
 ---
 
 - name: Deploys the server config for options.cafe to production
-  
+
   hosts: web-servers
-  
+
   become: yes
-  
+
   become_user: root
 
   roles:
@@ -14,7 +14,7 @@
     - docker-sites
     - docker-mysql
     - docker-nginx-proxy
-    
+
   vars_files:
     - "vars/encrypt.yml"
-    - "vars/all.yml"    
+    - "vars/all.yml"

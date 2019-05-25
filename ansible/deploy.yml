@@ -5,9 +5,9 @@
   hosts: web-servers
 
   become: yes
-  
-  become_user: optionscafe  
 
+  become_user: optionscafe
+  
   roles:
     - app
 

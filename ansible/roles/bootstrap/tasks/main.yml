@@ -3,17 +3,17 @@
 # Set Timezone
 - name: Set the timezone for the server to be Etc/UTC
   command: timedatectl set-timezone Etc/UTC
-  
+
 # Disable root password
 - name: Disabled root password
   tags:
     - sudo
-  command: passwd -d root 
-  
+  command: passwd -d root
+
 # Setup the Hostname
 - name: Updating the host name
-  hostname: name={{ ansible_host }}  
-  
+  hostname: name={{ ansible_host }}
+
 # Run the equivalent of "apt-get update" as a separate step
 - name: Run the equivalent of "apt-get update" as a separate step
   apt: update_cache=yes
@@ -27,7 +27,7 @@
   action: apt pkg={{item}} state=present
   with_items: "{{ core_packages }}"
 
-# Turn off root ssh access.     
+# Turn off root ssh access.
 - name: No more root ssh access
   lineinfile:
     dest: "/etc/ssh/sshd_config"
@@ -35,7 +35,7 @@
     line: "PermitRootLogin no"
   tags:
     - ssh
-  notify: "restart ssh"  
+  notify: "restart ssh"
 
 # Disable PasswordAuthentication SSH
 - name: Disable PasswordAuthentication SSH
@@ -44,7 +44,7 @@
     regexp: "^PasswordAuthentication"
     line: "PasswordAuthentication no"
   tags:
-    - ssh    
+    - ssh
   notify: "restart ssh"
 
 # Disable Empty Passwords SSH
@@ -54,7 +54,7 @@
     regexp: "^#?PermitEmptyPasswords"
     line: "PermitEmptyPasswords no"
   tags:
-    - ssh    
+    - ssh
   notify: "restart ssh"
 
 # Allow sudo'ing without password
