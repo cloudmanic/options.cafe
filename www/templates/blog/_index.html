@@ -3,19 +3,19 @@
 {% set query = craft.request.getParam('q') %}
 
 {% if query is not empty %}
-  {% paginate craft.entries.section('blog').search(query).order('postDate desc').limit(1000) as pageInfo, entries %}  
+{% paginate craft.entries.section('blog').search(query).order('postDate desc').limit(1000) as pageInfo, entries %}
 {% else %}
-  {% paginate craft.entries.section('blog').order('postDate desc').limit(15) as pageInfo, entries %}
+{% paginate craft.entries.section('blog').order('postDate desc').limit(15) as pageInfo, entries %}
 {% endif %}
 
-{% set title = entry.pageTitle ~ siteDetails.siteMetaTitleAppend %}
+{% set title = entry.pageTitle ~ " " ~ siteDetails.siteMetaTitleAppend %}
 {% set description = entry.pageDescription %}
 {% set page_image = entry.pageImage.first().url('width800') %}
 
 {% block head %}
-  {% include "modules/_head" %}
+{% include "modules/_head" %}
 {% endblock %}
 
 {% block content %}
-  {% include "blog/_modules/blogList" %}
+{% include "blog/_modules/blogList" %}
 {% endblock %}
