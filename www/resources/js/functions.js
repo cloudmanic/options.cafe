@@ -201,13 +201,9 @@
           }
 
           // Log events.
-          if(json.status && (! site.devMode))
-          {
-          	clicky.goal('5193');
-          	_paq.push(['trackGoal', 1]);
-          	_paq.push(['trackEvent', 'Newsletter', 'Subscribe', entry_type]);
-          	ga('send', 'event', 'Newsletter', 'Subscribe', entry_type);
-          }
+        	_paq.push(['trackGoal', 1]);
+        	_paq.push(['trackEvent', 'Newsletter', 'Subscribe', entry_type]);
+        	ga('send', 'event', 'Newsletter', 'Subscribe', entry_type);
         }
       });
 
