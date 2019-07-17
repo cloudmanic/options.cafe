@@ -1,6 +1,6 @@
 {% extends "layouts/_main" %}
 
-{% set title = entry.title ~ siteDetails.siteMetaTitleAppend %}
+{% set title = entry.title ~ " " ~ siteDetails.siteMetaTitleAppend %}
 {% set description = entry.blogDescription %}
 {% set page_image = entry.blogImage.one().url('width800') %}
 
@@ -15,138 +15,150 @@
 {% set nextEntry = entry.getNext(params) %}
 
 {% block head %}
-  {% include "modules/_head" %}
+{% include "modules/_head" %}
 {% endblock %}
 
 {% block content %}
 
 <div class="shell">
 
-  <div class="container__inner">
-    {% include "blog/_modules/blogIntro" %}
+	<div class="container__inner">
+		{% include "blog/_modules/blogIntro" %}
 
-    <div class="main main--flex">
-    	<div class="content">
-    		<article class="article article--single">
-    			<header class="article__head">
-    				<h1>{{ entry.title }}</h1>
+		<div class="main main--flex">
+			<div class="content">
+				<article class="article article--single">
+					<header class="article__head">
+						<h1>{{ entry.title }}</h1>
 
-    				<div class="article__meta">
-    					<p>
-    						<a href="{{ entry.blogCategory.one().url }}">{{ entry.blogCategory.one().title }}</a>
+						<div class="article__meta">
+							<p>
+								<a href="{{ entry.blogCategory.one().url }}">{{ entry.blogCategory.one().title }}</a>
 
-    						<em>{{ entry.postDate|date("F d, Y") }}</em>
+								<em>{{ entry.postDate|date("F d, Y") }}</em>
 
-    						<em>{{ entry.author.fullName }}</em>
-    					</p>
+								<em>{{ entry.author.fullName }}</em>
+							</p>
 
-    					<div class="socials socials--small">
-                {% include "modules/_socialShare" %}
-    					</div>
-    				</div>
-    			</header>
+							<div class="socials socials--small">
+								{% include "modules/_socialShare" %}
+							</div>
+						</div>
+					</header>
 
-  {#
-    			<figure class="article__image">
-    				<img src="/assets/css/images/temp/article-single-image.jpg" alt="">
-    			</figure>
-  #}
+					{#
+					<figure class="article__image">
+						<img src="/assets/css/images/temp/article-single-image.jpg" alt="">
+					</figure>
+					#}
 
-    			<div class="article__body">
-            {% for block in entry.pageBuilder %}
-              {% include "blocks/_" ~ block.type %}
-            {% endfor %}
-            
-            {% if entry.blogMustReads | length %}
-            <div class="blog-must-reads">
-              <b>Enjoyed this post? Here are some must reads.</b>
-              <ul>
-                {% for row in entry.blogMustReads %}
-                <li>
-                  <a href="{{ row.url }}">{{ row.title }}</a>
-                </li>
-                {% endfor %}                          
-              </ul>
-            </div>
-            {% endif %}
-            
-            {% if entry.blogTags | length %}
-            <p>
-              <b>Related Topics: </b>
-              {% for tag in entry.blogTags %}
-                <a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
-              {% endfor %}                      
-            </p>
-            {% endif %}
-    			</div>
-    			
-    			<div class="article__actions">
-    				<div class="widget widget--socials widget--secondary">
-    					<div class="widget__head">
-    						<h5 class="widget__title">Like what you read? Please Share!</h5><!-- /.widget__title -->
-    					</div><!-- /.widget__head -->
+					<div class="article__body">
+						{% for block in entry.pageBuilder %}
+						{% include "blocks/_" ~ block.type %}
+						{% endfor %}
 
-    					<div class="widget__body">
-      					<div class="socials">
-                  {% include "modules/_socialShare" %}
-      					</div>  
-              </div>
-    				</div>
-    			</div>
+						{% if entry.blogMustReads | length %}
+						<div class="blog-must-reads">
+							<b>Enjoyed this post? Here are some must reads.</b>
+							<ul>
+								{% for row in entry.blogMustReads %}
+								<li>
+									<a href="{{ row.url }}">{{ row.title }}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endif %}
 
-    			<footer class="article__foot">
-    				<div id="disqus_thread"></div>
-    			</footer>
-    		</article>
+						{% if entry.blogTags | length %}
+						<p>
+							<b>Related Topics: </b>
+							{% for tag in entry.blogTags %}
+							<a href="{{ url('blog/related-topics/' ~ tag.title|kebab) }}" class="capitalize">{{ tag.title }}</a>{{ loop.index < loop.length ? ', ' : '' }}
+							{% endfor %}
+						</p>
+						{% endif %}
+					</div>
 
-    		<div class="paging">
-      		{% if prevEntry %}
-    			<a href="{{ prevEntry.url }}" class="paging__prev">
-    				<i class="ico-arrow-left"></i>
-    				Prev
-    			</a>
-    			{% else %}
-    			&nbsp;
-          {% endif %}
+					<div class="article__actions">
+						<div class="widget widget--socials widget--secondary">
+							<div class="widget__head">
+								<h5 class="widget__title">Like what you read? Please Share!</h5><!-- /.widget__title -->
+							</div><!-- /.widget__head -->
 
-          {% if nextEntry %}
-    			<a href="{{ nextEntry.url }}" class="paging__next">
-    				Next
-    				<i class="ico-arrow-right"></i>
-    			</a>
-    			{% endif %}
-    		</div><!-- /.paging -->
-    	</div><!-- /.content -->
+							<div class="widget__body">
+								<div class="socials">
+									{% include "modules/_socialShare" %}
+								</div>
+							</div>
+						</div>
+					</div>
 
-      {% include "blog/_modules/blogSideBar" %}
-      
-    </div><!-- /.main main-/-flex -->
-  </div><!-- /.container__inner -->
+					<footer class="article__foot">
+						<div id="disqus_thread"></div>
+					</footer>
+				</article>
 
-  {% include "modules/_newsletter" %}
+				<div class="paging">
+					{% if prevEntry %}
+					<a href="{{ prevEntry.url }}" class="paging__prev">
+						<i class="ico-arrow-left"></i>
+						Prev
+					</a>
+					{% else %}
+					&nbsp;
+					{% endif %}
+
+					{% if nextEntry %}
+					<a href="{{ nextEntry.url }}" class="paging__next">
+						Next
+						<i class="ico-arrow-right"></i>
+					</a>
+					{% endif %}
+				</div><!-- /.paging -->
+			</div><!-- /.content -->
+
+			{% include "blog/_modules/blogSideBar" %}
+
+		</div><!-- /.main main-/-flex -->
+	</div><!-- /.container__inner -->
+
+	{% include "modules/_newsletter" %}
 </div>
- 
+
 <script type="text/javascript">
-{% if entry.blogCloudcmsBlogId | length and entry.blogCloudcmsBlogId > 0 %}
+	{
+		%
+		if entry.blogCloudcmsBlogId | length and entry.blogCloudcmsBlogId > 0 %
+	}
 	var disqus_shortname = 'stockpeer';
 	var disqus_identifier = '{{ entry.blogCloudcmsBlogId }}';
-	
+
 	(function() {
-	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		var dsq = document.createElement('script');
+		dsq.type = 'text/javascript';
+		dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	})();
-	
-{% else %}
-  var disqus_identifier = '{{ entry.slug }}';
-  
-  (function() {
-   var d = document, s = d.createElement('script');
-   s.src = 'https://options-cafe.disqus.com/embed.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-  })();
-{% endif %}
-</script>	
+
+	{
+		%
+		else %
+	}
+	var disqus_identifier = '{{ entry.slug }}';
+
+	(function() {
+		var d = document,
+			s = d.createElement('script');
+		s.src = 'https://options-cafe.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})(); {
+		%
+		endif %
+	}
+
+</script>
 
 {% endblock %}
