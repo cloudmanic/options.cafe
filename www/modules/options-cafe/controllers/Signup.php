@@ -13,6 +13,7 @@ namespace modules\OptionsCafe\controllers;
 use Craft;
 use craft\web\Controller;
 use yii\web\Response;
+use Jaybizzle\CrawlerDetect\CrawlerDetect;
 
 class SignupController extends Controller
 {
@@ -24,6 +25,8 @@ class SignupController extends Controller
   //
   public function actionIndex()
   {
+    $CrawlerDetect = new CrawlerDetect;
+
     $email = Craft::$app->request->getBodyParam('email');
     $name = Craft::$app->request->getBodyParam('name');
 
@@ -33,14 +36,18 @@ class SignupController extends Controller
       return $this->redirect('');
     }
 
+    if($CrawlerDetect->isCrawler()) {
+      return $this->redirect('');
+    }
+
     // Validate email
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)) 
+    if(filter_var($email, FILTER_VALIDATE_EMAIL))
     {
       // Subscribe (boolean set this to "true" so that you'll get a plain text response)
-      $postdata = http_build_query([ 
-        'email' => $email, 
-        'list' => getenv("SENDY_LIST_ID"), 
-        'boolean' => 'true', 
+      $postdata = http_build_query([
+        'email' => $email,
+        'list' => getenv("SENDY_LIST_ID"),
+        'boolean' => 'true',
         'ipaddress' => Craft::$app->request->userIP,
         'referrer' => 'https://options.cafe',
         'Signup' => 'Yes'
@@ -62,7 +69,7 @@ class SignupController extends Controller
       curl_setopt($ch, CURLOPT_POSTFIELDS, $slack);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       $result = curl_exec($ch);
-      curl_close($ch);  
+      curl_close($ch);
     }
 
     return $this->redirect(getenv("APP_URL") . '/register?email=' . $email);
