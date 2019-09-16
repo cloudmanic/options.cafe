@@ -57,19 +57,19 @@ class SignupController extends Controller
       $context  = stream_context_create($opts);
       $result = file_get_contents(getenv("SENDY_URL") . '/subscribe', false, $context);
 
-      // // Send slack notification
-      // $slack = "payload=" . json_encode([
-      //                 "channel" =>  "#events",
-      //                 "text" => "New Website Signup From https://options.cafe : $email",
-      //         ]);
-      //
-      // // You can get your webhook endpoint from your Slack settings
-      // $ch = curl_init(getenv("SLACK_HOOK"));
-      // curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-      // curl_setopt($ch, CURLOPT_POSTFIELDS, $slack);
-      // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      // $result = curl_exec($ch);
-      // curl_close($ch);
+      // Send slack notification
+      $slack = "payload=" . json_encode([
+                      "channel" =>  "#events",
+                      "text" => "New Website Signup From https://options.cafe : $email",
+              ]);
+
+      // You can get your webhook endpoint from your Slack settings
+      $ch = curl_init(getenv("SLACK_HOOK"));
+      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+      curl_setopt($ch, CURLOPT_POSTFIELDS, $slack);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      $result = curl_exec($ch);
+      curl_close($ch);
     }
 
     return $this->redirect(getenv("APP_URL") . '/register?email=' . $email);
