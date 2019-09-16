@@ -44,7 +44,7 @@ class SubscribeController extends Controller
     // Honeypot trap
     if($CrawlerDetect->isCrawler()) {
       return $this->asJson([ 'status' => 0 ]);
-    }    
+    }
 
     // Subscribe (boolean set this to "true" so that you'll get a plain text response)
     $postdata = http_build_query([
@@ -59,19 +59,19 @@ class SubscribeController extends Controller
     $context  = stream_context_create($opts);
     $result = file_get_contents(getenv("SENDY_URL") . '/subscribe', false, $context);
 
-    // Send slack notification
-    $slack = "payload=" . json_encode([
-                    "channel" =>  "#events",
-                    "text" => "New Newsletter Subscriber From https://options.cafe : $email",
-            ]);
-
-    // You can get your webhook endpoint from your Slack settings
-    $ch = curl_init(getenv("SLACK_HOOK"));
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $slack);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $result = curl_exec($ch);
-    curl_close($ch);
+    // // Send slack notification
+    // $slack = "payload=" . json_encode([
+    //                 "channel" =>  "#events",
+    //                 "text" => "New Newsletter Subscriber From https://options.cafe : $email",
+    //         ]);
+    //
+    // // You can get your webhook endpoint from your Slack settings
+    // $ch = curl_init(getenv("SLACK_HOOK"));
+    // curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    // curl_setopt($ch, CURLOPT_POSTFIELDS, $slack);
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // $result = curl_exec($ch);
+    // curl_close($ch);
 
     // Return status via json
     return $this->asJson([ 'status' => 1, 'ip' => Craft::$app->request->userIP ]);
