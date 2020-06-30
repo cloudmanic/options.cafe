@@ -14,9 +14,16 @@ gulp.task('css', function() {
 
 // Build JS
 gulp.task('js', function() {
-   gulp.src('resources/js/*.js')
-   .pipe(concat('app.js'))
+   gulp.src('resources/js/functions.js')
    .pipe(uglify())
+   .pipe(concat('app.js'))
+   .pipe(gulp.dest('assets/js/'));
+});
+
+// Build Vue App
+gulp.task('vue', function() {
+   gulp.src('resources/js/vueApp.js')
+   .pipe(concat('vueApp.js'))
    .pipe(gulp.dest('assets/js/'));
 });
 
@@ -25,23 +32,23 @@ gulp.task('images', function() {
 
 	gulp.src('resources/css/images/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('assets/css/images/'));
+		.pipe(gulp.dest('static/css/images/'));
 
 	gulp.src('resources/css/images/sprite/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('assets/css/images/sprite/'));
+		.pipe(gulp.dest('static/css/images/sprite/'));
 
 	gulp.src('resources/css/images/temp/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('assets/css/images/temp/'));
+		.pipe(gulp.dest('static/css/images/temp/'));
 
   gulp.src('resources/css/images/people/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/css/images/people/'));
+    .pipe(gulp.dest('static/css/images/people/'));
 
   gulp.src('resources/css/images/logos/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/css/images/logos/'));
+    .pipe(gulp.dest('static/css/images/logos/'));
 });
 
 // Watch
@@ -51,4 +58,4 @@ gulp.task('watch', function () {
 });
 
 // Default task
-gulp.task('default',['js','css', 'images'], function() {});
+gulp.task('default',['js', 'vue', 'css', 'images'], function() {});

@@ -1,0 +1,185 @@
+{{- $js := resources.Get "js/app.js" | minify | fingerprint -}}
+{{- $vue := resources.Get "js/vueApp.js" | minify | fingerprint -}}
+{{- $style := resources.Get "css/style.css" | minify | fingerprint -}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Options Trading Platform For Advanced Traders | #1 Options Trading Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="canonical" href="{{ $.Site.BaseURL }}" />
+	<link rel="shortcut icon" type="image/png" href="{{ $.Site.BaseURL }}assets/css/images/favicon.ico" />
+	<meta name="description" content="A trading platform that takes an entirely different approach: to excel in one area of trading—options trading. Built to accommodate advanced multi-leg trades." />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@optionscafe" />
+	<meta name="twitter:title" content="Options Trading Platform For Advanced Traders | #1 Options Trading Software" />
+	<meta name="twitter:description" content="A trading platform that takes an entirely different approach: to excel in one area of trading—options trading. Built to accommodate advanced multi-leg trades." />
+	<meta name="twitter:image" content="https://cdn.options.cafe/blog/options-cafe-cover.png?mtime=20181025205448" />
+
+	<meta name="og:site_name" content="Options Cafe - Best Place For Options Trading" />
+	<meta name="og:title" content="Options Trading Platform For Advanced Traders | #1 Options Trading Software" />
+	<meta name="og:url" content="{{ $.Site.BaseURL }}" />
+	<meta name="og:description" content="A trading platform that takes an entirely different approach: to excel in one area of trading—options trading. Built to accommodate advanced multi-leg trades." />
+	<meta name="og:image" content="https://cdn.options.cafe/blog/options-cafe-cover.png?mtime=20181025205448" />
+	<meta property="og:type" content="article" />
+	<meta name="fb:app_id" content="1512164148794908" />
+	<meta property="fb:pages" content="730529083708603" />
+
+	<link rel="alternate" type="application/rss+xml" title="Options Cafe" href="{{ $.Site.BaseURL }}blog/rss" />
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+	<script>
+		var site = {
+			devMode: "0",
+			baseUrl: "{{ $.Site.BaseURL }}"
+		}
+
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-102266466-1');
+
+	</script>
+</head>
+
+<body>
+	<div class="wrapper ">
+
+		<header class="header">
+			<div class="shell">
+				<div class="header__inner">
+					<a href="{{ $.Site.BaseURL }}" class="logo">O/C Options Cafe</a>
+
+					<a href="{{ $.Site.BaseURL }}" class="btn-menu visible-xs-inline-block">
+						<span></span>
+
+						<span></span>
+
+						<span></span>
+					</a>
+
+					<nav class="nav">
+						<ul>
+							<li class=" current">
+								<a href="{{ $.Site.BaseURL }}">Home</a>
+							</li>
+							<li class=" ">
+								<a href="{{ $.Site.BaseURL }}blog">Blog</a>
+							</li>
+
+							<li>
+								<a href="{{ $.Site.BaseURL }}help">Support</a>
+							</li>
+
+							<li>
+								<a href="https://app.options.cafe/login">Login</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		{{- block "main" . }}{{- end }}
+
+		<footer class="footer">
+			<div class="shell">
+				<div class="footer__inner">
+					<div class="footer__content">
+						<a href="{{ $.Site.BaseURL }}" class="footer__logo">O/C</a>
+
+						<p class="copyright">
+							<span class="broker-statement">
+								Brokerage services provided by <a href="https://brokerage.tradier.com" target="_blank">Tradier Brokerage</a> Member <a href="http://www.finra.org" target="_blank">FINRA</a>/<a href="https://www.sipc.org" target="_blank">SIPC</a></span> <br />
+							<span class="cloudmanic-copyright">© 2018. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
+						</p>
+						<p></p>
+					</div>
+
+					<aside class="footer__aside">
+						<nav class="footer__nav">
+							<ul>
+
+								<li>
+									<a href="{{ $.Site.BaseURL }}terms-of-service">Terms of Service</a>
+								</li>
+								<li>
+									<a href="{{ $.Site.BaseURL }}privacy-policy">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="{{ $.Site.BaseURL }}refunds">Refunds</a>
+								</li>
+								<li>
+									<a href="{{ $.Site.BaseURL }}about">About Us</a>
+								</li>
+
+							</ul>
+						</nav><!-- /.footer__nav -->
+
+						<div class="socials">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/optionscafetrading">
+										<i class="ico-facebook-circle"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://twitter.com/options_cafe">
+										<i class="ico-twitter-circle"></i>
+									</a>
+								</li>
+							</ul>
+						</div><!-- /.socials -->
+					</aside><!-- /.footer__aside -->
+				</div><!-- /.footer__inner -->
+			</div><!-- /.shell -->
+		</footer><!-- /.footer -->
+	</div><!-- /.wrapper -->
+
+	<script src="/vendor/vue.min.js"></script>
+	<script src="/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/vendor/detectmobilebrowser.js"></script>
+	<script src="{{ $js.Permalink }}"></script>
+	<script src="{{ $vue.Permalink }}"></script>
+
+	<!-- Start of Piwik Code -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		_paq.push(["setCookieDomain", "*.options.cafe"]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.cloudmanic.com/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', 5]);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.defer = true;
+			g.async = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+
+	</script>
+	<noscript>
+		<p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style="border:0;" alt="" /></p>
+	</noscript>
+</body>
+
+</html>

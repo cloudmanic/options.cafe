@@ -7,3 +7,7 @@ This is the public website for https://options.cafe
 `npm install --global gulp-cli`
 
 `npm install`
+
+
+# Run local server
+hugo server -D

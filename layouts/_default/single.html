@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="container">
+
+	<div class="shell">
+
+		<div class="container__inner container__inner--secondary container__inner--white">
+
+			{{- .Content -}}
+
+		</div>
+
+		{{- partial "subscribe.html" . -}}
+	</div>
+
+</div>
+
+{{ end }}

@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://options.cafe/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Options Cafe"
+
+[params]
+  description = "Options Cafe decided has taken an entirely different approach: to excel at options only. Our options trading software provides best way to trade options."
