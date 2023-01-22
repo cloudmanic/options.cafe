@@ -1,3 +1,16 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://options.cafe/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Options Cafe'
+publishDir = "docs"
+disableHugoGeneratorInject = true
+
+[params]
+    copyRightYear = 2023
+    newsletterHeader = false
+    appLogin = 'https://app.options.cafe/login'
+    twitterHandle = 'options_cafe'
+    twitterLink = 'https://twitter.com/options_cafe'
+    facebookAppId = '1512164148794908'
+    facebookPageId = '730529083708603'
+    facebookLink = 'https://www.facebook.com/optionscafetrading'
+    appSignUpLink = 'https://options.cafe/actions/options-cafe/signup'

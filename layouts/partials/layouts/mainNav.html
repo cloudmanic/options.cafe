@@ -1,0 +1,17 @@
+<ul>
+    <li class="{{ if eq .Section ""  }}current{{ end }}">
+        <a href="{{ "" | absURL }}">Home</a>
+    </li>
+
+    <li class="{{ if eq .Section "blog"  }}current{{ end }}">
+        <a href="{{ "blog" | absURL }}">Blog</a>
+    </li>
+
+    <li class="{{ if eq .Section "help"  }}current{{ end }}">
+        <a href="{{ "help" | absURL }}">Support</a>
+    </li>
+
+    <li class="{{ if eq .Section "login"  }}current{{ end }}">
+        <a href="{{ .Site.Params.appLogin }}">Login</a>
+    </li>
+</ul>
