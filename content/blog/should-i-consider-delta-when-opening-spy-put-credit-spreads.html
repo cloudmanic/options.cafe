@@ -1,0 +1,33 @@
+---
+title: "Should I Consider Delta When Opening SPY Put Credit Spreads?"
+date: 2015-01-29T08:00:00+00:00
+draft: false
+author: "Spicer Matthews"
+categories: ["Spicer's Soapbox"]
+image: "blog/delta-table_26.png?mtime=20170514144514"
+description: "To study how delta affects an opening trade I did—of course—some backtesting. I took a $10,000 account and placed put credit spread trades from 2011 to current."
+must_reads: [
+"being-hyperfocused-on-the-spy",
+"baseline-strategy-for-trading-spy-put-credit-spreads",
+"what-size-trades-should-you-put-on-when-trading-spy-put-credit-spreads",
+]
+---
+<p><a href="http://www.macroption.com/delta-calls-puts-probability-expiring-itm/">Delta</a> is a metric that options traders use to predict how the price of an option will change when the underlying stock moves by one dollar. If, for example, a call option has a delta of .3 and the underlying stock value increases from $100 to $101, then theoretically that call option would increase in value by $0.30.</p>
+<p>Delta is also a probability proxy. You can think of delta as the probability the option will expire in the money—so in other words that call option with a delta of .3 has a 30% chance of expiring in the money. The question is, should you consider the value of delta before opening a put credit spread on the <a href="http://finance.yahoo.com/q?s=SPY">SPY</a>? That is, before placing an order should you estimate the probability that your short leg will expire in the money, causing you to lose money?</p>
+<p><strong>Backtesting (...)</strong></p>
+<p>To study how delta affects an opening trade I did—of course—some backtesting. I took a $10,000 account and placed put credit spread trades from 2011 to current. I opened up spreads that were $2 wide, at least 4% out of the money, and no more than 45 days to expiration. I then ran the test only opening trades when delta was less than certain values. Below are my backtested results.</p>
+<div class="trade-table">
+<table class="table"><thead><tr><th> </th>
+<th>No Delta Filter</th>
+<th>Delta &lt;= 0.10</th>
+<th>Delta &lt;= 0.15</th>
+<th>Delta &lt;= 0.20</th>
+<th>Delta &lt;= 0.25</th>
+<th>Delta &lt;= 0.30</th>
+<th>Delta &lt;= 0.35</th>
+</tr></thead><tbody><tr><td>Total Trades</td><td>398</td><td>3</td><td>68</td><td>377</td><td>363</td><td>363</td><td>397</td></tr><tr><td>Success Rate</td><td>94.72%</td><td>100%</td><td>100%</td><td>95.23%</td><td>94.21%</td><td>94.21%</td><td>94.71%</td></tr><tr><td>Percent Gain</td><td>210.78%</td><td>3.01%</td><td>62.64%</td><td>202.74%</td><td>168.78%</td><td>168.78%</td><td>208.96%</td></tr><tr><td>Profit</td><td>$21,078</td><td>$301</td><td>$6,264</td><td>$20,274</td><td>$16,878</td><td>$16,878</td><td>$20,895</td></tr></tbody></table></div>
+<p>As you can see, considering delta before opening SPY put credit spreads is a waste of time. I was expecting to find a perfect delta value for opening trades and was surprised to learn that you get better results by simply ignoring it.</p>
+                    
+                      <p><strong>Delta This, Delta That</strong></p>
+<p>So why does every other options trader seem to natter on about how important delta is? For one thing, delta is more important for other underlying stocks (I will show some backtest results demonstrating as much in future posts). Delta is also very important for choosing when to exit a trade. If a trade starts to go south you can monitor the change in delta and decide whether to cut your losses or remain in the trade (more on this in future posts as well).</p>
+<p>One of the reasons I especially like trading the SPY is the practicality of keeping things simple. You don’t need to crunch hundreds of inputs, such as delta, to make wise trade decisions—this study demonstrates that reassuring fact.</p>

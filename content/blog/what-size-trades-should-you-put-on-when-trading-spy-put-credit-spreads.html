@@ -1,0 +1,85 @@
+---
+title: "What Size Trades Should You Put on When Trading SPY Put Credit Spreads?"
+date: 2015-03-24T07:00:00+00:00
+draft: false
+author: "Spicer Matthews"
+categories: ["Spicer's Soapbox"]
+image: "blog/baseline_29.jpg?mtime=20170514144317"
+description: "How much money should you risk with each trade? Trade size is one of the most important considerations of an active trading strategy, and maintaining optimal tr"
+must_reads: [
+]
+---
+<p>How much money should you risk with each trade? Trade size is one of the most important considerations of an active trading strategy, and maintaining optimal trade size over time involves technique. In this post we will examine 3 methods for determining trade size and how they fared when they were backtested against my <a href="https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy">consistent</a> put <a href="https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads">credit spread</a> strategy on the SPY. In each backtest I started with a balance of $50,000 and tested from 2010 through 2014.</p>
+                    
+                      <h2>Trading a Fixed Amount</h2>
+                    
+                      <p>
+One method is to risk the same number of contracts for every trade. In this case returns are not compounded. This method is popular among traders who live on trading income and therefore need to take money out of their account for expenses. For this backtest I traded a fixed lot size of 25.</p>
+<div class="table-blocks">
+<table><thead><tr><th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr></thead><tbody><tr><td>406</td>
+			<td>$66,947</td>
+			<td>133.89%</td>
+			<td>18.52%</td>						
+		</tr></tbody></table></div>
+                    
+                      <h2>Trading a Percentage of Account Balance</h2>
+                    
+                      <p>
+Another popular method sizes each trade as a percentage of the account balance. In this backtest the maximum risk for every trade was 10% of the account balance (minus credit received). With this method returns are compounded.
+</p>
+<div class="table-blocks">
+<table><thead><tr><th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr></thead><tbody><tr><td>385</td>
+			<td>$121,368</td>
+			<td>242.74%</td>
+			<td>27.94%</td>						
+		</tr></tbody></table></div>
+                    
+                      <h2>Trading a Fixed Ratio</h2>
+                    
+                      <p>
+The fixed ratio method uses a mathematical formula to indicate when you should increase to the next lot size as your account grows. The formula is based on your largest expected drawdown—that is, how much you expect to lose when your strategy goes against you: 
+</p>
+<p>
+<em>Current Trade Size * (½ * Largest Expected Drawdown) + Previous Account Size<em>
+</em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em>
+If, for example, you are currently trading 1 lot, your account size is $5,000, and your largest expected drawdown is $1,000—then you should start trading 2 lots when your account grows to $5,500 in value.
+</em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em>
+<em>1 * (½ * $1,000) + $5,000</em>
+</em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<div class="table-blocks"><em><em>
+</em></em><em><em>Trades
+			Profit
+			Return
+			CAGR									
+		407
+			$43,487
+			86.97%
+			13.33%						
+		</em></em></div>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em><strong>It’s a Personal Thing</strong></em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em>A smart trade size strategy is one way to ensure that your active trading outperforms the SPY. To wit: over the same time period as these backtests the <a href="http://finance.yahoo.com/q?s=SPY">SPY</a> returned (before dividends) 16.89% CAGR—3.56 percentage points more than the CAGR achieved with the fixed ratio method. Obviously there’s no point bothering with the added risk and effort of trading credit spreads if you don’t do better than just buying the SPY directly. </em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em>
+I am not suggesting that one of the methods I backtested is better than another—the comparison is not, in fact, apples to apples. The real takeaway is how different the results can be and the importance of studying this aspect of credit spread trading. Trade size management is highly personal because each strategy carries a different risk profile. Also, when and how you need to access the money from your investments is personal. A compounding strategy might not be best for someone who needs the profits each month to pay bills. 
+</em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><em><em>
+Managing how you use your funds to deploy your strategy is often more important than the strategy itself but it’s often overlooked by traders. Outperform the chumps by putting as much thought into your bankroll as you do your trading strategy.  
+</em></em></p>
+<p><em><em><br /></em></em><br /></p>
+<p><br /></p>

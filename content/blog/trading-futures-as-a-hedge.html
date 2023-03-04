@@ -1,0 +1,36 @@
+---
+title: "Trading Futures as a Hedge"
+date: 2016-10-05T07:00:00+00:00
+draft: false
+author: "Spicer Matthews"
+categories: ["Spicer's Soapbox"]
+image: "blog/signs_jpg_37.jpg?mtime=20170514145057"
+description: "Recently I have been playing around with something new: trading the futures market as a hedge against my options trading strategy."
+must_reads: [
+]
+---
+<p>Recently I have been playing around with something new: trading the futures market as a hedge against <a href="https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy">my options trading strategy</a>. Why hedge a good bet you ask? Though the <a href="https://stockpeer.com/blog/40/trading-weekly-put-credit-spreads">strategy</a> I rely on the most—trading <a href="https://stockpeer.com/blog/11/what-is-a-put-credit-spread">put credit spreads</a> on a consistent basis—is pretty reliable, it does occasionally break down, causing a big drawdown in capital. In 2015, for example, I earned profit every month except August and September. The market pulled back hard and fast during those 2 months, and major drawdowns ensued. Had it not been for those losses I would have ended the year with a gain of nearly 90%. But that’s not what happened, and I ended the year with a low double-digit return. This experience sent me searching for a way to protect against such blows.</p>
+                    
+                      <h2>Hello Futures Trading!</h2>
+                    
+                      <p>Buckle up because the futures market is the Wild West. If you’re not careful you can lose all your capital in the blink of an eye—or in that same blink your wealth can blow up. The futures market is by design highly leveraged. For instance, $500 in down payment (margin requirement) can give you access to around $100,000 in the case of the <a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500.html">ES</a> (S&amp;P 500 index). A $0.25 move in the S&amp;P 500 (future) is equal to $12.50. Translation: massive leverage.</p>
+                    
+                      <p>
+    <a href="https://cdn.options.cafe/blog/futures-trading.jpg?mtime=20170514144555">
+      <img src="https://cdn.options.cafe/blog/_width1000/futures-trading.jpg?mtime=20170514144555" style="width: 75%; float: none; display: block; margin: 0px auto;" alt="Futures-Trading" />
+  </a>  
+</p>
+                    
+                      <p>What’s more, most futures brokers are stuck in the 1990s; the trading software stinks. Transferring money in and out of your account is painful and too often there are no safeguards to stop you from doing something dumb (like buying a future when you don’t have proper money—yeah, that crazy!).</p>
+<p>The futures market is for experienced investors and people willing to put in the time to learn the ins and outs. Rubes and slackers beware.</p>
+                    
+                      <h2>How Futures Can Hedge You</h2>
+                    
+                      <p>Options are already a highly leveraged investment vehicle, so to hedge against an option’s position you need something even more leveraged to ensure that the cost of your hedge does not cut into your profits too much. That’s why futures are a great place to look for hedging opportunities. </p>
+<p>I am still in the experimental mode, but when I am more confident I will share the lowdown on how I am hedging my options trading. For now, just the highlights. I created an algorithm to trade the S&amp;P 500 index (ES) that produces about what I expect to lose in options trading each year. Meaning this algorithm should offset any losses I experience in options trades. The good news is this algorithm uses about 10% of my planned capital. That is, I can set aside 10% and run it through this algorithm to protect against all of my projected losses.</p>
+<p>The other great thing about the algorithm is its tendency to perform well when my options are failing and remain relatively flat when my options are profitable. Did you get that? It kicks in when times are bad and chills out when times are good. I have been running this algorithm only for some weeks, but I have backtested it to 2009 (it’s the backtesting results I am referring to, which is one reason I am not ready to share the nuts and bolts of this approach).</p>
+<p>One thing to keep in mind is that I am more or less day trading futures. I find times in the market that seem oversold or overbought and I place a trade assuming the market will revert back to the mean. Through backtesting I can identify conditions with a high probability of being right for placing bets. Given how wild futures markets are I highly recommend automating your strategy. Lots of brokers have tools that allow you to create an algorithm and write some basic software code to instruct the system to autotrade for you. My pick is <a href="http://ninjatrader.com/">NinjaTrader</a>. Yes, a computer programming background is helpful, but if you are willing to learn writing an algorithm doesn’t take much. [You don’t need a computer science degree, trust me.] Other tools are more of the point-and-click ilk. My point is this: I do not recommend trading futures by hand unless your strategy is so optimized.</p>
+                    
+                      <h2>Just a Tease</h2>
+                    
+                      <p>I am still kicking the tires of this idea of trading futures to hedge my options trading. But I am logging the hours to figure this thing out and I intend to share my discoveries. I also want to start a conversation so if anyone out there wants to collaborate on this endeavor drop me a line.</p>
