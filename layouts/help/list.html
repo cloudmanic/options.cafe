@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <div class="shell help-page">
+    <div
+      class="container__inner container__inner--secondary container__inner--white"
+    >
+      <section class="section">
+        <div class="post-header">
+          <div class="breadcrumb">
+            <a href="{{ "help" | absURL }}">Knowledge Base</a> :
+            <span>Support Articles</span>
+          </div>
+
+          <a href="{{ "help/contact" | absURL }}" class="btn">Contact Us</a>
+        </div>
+
+        <div class="spacer">&nbsp;</div>
+
+        <div class="section__content">
+          <div style="">
+            <h2 class="section__title">What can we help you with today?</h2>
+
+            {{/* <!-- <form>
+              <input type="text" class="search-field" placeholder="Enter a question, keyword or topic..." />
+              </form> -->
+            */}}
+          </div>
+
+          <div class="grid">
+            {{ range $key, $row := .Site.Params.helpCategories }}
+              <div class="item">
+                <h3>{{ $row }}</h3>
+                <ul>
+                  {{ $termName := $row | urlize }}
+                  {{ range  $.Site.Taxonomies.help_categories.Get $termName }}
+                    <li>
+                      <a href="{{ .Permalink }}" class="item">{{ .Title }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {{- partial "shared/newsletter.html" . -}}
+{{ end }}

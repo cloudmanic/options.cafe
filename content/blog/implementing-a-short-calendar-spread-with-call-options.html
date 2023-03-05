@@ -1,0 +1,103 @@
+---
+title: "Implementing a Short Calendar Spread with Call Options"
+date: 2019-05-25T19:10:00+00:00
+draft: false
+author: "Spicer Matthews"
+categories: ["Education"]
+image: "blog/woman-1172718_1920.jpg"
+description: "Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy."
+blog_tags: [
+"calendar spread",
+]
+must_reads: [
+"what-is-a-put-credit-spread",
+"the-long-calendar-spread-explained",
+"how-to-profit-with-a-short-calendar-spread",
+]
+---
+<p>
+    <a href="/blog/woman-1172718_1920.jpg?mtime=20190525114432">
+      <img src="/blog/_width1000/woman-1172718_1920.jpg?mtime=20190525114432" style="width: 75%; float: none; display: block; margin: 0px auto;" alt="Woman 1172718 1920" />
+  </a>  
+</p>
+                    
+                      <p>Whenever you expect a significant level of volatility in a stock short-term but are <a href="https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/">long-term bearish</a>, the short calendar spread with calls should be your go-to option strategy. The derivative play is entered for a <a href="http://optionsmanual.com/secondary-informational-articles/what-does-net-credit-mean-in-options-trading/">net credit</a> and profits in the near-term with either bullish or bearish (but not flat) price activity in the underlying stock. </p>
+<h2>Details of the Long Calendar Spread with Calls</h2>
+<p>The short calendar spread has two legs. It can be traded with puts, but our example here will use calls. Both contracts should have the same underlying stock. The first one is going to be long. It will expire in half the time as the next leg, which is short. If the long call has three weeks of life, the short call should have six weeks. This means the written call has more time value; thus, the short calendar spread will always be entered for a net credit.</p>
+<p>The default setup uses the same strike price. This is called the <a href="http://www.optionstrading.org/basics/spreads/horizontal">horizontal spread</a>. It is acceptable to use different strike prices. This is known as a diagonal spread. We’ll use the horizontal method in our example. Both contracts will be at- or near-the-money. Here’s the set up:</p>
+<blockquote>Buy 1 ABC near 105 call</blockquote>
+<blockquote>Sell 1 ABC far 105 call </blockquote>
+<p>You won’t be able to capture any intrinsic value in this strategy because both options (one long and one short) have the same strike. However, if you were to go with the diagonal spread you could establish intrinsic value in the strategy. </p>
+<h2>Maximums and Breakeven Points</h2>
+<p>The maximum profit the short call calendar spread can earn is the premium received at the beginning of the trade, minus commissions. This maximum will be achieved on the expiration date of the near contract if the equity price is far above or far below the strike price. </p>
+<p>While the long call is live, the <a href="http://www.plaintrading.com/en/index.php/faqs/56-1-how-can-i-change-something-in-my-order">maximum risk</a> occurs if the equity price equals the strike price on the expiration date of the long call. In this situation, the difference in premiums between the long and short calls is at its greatest. The exact amount of the loss cannot be known for sure because the price of the short call can vary as a result of several issues—namely Greek values, which we will look at shortly. <br /></p>
+                    
+                      <p>
+    <a href="/blog/wallstreet-crossroad.jpg?mtime=20190525115320">
+      <img src="/blog/_width1000/wallstreet-crossroad.jpg?mtime=20190525115320" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Wallstreet Crossroad" />
+  </a>  
+</p>
+                    
+                      <p>The short calendar play has two breakeven spots at the long call’s <a href="https://www.investopedia.com/terms/e/expirationdate.asp">expiration</a>. One is above the strike, while the other is below. After the expiration of the first contract, you end up with a naked short call (assuming you don’t own shares of the underlying stock). Here, the maximum loss is unlimited because the equity could in theory rise indefinitely. The breakeven price on the uncovered short call is the option’s strike plus the premium received.</p>
+<h2>Reasons to Choose the Short Call Calendar Spread</h2>
+<p>Because the first half of the trade profits when a stock moves quite a bit either up or down, the short calendar call play would be ideal if you’re expecting a high amount of volatility, but aren’t certain which direction it will be in. Often traders find themselves in this situation when a company is about to release earnings. Stocks often move significantly, to the upside or downside, after these types of announcements.</p>
+<p>Since you’ll be left with an uncovered short call when the first option expires, you’ll want to find a stock that you’re bearish on longer term. You could of course buy another call when the first one expires in order to check the short call, but doing so will offset the premium you earned at the start of the original trade. A third option would be to buy to close the second leg mid-way through the trade. If the premium is low enough, and it may not be, you would be left with a small profit.</p>
+<h2>Don’t Forget the Risks</h2>
+<p>There’s a short option in the calendar spread under discussion, and this is where you’re going to find difficulties in options trading. During the first half of the trade, if the stock experiences a bull run the short contract will go in-the-money, and you may receive an assignment. Short options in the United States can be assigned any market day, so you’ll definitely need to be prepared in this situation.</p>
+<p>If you do receive an assignment, you’ll have to sell 100 shares of the underlying stock for each contract that is exercised. If you don’t already own the stock, the sale will create a short stock position, which has its own hazards. These include margin calls, margin interest, and buy-ins. Assuming you hang onto your long call, you’ll actually have a protective call position (this is composed of a long call and a short stock).</p>
+<p>With the protective call, you’ll have a small loss if the stock rises. The loss is actually from the cost of the option, which you have already purchased in this case.<br /></p>
+                    
+                      <p>
+    <a href="/blog/live-has-risks.jpg?mtime=20190525115744">
+      <img src="/blog/_width1000/live-has-risks.jpg?mtime=20190525115744" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Live Has Risks" />
+  </a>  
+</p>
+                    
+                      <p>If the stock declines, you will experience a very nice profit. Obviously, this position should be maintained only if you’re bearish until the expiration of the long option. If not, there are two methods to get out of it. You can either exercise your long call and this will eliminate both the call and the stock (you’re buying to cover the short stock position); or you’ll need to buy to cover the stock and sell to close the option.</p>
+<p>Because the written option has a longer life in the short calendar play, it’s possible to receive an assignment after your long call has expired. In this case, you’ll have to sell short 100 shares per contract as in the front-end scenario. But here, you won’t have a long call to help you get rid of the stock. If you’re bearish on the stock, you can simply maintain this trade and accept the standard risks of shorting. Otherwise, you’ll need to buy to cover the shares the following business day, and the price could be far from where you shorted.</p>
+<p>Given all of this complexity, the short call calendar spread should only be attempted by experienced option traders.</p>
+<h2>First, You Need to Find a Good Stock</h2>
+<p>Before going into the short calendar spread, you’ll want to decide how you plan to handle the second half of the trade. The goal in the first half of the trade is price movement in either direction. In the second half, you’re going to be looking for a move to the downside—if you decide to stay in the trade.</p>
+<p>Although earnings announcements are often the go-to-choice of traders in a short calendar spread, there is another method that can be chosen. The U.S. government releases economic reports at scheduled intervals, and these can impact the price of a stock. For example, announcements on building permits and housing starts could affect the price of home builders.</p>
+<p>The federal government is scheduled to releases housing data in seven days. During this time, stocks of home builders will probably remain flat in anticipation; then they should move in accordance with the announcement. You’ll need plenty of time for the stock of your choice to move before the long contract expires. An expiration date of at least two weeks should be enough.</p>
+<p>Looking at the derivatives of various housing stocks, you see that D. R. Horton has high open interest in both two-week and four-week contracts. But first, we’ll need to look at the Greek values.</p>
+<h2>Check the Greeks First Before Placing a Trade</h2>
+<p>Greeks are numbers that help derivative traders see how valuable or invaluable a particular contract is. Because modern software programs calculate these numbers for you, they’re all the more useful.</p>
+<p>Delta is one of the more <a href="https://www.investopedia.com/university/options-pricing/greeks.asp">popular Greeks</a> and it can help you analyze a short calendar spread. Delta tells you how much an option’s premium will move for each movement of a stock. A long call has a positive delta (between 0.0 and 1.0), while a short call has a negative delta. Net delta is calculated by adding all of the deltas of a strategy together. For the short call calendar spread, it is usually close to zero. As expiration gets closer, the net delta of a short calendar call spread will vary from -0.50 to 0.50.<br /></p>
+                    
+                      <p>
+    <a href="/blog/good-greek.jpg?mtime=20190525115953">
+      <img src="/blog/_width1000/good-greek.jpg?mtime=20190525115953" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Good Greek" />
+  </a>  
+</p>
+                    
+                      <p>Theta is another commonly-used Greek. It measures how time erosion affects the price of options. Long contracts have negative theta, while short options have positive theta (because they profit from time erosion). In the calendar spread, the expiration dates differ, and this will affect the net theta.</p>
+<h2>Preparing the Order</h2>
+<p>Since one leg is long in this trade, and one is short, the cost to enter is small. In fact, as already mentioned, this particular strategy will earn a premium. If you wish, you can trade more than one contract per leg, but be sure to keep the ratio at 1:1. Also remember that for each contract that gets assigned, you’ll have to sell 100 shares of <a href="https://www.drhorton.com">D. R. Horton</a> (ticker symbol DHI), which is trading for $41.60 right now.</p>
+<p>You will do eight contracts per leg. The number of options should be easily adjustable using your broker’s order form. Remember to double check the expiration dates before submitting your order.</p>
+<p>The closest strike price is $41.50, which means the short calls will be ITM straight away. Here’s the trade result:</p>
+<blockquote>Buy 8 DHI 14-day 41.50 calls @ -1.40 -$1,120</blockquote>
+<blockquote>Sell 8 DHI 28-day 41.50 calls @ 1.75 $1,400</blockquote>
+<blockquote><strong>Net Credit	$280</strong></blockquote>
+<p>It’s a decent $280 profit before a $15 commission is considered.</p>
+<h2>Trade Result</h2>
+<p>Because the short calls are ITM, you need to decide now how you will handle an assignment. In the short calendar play, you have long calls of the same stock, and you can use these to cover a short stock position.</p>
+<p>During the first week, DHI moves sideways between $41.20 and $41.70. This is about what you expected in the lead up to the economic report.</p>
+<p>On Tuesday of the second week, the government reports a significant uptick in the number of housing starts and building permits issued. As a result, traders send DHI up to $43. While it’s good that the stock is moving, the short calls are now deeper ITM.</p>
+<p>As of Friday approaches, DHI continues climbing, and the long calls are getting closer to their expiration date. Most brokers in the United States will automatically exercise any contract on its expiration day if it is in the money by $0.01 or more. If you don’t want your ITM options exercised (for example, you don’t want to take on shares of the stock) you can call your broker and request the contracts not be exercised. Or you can sell to close the calls before expiration, and this would generate a profit. Obviously, the second choice is preferable.</p>
+<p>In the short calendar spread, exercising the near calls is advantageous because it gives you the shares you’ll need to fulfill your obligation on the short leg if it is exercised. Because the short call is in-the-money in our example, this is probably the wisest choice here.<br /></p>
+                    
+                      <p>
+    <a href="/blog/good-results.jpg?mtime=20190525120213">
+      <img src="/blog/_width1000/good-results.jpg?mtime=20190525120213" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Good Results" />
+  </a>  
+</p>
+                    
+                      <p>Friday evening, your broker gives you 800 shares of DHI and charges you $33,200. You’re going to have to pay margin interest on this because you don’t have the cash in your account to buy the shares.</p>
+<p>On Monday morning, D. R. Horton continues its advance, and this move puts the short calls further ITM. As the short leg gains more intrinsic value, it becomes more likely that you will receive an assignment eventually. In this situation, you could go ahead and close out the short contracts; but since you purchased the stock, you decide to wait it out. Buying to close the short contracts will cost a pretty premium at this point because they are so valuable.</p>
+<p>D. R. Horton stabilizes at $48 during the final week of the trade, and you receive an assignment after the market closes on Friday. This earns you $33,200 (800 shares × $41.50), and the stock position is closed.</p>
+<h2>Finding the Bottom Line</h2>
+<p>There were several events during the life of this example. You entered with one trade consisting of two legs with a total of 16 contracts. You then had an automatic exercise, which cost $20. The margin loan was a total of $110. Finally, you received an assignment on the short leg, and this was another $20 fee. Plugging these figures into the following equation will give you the bottom line:</p>
+<p>Net credit – Stock purchase – Margin interest + Stock sale – Commissions = Bottom line</p>
+<p>$280 – $33,200 – $110 + $33,200 – $55 = <strong>$115</strong></p>
+<p>It’s a decent gain of $115. Carrying the stock on margin for two weeks cost almost the same amount.</p>

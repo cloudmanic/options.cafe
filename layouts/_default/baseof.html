@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "layouts/head.html" . -}}
+
+<body>
+	<div class="wrapper {{ if .Site.Params.newsletterHeader }}wrapper--padding{{ end }}">
+        {{ if .Site.Params.newsletterHeader }}
+        {{- partial "layouts/headerNewsletter.html" . -}}
+        {{ end }}
+
+		<header class="header">
+			<div class="shell">
+				<div class="header__inner">
+					<a href="{{ "" | absURL }}" class="logo">O/C Options Cafe</a>
+
+					<a href="{{ "" | absURL }}" class="btn-menu visible-xs-inline-block">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<nav class="nav">
+                        {{- partial "layouts/mainNav.html" . -}}
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="{{ if not (eq .RelPermalink "/") }}container{{ end }} ">
+            {{ block "main" . }}{{ end }}
+		</div>
+
+        {{- partial "layouts/footer.html" . -}}
+	</div>
+
+    {{- partial "layouts/endOfBodyJs.html" . -}}
+</body>
+
+</html>

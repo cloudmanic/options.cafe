@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ $title := replace .Title "-" " " }}
+  <div class="shell">
+    <div class="container__inner">
+      {{- partial "blog/intro.html" . -}}
+
+
+      <div class="main main--flex">
+        <div class="content">
+          <h3 class="content__title capitalize">{{ $title }}</h3>
+          {{- partial "blog/blog-list.html" . -}}
+        </div>
+        {{- partial "blog/sidebar.html" . -}}
+      </div>
+    </div>
+  </div>
+  {{- partial "shared/newsletter.html" . -}}
+{{ end }}

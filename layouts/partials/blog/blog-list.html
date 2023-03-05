@@ -1,0 +1,59 @@
+<ol class="articles">
+  {{ range (.Paginate .RegularPagesRecursive).Pages }}
+    {{ $image := resources.Get .Params.image }}
+    {{ $image := $image.Fill "700x700" }}
+
+
+    <li class="article article--small">
+      <figure class="article__image">
+        <a href="{{ .Permalink }}">
+          <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" />
+        </a>
+      </figure>
+
+      <div class="article__content">
+        <div class="article__head">
+          <a href="{{ .Permalink }}"><h1>{{ .Title }}</h1></a>
+
+          <div class="article__meta">
+            {{ range .Params.categories }}
+              <a href="{{ "/blog/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            <em>{{ dateFormat "January 2, 2006" .Date }}</em>
+          </div>
+        </div>
+
+        <div class="article__body">
+          {{ $partialPath := printf "blog/summaries/%s.html" .Title | urlize }}
+          {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+            {{ partial $partialPath . }}
+          {{ else }}
+            {{ .Summary | safeHTML }}
+          {{ end }}
+        </div>
+
+        <div class="article__actions">
+          <a href="{{ .Permalink }}">Read More</a>
+        </div>
+      </div>
+    </li>
+  {{ end }}
+
+</ol>
+
+<div class="paging">
+  {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="paging__prev">
+      <i class="ico-arrow-left"></i>
+      Prev Posts
+    </a>
+  {{ else }}
+    &nbsp;
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="paging__next">
+      Next Posts
+      <i class="ico-arrow-right"></i>
+    </a>
+  {{ end }}
+</div>

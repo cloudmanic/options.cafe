@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>long strategies on Options Cafe</title>
+    <link>https://options.cafe/related-topics/long-strategies/</link>
+    <description>Recent content in long strategies on Options Cafe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Aug 2017 02:16:00 +0000</lastBuildDate><atom:link href="https://options.cafe/related-topics/long-strategies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Long Delta Strategies : What is Delta?</title>
+      <link>https://options.cafe/blog/long-delta-strategies-what-is-delta/</link>
+      <pubDate>Mon, 21 Aug 2017 02:16:00 +0000</pubDate>
+      
+      <guid>https://options.cafe/blog/long-delta-strategies-what-is-delta/</guid>
+      <description>If you have ever traded options before, you’ve likely seen a numerical value for &#34;delta&#34; on your trading platform. Delta is simply one of several values options traders refer to as &#34;greeks&#34;. These numbers are all being used in calculations behind the scenes to determine what the fair premium for an option contract is. Other greeks include Theta and Gamma, but today we will be considering delta and how you can profit from it.</description>
+    </item>
+    
+  </channel>
+</rss>

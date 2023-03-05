@@ -1,0 +1,46 @@
+---
+title: "What Is a Put Credit Spread?"
+date: 2014-12-16T08:00:00+00:00
+draft: false
+author: "Spicer Matthews"
+categories: ["Education"]
+image: "blog/Safety-copy_jpg__2240×2500__13.png"
+description: "As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi"
+blog_tags: [
+"credit spreads",
+"put options",
+"put credit spread",
+]
+must_reads: [
+"iron-condor-explained",
+"learning-the-short-butterfly-strategy",
+"a-quick-guide-to-paper-trading-options-and-newbie-investing",
+]
+---
+<p>In the options trading world there is a type of trade called a put credit spread. The goal of this trade is to collect money and hope the market does not move against you. Let me explain with an analogy we all understand: car insurance. Every month you cough up a hundred bucks or so for coverage, and your insurance company makes a calculated bet that you will not get in a car accident. If you are a safe driver, the insurance company keeps your 100 bucks. But if you drive off the road while checking stock quotes on your phone, the insurance company has to pay out to fix the damage.</p>
+                    
+                      <p>
+    <a href="/blog/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046">
+      <img src="/blog/_width1000/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046" style="width: 50%; float: none; display: block; margin: 0px auto;" alt="Safety-Copy_Jpg__2240×2500__13" />
+  </a>  
+</p>
+                    
+                      <p>In other words, if you are a safe driver the insurance company profits—and if you are not, it takes a loss. The key is that the insurance company collects a small fee from you up front and is at risk for some length of time.</p>
+                    
+                      <h2>Hey—This Is a Stock Blog, not Insurance Broker Monthly!</h2>
+                    
+                      <p>Getting back on track... How does selling put credit spreads relate to the insurance example? Well, the idea is the same. As a trader you collect a fee that you keep if the market goes your way—but if the market goes against you, you pay out. The way it works is you sell a put option and then buy another put option to limit your risk to the spread between the puts.</p>
+<p>Say the <a href="http://finance.yahoo.com/q?s=SPY">SPY</a> (S&amp;P 500 index ETF) is trading at $200. We could sell a put option with a strike price of $190 for a credit of $100 ($1 * 100). The put option expires in 30 days, and in the meantime we put that $100 in our account as cold, hard cash.</p>
+<p>Our risk is that if the SPY drops below $190 within the next 30 days, we will have to pay out the difference below $190. That’s because by selling a put option contract we guarantee delivery of a stock at a certain price—in this case $190. And so, if in 30 days the SPY were at $185 we would lose $500 ($5 * 100), though because we collected that fee of $100 we would really lose only $400.</p>
+                    
+                      <p>Our hope is that the SPY stays above $190 so that the put option expires worthless and we keep the $100 collected as profit. In this case the SPY staying above $190 is like the insurance company customer not getting in a car accident.</p>
+                    
+                      <h2>But What Is a Put Credit Spread Really?</h2>
+                    
+                      <p>What I just described was the sale of a <a href="http://www.optionseducation.org/strategies_advanced_concepts/strategies/naked_put.html">naked put</a>, for which the seller assumes a massive amount of risk. For example, if the SPY were to plunge to $0 in 30 days (unlikely, but something to consider) we would be on the hook for $19,000. Obviously, we need to protect ourselves and we can do so by turning our naked put into a <a href="http://www.theoptionsguide.com/bull-put-spread.aspx">put credit spread</a> and capping our potential losses.</p>
+<p>Say that we bought a put that expires in 30 days at a strike price of $188 for $65 ($.65 * 100). If the SPY were to drop below $188, our lower strike price put option would save us because we would only be at risk for $200—the difference in price between the $190 put that we sold and the $188 put that we purchased ($2 * 100).</p>
+<p>Of course, we would also take a hit in terms of our credit. We collected $100 when we sold the $190 put, but we paid $65 for the $188 put so we only have $35 new dollars in our account—but we risked losing only $200 instead of $19,000. The real risk reward is $165 to make $35.</p>
+                    
+                      <h2>Be Your Own Little Insurance Company</h2>
+                    
+                      <p>As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes things will go against you, you protect your losses with a lower out of the money put. Put credit spreads have a much better risk and reward quotient than a naked put.</p>

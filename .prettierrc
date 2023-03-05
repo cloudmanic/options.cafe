@@ -1,0 +1,12 @@
+{
+  "printWidth": 600,
+  "goTemplateBracketSpacing": true,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template",
+      },
+    },
+  ],
+}
