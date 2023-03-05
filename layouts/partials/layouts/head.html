@@ -1,72 +1,57 @@
 {{- $js := resources.Get "js/app.js" | minify | fingerprint -}}
 {{- $cssStyle := resources.Get "css/style.css" | minify | fingerprint -}}
-{{- $cssApp := resources.Get "css/app.css"
-  | minify | fingerprint
--}}
+{{- $cssApp := resources.Get "css/app.css"| minify | fingerprint -}}
 {{- $vue := resources.Get "vendor/vue.min.js" -}}
 {{- $jquery := resources.Get "vendor/jquery-1.12.4.min.js" -}}
-{{- $detectmobilebrowser :=
-  resources.Get "vendor/detectmobilebrowser.js"
--}}
-
-
+{{- $detectmobilebrowser := resources.Get "vendor/detectmobilebrowser.js" -}}
 <head>
   <meta charset="UTF-8" />
-  <title>{{ .Site.Title }}</title>
+  <title>{{ .Title }} - Options Cafe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="{{ .Permalink }}" />
-  <link
-    rel="shortcut icon"
-    type="image/png"
-    href="{{ "css/images/favicon.ico" | absURL }}"
-  />
+  <link rel="shortcut icon" type="image/png" href="{{ "css/images/favicon.ico" | absURL }}" />
   <meta
     name="description"
-    content="{{ if .Description }}
-      {{ .Description }}
-    {{ else }}
-      {{ .Site.Params.description }}
-    {{ end }}
+    content="{{- if .Description -}}
+      {{- .Description -}}
+    {{- else -}}
+      {{- .Site.Params.description -}}
+    {{- end -}}
     "
   />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
-  <meta name="twitter:title" content="{{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title }} - Options Cafe" />
   <meta
     name="twitter:description"
-    content="{{ if .Description }}
-      {{ .Description }}
-    {{ else }}
-      {{ .Site.Params.description }}
-    {{ end }}"
+    content="{{- if .Description -}}
+      {{- .Description -}}
+    {{- else -}}
+      {{- .Site.Params.description -}}
+    {{- end -}}"
   />
   <meta name="twitter:image" content="" />
 
-  <meta
-    name="og:site_name"
-    content="{{ .Site.Title }} - Best Place For Options Trading"
-  />
-  <meta name="og:title" content="{{ .Site.Title }}" />
+  <meta name="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
+  <meta name="og:title" content="{{ .Title }} - Options Cafe" />
   <meta name="og:url" content="{{ .Permalink }}" />
   <meta
     name="og:description"
-    content="{{ if .Description }}
-      {{ .Description }}
-    {{ else }}
-      {{ .Site.Params.description }}
-    {{ end }}"
+    content="{{- if .Description -}}
+      {{- .Description -}}
+    {{- else -}}
+      {{- .Site.Params.description }}
+    {{- end -}}"
   />
   <!-- <meta name="og:image" content="" /> -->
   <meta property="og:type" content="article" />
   <meta name="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
   <meta property="fb:pages" content="{{ .Site.Params.facebookPageId }}" />
 
-  <!-- <link rel="alternate" type="application/rss+xml" title="Options Cafe" href="" /> -->
-  <link
-    href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700"
-    rel="stylesheet"
-  />
+  <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}" />
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
   <link rel="stylesheet" href="{{ $cssStyle.Permalink }}" />
   <link rel="stylesheet" href="{{ $cssApp.Permalink }}" />
 
@@ -83,10 +68,7 @@
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -98,9 +80,5 @@
     gtag("config", "UA-102266466-1");
   </script>
 
-  <script
-    defer
-    data-domain="options.cafe"
-    src="https://plausible.io/js/script.js"
-  ></script>
+  <script defer data-domain="options.cafe" src="https://plausible.io/js/script.js"></script>
 </head>

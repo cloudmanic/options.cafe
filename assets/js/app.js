@@ -99,11 +99,7 @@
       if (email.length <= 0) {
         error = true;
         $this.find("#email").parent().addClass("has-error");
-        $this
-          .find("#email")
-          .parent()
-          .find("p")
-          .html("Email address is required.");
+        $this.find("#email").parent().find("p").html("Email address is required.");
       } else {
         $this.find("#email").parent().removeClass("has-error");
         $this.find("#email").parent().find("p").html("");
@@ -178,7 +174,7 @@
 
       $.ajax({
         type: "POST",
-        url: "/actions/cloudmanic-craft-sendy/subscribe",
+        url: "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-3ee59ea2-6356-4796-a28f-713ebf8ac572/default/newsletter-subscribe",
         data: JSON.stringify({ email: email }),
         contentType: "application/json",
         dataType: "json",
