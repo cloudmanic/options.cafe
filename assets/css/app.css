@@ -32,6 +32,10 @@
 	.help-page .section .section__title { text-align: left; }
 }
 
+/* ------------ Blog -------------- */
+
+.blog-img-cont { margin-top: 15px; margin-bottom: 15px;}
+
 /* ------------ Override CSS -------------- */
 
 .hide { display: none; }
