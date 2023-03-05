@@ -99,7 +99,11 @@
       if (email.length <= 0) {
         error = true;
         $this.find("#email").parent().addClass("has-error");
-        $this.find("#email").parent().find("p").html("Email address is required.");
+        $this
+          .find("#email")
+          .parent()
+          .find("p")
+          .html("Email address is required.");
       } else {
         $this.find("#email").parent().removeClass("has-error");
         $this.find("#email").parent().find("p").html("");
@@ -128,22 +132,27 @@
         return false;
       }
 
+      $this.hide();
+      $(".help-page .section__title").hide();
+      $(".contact-us .success").fadeIn();
+
       // Send it to the server
       $.post({
-        url: "/",
+        url: "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-3ee59ea2-6356-4796-a28f-713ebf8ac572/default/support-form",
         dataType: "json",
         data: $this.serialize(),
-        success: function (response) {
-          if (response.success) {
-            $this.hide();
-            $(".help-page .section__title").hide();
-            $(".contact-us .success").fadeIn();
-          } else {
-            // response.error will be an object containing any validation errors that occurred, indexed by field name
-            // e.g. response.error.fromName => ['From Name is required']
-            alert("An error occurred. Please try again.");
-          }
-        },
+        // success: function (response) {
+        //   console.log(response);
+        //   if (response.success) {
+        //     $this.hide();
+        //     $(".help-page .section__title").hide();
+        //     $(".contact-us .success").fadeIn();
+        //   } else {
+        //     // response.error will be an object containing any validation errors that occurred, indexed by field name
+        //     // e.g. response.error.fromName => ['From Name is required']
+        //     alert("An error occurred. Please try again.");
+        //   }
+        // },
       });
     });
   };
