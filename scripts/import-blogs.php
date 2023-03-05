@@ -41,7 +41,9 @@ foreach ($rss_obj->channel->item as $item) {
 
     $page .= "---\n";
 
-    $page .= trim($item->description);
+    $body = str_replace("https://cdn.options.cafe", "", $item->description);
+
+    $page .= trim($body);
 
     //echo $item->blogDesc . "\n";
 
