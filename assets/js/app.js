@@ -113,7 +113,7 @@
         contentType: "application/json",
         dataType: "json",
         success: function (json) {
-          window.location.href = site.baseUrl + "/sunset-of-trading-platform/";
+          window.location.href = site.baseUrl + "sunset-of-trading-platform/";
         },
       });
     });
