@@ -8,7 +8,7 @@ disableHugoGeneratorInject = true
 [taxonomies]
   blog_tag = "blog_tags"
   category = "categories"
-  supportCategory = "supportCategories"
+  help_category = "help_categories"
 
 [permalinks]
   blog_tags = "/related-topics/:slug/"
@@ -24,4 +24,5 @@ disableHugoGeneratorInject = true
     facebookPageId = '730529083708603'
     facebookLink = 'https://www.facebook.com/optionscafetrading'
     appSignUpLink = 'https://options.cafe/actions/options-cafe/signup'
+    helpCategories = ['Getting Started', 'Broker Support', 'Options Screener']
     blogCategories = ['Education', 'Random Fun', "Spicer's Trades", "Spicer's Soapbox", 'Company Updates']
