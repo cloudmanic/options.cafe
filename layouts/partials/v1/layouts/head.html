@@ -32,7 +32,6 @@
       {{- .Site.Params.description -}}
     {{- end -}}"
   />
-  <meta name="twitter:image" content="" />
 
   <meta name="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
   <meta name="og:title" content="{{ .Title }} - Options Cafe" />
@@ -46,9 +45,11 @@
     {{- end -}}"
   />
   {{ if $.Param "image" }}
+    <meta name="twitter:image" content="{{ $.Param "image" | absURL }}" />
     <meta property="og:image" content="{{ $.Param "image" | absURL }}" />
     <meta property="og:image:secure_url" content="{{ $.Param "image" | absURL }}" />
   {{ else }}
+    <meta name="twitter:image" content="{{ $shareImg.Permalink }}" />
     <meta property="og:image" content="{{ $shareImg.Permalink }}" />
     <meta property="og:image:secure_url" content="{{ $shareImg.Permalink }}" />
   {{ end }}
