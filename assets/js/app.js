@@ -9,6 +9,7 @@
     this.homePageClick();
     this.initDetectMobileBrowser();
     this.newsletterSubscribe();
+    this.tradingSignup();
   };
 
   /**
@@ -79,6 +80,42 @@
       _paq.push(["trackEvent", "Ad", "Click", "Ad Click Blog Sidebar"]);
       window.location = site.baseUrl;
       event.preventDefault();
+    });
+  };
+
+  //
+  // Will handle signup for our trading platform
+  //
+  ocApp.tradingSignup = function () {
+    $(".trading-signup").on("submit", function (event) {
+      event.preventDefault();
+      var $this = $(this);
+      var email = $this.find("#subscribe-mail").val();
+      $this.find(".subscribe__btn").val("Loading...");
+
+      if (email.length <= 0) {
+        alert("Please enter your email address.");
+        $this.find(".subscribe__btn").val("GET STARTED");
+        return false;
+      }
+
+      // Track event
+      plausible("trading-platform-signup");
+      plausible("newsletter-signup");
+      _paq.push(["trackGoal", 1]);
+      _paq.push(["trackEvent", "Newsletter", "Subscribe", "Trading Platform"]);
+      ga("send", "event", "Newsletter", "Subscribe", "Trading Platform");
+
+      $.ajax({
+        type: "POST",
+        url: "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-3ee59ea2-6356-4796-a28f-713ebf8ac572/default/newsletter-subscribe",
+        data: JSON.stringify({ email: email }),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (json) {
+          window.location.href = site.baseUrl + "/sunset-of-trading-platform/";
+        },
+      });
     });
   };
 
