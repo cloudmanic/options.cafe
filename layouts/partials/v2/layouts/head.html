@@ -1,0 +1,10 @@
+{{- $style := resources.Get "css/v2-build.css" | minify | fingerprint -}}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{ .Title }} - Options Cafe</title>
+  <base href="{{ .Site.BaseURL }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ "css/images/favicon.ico" | absURL }}" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+</head>
