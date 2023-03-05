@@ -196,6 +196,7 @@
           }
 
           // Log events.
+          plausible("newsletter-signup");
           _paq.push(["trackGoal", 1]);
           _paq.push(["trackEvent", "Newsletter", "Subscribe", entry_type]);
           ga("send", "event", "Newsletter", "Subscribe", entry_type);
