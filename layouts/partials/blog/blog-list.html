@@ -1,5 +1,5 @@
 <ol class="articles">
-  {{ range .Pages }}
+  {{ range (.Paginate .RegularPagesRecursive).Pages }}
     <li class="article article--small">
       <figure class="article__image">
         <a href="{{ .URL }}">
@@ -39,3 +39,20 @@
   {{ end }}
 
 </ol>
+
+<div class="paging">
+  {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="paging__prev">
+      <i class="ico-arrow-left"></i>
+      Prev Posts
+    </a>
+  {{ else }}
+    &nbsp;
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="paging__next">
+      Next Posts
+      <i class="ico-arrow-right"></i>
+    </a>
+  {{ end }}
+</div>

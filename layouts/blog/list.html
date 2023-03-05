@@ -1,33 +1,18 @@
 {{ define "main" }}
-<div class="shell">
-	<div class="container__inner">
-		{{- partial "blog/intro.html" . -}}
-
-		<div class="main main--flex">
-			<div class="content">
-				{{/*  {% if category is defined %}
-				<h3 class="content__title">{{ category.title }}</h3>
-				{% endif %}
-	  
-				{% if query is not empty %}
-				<h3 class="content__title">Search: {{ query }}</h3>
-				{% endif %}
-	  
-				{% if tag is defined %}
-				<h3 class="content__title">Related To: {{ tag.title }}</h3>
-				{% endif %}  */}}
+  <div class="shell">
+    <div class="container__inner">
+      {{- partial "blog/intro.html" . -}}
 
 
-				{{- partial "blog/blog-list.html" . -}}
-	
+      <div class="main main--flex">
+        <div class="content">
+          {{- partial "blog/blog-list.html" . -}}
+        </div>
 
-			</div>
-			
-			{{- partial "blog/sidebar.html" . -}}
-		</div>
+        {{- partial "blog/sidebar.html" . -}}
+      </div>
+    </div>
+  </div>
 
-	</div>
-</div>
-
-{{- partial "shared/newsletter.html" . -}}
+  {{- partial "shared/newsletter.html" . -}}
 {{ end }}
