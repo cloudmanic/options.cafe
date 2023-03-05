@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on Options Cafe</title>
+    <link>https://options.cafe/help_categories/getting-started/</link>
+    <description>Recent content in Getting Started on Options Cafe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 04:00:48 +0000</lastBuildDate><atom:link href="https://options.cafe/help_categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do you provide phone support or phone training?</title>
+      <link>https://options.cafe/help/do-you-provide-phone-support-or-phone-training/</link>
+      <pubDate>Wed, 20 Sep 2017 04:00:48 +0000</pubDate>
+      
+      <guid>https://options.cafe/help/do-you-provide-phone-support-or-phone-training/</guid>
+      <description>  We sure do. You can call us at 503-756-1960. We also provide training over the phone or more ideally via a screen share meeting. If you are interested in getting one on one support from us it is best to send us an email at help@options.cafe and we will schedule a time. </description>
+    </item>
+    
+    <item>
+      <title>What options strategies does Options Cafe support?</title>
+      <link>https://options.cafe/help/what-options-strategies-does-options-cafe-support/</link>
+      <pubDate>Wed, 20 Sep 2017 04:00:48 +0000</pubDate>
+      
+      <guid>https://options.cafe/help/what-options-strategies-does-options-cafe-support/</guid>
+      <description>Here is a list of options strategies we currently support.
+ Put Credit Spreads Call Credit Spreads Put Debit Spreads Call Debit Spreads Iron Condors Reverse Iron Condors   We are adding new strategies every day. If your favorite strategy is not listed please check back in. Better yet send us a message at help@options.cafe and let us know what you prefer to trade. We promise to move quickly on adding your prefered strategy.</description>
+    </item>
+    
+    <item>
+      <title>Does Option Cafe offer two-factor authentication (2FA)?</title>
+      <link>https://options.cafe/help/does-option-cafe-offer-two-factor-authentication-2fa/</link>
+      <pubDate>Tue, 20 Sep 2016 04:00:48 +0000</pubDate>
+      
+      <guid>https://options.cafe/help/does-option-cafe-offer-two-factor-authentication-2fa/</guid>
+      <description>Yes. 2FA is an extra layer of security used to make sure that people trying to gain access to an online account are who they say they are. First, a user will enter their username and a password. Then, instead of immediately gaining access, they will be required to provide another piece of information.  We highly recommend setting up two-factor authentication (2FA) with your Options Cafe account.  If you want to secure your Options Cafe account with 2FA, you’ll need to log into Options Cafe using a Google Sign-In.</description>
+    </item>
+    
+  </channel>
+</rss>
