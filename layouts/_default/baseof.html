@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    {{- partial "layouts/head.html" . -}}
+  {{- partial "v1/layouts/head.html" . -}}
 
-<body>
-	<div class="wrapper {{ if .Site.Params.newsletterHeader }}wrapper--padding{{ end }}">
-        {{ if .Site.Params.newsletterHeader }}
-        {{- partial "layouts/headerNewsletter.html" . -}}
-        {{ end }}
 
-		<header class="header">
-			<div class="shell">
-				<div class="header__inner">
-					<a href="{{ "" | absURL }}" class="logo">O/C Options Cafe</a>
+  <body>
+    <div class="wrapper {{ if .Site.Params.newsletterHeader }}wrapper--padding{{ end }}">
+      {{ if .Site.Params.newsletterHeader }}
+        {{- partial "v1/layouts/headerNewsletter.html" . -}}
+      {{ end }}
 
-					<a href="{{ "" | absURL }}" class="btn-menu visible-xs-inline-block">
-						<span></span>
-						<span></span>
-						<span></span>
-					</a>
 
-					<nav class="nav">
-                        {{- partial "layouts/mainNav.html" . -}}
-					</nav>
-				</div>
-			</div>
-		</header>
+      <header class="header">
+        <div class="shell">
+          <div class="header__inner">
+            <a href="{{ "" | absURL }}" class="logo">O/C Options Cafe</a>
 
-		<div class="{{ if not (eq .RelPermalink "/") }}container{{ end }} ">
-            {{ block "main" . }}{{ end }}
-		</div>
+            <a href="{{ "" | absURL }}" class="btn-menu visible-xs-inline-block">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
 
-        {{- partial "layouts/footer.html" . -}}
-	</div>
+            <nav class="nav">
+              {{- partial "v1/layouts/mainNav.html" . -}}
+            </nav>
+          </div>
+        </div>
+      </header>
 
-    {{- partial "layouts/endOfBodyJs.html" . -}}
-</body>
+      <div class="{{ if not (eq .RelPermalink "/") }}container{{ end }} ">
+        {{ block "main" . }}{{ end }}
+      </div>
 
+      {{- partial "v1/layouts/footer.html" . -}}
+    </div>
+
+    {{- partial "v1/layouts/endOfBodyJs.html" . -}}
+  </body>
 </html>

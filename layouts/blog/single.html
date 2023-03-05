@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="shell">
     <div class="container__inner">
-      {{- partial "blog/intro.html" . -}}
+      {{- partial "v1/blog/intro.html" . -}}
 
 
       <div class="main main--flex">
@@ -13,9 +13,7 @@
               <div class="article__meta">
                 <p>
                   {{ range .Params.categories }}
-                    <a href="{{ "/blog/" | relLangURL }}{{ . | urlize }}"
-                      >{{ . }}</a
-                    >
+                    <a href="{{ "/blog/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
                   {{ end }}
 
 
@@ -25,42 +23,40 @@
                 </p>
 
                 <div class="socials socials--small">
-                  {{- partial "social/share.html" . -}}
+                  {{- partial "v1/social/share.html" . -}}
                 </div>
               </div>
             </header>
 
             <div class="article__body">
               {{ .Content }}
-              {{- partial "blog/must-reads.html" . -}}
-              {{- partial "blog/related-topics.html" . -}}
+              {{- partial "v1/blog/must-reads.html" . -}}
+              {{- partial "v1/blog/related-topics.html" . -}}
             </div>
 
             <div class="article__actions">
               <div class="widget widget--socials widget--secondary">
                 <div class="widget__head">
-                  <h5 class="widget__title">
-                    Like what you read? Please Share!
-                  </h5>
+                  <h5 class="widget__title">Like what you read? Please Share!</h5>
                 </div>
 
                 <div class="widget__body">
                   <div class="socials">
-                    {{- partial "social/share.html" . -}}
+                    {{- partial "v1/social/share.html" . -}}
                   </div>
                 </div>
               </div>
             </div>
 
-            {{- partial "blog/comments.html" . -}}
+            {{- partial "v1/blog/comments.html" . -}}
           </article>
         </div>
 
-        {{- partial "blog/sidebar.html" . -}}
+        {{- partial "v1/blog/sidebar.html" . -}}
       </div>
     </div>
   </div>
 
-  {{- partial "shared/newsletter.html" . -}}
+  {{- partial "v1/shared/newsletter.html" . -}}
 
 {{ end }}

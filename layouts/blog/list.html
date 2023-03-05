@@ -1,18 +1,18 @@
 {{ define "main" }}
   <div class="shell">
     <div class="container__inner">
-      {{- partial "blog/intro.html" . -}}
+      {{- partial "v1/blog/intro.html" . -}}
 
 
       <div class="main main--flex">
         <div class="content">
-          {{- partial "blog/blog-list.html" . -}}
+          {{- partial "v1/blog/blog-list.html" . -}}
         </div>
 
-        {{- partial "blog/sidebar.html" . -}}
+        {{- partial "v1/blog/sidebar.html" . -}}
       </div>
     </div>
   </div>
 
-  {{- partial "shared/newsletter.html" . -}}
+  {{- partial "v1/shared/newsletter.html" . -}}
 {{ end }}

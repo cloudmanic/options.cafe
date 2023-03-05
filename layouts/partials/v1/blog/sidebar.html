@@ -13,23 +13,21 @@
 
           {{ range $key, $value := .Site.Params.blogCategories }}
             <li>
-              <a href="{{ $.Site.BaseURL }}/blog/{{ $value | urlize }}"
-                >{{ $value }}</a
-              >
+              <a href="{{ $.Site.BaseURL }}/blog/{{ $value | urlize }}">{{ $value }}</a>
             </li>
           {{ end }}
         </ul>
 
-        {{- partial "blog/search.html" . -}}
+        {{- partial "v1/blog/search.html" . -}}
       </div>
     </li>
 
     <li class="widget widget--ad">
-      {{- partial "blog/ads/trading.html" . -}}
+      {{- partial "v1/blog/ads/trading.html" . -}}
     </li>
 
     <li class="widget widget--socials">
-      {{- partial "blog/sidebar-follow.html" . -}}
+      {{- partial "v1/blog/sidebar-follow.html" . -}}
     </li>
   </ul>
 </div>
