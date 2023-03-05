@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>long straddles on Options Cafe</title><link>https://options.cafe/related-topics/long-straddles/</link><description>Recent content in long straddles on Options Cafe</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Aug 2017 07:00:00 +0000</lastBuildDate><atom:link href="https://options.cafe/related-topics/long-straddles/index.xml" rel="self" type="application/rss+xml"/><item><title>How To Profit Using Long Straddles</title><link>https://options.cafe/blog/how-to-profit-using-long-straddles/</link><pubDate>Fri, 11 Aug 2017 07:00:00 +0000</pubDate><guid>https://options.cafe/blog/how-to-profit-using-long-straddles/</guid><description>If you’ve been trading put and call options because you’re bullish or bearish on a particular stock, you’re only capturing part of the market. There will be times when there’s too much uncertainty around a company to know where its stock is headed. Maybe there’s a big news announcement around the corner, or the latest quarterly earnings are soon to be released. But the exact details are unknown. In these types of scenarios, a put or call option isn’t the best course of action, nor is going long or short on the underlying stock.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>long straddles on Options Cafe</title>
+    <link>https://options.cafe/related-topics/long-straddles/</link>
+    <description>Recent content in long straddles on Options Cafe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Aug 2017 07:00:00 +0000</lastBuildDate><atom:link href="https://options.cafe/related-topics/long-straddles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Profit Using Long Straddles</title>
+      <link>https://options.cafe/blog/how-to-profit-using-long-straddles/</link>
+      <pubDate>Fri, 11 Aug 2017 07:00:00 +0000</pubDate>
+      
+      <guid>https://options.cafe/blog/how-to-profit-using-long-straddles/</guid>
+      <description>If you’ve been trading put and call options because you’re bullish or bearish on a particular stock, you’re only capturing part of the market. There will be times when there’s too much uncertainty around a company to know where its stock is headed. Maybe there’s a big news announcement around the corner, or the latest quarterly earnings are soon to be released. But the exact details are unknown. In these types of scenarios, a put or call option isn’t the best course of action, nor is going long or short on the underlying stock.</description>
+    </item>
+    
+  </channel>
+</rss>

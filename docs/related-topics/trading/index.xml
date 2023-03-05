@@ -1,2 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>trading on Options Cafe</title><link>https://options.cafe/related-topics/trading/</link><description>Recent content in trading on Options Cafe</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2017 20:38:00 +0000</lastBuildDate><atom:link href="https://options.cafe/related-topics/trading/index.xml" rel="self" type="application/rss+xml"/><item><title>My SPY Put Credit Spread Trades For September 2017</title><link>https://options.cafe/blog/my-spy-put-credit-spread-trades-for-september-2017/</link><pubDate>Sun, 01 Oct 2017 20:38:00 +0000</pubDate><guid>https://options.cafe/blog/my-spy-put-credit-spread-trades-for-september-2017/</guid><description>Once again it is time for our monthly summary of trades I closed. Below are the put credit spread trades I closed in September 2017. My birthday month!!
-Compared to August a number of put credit spreads closed this month. Volatility continues to be very low. When volatility is low we have less opportunities to place trades. Low volatility has 2 downsides: it is hard to deploy all your planned capital (not enough trades to place), and the premium you receive from selling the put credit spread is lower than normal (less profit per trade).</description></item><item><title>The Only Free Lunch in Trading Is a Consistent Trading Strategy</title><link>https://options.cafe/blog/the-only-free-lunch-in-trading-is-a-consistent-trading-strategy/</link><pubDate>Mon, 24 Nov 2014 08:00:00 +0000</pubDate><guid>https://options.cafe/blog/the-only-free-lunch-in-trading-is-a-consistent-trading-strategy/</guid><description>What I mean by a consistent trading strategy is if you build a smart trading strategy and stick to it you are almost certain to make money. I make this claim with such conviction because I assume that you backtest your strategy. That you factor in maximum drawdown periods (times when you lose money). And most critical, that you understand the importance of fidelity to your strategy—because inconsistent strategy is the road to a blown-out account.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trading  on Options Cafe</title>
+    <link>https://options.cafe/related-topics/trading/</link>
+    <description>Recent content in trading  on Options Cafe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Oct 2017 20:38:00 +0000</lastBuildDate><atom:link href="https://options.cafe/related-topics/trading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My SPY Put Credit Spread Trades For September 2017</title>
+      <link>https://options.cafe/blog/my-spy-put-credit-spread-trades-for-september-2017/</link>
+      <pubDate>Sun, 01 Oct 2017 20:38:00 +0000</pubDate>
+      
+      <guid>https://options.cafe/blog/my-spy-put-credit-spread-trades-for-september-2017/</guid>
+      <description>Once again it is time for our monthly summary of trades I closed. Below are the put credit spread trades I closed in September 2017. My birthday month!!
+Compared to August a number of put credit spreads closed this month. Volatility continues to be very low. When volatility is low we have less opportunities to place trades. Low volatility has 2 downsides: it is hard to deploy all your planned capital (not enough trades to place), and the premium you receive from selling the put credit spread is lower than normal (less profit per trade).</description>
+    </item>
+    
+    <item>
+      <title>The Only Free Lunch in Trading Is a Consistent Trading Strategy</title>
+      <link>https://options.cafe/blog/the-only-free-lunch-in-trading-is-a-consistent-trading-strategy/</link>
+      <pubDate>Mon, 24 Nov 2014 08:00:00 +0000</pubDate>
+      
+      <guid>https://options.cafe/blog/the-only-free-lunch-in-trading-is-a-consistent-trading-strategy/</guid>
+      <description>What I mean by a consistent trading strategy is if you build a smart trading strategy and stick to it you are almost certain to make money. I make this claim with such conviction because I assume that you backtest your strategy. That you factor in maximum drawdown periods (times when you lose money). And most critical, that you understand the importance of fidelity to your strategy—because inconsistent strategy is the road to a blown-out account.</description>
+    </item>
+    
+  </channel>
+</rss>

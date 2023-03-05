@@ -1,287 +1,434 @@
-<!doctype html><html lang=en><head>
-<meta charset=utf-8>
-<title>The Long Calendar Spread Explained - Options Cafe</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=canonical href=https://options.cafe/blog/the-long-calendar-spread-explained/>
-<link rel="shortcut icon" type=image/png href=https://options.cafe/css/images/favicon.ico>
-<meta name=description content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay.">
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content="@options_cafe">
-<meta name=twitter:title content="The Long Calendar Spread Explained - Options Cafe">
-<meta name=twitter:description content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay.">
-<meta name=twitter:image content>
-<meta name=og:site_name content="Options Cafe - Best Place For Options Trading">
-<meta name=og:title content="The Long Calendar Spread Explained - Options Cafe">
-<meta name=og:url content="https://options.cafe/blog/the-long-calendar-spread-explained/">
-<meta name=og:description content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay.">
-<meta property="og:type" content="article">
-<meta name=fb:app_id content="1512164148794908">
-<meta property="fb:pages" content="730529083708603">
-<link rel=alternate type=application/rss+xml href=https://options.cafe//index.xml title="Options Cafe">
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel=stylesheet>
-<link rel=stylesheet href=https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css>
-<link rel=stylesheet href=https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css>
-<script src=https://options.cafe/vendor/vue.min.js></script>
-<script src=https://options.cafe/vendor/jquery-1.12.4.min.js defer></script>
-<script src=https://options.cafe/vendor/detectmobilebrowser.js defer></script>
-<script src=https://options.cafe/js/app.min.bbc94bc0b23126294ed70deb0bf3bff76ae394bbf7540a87b604e6541aa777cf.js defer></script>
-<script>var site={devMode:"0",baseUrl:"https://options.cafe/"}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-102266466-1")</script>
-<script defer data-domain=options.cafe src=https://plausible.io/js/script.js></script>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <title>The Long Calendar Spread Explained - Options Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://options.cafe/blog/the-long-calendar-spread-explained/" />
+  <link rel="shortcut icon" type="image/png" href="https://options.cafe/css/images/favicon.ico" />
+  <meta
+    name="description"
+    content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay."
+  />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@options_cafe" />
+  <meta name="twitter:title" content="The Long Calendar Spread Explained - Options Cafe" />
+  <meta
+    name="twitter:description"
+    content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay."
+  />
+  <meta name="twitter:image" content="" />
+
+  <meta name="og:site_name" content="Options Cafe - Best Place For Options Trading" />
+  <meta name="og:title" content="The Long Calendar Spread Explained - Options Cafe" />
+  <meta name="og:url" content="https://options.cafe/blog/the-long-calendar-spread-explained/" />
+  <meta
+    name="og:description"
+    content="The long calendar spread allows you to buy and sell option contracts with different expiration dates, with the likelihood of profiting from time decay."
+  />
+  
+  <meta property="og:type" content="article" />
+  <meta name="fb:app_id" content="1512164148794908" />
+  <meta property="fb:pages" content="730529083708603" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://options.cafe//index.xml" title="Options Cafe" />
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css" />
+  <link rel="stylesheet" href="https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css" />
+
+  <script src="https://options.cafe/vendor/vue.min.js"></script>
+  <script src="https://options.cafe/vendor/jquery-1.12.4.min.js" defer></script>
+  <script src="https://options.cafe/vendor/detectmobilebrowser.js" defer></script>
+  <script src="https://options.cafe/js/app.min.d1e88cb0055edc0bf6fb98fdc34e453884d40e13ff4fa88c80dd8dbe747e5e16.js" defer></script>
+
+  <script>
+    var site = {
+      devMode: "0",
+      baseUrl: "https:\/\/options.cafe\/",
+    };
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-102266466-1");
+  </script>
+
+  <script defer data-domain="options.cafe" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-<div class=wrapper>
-<header class=header>
-<div class=shell>
-<div class=header__inner>
-<a href=https://options.cafe/ class=logo>O/C Options Cafe</a>
-<a href=https://options.cafe/ class="btn-menu visible-xs-inline-block">
-<span></span>
-<span></span>
-<span></span>
-</a>
-<nav class=nav><ul>
-<li>
-<a href=https://options.cafe/>Home</a>
-</li>
-<li class=current>
-<a href=https://options.cafe/blog>Blog</a>
-</li>
-<li>
-<a href=https://options.cafe/help>Support</a>
-</li>
-<li>
-<a href=https://app.options.cafe/login>Login</a>
-</li>
+	<div class="wrapper ">
+        
+
+		<header class="header">
+			<div class="shell">
+				<div class="header__inner">
+					<a href="https://options.cafe/" class="logo">O/C Options Cafe</a>
+
+					<a href="https://options.cafe/" class="btn-menu visible-xs-inline-block">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<nav class="nav"><ul>
+    <li class="">
+        <a href="https://options.cafe/">Home</a>
+    </li>
+
+    <li class="current">
+        <a href="https://options.cafe/blog">Blog</a>
+    </li>
+
+    <li class="">
+        <a href="https://options.cafe/help">Support</a>
+    </li>
+
+    <li class="">
+        <a href="https://app.options.cafe/login">Login</a>
+    </li>
 </ul></nav>
-</div>
-</div>
-</header>
-<div class=container>
-<div class=shell>
-<div class=container__inner><div class=intro>
-<img src=/css/images/temp/blog-image.png alt class=intro__image width=189 height=107>
-<p>
-We like to explore, educate, and share ideas involving options trading. Come along with us on <br>
-our journey to demystify the complex yet rewarding world of options trading.
-</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="container ">
+            
+  <div class="shell">
+    <div class="container__inner"><div class="intro">
+  <img src="/css/images/temp/blog-image.png" alt="" class="intro__image" width="189" height="107" />
+
+  <p>
+    We like to explore, educate, and share ideas involving options trading. Come along with us on <br />
+    our journey to demystify the complex yet rewarding world of options trading.
+  </p>
 </div>
 <div class="main main--flex">
-<div class=content>
-<article class="article article--single">
-<header class=article__head>
-<h1>The Long Calendar Spread Explained</h1>
-<div class=article__meta>
-<p>
-<a href=/blog/education>Education</a>
-<em>October 29, 2017</em>
-<em>Spicer Matthews</em>
-</p>
-<div class="socials socials--small"><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
+        <div class="content">
+          <article class="article article--single">
+            <header class="article__head">
+              <h1>The Long Calendar Spread Explained</h1>
+
+              <div class="article__meta">
+                <p>
+                  
+                    <a href="/blog/education"
+                      >Education</a
+                    >
+                  
+
+
+                  <em>October 29, 2017</em>
+
+                  <em>Spicer Matthews</em>
+                </p>
+
+                <div class="socials socials--small"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</div>
-</header>
-<div class=article__body>
-<p>If you expect a stock to remain in a neutral trading range for a few months, maybe because it isn’t set to release earnings or doesn’t have a history of volatility, then you might be able to earn a nice profit while stockholders earn little to nothing. With a unique <a href=https://www.optionsplaybook.com/option-strategies>option strategy</a>, you can sell time, which is why the investment tactic is known as the long calendar spread.<br></p>
+              </div>
+            </header>
+
+            <div class="article__body">
+              <p>If you expect a stock to remain in a neutral trading range for a few months, maybe because it isn’t set to release earnings or doesn’t have a history of volatility, then you might be able to earn a nice profit while stockholders earn little to nothing. With a unique <a href="https://www.optionsplaybook.com/option-strategies">option strategy</a>, you can sell time, which is why the investment tactic is known as the long calendar spread.<br /></p>
 <h2>Taking a Long Calendar Spread Position</h2>
 <p>The long calendar option spread can be entered by purchasing one contract and simultaneously selling another contract with a shorter expiration date. Typically, the contract you write should expire one week to one month prior to the expiration of the contract you purchase. Both contracts have the same underlying security and strike price, and the contracts should be at-the-money or just out-of-the-money. The options can be either puts or calls, but not a mix. </p>
 <h2>Profiting from the Long Calendar Strategy</h2>
 <p>Notice that in the long calendar spread, you take a short position on the contract that has the shorter expiration date. The time value of this contract should deteriorate more quickly than the time value of the contract with the longer expiration date. As the first expiration date approaches, the difference between the two contract values should widen, assuming the stock price has not made any significant moves, either to the upside or downside. </p>
 <h2>Bulls, Bears, and Risks</h2>
 <p>The primary risk with the long calendar spread is that the stock moves in the wrong direction, which will cause the contract you sold to have intrinsic value, leading to an exercise. If that happens, you will be left only with the contract you purchased, which will also have intrinsic value. You could either sell it on the open market, which would close out your derivative investment; or you could exercise it. </p>
-<figure><img src="/blog/long-calendar-spread-graph.jpeg?mtime=20171029133317" alt></figure><p>If you used a <a href=https://options.cafe/blog/what-is-a-put-option>put</a> spread, the long contract you hold will develop intrinsic value if the underlying stock turns south. Thus, you can have a bearish view on the underlying equity when using puts in the time spread. If you used <a href=https://options.cafe/blog/what-is-a-call-option>calls</a>, the contract you hold will increase in value if the stock heads north; so you can be bullish in your long-term expectations.<br></p>
+<figure><img src="/blog/long-calendar-spread-graph.jpeg?mtime=20171029133317" alt="" /></figure><p>If you used a <a href="https://options.cafe/blog/what-is-a-put-option">put</a> spread, the long contract you hold will develop intrinsic value if the underlying stock turns south. Thus, you can have a bearish view on the underlying equity when using puts in the time spread. If you used <a href="https://options.cafe/blog/what-is-a-call-option">calls</a>, the contract you hold will increase in value if the stock heads north; so you can be bullish in your long-term expectations.<br /></p>
 <h2>Example of a Long Calendar Spread</h2>
-<p><a href=https://finance.yahoo.com/quote/KMB/>Kimberly-Clark (KMB)</a> reported earnings last week while trading at $122. The data was in line with market expectations. You don’t foresee any major changes in the stock’s price, other than a gradual rise over time. You decide that a calendar spread with calls would be a safe method of earning some extra income. </p>
+<p><a href="https://finance.yahoo.com/quote/KMB/">Kimberly-Clark (KMB)</a> reported earnings last week while trading at $122. The data was in line with market expectations. You don’t foresee any major changes in the stock’s price, other than a gradual rise over time. You decide that a calendar spread with calls would be a safe method of earning some extra income. </p>
 <p>You sell one call contract out-of-the-money for $350 with an October expiration date. At the same time, you buy another call contract, with the same strike price of $125, for $450. It expires in November. The total cost of the investment is $100. This net debit is the maximum loss the investment can produce. </p>
 <p>If KMB hovers around $122, the short contract will be worthless at expiration. The long contract will decrease in value, but will still have some time value left in it. At this point you can sell the contract. If it has a market price of $300, the net profit on the investment will be $200 ($300 - $100). </p>
 <p>If KMB increases to $130, the short contract will be exercised, but the contract you purchased will also rise in intrinsic value at the same time. If the stock declines to $105 at expiration, both contracts will have zero value, and the investment will be over, with the maximum loss of just $100.</p>
-<div class=blog-must-reads>
-<b>Enjoyed this post? Here are some must reads.</b>
-<ul>
-<li>
-<a href=https://options.cafe/blog/iron-condor-explained/>Iron Condor Explained</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/what-is-a-put-credit-spread/>What Is a Put Credit Spread?</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/how-to-profit-with-a-short-calendar-spread/>How to Profit with a Short Calendar Spread</a>
-</li>
+<div class="blog-must-reads">
+  <b>Enjoyed this post? Here are some must reads.</b>
+  <ul>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/iron-condor-explained/">Iron Condor Explained</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/what-is-a-put-credit-spread/">What Is a Put Credit Spread?</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/how-to-profit-with-a-short-calendar-spread/">How to Profit with a Short Calendar Spread</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+
+  <p>
+    <b>Related Topics: </b>
+    
+    
+      
+        
+        
+          <a href="https://options.cafe/related-topics/calendar-spread/" class="capitalize">calendar spread</a
+          ></p></div>
+
+            <div class="article__actions">
+              <div class="widget widget--socials widget--secondary">
+                <div class="widget__head">
+                  <h5 class="widget__title">
+                    Like what you read? Please Share!
+                  </h5>
+                </div>
+
+                <div class="widget__body">
+                  <div class="socials"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-<p>
-<b>Related Topics: </b>
-<a href=https://options.cafe/related-topics/calendar-spread/ class=capitalize>calendar spread</a></p></div>
-<div class=article__actions>
-<div class="widget widget--socials widget--secondary">
-<div class=widget__head>
-<h5 class=widget__title>
-Like what you read? Please Share!
-</h5>
-</div>
-<div class=widget__body>
-<div class=socials><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fthe-long-calendar-spread-explained%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                </div>
+              </div>
+            </div>
 </article>
-</div><div class=sidebar>
-<ul class=widgets>
-<li class="widget widget--categories">
-<div class=widget__head>
-<h2 class=widget__title>Categories</h2>
+        </div><div class="sidebar">
+  <ul class="widgets">
+    <li class="widget widget--categories">
+      <div class="widget__head">
+        <h2 class="widget__title">Categories</h2>
+      </div>
+
+      <div class="widget__body">
+        <ul class="list-links">
+          <li>
+            <a href="https://options.cafe//blog">All Posts</a>
+          </li>
+
+          
+            <li>
+              <a href="https://options.cafe//blog/education"
+                >Education</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/random-fun"
+                >Random Fun</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-trades"
+                >Spicer&#39;s Trades</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-soapbox"
+                >Spicer&#39;s Soapbox</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/company-updates"
+                >Company Updates</a
+              >
+            </li>
+          
+        </ul>
 </div>
-<div class=widget__body>
-<ul class=list-links>
-<li>
-<a href=https://options.cafe//blog>All Posts</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/education>Education</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/random-fun>Random Fun</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-trades>Spicer's Trades</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-soapbox>Spicer's Soapbox</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/company-updates>Company Updates</a>
-</li>
-</ul>
+    </li>
+
+    <li class="widget widget--ad"><div class="widget__head home-page-click">
+  <h2 class="widget__title">
+    <span>Options Cafe</span>
+    Trading
+  </h2>
 </div>
-</li>
-<li class="widget widget--ad"><div class="widget__head home-page-click">
-<h2 class=widget__title>
-<span>Options Cafe</span>
-Trading
-</h2>
-</div>
+
 <figure class="widget__image home-page-click">
-<img src=/css/images/temp/trading.jpg alt>
+  <img src="/css/images/temp/trading.jpg" alt="" />
 </figure>
-<div class=widget__actions>
-<a href=https://options.cafe/ onclick="_paq.push(['trackEvent','Ad','Click','Ad Click Blog Sidebar'])">Learn More <i class=ico-arrow-right-light></i></a>
+
+<div class="widget__actions">
+  <a
+    href="https://options.cafe/"
+    onclick="javascript:_paq.push(['trackEvent', 'Ad', 'Click', 'Ad Click Blog Sidebar']);"
+    >Learn More <i class="ico-arrow-right-light"></i
+  ></a>
 </div>
 </li>
-<li class="widget widget--socials"><div class=widget__head>
-<h3 class=widget__title>Follow us!</h3>
-<h4>On social media</h4>
+
+    <li class="widget widget--socials"><div class="widget__head">
+  <h3 class="widget__title">Follow us!</h3>
+  <h4>On social media</h4>
 </div>
-<div class=widget__body>
-<div class=socials>
-<ul>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter></i>
-</a>
+
+<div class="widget__body">
+  <div class="socials">
+    <ul>
+      <li>
+        <a href="https://twitter.com/options_cafe">
+          <i class="ico-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/optionscafetrading">
+          <i class="ico-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 </li>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook></i>
-</a>
-</li>
-</ul>
+  </ul>
 </div>
 </div>
-</li>
-</ul>
+    </div>
+  </div><div class="shell">
+  <div class="subscribe">
+    <div class="subscribe__content">
+      <img src="https://options.cafe/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111" />
+      <h1>Options Cafe Newsletter</h1>
+      <p>Get our latest news delivered to your inbox.</p>
+    </div>
+
+    <aside class="subscribe__aside">
+      <form action="" method="post" class="newsletter-form">
+        <label for="mail2" class="subscribe__label">Email</label>
+        <span class="subscribe__alert" style="display: none">Thanks! You won't regret it!</span>
+        <input type="email" id="mail2" name="email" value="" class="subscribe__field" />
+        <input type="hidden" name="entry_type" value="Newsletter Footer Subscribe" />
+        <input type="submit" name="subscribe" value="Subscribe" class="btn btn--medium subscribe__btn" />
+      </form>
+    </aside>
+  </div>
 </div>
-</div>
-</div>
-</div><div class=shell>
-<div class=subscribe>
-<div class=subscribe__content>
-<img src=https://options.cafe/css/images/temp/letter.png alt class=subscribe__image width=140 height=111>
-<h1>Options Cafe Newsletter</h1>
-<p>Get our latest news delivered to your inbox.</p>
-</div>
-<aside class=subscribe__aside>
-<form method=post class=newsletter-form>
-<label for=mail2 class=subscribe__label>Email</label>
-<span class=subscribe__alert style=display:none>Thanks! You won't regret it!</span>
-<input type=email id=mail2 name=email class=subscribe__field>
-<input type=hidden name=entry_type value="Newsletter Footer Subscribe">
-<input type=submit name=subscribe value=Subscribe class="btn btn--medium subscribe__btn">
-</form>
-</aside>
-</div>
-</div>
-</div><footer class=footer>
-<div class=shell>
-<div class=footer__inner>
-<div class=footer__content>
-<a href=https://options.cafe/ class=footer__logo>O/C</a>
-<p class=copyright>
-<span class=broker-statement>
-Brokerage services provided by <a href=https://brokerage.tradier.com target=_blank>Tradier Brokerage</a> Member <a href=http://www.finra.org target=_blank>FINRA</a>/<a href=https://www.sipc.org target=_blank>SIPC</a></span> <br>
-<span class=cloudmanic-copyright>© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
-</p>
-<p></p>
-</div>
-<aside class=footer__aside>
-<nav class=footer__nav><ul>
-<li>
-<a href=https://options.cafe/terms-of-service>Terms of Service</a>
-</li>
-<li>
-<a href=https://options.cafe/privacy-policy>Privacy Policy</a>
-</li>
-<li>
-<a href=https://options.cafe/refunds>Refunds</a>
-</li>
-<li>
-<a href=https://options.cafe/about>About Us</a>
-</li>
+
+		</div><footer class="footer">
+    <div class="shell">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <a href="https://options.cafe/" class="footer__logo">O/C</a>
+
+                <p class="copyright">
+                    <span class="broker-statement">
+                        Brokerage services provided by <a href="https://brokerage.tradier.com" target="_blank">Tradier Brokerage</a> Member <a href="http://www.finra.org" target="_blank">FINRA</a>/<a href="https://www.sipc.org" target="_blank">SIPC</a></span> <br />
+                    <span class="cloudmanic-copyright">© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
+                </p>
+                <p></p>
+            </div>
+
+            <aside class="footer__aside">
+                <nav class="footer__nav"><ul>
+  <li>
+    <a href="https://options.cafe/terms-of-service">Terms of Service</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/privacy-policy">Privacy Policy</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/refunds">Refunds</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/about">About Us</a>
+  </li>
 </ul>
 </nav>
-<div class=socials><ul>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
+
+                <div class="socials"><ul>
+  <li>
+    <a href="https://www.facebook.com/optionscafetrading">
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://twitter.com/options_cafe">
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</aside>
-</div>
-</div>
+            </aside>
+        </div>
+    </div>
 </footer></div>
-<script type=text/javascript>var _paq=_paq||[];_paq.push(["setCookieDomain","*.options.cafe"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var b=("https:"==document.location.protocol?"https":"http")+"://piwik.cloudmanic.com/",c,a,d;_paq.push(["setTrackerUrl",b+"piwik.php"]),_paq.push(["setSiteId",5]),c=document,a=c.createElement("script"),d=c.getElementsByTagName("script")[0],a.type="text/javascript",a.defer=!0,a.async=!0,a.src=b+"piwik.js",d.parentNode.insertBefore(a,d)}()</script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.options.cafe"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function () {
+    var u = ("https:" == document.location.protocol ? "https" : "http") + "://piwik.cloudmanic.com/";
+    _paq.push(["setTrackerUrl", u + "piwik.php"]);
+    _paq.push(["setSiteId", 5]);
+    var d = document,
+      g = d.createElement("script"),
+      s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.defer = true;
+    g.async = true;
+    g.src = u + "piwik.js";
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
 <noscript>
-<p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style=border:0 alt></p>
+  <p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style="border: 0" alt="" /></p>
 </noscript>
 </body>
+
 </html>

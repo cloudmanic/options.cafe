@@ -1,294 +1,456 @@
-<!doctype html><html lang=en><head>
-<meta charset=utf-8>
-<title>What Is a Put Credit Spread? - Options Cafe</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=canonical href=https://options.cafe/blog/what-is-a-put-credit-spread/>
-<link rel="shortcut icon" type=image/png href=https://options.cafe/css/images/favicon.ico>
-<meta name=description content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi">
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content="@options_cafe">
-<meta name=twitter:title content="What Is a Put Credit Spread? - Options Cafe">
-<meta name=twitter:description content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi">
-<meta name=twitter:image content>
-<meta name=og:site_name content="Options Cafe - Best Place For Options Trading">
-<meta name=og:title content="What Is a Put Credit Spread? - Options Cafe">
-<meta name=og:url content="https://options.cafe/blog/what-is-a-put-credit-spread/">
-<meta name=og:description content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi">
-<meta property="og:type" content="article">
-<meta name=fb:app_id content="1512164148794908">
-<meta property="fb:pages" content="730529083708603">
-<link rel=alternate type=application/rss+xml href=https://options.cafe//index.xml title="Options Cafe">
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel=stylesheet>
-<link rel=stylesheet href=https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css>
-<link rel=stylesheet href=https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css>
-<script src=https://options.cafe/vendor/vue.min.js></script>
-<script src=https://options.cafe/vendor/jquery-1.12.4.min.js defer></script>
-<script src=https://options.cafe/vendor/detectmobilebrowser.js defer></script>
-<script src=https://options.cafe/js/app.min.bbc94bc0b23126294ed70deb0bf3bff76ae394bbf7540a87b604e6541aa777cf.js defer></script>
-<script>var site={devMode:"0",baseUrl:"https://options.cafe/"}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-102266466-1")</script>
-<script defer data-domain=options.cafe src=https://plausible.io/js/script.js></script>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <title>What Is a Put Credit Spread? - Options Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://options.cafe/blog/what-is-a-put-credit-spread/" />
+  <link rel="shortcut icon" type="image/png" href="https://options.cafe/css/images/favicon.ico" />
+  <meta
+    name="description"
+    content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi"
+  />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@options_cafe" />
+  <meta name="twitter:title" content="What Is a Put Credit Spread? - Options Cafe" />
+  <meta
+    name="twitter:description"
+    content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi"
+  />
+  <meta name="twitter:image" content="" />
+
+  <meta name="og:site_name" content="Options Cafe - Best Place For Options Trading" />
+  <meta name="og:title" content="What Is a Put Credit Spread? - Options Cafe" />
+  <meta name="og:url" content="https://options.cafe/blog/what-is-a-put-credit-spread/" />
+  <meta
+    name="og:description"
+    content="As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi"
+  />
+  
+  <meta property="og:type" content="article" />
+  <meta name="fb:app_id" content="1512164148794908" />
+  <meta property="fb:pages" content="730529083708603" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://options.cafe//index.xml" title="Options Cafe" />
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css" />
+  <link rel="stylesheet" href="https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css" />
+
+  <script src="https://options.cafe/vendor/vue.min.js"></script>
+  <script src="https://options.cafe/vendor/jquery-1.12.4.min.js" defer></script>
+  <script src="https://options.cafe/vendor/detectmobilebrowser.js" defer></script>
+  <script src="https://options.cafe/js/app.min.d1e88cb0055edc0bf6fb98fdc34e453884d40e13ff4fa88c80dd8dbe747e5e16.js" defer></script>
+
+  <script>
+    var site = {
+      devMode: "0",
+      baseUrl: "https:\/\/options.cafe\/",
+    };
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-102266466-1");
+  </script>
+
+  <script defer data-domain="options.cafe" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-<div class=wrapper>
-<header class=header>
-<div class=shell>
-<div class=header__inner>
-<a href=https://options.cafe/ class=logo>O/C Options Cafe</a>
-<a href=https://options.cafe/ class="btn-menu visible-xs-inline-block">
-<span></span>
-<span></span>
-<span></span>
-</a>
-<nav class=nav><ul>
-<li>
-<a href=https://options.cafe/>Home</a>
-</li>
-<li class=current>
-<a href=https://options.cafe/blog>Blog</a>
-</li>
-<li>
-<a href=https://options.cafe/help>Support</a>
-</li>
-<li>
-<a href=https://app.options.cafe/login>Login</a>
-</li>
+	<div class="wrapper ">
+        
+
+		<header class="header">
+			<div class="shell">
+				<div class="header__inner">
+					<a href="https://options.cafe/" class="logo">O/C Options Cafe</a>
+
+					<a href="https://options.cafe/" class="btn-menu visible-xs-inline-block">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<nav class="nav"><ul>
+    <li class="">
+        <a href="https://options.cafe/">Home</a>
+    </li>
+
+    <li class="current">
+        <a href="https://options.cafe/blog">Blog</a>
+    </li>
+
+    <li class="">
+        <a href="https://options.cafe/help">Support</a>
+    </li>
+
+    <li class="">
+        <a href="https://app.options.cafe/login">Login</a>
+    </li>
 </ul></nav>
-</div>
-</div>
-</header>
-<div class=container>
-<div class=shell>
-<div class=container__inner><div class=intro>
-<img src=/css/images/temp/blog-image.png alt class=intro__image width=189 height=107>
-<p>
-We like to explore, educate, and share ideas involving options trading. Come along with us on <br>
-our journey to demystify the complex yet rewarding world of options trading.
-</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="container ">
+            
+  <div class="shell">
+    <div class="container__inner"><div class="intro">
+  <img src="/css/images/temp/blog-image.png" alt="" class="intro__image" width="189" height="107" />
+
+  <p>
+    We like to explore, educate, and share ideas involving options trading. Come along with us on <br />
+    our journey to demystify the complex yet rewarding world of options trading.
+  </p>
 </div>
 <div class="main main--flex">
-<div class=content>
-<article class="article article--single">
-<header class=article__head>
-<h1>What Is a Put Credit Spread?</h1>
-<div class=article__meta>
-<p>
-<a href=/blog/education>Education</a>
-<em>December 16, 2014</em>
-<em>Spicer Matthews</em>
-</p>
-<div class="socials socials--small"><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
+        <div class="content">
+          <article class="article article--single">
+            <header class="article__head">
+              <h1>What Is a Put Credit Spread?</h1>
+
+              <div class="article__meta">
+                <p>
+                  
+                    <a href="/blog/education"
+                      >Education</a
+                    >
+                  
+
+
+                  <em>December 16, 2014</em>
+
+                  <em>Spicer Matthews</em>
+                </p>
+
+                <div class="socials socials--small"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</div>
-</header>
-<div class=article__body>
-<p>In the options trading world there is a type of trade called a put credit spread. The goal of this trade is to collect money and hope the market does not move against you. Let me explain with an analogy we all understand: car insurance. Every month you cough up a hundred bucks or so for coverage, and your insurance company makes a calculated bet that you will not get in a car accident. If you are a safe driver, the insurance company keeps your 100 bucks. But if you drive off the road while checking stock quotes on your phone, the insurance company has to pay out to fix the damage.</p>
-<p>
-<a href="/blog/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046">
-<img src="/blog/_width1000/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046" style="width:50%;float:none;display:block;margin:0 auto" alt=Safety-Copy_Jpg__2240×2500__13>
-</a>
+              </div>
+            </header>
+
+            <div class="article__body">
+              <p>In the options trading world there is a type of trade called a put credit spread. The goal of this trade is to collect money and hope the market does not move against you. Let me explain with an analogy we all understand: car insurance. Every month you cough up a hundred bucks or so for coverage, and your insurance company makes a calculated bet that you will not get in a car accident. If you are a safe driver, the insurance company keeps your 100 bucks. But if you drive off the road while checking stock quotes on your phone, the insurance company has to pay out to fix the damage.</p>
+                    
+                      <p>
+    <a href="/blog/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046">
+      <img src="/blog/_width1000/Safety-copy_jpg__2240×2500__13.png?mtime=20170514145046" style="width: 50%; float: none; display: block; margin: 0px auto;" alt="Safety-Copy_Jpg__2240×2500__13" />
+  </a>  
 </p>
-<p>In other words, if you are a safe driver the insurance company profits—and if you are not, it takes a loss. The key is that the insurance company collects a small fee from you up front and is at risk for some length of time.</p>
-<h2>Hey—This Is a Stock Blog, not Insurance Broker Monthly!</h2>
-<p>Getting back on track... How does selling put credit spreads relate to the insurance example? Well, the idea is the same. As a trader you collect a fee that you keep if the market goes your way—but if the market goes against you, you pay out. The way it works is you sell a put option and then buy another put option to limit your risk to the spread between the puts.</p>
-<p>Say the <a href="http://finance.yahoo.com/q?s=SPY">SPY</a> (S&P 500 index ETF) is trading at $200. We could sell a put option with a strike price of $190 for a credit of $100 ($1 * 100). The put option expires in 30 days, and in the meantime we put that $100 in our account as cold, hard cash.</p>
+                    
+                      <p>In other words, if you are a safe driver the insurance company profits—and if you are not, it takes a loss. The key is that the insurance company collects a small fee from you up front and is at risk for some length of time.</p>
+                    
+                      <h2>Hey—This Is a Stock Blog, not Insurance Broker Monthly!</h2>
+                    
+                      <p>Getting back on track... How does selling put credit spreads relate to the insurance example? Well, the idea is the same. As a trader you collect a fee that you keep if the market goes your way—but if the market goes against you, you pay out. The way it works is you sell a put option and then buy another put option to limit your risk to the spread between the puts.</p>
+<p>Say the <a href="http://finance.yahoo.com/q?s=SPY">SPY</a> (S&amp;P 500 index ETF) is trading at $200. We could sell a put option with a strike price of $190 for a credit of $100 ($1 * 100). The put option expires in 30 days, and in the meantime we put that $100 in our account as cold, hard cash.</p>
 <p>Our risk is that if the SPY drops below $190 within the next 30 days, we will have to pay out the difference below $190. That’s because by selling a put option contract we guarantee delivery of a stock at a certain price—in this case $190. And so, if in 30 days the SPY were at $185 we would lose $500 ($5 * 100), though because we collected that fee of $100 we would really lose only $400.</p>
-<p>Our hope is that the SPY stays above $190 so that the put option expires worthless and we keep the $100 collected as profit. In this case the SPY staying above $190 is like the insurance company customer not getting in a car accident.</p>
-<h2>But What Is a Put Credit Spread Really?</h2>
-<p>What I just described was the sale of a <a href=http://www.optionseducation.org/strategies_advanced_concepts/strategies/naked_put.html>naked put</a>, for which the seller assumes a massive amount of risk. For example, if the SPY were to plunge to $0 in 30 days (unlikely, but something to consider) we would be on the hook for $19,000. Obviously, we need to protect ourselves and we can do so by turning our naked put into a <a href=http://www.theoptionsguide.com/bull-put-spread.aspx>put credit spread</a> and capping our potential losses.</p>
+                    
+                      <p>Our hope is that the SPY stays above $190 so that the put option expires worthless and we keep the $100 collected as profit. In this case the SPY staying above $190 is like the insurance company customer not getting in a car accident.</p>
+                    
+                      <h2>But What Is a Put Credit Spread Really?</h2>
+                    
+                      <p>What I just described was the sale of a <a href="http://www.optionseducation.org/strategies_advanced_concepts/strategies/naked_put.html">naked put</a>, for which the seller assumes a massive amount of risk. For example, if the SPY were to plunge to $0 in 30 days (unlikely, but something to consider) we would be on the hook for $19,000. Obviously, we need to protect ourselves and we can do so by turning our naked put into a <a href="http://www.theoptionsguide.com/bull-put-spread.aspx">put credit spread</a> and capping our potential losses.</p>
 <p>Say that we bought a put that expires in 30 days at a strike price of $188 for $65 ($.65 * 100). If the SPY were to drop below $188, our lower strike price put option would save us because we would only be at risk for $200—the difference in price between the $190 put that we sold and the $188 put that we purchased ($2 * 100).</p>
 <p>Of course, we would also take a hit in terms of our credit. We collected $100 when we sold the $190 put, but we paid $65 for the $188 put so we only have $35 new dollars in our account—but we risked losing only $200 instead of $19,000. The real risk reward is $165 to make $35.</p>
-<h2>Be Your Own Little Insurance Company</h2>
-<p>As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes things will go against you, you protect your losses with a lower out of the money put. Put credit spreads have a much better risk and reward quotient than a naked put.</p>
-<div class=blog-must-reads>
-<b>Enjoyed this post? Here are some must reads.</b>
-<ul>
-<li>
-<a href=https://options.cafe/blog/iron-condor-explained/>Iron Condor Explained</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/learning-the-short-butterfly-strategy/>Learning The Short Butterfly Strategy</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/a-quick-guide-to-paper-trading-options-and-newbie-investing/>A Quick Guide to Paper Trading Options & Newbie Investing</a>
-</li>
+                    
+                      <h2>Be Your Own Little Insurance Company</h2>
+                    
+                      <p>As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes things will go against you, you protect your losses with a lower out of the money put. Put credit spreads have a much better risk and reward quotient than a naked put.</p>
+<div class="blog-must-reads">
+  <b>Enjoyed this post? Here are some must reads.</b>
+  <ul>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/iron-condor-explained/">Iron Condor Explained</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/learning-the-short-butterfly-strategy/">Learning The Short Butterfly Strategy</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/a-quick-guide-to-paper-trading-options-and-newbie-investing/">A Quick Guide to Paper Trading Options &amp; Newbie Investing</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+
+  <p>
+    <b>Related Topics: </b>
+    
+    
+      
+        
+        
+          <a href="https://options.cafe/related-topics/credit-spreads/" class="capitalize">credit spreads</a
+          >,
+        
+        
+          <a href="https://options.cafe/related-topics/put-options/" class="capitalize">put options</a
+          >,
+        
+        
+          <a href="https://options.cafe/related-topics/put-credit-spread/" class="capitalize">put credit spread</a
+          ></p></div>
+
+            <div class="article__actions">
+              <div class="widget widget--socials widget--secondary">
+                <div class="widget__head">
+                  <h5 class="widget__title">
+                    Like what you read? Please Share!
+                  </h5>
+                </div>
+
+                <div class="widget__body">
+                  <div class="socials"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-<p>
-<b>Related Topics: </b>
-<a href=https://options.cafe/related-topics/credit-spreads/ class=capitalize>credit spreads</a>,
-<a href=https://options.cafe/related-topics/put-options/ class=capitalize>put options</a>,
-<a href=https://options.cafe/related-topics/put-credit-spread/ class=capitalize>put credit spread</a></p></div>
-<div class=article__actions>
-<div class="widget widget--socials widget--secondary">
-<div class=widget__head>
-<h5 class=widget__title>
-Like what you read? Please Share!
-</h5>
-</div>
-<div class=widget__body>
-<div class=socials><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fwhat-is-a-put-credit-spread%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                </div>
+              </div>
+            </div>
 </article>
-</div><div class=sidebar>
-<ul class=widgets>
-<li class="widget widget--categories">
-<div class=widget__head>
-<h2 class=widget__title>Categories</h2>
+        </div><div class="sidebar">
+  <ul class="widgets">
+    <li class="widget widget--categories">
+      <div class="widget__head">
+        <h2 class="widget__title">Categories</h2>
+      </div>
+
+      <div class="widget__body">
+        <ul class="list-links">
+          <li>
+            <a href="https://options.cafe//blog">All Posts</a>
+          </li>
+
+          
+            <li>
+              <a href="https://options.cafe//blog/education"
+                >Education</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/random-fun"
+                >Random Fun</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-trades"
+                >Spicer&#39;s Trades</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-soapbox"
+                >Spicer&#39;s Soapbox</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/company-updates"
+                >Company Updates</a
+              >
+            </li>
+          
+        </ul>
 </div>
-<div class=widget__body>
-<ul class=list-links>
-<li>
-<a href=https://options.cafe//blog>All Posts</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/education>Education</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/random-fun>Random Fun</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-trades>Spicer's Trades</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-soapbox>Spicer's Soapbox</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/company-updates>Company Updates</a>
-</li>
-</ul>
+    </li>
+
+    <li class="widget widget--ad"><div class="widget__head home-page-click">
+  <h2 class="widget__title">
+    <span>Options Cafe</span>
+    Trading
+  </h2>
 </div>
-</li>
-<li class="widget widget--ad"><div class="widget__head home-page-click">
-<h2 class=widget__title>
-<span>Options Cafe</span>
-Trading
-</h2>
-</div>
+
 <figure class="widget__image home-page-click">
-<img src=/css/images/temp/trading.jpg alt>
+  <img src="/css/images/temp/trading.jpg" alt="" />
 </figure>
-<div class=widget__actions>
-<a href=https://options.cafe/ onclick="_paq.push(['trackEvent','Ad','Click','Ad Click Blog Sidebar'])">Learn More <i class=ico-arrow-right-light></i></a>
+
+<div class="widget__actions">
+  <a
+    href="https://options.cafe/"
+    onclick="javascript:_paq.push(['trackEvent', 'Ad', 'Click', 'Ad Click Blog Sidebar']);"
+    >Learn More <i class="ico-arrow-right-light"></i
+  ></a>
 </div>
 </li>
-<li class="widget widget--socials"><div class=widget__head>
-<h3 class=widget__title>Follow us!</h3>
-<h4>On social media</h4>
+
+    <li class="widget widget--socials"><div class="widget__head">
+  <h3 class="widget__title">Follow us!</h3>
+  <h4>On social media</h4>
 </div>
-<div class=widget__body>
-<div class=socials>
-<ul>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter></i>
-</a>
+
+<div class="widget__body">
+  <div class="socials">
+    <ul>
+      <li>
+        <a href="https://twitter.com/options_cafe">
+          <i class="ico-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/optionscafetrading">
+          <i class="ico-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 </li>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook></i>
-</a>
-</li>
-</ul>
+  </ul>
 </div>
 </div>
-</li>
-</ul>
+    </div>
+  </div><div class="shell">
+  <div class="subscribe">
+    <div class="subscribe__content">
+      <img src="https://options.cafe/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111" />
+      <h1>Options Cafe Newsletter</h1>
+      <p>Get our latest news delivered to your inbox.</p>
+    </div>
+
+    <aside class="subscribe__aside">
+      <form action="" method="post" class="newsletter-form">
+        <label for="mail2" class="subscribe__label">Email</label>
+        <span class="subscribe__alert" style="display: none">Thanks! You won't regret it!</span>
+        <input type="email" id="mail2" name="email" value="" class="subscribe__field" />
+        <input type="hidden" name="entry_type" value="Newsletter Footer Subscribe" />
+        <input type="submit" name="subscribe" value="Subscribe" class="btn btn--medium subscribe__btn" />
+      </form>
+    </aside>
+  </div>
 </div>
-</div>
-</div>
-</div><div class=shell>
-<div class=subscribe>
-<div class=subscribe__content>
-<img src=https://options.cafe/css/images/temp/letter.png alt class=subscribe__image width=140 height=111>
-<h1>Options Cafe Newsletter</h1>
-<p>Get our latest news delivered to your inbox.</p>
-</div>
-<aside class=subscribe__aside>
-<form method=post class=newsletter-form>
-<label for=mail2 class=subscribe__label>Email</label>
-<span class=subscribe__alert style=display:none>Thanks! You won't regret it!</span>
-<input type=email id=mail2 name=email class=subscribe__field>
-<input type=hidden name=entry_type value="Newsletter Footer Subscribe">
-<input type=submit name=subscribe value=Subscribe class="btn btn--medium subscribe__btn">
-</form>
-</aside>
-</div>
-</div>
-</div><footer class=footer>
-<div class=shell>
-<div class=footer__inner>
-<div class=footer__content>
-<a href=https://options.cafe/ class=footer__logo>O/C</a>
-<p class=copyright>
-<span class=broker-statement>
-Brokerage services provided by <a href=https://brokerage.tradier.com target=_blank>Tradier Brokerage</a> Member <a href=http://www.finra.org target=_blank>FINRA</a>/<a href=https://www.sipc.org target=_blank>SIPC</a></span> <br>
-<span class=cloudmanic-copyright>© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
-</p>
-<p></p>
-</div>
-<aside class=footer__aside>
-<nav class=footer__nav><ul>
-<li>
-<a href=https://options.cafe/terms-of-service>Terms of Service</a>
-</li>
-<li>
-<a href=https://options.cafe/privacy-policy>Privacy Policy</a>
-</li>
-<li>
-<a href=https://options.cafe/refunds>Refunds</a>
-</li>
-<li>
-<a href=https://options.cafe/about>About Us</a>
-</li>
+
+		</div><footer class="footer">
+    <div class="shell">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <a href="https://options.cafe/" class="footer__logo">O/C</a>
+
+                <p class="copyright">
+                    <span class="broker-statement">
+                        Brokerage services provided by <a href="https://brokerage.tradier.com" target="_blank">Tradier Brokerage</a> Member <a href="http://www.finra.org" target="_blank">FINRA</a>/<a href="https://www.sipc.org" target="_blank">SIPC</a></span> <br />
+                    <span class="cloudmanic-copyright">© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
+                </p>
+                <p></p>
+            </div>
+
+            <aside class="footer__aside">
+                <nav class="footer__nav"><ul>
+  <li>
+    <a href="https://options.cafe/terms-of-service">Terms of Service</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/privacy-policy">Privacy Policy</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/refunds">Refunds</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/about">About Us</a>
+  </li>
 </ul>
 </nav>
-<div class=socials><ul>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
+
+                <div class="socials"><ul>
+  <li>
+    <a href="https://www.facebook.com/optionscafetrading">
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://twitter.com/options_cafe">
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</aside>
-</div>
-</div>
+            </aside>
+        </div>
+    </div>
 </footer></div>
-<script type=text/javascript>var _paq=_paq||[];_paq.push(["setCookieDomain","*.options.cafe"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var b=("https:"==document.location.protocol?"https":"http")+"://piwik.cloudmanic.com/",c,a,d;_paq.push(["setTrackerUrl",b+"piwik.php"]),_paq.push(["setSiteId",5]),c=document,a=c.createElement("script"),d=c.getElementsByTagName("script")[0],a.type="text/javascript",a.defer=!0,a.async=!0,a.src=b+"piwik.js",d.parentNode.insertBefore(a,d)}()</script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.options.cafe"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function () {
+    var u = ("https:" == document.location.protocol ? "https" : "http") + "://piwik.cloudmanic.com/";
+    _paq.push(["setTrackerUrl", u + "piwik.php"]);
+    _paq.push(["setSiteId", 5]);
+    var d = document,
+      g = d.createElement("script"),
+      s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.defer = true;
+    g.async = true;
+    g.src = u + "piwik.js";
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
 <noscript>
-<p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style=border:0 alt></p>
+  <p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style="border: 0" alt="" /></p>
 </noscript>
 </body>
+
 </html>

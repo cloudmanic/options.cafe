@@ -1,133 +1,202 @@
-<!doctype html><html lang=en><head>
-<meta charset=utf-8>
-<title>Implementing a Short Calendar Spread with Call Options - Options Cafe</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=canonical href=https://options.cafe/blog/implementing-a-short-calendar-spread-with-call-options/>
-<link rel="shortcut icon" type=image/png href=https://options.cafe/css/images/favicon.ico>
-<meta name=description content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy.">
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content="@options_cafe">
-<meta name=twitter:title content="Implementing a Short Calendar Spread with Call Options - Options Cafe">
-<meta name=twitter:description content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy.">
-<meta name=twitter:image content>
-<meta name=og:site_name content="Options Cafe - Best Place For Options Trading">
-<meta name=og:title content="Implementing a Short Calendar Spread with Call Options - Options Cafe">
-<meta name=og:url content="https://options.cafe/blog/implementing-a-short-calendar-spread-with-call-options/">
-<meta name=og:description content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy.">
-<meta property="og:type" content="article">
-<meta name=fb:app_id content="1512164148794908">
-<meta property="fb:pages" content="730529083708603">
-<link rel=alternate type=application/rss+xml href=https://options.cafe//index.xml title="Options Cafe">
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel=stylesheet>
-<link rel=stylesheet href=https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css>
-<link rel=stylesheet href=https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css>
-<script src=https://options.cafe/vendor/vue.min.js></script>
-<script src=https://options.cafe/vendor/jquery-1.12.4.min.js defer></script>
-<script src=https://options.cafe/vendor/detectmobilebrowser.js defer></script>
-<script src=https://options.cafe/js/app.min.bbc94bc0b23126294ed70deb0bf3bff76ae394bbf7540a87b604e6541aa777cf.js defer></script>
-<script>var site={devMode:"0",baseUrl:"https://options.cafe/"}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-102266466-1")</script>
-<script defer data-domain=options.cafe src=https://plausible.io/js/script.js></script>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <title>Implementing a Short Calendar Spread with Call Options - Options Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://options.cafe/blog/implementing-a-short-calendar-spread-with-call-options/" />
+  <link rel="shortcut icon" type="image/png" href="https://options.cafe/css/images/favicon.ico" />
+  <meta
+    name="description"
+    content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy."
+  />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@options_cafe" />
+  <meta name="twitter:title" content="Implementing a Short Calendar Spread with Call Options - Options Cafe" />
+  <meta
+    name="twitter:description"
+    content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy."
+  />
+  <meta name="twitter:image" content="" />
+
+  <meta name="og:site_name" content="Options Cafe - Best Place For Options Trading" />
+  <meta name="og:title" content="Implementing a Short Calendar Spread with Call Options - Options Cafe" />
+  <meta name="og:url" content="https://options.cafe/blog/implementing-a-short-calendar-spread-with-call-options/" />
+  <meta
+    name="og:description"
+    content="Whenever you expect a significant level of volatility in a stock short-term but are long-term bearish, the short calendar spread should be your go-to strategy."
+  />
+  
+  <meta property="og:type" content="article" />
+  <meta name="fb:app_id" content="1512164148794908" />
+  <meta property="fb:pages" content="730529083708603" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://options.cafe//index.xml" title="Options Cafe" />
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://options.cafe/css/style.min.d43f1d7ffd3baa911585ccf6c735ca8593b6104cafd0b61962b2217caafd191a.css" />
+  <link rel="stylesheet" href="https://options.cafe/css/app.min.a65469dc88455c6ac43b48f4eb3170c5e9dc5f3fa429c5ca4fe7d11bacdde16d.css" />
+
+  <script src="https://options.cafe/vendor/vue.min.js"></script>
+  <script src="https://options.cafe/vendor/jquery-1.12.4.min.js" defer></script>
+  <script src="https://options.cafe/vendor/detectmobilebrowser.js" defer></script>
+  <script src="https://options.cafe/js/app.min.d1e88cb0055edc0bf6fb98fdc34e453884d40e13ff4fa88c80dd8dbe747e5e16.js" defer></script>
+
+  <script>
+    var site = {
+      devMode: "0",
+      baseUrl: "https:\/\/options.cafe\/",
+    };
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102266466-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-102266466-1");
+  </script>
+
+  <script defer data-domain="options.cafe" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-<div class=wrapper>
-<header class=header>
-<div class=shell>
-<div class=header__inner>
-<a href=https://options.cafe/ class=logo>O/C Options Cafe</a>
-<a href=https://options.cafe/ class="btn-menu visible-xs-inline-block">
-<span></span>
-<span></span>
-<span></span>
-</a>
-<nav class=nav><ul>
-<li>
-<a href=https://options.cafe/>Home</a>
-</li>
-<li class=current>
-<a href=https://options.cafe/blog>Blog</a>
-</li>
-<li>
-<a href=https://options.cafe/help>Support</a>
-</li>
-<li>
-<a href=https://app.options.cafe/login>Login</a>
-</li>
+	<div class="wrapper ">
+        
+
+		<header class="header">
+			<div class="shell">
+				<div class="header__inner">
+					<a href="https://options.cafe/" class="logo">O/C Options Cafe</a>
+
+					<a href="https://options.cafe/" class="btn-menu visible-xs-inline-block">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<nav class="nav"><ul>
+    <li class="">
+        <a href="https://options.cafe/">Home</a>
+    </li>
+
+    <li class="current">
+        <a href="https://options.cafe/blog">Blog</a>
+    </li>
+
+    <li class="">
+        <a href="https://options.cafe/help">Support</a>
+    </li>
+
+    <li class="">
+        <a href="https://app.options.cafe/login">Login</a>
+    </li>
 </ul></nav>
-</div>
-</div>
-</header>
-<div class=container>
-<div class=shell>
-<div class=container__inner><div class=intro>
-<img src=/css/images/temp/blog-image.png alt class=intro__image width=189 height=107>
-<p>
-We like to explore, educate, and share ideas involving options trading. Come along with us on <br>
-our journey to demystify the complex yet rewarding world of options trading.
-</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="container ">
+            
+  <div class="shell">
+    <div class="container__inner"><div class="intro">
+  <img src="/css/images/temp/blog-image.png" alt="" class="intro__image" width="189" height="107" />
+
+  <p>
+    We like to explore, educate, and share ideas involving options trading. Come along with us on <br />
+    our journey to demystify the complex yet rewarding world of options trading.
+  </p>
 </div>
 <div class="main main--flex">
-<div class=content>
-<article class="article article--single">
-<header class=article__head>
-<h1>Implementing a Short Calendar Spread with Call Options</h1>
-<div class=article__meta>
-<p>
-<a href=/blog/education>Education</a>
-<em>May 25, 2019</em>
-<em>Spicer Matthews</em>
-</p>
-<div class="socials socials--small"><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
+        <div class="content">
+          <article class="article article--single">
+            <header class="article__head">
+              <h1>Implementing a Short Calendar Spread with Call Options</h1>
+
+              <div class="article__meta">
+                <p>
+                  
+                    <a href="/blog/education"
+                      >Education</a
+                    >
+                  
+
+
+                  <em>May 25, 2019</em>
+
+                  <em>Spicer Matthews</em>
+                </p>
+
+                <div class="socials socials--small"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</div>
-</header>
-<div class=article__body>
-<p>
-<a href="/blog/woman-1172718_1920.jpg?mtime=20190525114432">
-<img src="/blog/_width1000/woman-1172718_1920.jpg?mtime=20190525114432" style="width:75%;float:none;display:block;margin:0 auto" alt="Woman 1172718 1920">
-</a>
+              </div>
+            </header>
+
+            <div class="article__body">
+              <p>
+    <a href="/blog/woman-1172718_1920.jpg?mtime=20190525114432">
+      <img src="/blog/_width1000/woman-1172718_1920.jpg?mtime=20190525114432" style="width: 75%; float: none; display: block; margin: 0px auto;" alt="Woman 1172718 1920" />
+  </a>  
 </p>
-<p>Whenever you expect a significant level of volatility in a stock short-term but are <a href=https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/>long-term bearish</a>, the short calendar spread with calls should be your go-to option strategy. The derivative play is entered for a <a href=http://optionsmanual.com/secondary-informational-articles/what-does-net-credit-mean-in-options-trading/>net credit</a> and profits in the near-term with either bullish or bearish (but not flat) price activity in the underlying stock. </p>
+                    
+                      <p>Whenever you expect a significant level of volatility in a stock short-term but are <a href="https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/">long-term bearish</a>, the short calendar spread with calls should be your go-to option strategy. The derivative play is entered for a <a href="http://optionsmanual.com/secondary-informational-articles/what-does-net-credit-mean-in-options-trading/">net credit</a> and profits in the near-term with either bullish or bearish (but not flat) price activity in the underlying stock. </p>
 <h2>Details of the Long Calendar Spread with Calls</h2>
 <p>The short calendar spread has two legs. It can be traded with puts, but our example here will use calls. Both contracts should have the same underlying stock. The first one is going to be long. It will expire in half the time as the next leg, which is short. If the long call has three weeks of life, the short call should have six weeks. This means the written call has more time value; thus, the short calendar spread will always be entered for a net credit.</p>
-<p>The default setup uses the same strike price. This is called the <a href=http://www.optionstrading.org/basics/spreads/horizontal>horizontal spread</a>. It is acceptable to use different strike prices. This is known as a diagonal spread. We’ll use the horizontal method in our example. Both contracts will be at- or near-the-money. Here’s the set up:</p>
+<p>The default setup uses the same strike price. This is called the <a href="http://www.optionstrading.org/basics/spreads/horizontal">horizontal spread</a>. It is acceptable to use different strike prices. This is known as a diagonal spread. We’ll use the horizontal method in our example. Both contracts will be at- or near-the-money. Here’s the set up:</p>
 <blockquote>Buy 1 ABC near 105 call</blockquote>
 <blockquote>Sell 1 ABC far 105 call </blockquote>
 <p>You won’t be able to capture any intrinsic value in this strategy because both options (one long and one short) have the same strike. However, if you were to go with the diagonal spread you could establish intrinsic value in the strategy. </p>
 <h2>Maximums and Breakeven Points</h2>
 <p>The maximum profit the short call calendar spread can earn is the premium received at the beginning of the trade, minus commissions. This maximum will be achieved on the expiration date of the near contract if the equity price is far above or far below the strike price. </p>
-<p>While the long call is live, the <a href=http://www.plaintrading.com/en/index.php/faqs/56-1-how-can-i-change-something-in-my-order>maximum risk</a> occurs if the equity price equals the strike price on the expiration date of the long call. In this situation, the difference in premiums between the long and short calls is at its greatest. The exact amount of the loss cannot be known for sure because the price of the short call can vary as a result of several issues—namely Greek values, which we will look at shortly. <br></p>
-<p>
-<a href="/blog/wallstreet-crossroad.jpg?mtime=20190525115320">
-<img src="/blog/_width1000/wallstreet-crossroad.jpg?mtime=20190525115320" style="width:100%;float:none;display:block;margin:0 auto" alt="Wallstreet Crossroad">
-</a>
+<p>While the long call is live, the <a href="http://www.plaintrading.com/en/index.php/faqs/56-1-how-can-i-change-something-in-my-order">maximum risk</a> occurs if the equity price equals the strike price on the expiration date of the long call. In this situation, the difference in premiums between the long and short calls is at its greatest. The exact amount of the loss cannot be known for sure because the price of the short call can vary as a result of several issues—namely Greek values, which we will look at shortly. <br /></p>
+                    
+                      <p>
+    <a href="/blog/wallstreet-crossroad.jpg?mtime=20190525115320">
+      <img src="/blog/_width1000/wallstreet-crossroad.jpg?mtime=20190525115320" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Wallstreet Crossroad" />
+  </a>  
 </p>
-<p>The short calendar play has two breakeven spots at the long call’s <a href=https://www.investopedia.com/terms/e/expirationdate.asp>expiration</a>. One is above the strike, while the other is below. After the expiration of the first contract, you end up with a naked short call (assuming you don’t own shares of the underlying stock). Here, the maximum loss is unlimited because the equity could in theory rise indefinitely. The breakeven price on the uncovered short call is the option’s strike plus the premium received.</p>
+                    
+                      <p>The short calendar play has two breakeven spots at the long call’s <a href="https://www.investopedia.com/terms/e/expirationdate.asp">expiration</a>. One is above the strike, while the other is below. After the expiration of the first contract, you end up with a naked short call (assuming you don’t own shares of the underlying stock). Here, the maximum loss is unlimited because the equity could in theory rise indefinitely. The breakeven price on the uncovered short call is the option’s strike plus the premium received.</p>
 <h2>Reasons to Choose the Short Call Calendar Spread</h2>
 <p>Because the first half of the trade profits when a stock moves quite a bit either up or down, the short calendar call play would be ideal if you’re expecting a high amount of volatility, but aren’t certain which direction it will be in. Often traders find themselves in this situation when a company is about to release earnings. Stocks often move significantly, to the upside or downside, after these types of announcements.</p>
 <p>Since you’ll be left with an uncovered short call when the first option expires, you’ll want to find a stock that you’re bearish on longer term. You could of course buy another call when the first one expires in order to check the short call, but doing so will offset the premium you earned at the start of the original trade. A third option would be to buy to close the second leg mid-way through the trade. If the premium is low enough, and it may not be, you would be left with a small profit.</p>
 <h2>Don’t Forget the Risks</h2>
 <p>There’s a short option in the calendar spread under discussion, and this is where you’re going to find difficulties in options trading. During the first half of the trade, if the stock experiences a bull run the short contract will go in-the-money, and you may receive an assignment. Short options in the United States can be assigned any market day, so you’ll definitely need to be prepared in this situation.</p>
 <p>If you do receive an assignment, you’ll have to sell 100 shares of the underlying stock for each contract that is exercised. If you don’t already own the stock, the sale will create a short stock position, which has its own hazards. These include margin calls, margin interest, and buy-ins. Assuming you hang onto your long call, you’ll actually have a protective call position (this is composed of a long call and a short stock).</p>
-<p>With the protective call, you’ll have a small loss if the stock rises. The loss is actually from the cost of the option, which you have already purchased in this case.<br></p>
-<p>
-<a href="/blog/live-has-risks.jpg?mtime=20190525115744">
-<img src="/blog/_width1000/live-has-risks.jpg?mtime=20190525115744" style="width:100%;float:none;display:block;margin:0 auto" alt="Live Has Risks">
-</a>
+<p>With the protective call, you’ll have a small loss if the stock rises. The loss is actually from the cost of the option, which you have already purchased in this case.<br /></p>
+                    
+                      <p>
+    <a href="/blog/live-has-risks.jpg?mtime=20190525115744">
+      <img src="/blog/_width1000/live-has-risks.jpg?mtime=20190525115744" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Live Has Risks" />
+  </a>  
 </p>
-<p>If the stock declines, you will experience a very nice profit. Obviously, this position should be maintained only if you’re bearish until the expiration of the long option. If not, there are two methods to get out of it. You can either exercise your long call and this will eliminate both the call and the stock (you’re buying to cover the short stock position); or you’ll need to buy to cover the stock and sell to close the option.</p>
+                    
+                      <p>If the stock declines, you will experience a very nice profit. Obviously, this position should be maintained only if you’re bearish until the expiration of the long option. If not, there are two methods to get out of it. You can either exercise your long call and this will eliminate both the call and the stock (you’re buying to cover the short stock position); or you’ll need to buy to cover the stock and sell to close the option.</p>
 <p>Because the written option has a longer life in the short calendar play, it’s possible to receive an assignment after your long call has expired. In this case, you’ll have to sell short 100 shares per contract as in the front-end scenario. But here, you won’t have a long call to help you get rid of the stock. If you’re bearish on the stock, you can simply maintain this trade and accept the standard risks of shorting. Otherwise, you’ll need to buy to cover the shares the following business day, and the price could be far from where you shorted.</p>
 <p>Given all of this complexity, the short call calendar spread should only be attempted by experienced option traders.</p>
 <h2>First, You Need to Find a Good Stock</h2>
@@ -137,33 +206,37 @@ our journey to demystify the complex yet rewarding world of options trading.
 <p>Looking at the derivatives of various housing stocks, you see that D. R. Horton has high open interest in both two-week and four-week contracts. But first, we’ll need to look at the Greek values.</p>
 <h2>Check the Greeks First Before Placing a Trade</h2>
 <p>Greeks are numbers that help derivative traders see how valuable or invaluable a particular contract is. Because modern software programs calculate these numbers for you, they’re all the more useful.</p>
-<p>Delta is one of the more <a href=https://www.investopedia.com/university/options-pricing/greeks.asp>popular Greeks</a> and it can help you analyze a short calendar spread. Delta tells you how much an option’s premium will move for each movement of a stock. A long call has a positive delta (between 0.0 and 1.0), while a short call has a negative delta. Net delta is calculated by adding all of the deltas of a strategy together. For the short call calendar spread, it is usually close to zero. As expiration gets closer, the net delta of a short calendar call spread will vary from -0.50 to 0.50.<br></p>
-<p>
-<a href="/blog/good-greek.jpg?mtime=20190525115953">
-<img src="/blog/_width1000/good-greek.jpg?mtime=20190525115953" style="width:100%;float:none;display:block;margin:0 auto" alt="Good Greek">
-</a>
+<p>Delta is one of the more <a href="https://www.investopedia.com/university/options-pricing/greeks.asp">popular Greeks</a> and it can help you analyze a short calendar spread. Delta tells you how much an option’s premium will move for each movement of a stock. A long call has a positive delta (between 0.0 and 1.0), while a short call has a negative delta. Net delta is calculated by adding all of the deltas of a strategy together. For the short call calendar spread, it is usually close to zero. As expiration gets closer, the net delta of a short calendar call spread will vary from -0.50 to 0.50.<br /></p>
+                    
+                      <p>
+    <a href="/blog/good-greek.jpg?mtime=20190525115953">
+      <img src="/blog/_width1000/good-greek.jpg?mtime=20190525115953" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Good Greek" />
+  </a>  
 </p>
-<p>Theta is another commonly-used Greek. It measures how time erosion affects the price of options. Long contracts have negative theta, while short options have positive theta (because they profit from time erosion). In the calendar spread, the expiration dates differ, and this will affect the net theta.</p>
+                    
+                      <p>Theta is another commonly-used Greek. It measures how time erosion affects the price of options. Long contracts have negative theta, while short options have positive theta (because they profit from time erosion). In the calendar spread, the expiration dates differ, and this will affect the net theta.</p>
 <h2>Preparing the Order</h2>
-<p>Since one leg is long in this trade, and one is short, the cost to enter is small. In fact, as already mentioned, this particular strategy will earn a premium. If you wish, you can trade more than one contract per leg, but be sure to keep the ratio at 1:1. Also remember that for each contract that gets assigned, you’ll have to sell 100 shares of <a href=https://www.drhorton.com>D. R. Horton</a> (ticker symbol DHI), which is trading for $41.60 right now.</p>
+<p>Since one leg is long in this trade, and one is short, the cost to enter is small. In fact, as already mentioned, this particular strategy will earn a premium. If you wish, you can trade more than one contract per leg, but be sure to keep the ratio at 1:1. Also remember that for each contract that gets assigned, you’ll have to sell 100 shares of <a href="https://www.drhorton.com">D. R. Horton</a> (ticker symbol DHI), which is trading for $41.60 right now.</p>
 <p>You will do eight contracts per leg. The number of options should be easily adjustable using your broker’s order form. Remember to double check the expiration dates before submitting your order.</p>
 <p>The closest strike price is $41.50, which means the short calls will be ITM straight away. Here’s the trade result:</p>
 <blockquote>Buy 8 DHI 14-day 41.50 calls @ -1.40 -$1,120</blockquote>
 <blockquote>Sell 8 DHI 28-day 41.50 calls @ 1.75 $1,400</blockquote>
-<blockquote><strong>Net Credit $280</strong></blockquote>
+<blockquote><strong>Net Credit	$280</strong></blockquote>
 <p>It’s a decent $280 profit before a $15 commission is considered.</p>
 <h2>Trade Result</h2>
 <p>Because the short calls are ITM, you need to decide now how you will handle an assignment. In the short calendar play, you have long calls of the same stock, and you can use these to cover a short stock position.</p>
 <p>During the first week, DHI moves sideways between $41.20 and $41.70. This is about what you expected in the lead up to the economic report.</p>
 <p>On Tuesday of the second week, the government reports a significant uptick in the number of housing starts and building permits issued. As a result, traders send DHI up to $43. While it’s good that the stock is moving, the short calls are now deeper ITM.</p>
 <p>As of Friday approaches, DHI continues climbing, and the long calls are getting closer to their expiration date. Most brokers in the United States will automatically exercise any contract on its expiration day if it is in the money by $0.01 or more. If you don’t want your ITM options exercised (for example, you don’t want to take on shares of the stock) you can call your broker and request the contracts not be exercised. Or you can sell to close the calls before expiration, and this would generate a profit. Obviously, the second choice is preferable.</p>
-<p>In the short calendar spread, exercising the near calls is advantageous because it gives you the shares you’ll need to fulfill your obligation on the short leg if it is exercised. Because the short call is in-the-money in our example, this is probably the wisest choice here.<br></p>
-<p>
-<a href="/blog/good-results.jpg?mtime=20190525120213">
-<img src="/blog/_width1000/good-results.jpg?mtime=20190525120213" style="width:100%;float:none;display:block;margin:0 auto" alt="Good Results">
-</a>
+<p>In the short calendar spread, exercising the near calls is advantageous because it gives you the shares you’ll need to fulfill your obligation on the short leg if it is exercised. Because the short call is in-the-money in our example, this is probably the wisest choice here.<br /></p>
+                    
+                      <p>
+    <a href="/blog/good-results.jpg?mtime=20190525120213">
+      <img src="/blog/_width1000/good-results.jpg?mtime=20190525120213" style="width: 100%; float: none; display: block; margin: 0px auto;" alt="Good Results" />
+  </a>  
 </p>
-<p>Friday evening, your broker gives you 800 shares of DHI and charges you $33,200. You’re going to have to pay margin interest on this because you don’t have the cash in your account to buy the shares.</p>
+                    
+                      <p>Friday evening, your broker gives you 800 shares of DHI and charges you $33,200. You’re going to have to pay margin interest on this because you don’t have the cash in your account to buy the shares.</p>
 <p>On Monday morning, D. R. Horton continues its advance, and this move puts the short calls further ITM. As the short leg gains more intrinsic value, it becomes more likely that you will receive an assignment eventually. In this situation, you could go ahead and close out the short contracts; but since you purchased the stock, you decide to wait it out. Buying to close the short contracts will cost a pretty premium at this point because they are so valuable.</p>
 <p>D. R. Horton stabilizes at $48 during the final week of the trade, and you receive an assignment after the market closes on Friday. This earns you $33,200 (800 shares × $41.50), and the stock position is closed.</p>
 <h2>Finding the Bottom Line</h2>
@@ -171,181 +244,264 @@ our journey to demystify the complex yet rewarding world of options trading.
 <p>Net credit – Stock purchase – Margin interest + Stock sale – Commissions = Bottom line</p>
 <p>$280 – $33,200 – $110 + $33,200 – $55 = <strong>$115</strong></p>
 <p>It’s a decent gain of $115. Carrying the stock on margin for two weeks cost almost the same amount.</p>
-<div class=blog-must-reads>
-<b>Enjoyed this post? Here are some must reads.</b>
-<ul>
-<li>
-<a href=https://options.cafe/blog/what-is-a-put-credit-spread/>What Is a Put Credit Spread?</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/the-long-calendar-spread-explained/>The Long Calendar Spread Explained</a>
-</li>
-<li>
-<a href=https://options.cafe/blog/how-to-profit-with-a-short-calendar-spread/>How to Profit with a Short Calendar Spread</a>
-</li>
+<div class="blog-must-reads">
+  <b>Enjoyed this post? Here are some must reads.</b>
+  <ul>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/what-is-a-put-credit-spread/">What Is a Put Credit Spread?</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/the-long-calendar-spread-explained/">The Long Calendar Spread Explained</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="https://options.cafe/blog/how-to-profit-with-a-short-calendar-spread/">How to Profit with a Short Calendar Spread</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+
+  <p>
+    <b>Related Topics: </b>
+    
+    
+      
+        
+        
+          <a href="https://options.cafe/related-topics/calendar-spread/" class="capitalize">calendar spread</a
+          ></p></div>
+
+            <div class="article__actions">
+              <div class="widget widget--socials widget--secondary">
+                <div class="widget__head">
+                  <h5 class="widget__title">
+                    Like what you read? Please Share!
+                  </h5>
+                </div>
+
+                <div class="widget__body">
+                  <div class="socials"><ul>
+  <li>
+    <a
+      href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f&via=options_cafe"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      style="margin-right: 5px"
+    >
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f"
+      onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+    >
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-<p>
-<b>Related Topics: </b>
-<a href=https://options.cafe/related-topics/calendar-spread/ class=capitalize>calendar spread</a></p></div>
-<div class=article__actions>
-<div class="widget widget--socials widget--secondary">
-<div class=widget__head>
-<h5 class=widget__title>
-Like what you read? Please Share!
-</h5>
-</div>
-<div class=widget__body>
-<div class=socials><ul>
-<li>
-<a href="https://twitter.com/share?url=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f&via=options_cafe" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1" style=margin-right:5px>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2foptions.cafe%2fblog%2fimplementing-a-short-calendar-spread-with-call-options%2f" onclick="return window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'),!1">
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                </div>
+              </div>
+            </div>
 </article>
-</div><div class=sidebar>
-<ul class=widgets>
-<li class="widget widget--categories">
-<div class=widget__head>
-<h2 class=widget__title>Categories</h2>
+        </div><div class="sidebar">
+  <ul class="widgets">
+    <li class="widget widget--categories">
+      <div class="widget__head">
+        <h2 class="widget__title">Categories</h2>
+      </div>
+
+      <div class="widget__body">
+        <ul class="list-links">
+          <li>
+            <a href="https://options.cafe//blog">All Posts</a>
+          </li>
+
+          
+            <li>
+              <a href="https://options.cafe//blog/education"
+                >Education</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/random-fun"
+                >Random Fun</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-trades"
+                >Spicer&#39;s Trades</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/spicers-soapbox"
+                >Spicer&#39;s Soapbox</a
+              >
+            </li>
+          
+            <li>
+              <a href="https://options.cafe//blog/company-updates"
+                >Company Updates</a
+              >
+            </li>
+          
+        </ul>
 </div>
-<div class=widget__body>
-<ul class=list-links>
-<li>
-<a href=https://options.cafe//blog>All Posts</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/education>Education</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/random-fun>Random Fun</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-trades>Spicer's Trades</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/spicers-soapbox>Spicer's Soapbox</a>
-</li>
-<li>
-<a href=https://options.cafe//blog/company-updates>Company Updates</a>
-</li>
-</ul>
+    </li>
+
+    <li class="widget widget--ad"><div class="widget__head home-page-click">
+  <h2 class="widget__title">
+    <span>Options Cafe</span>
+    Trading
+  </h2>
 </div>
-</li>
-<li class="widget widget--ad"><div class="widget__head home-page-click">
-<h2 class=widget__title>
-<span>Options Cafe</span>
-Trading
-</h2>
-</div>
+
 <figure class="widget__image home-page-click">
-<img src=/css/images/temp/trading.jpg alt>
+  <img src="/css/images/temp/trading.jpg" alt="" />
 </figure>
-<div class=widget__actions>
-<a href=https://options.cafe/ onclick="_paq.push(['trackEvent','Ad','Click','Ad Click Blog Sidebar'])">Learn More <i class=ico-arrow-right-light></i></a>
+
+<div class="widget__actions">
+  <a
+    href="https://options.cafe/"
+    onclick="javascript:_paq.push(['trackEvent', 'Ad', 'Click', 'Ad Click Blog Sidebar']);"
+    >Learn More <i class="ico-arrow-right-light"></i
+  ></a>
 </div>
 </li>
-<li class="widget widget--socials"><div class=widget__head>
-<h3 class=widget__title>Follow us!</h3>
-<h4>On social media</h4>
+
+    <li class="widget widget--socials"><div class="widget__head">
+  <h3 class="widget__title">Follow us!</h3>
+  <h4>On social media</h4>
 </div>
-<div class=widget__body>
-<div class=socials>
-<ul>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter></i>
-</a>
+
+<div class="widget__body">
+  <div class="socials">
+    <ul>
+      <li>
+        <a href="https://twitter.com/options_cafe">
+          <i class="ico-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/optionscafetrading">
+          <i class="ico-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 </li>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook></i>
-</a>
-</li>
-</ul>
+  </ul>
 </div>
 </div>
-</li>
-</ul>
+    </div>
+  </div><div class="shell">
+  <div class="subscribe">
+    <div class="subscribe__content">
+      <img src="https://options.cafe/css/images/temp/letter.png" alt="" class="subscribe__image" width="140" height="111" />
+      <h1>Options Cafe Newsletter</h1>
+      <p>Get our latest news delivered to your inbox.</p>
+    </div>
+
+    <aside class="subscribe__aside">
+      <form action="" method="post" class="newsletter-form">
+        <label for="mail2" class="subscribe__label">Email</label>
+        <span class="subscribe__alert" style="display: none">Thanks! You won't regret it!</span>
+        <input type="email" id="mail2" name="email" value="" class="subscribe__field" />
+        <input type="hidden" name="entry_type" value="Newsletter Footer Subscribe" />
+        <input type="submit" name="subscribe" value="Subscribe" class="btn btn--medium subscribe__btn" />
+      </form>
+    </aside>
+  </div>
 </div>
-</div>
-</div>
-</div><div class=shell>
-<div class=subscribe>
-<div class=subscribe__content>
-<img src=https://options.cafe/css/images/temp/letter.png alt class=subscribe__image width=140 height=111>
-<h1>Options Cafe Newsletter</h1>
-<p>Get our latest news delivered to your inbox.</p>
-</div>
-<aside class=subscribe__aside>
-<form method=post class=newsletter-form>
-<label for=mail2 class=subscribe__label>Email</label>
-<span class=subscribe__alert style=display:none>Thanks! You won't regret it!</span>
-<input type=email id=mail2 name=email class=subscribe__field>
-<input type=hidden name=entry_type value="Newsletter Footer Subscribe">
-<input type=submit name=subscribe value=Subscribe class="btn btn--medium subscribe__btn">
-</form>
-</aside>
-</div>
-</div>
-</div><footer class=footer>
-<div class=shell>
-<div class=footer__inner>
-<div class=footer__content>
-<a href=https://options.cafe/ class=footer__logo>O/C</a>
-<p class=copyright>
-<span class=broker-statement>
-Brokerage services provided by <a href=https://brokerage.tradier.com target=_blank>Tradier Brokerage</a> Member <a href=http://www.finra.org target=_blank>FINRA</a>/<a href=https://www.sipc.org target=_blank>SIPC</a></span> <br>
-<span class=cloudmanic-copyright>© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
-</p>
-<p></p>
-</div>
-<aside class=footer__aside>
-<nav class=footer__nav><ul>
-<li>
-<a href=https://options.cafe/terms-of-service>Terms of Service</a>
-</li>
-<li>
-<a href=https://options.cafe/privacy-policy>Privacy Policy</a>
-</li>
-<li>
-<a href=https://options.cafe/refunds>Refunds</a>
-</li>
-<li>
-<a href=https://options.cafe/about>About Us</a>
-</li>
+
+		</div><footer class="footer">
+    <div class="shell">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <a href="https://options.cafe/" class="footer__logo">O/C</a>
+
+                <p class="copyright">
+                    <span class="broker-statement">
+                        Brokerage services provided by <a href="https://brokerage.tradier.com" target="_blank">Tradier Brokerage</a> Member <a href="http://www.finra.org" target="_blank">FINRA</a>/<a href="https://www.sipc.org" target="_blank">SIPC</a></span> <br />
+                    <span class="cloudmanic-copyright">© 2023. All rights reserved. Options Cafe is a <a href="https://cloudmanic.com?utm_campaign=options.cafe">Cloudmanic Labs</a> company</span>
+                </p>
+                <p></p>
+            </div>
+
+            <aside class="footer__aside">
+                <nav class="footer__nav"><ul>
+  <li>
+    <a href="https://options.cafe/terms-of-service">Terms of Service</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/privacy-policy">Privacy Policy</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/refunds">Refunds</a>
+  </li>
+  <li>
+    <a href="https://options.cafe/about">About Us</a>
+  </li>
 </ul>
 </nav>
-<div class=socials><ul>
-<li>
-<a href=https://www.facebook.com/optionscafetrading>
-<i class=ico-facebook-circle></i>
-</a>
-</li>
-<li>
-<a href=https://twitter.com/options_cafe>
-<i class=ico-twitter-circle></i>
-</a>
-</li>
+
+                <div class="socials"><ul>
+  <li>
+    <a href="https://www.facebook.com/optionscafetrading">
+      <i class="ico-facebook-circle"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://twitter.com/options_cafe">
+      <i class="ico-twitter-circle"></i>
+    </a>
+  </li>
 </ul>
 </div>
-</aside>
-</div>
-</div>
+            </aside>
+        </div>
+    </div>
 </footer></div>
-<script type=text/javascript>var _paq=_paq||[];_paq.push(["setCookieDomain","*.options.cafe"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var b=("https:"==document.location.protocol?"https":"http")+"://piwik.cloudmanic.com/",c,a,d;_paq.push(["setTrackerUrl",b+"piwik.php"]),_paq.push(["setSiteId",5]),c=document,a=c.createElement("script"),d=c.getElementsByTagName("script")[0],a.type="text/javascript",a.defer=!0,a.async=!0,a.src=b+"piwik.js",d.parentNode.insertBefore(a,d)}()</script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.options.cafe"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function () {
+    var u = ("https:" == document.location.protocol ? "https" : "http") + "://piwik.cloudmanic.com/";
+    _paq.push(["setTrackerUrl", u + "piwik.php"]);
+    _paq.push(["setSiteId", 5]);
+    var d = document,
+      g = d.createElement("script"),
+      s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.defer = true;
+    g.async = true;
+    g.src = u + "piwik.js";
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
 <noscript>
-<p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style=border:0 alt></p>
+  <p><img src="https://piwik.cloudmanic.com/piwik.php?idsite=5" style="border: 0" alt="" /></p>
 </noscript>
 </body>
+
 </html>
