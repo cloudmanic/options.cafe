@@ -1,18 +1,19 @@
 <ol class="articles">
   {{ range (.Paginate .RegularPagesRecursive).Pages }}
+    {{ $image := resources.Get .Params.image }}
+    {{ $image := $image.Fill "700x700" }}
+
+
     <li class="article article--small">
       <figure class="article__image">
-        <a href="{{ .URL }}">
-          <img
-            src="{{ .Site.BaseURL }}{{ .Params.image }}"
-            alt="{{ .Title }}"
-          />
+        <a href="{{ .Permalink }}">
+          <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" />
         </a>
       </figure>
 
       <div class="article__content">
         <div class="article__head">
-          <a href="{{ .URL }}"><h1>{{ .Title }}</h1></a>
+          <a href="{{ .Permalink }}"><h1>{{ .Title }}</h1></a>
 
           <div class="article__meta">
             {{ range .Params.categories }}
@@ -32,7 +33,7 @@
         </div>
 
         <div class="article__actions">
-          <a href="{{ .URL }}">Read More</a>
+          <a href="{{ .Permalink }}">Read More</a>
         </div>
       </div>
     </li>

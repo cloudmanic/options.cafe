@@ -15,13 +15,15 @@ $rss_obj = simplexml_load_string($rss_xml);
 foreach ($rss_obj->channel->item as $item) {
     $file_title = str_replace($baseUrl . '/blog/', '', $item->link) . ".html";
 
+    $image =  strstr(str_replace("https://cdn.options.cafe/", "", $item->image), "?", true);
+
     $page = "---\n";
     $page .= "title: \"" . $item->title . "\"\n";
     $page .= "date: " . date('Y-m-d\TH:i:sP', strtotime($item->pubDate)) . "\n"; // 2020-06-10T01:18:58-07:00
     $page .= "draft: false\n";
     $page .= "author: \"$item->author\"\n";
     $page .= "categories: [\"$item->category\"]\n";
-    $page .= "image: \"" . str_replace("https://cdn.options.cafe/", "", $item->image) . "\"\n";
+    $page .= "image: \"" . $image . "\"\n";
     $page .= "description: \"" . trim($item->blogDesc) . "\"\n";
 
     $page .= "blog_tags: [\n";
