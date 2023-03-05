@@ -1,6 +1,7 @@
 /.env
 /.idea
 /vendor
+/docs
 node_modules
 .DS_Store
 *.retry
