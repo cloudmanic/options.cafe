@@ -21,11 +21,11 @@
     "
   />
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
-  <meta name="twitter:title" content="{{ .Title }} - Options Cafe" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
+  <meta property="twitter:title" content="{{ .Title }} - Options Cafe" />
   <meta
-    name="twitter:description"
+    property="twitter:description"
     content="{{- if .Description -}}
       {{- .Description -}}
     {{- else -}}
@@ -33,9 +33,9 @@
     {{- end -}}"
   />
 
-  <meta name="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
-  <meta name="og:title" content="{{ .Title }} - Options Cafe" />
-  <meta name="og:url" content="{{ .Permalink }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
+  <meta property="og:title" content="{{ .Title }} - Options Cafe" />
+  <meta property="og:url" content="{{ .Permalink }}" />
   <meta
     name="og:description"
     content="{{- if .Description -}}
@@ -45,18 +45,18 @@
     {{- end -}}"
   />
   {{ if $.Param "image" }}
-    <meta name="twitter:image" content="{{ $.Param "image" | absURL }}" />
+    <meta property="twitter:image" content="{{ $.Param "image" | absURL }}" />
     <meta property="og:image" content="{{ $.Param "image" | absURL }}" />
     <meta property="og:image:secure_url" content="{{ $.Param "image" | absURL }}" />
   {{ else }}
-    <meta name="twitter:image" content="{{ $shareImg.Permalink }}" />
+    <meta property="twitter:image" content="{{ $shareImg.Permalink }}" />
     <meta property="og:image" content="{{ $shareImg.Permalink }}" />
     <meta property="og:image:secure_url" content="{{ $shareImg.Permalink }}" />
   {{ end }}
 
 
   <meta property="og:type" content="article" />
-  <meta name="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
+  <meta property="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
   <meta property="fb:pages" content="{{ .Site.Params.facebookPageId }}" />
 
   <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}" />
