@@ -1,4 +1,4 @@
 ---
 type: "course"
-title: "Hero to Hero Options Trading Course"
+title: "Zero to Hero Options Trading Course"
 ---
