@@ -21,11 +21,12 @@
     "
   />
 
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
-  <meta property="twitter:title" content="{{ .Title }} - Options Cafe" />
+  {{/* Twitter stuff */}}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
+  <meta name="twitter:title" content="{{ .Title }} - Options Cafe" />
   <meta
-    property="twitter:description"
+    name="twitter:description"
     content="{{- if .Description -}}
       {{- .Description -}}
     {{- else -}}
@@ -33,9 +34,13 @@
     {{- end -}}"
   />
 
+  {{/* Facebook stuff */}}
   <meta property="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
   <meta property="og:title" content="{{ .Title }} - Options Cafe" />
   <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="article" />
+  <meta property="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
+  <meta property="fb:pages" content="{{ .Site.Params.facebookPageId }}" />
   <meta
     name="og:description"
     content="{{- if .Description -}}
@@ -44,6 +49,8 @@
       {{- .Site.Params.description }}
     {{- end -}}"
   />
+
+  {{/* Image stuff */}}
   {{ if $.Param "image" }}
     <meta property="twitter:image" content="{{ $.Param "image" | absURL }}" />
     <meta property="og:image" content="{{ $.Param "image" | absURL }}" />
@@ -55,12 +62,7 @@
   {{ end }}
 
 
-  <meta property="og:type" content="article" />
-  <meta property="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
-  <meta property="fb:pages" content="{{ .Site.Params.facebookPageId }}" />
-
   <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}" />
-
   <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
   <link rel="stylesheet" href="{{ $cssStyle.Permalink }}" />
   <link rel="stylesheet" href="{{ $cssApp.Permalink }}" />
