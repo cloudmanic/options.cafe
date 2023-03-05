@@ -1,0 +1,2097 @@
+BlogId,"BlogTitle","BlogDate","BlogCategory","BlogSummary","BlogBody","BlogDescription",BlogImage,"BlogStatus",BlogOrder,"BlogUpdatedAt","BlogCreatedAt"
+3,"Hello Interwebs","2014-11-17 00:00:00","posts","<p>
+Welcome to the inaugural blog post of <a href=\"http://stockpeer.com\">Stockpeer.com</a>. To find out more about me, <a href=\"https://twitter.com/spicermatthews\">Spicer</a>, take a detour and check out the <a href=\"http://stockpeer.com/about\">About page</a>. To learn more about Stockpeer, read on.
+</p>
+
+<p>
+I have been investing and trading in the stock market for more than a decade and developing web and mobile software for <a href=\"https://cloudmanic.com/\">Cloudmanic Labs</a> since I founded the company in 1998. When a person has been doing something for 10 years I usually assume that he or she has reached expert status. I am not convinced, however, that anyone can be considered an expert in the wild and wooly worlds of investing and software development—so let’s just say I have learned a thing or two. I envision Stockpeer as a forum for sharing my experience and knowledge to help others create wealth and a place to document trading research and innovations. Though I intend to baby step Stockpeer initially, I have plans for much, much more—eventually.</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/newspaper-418919_128044_4.jpg\" style=\"width: 366.411371237458px; height: 259px; float: none; display: block; margin: 0px auto;\" alt=\"stock and options training online\">
+</p>
+
+<p>
+For now the focus of Stockpeer will be how I use custom software in my daily trading. I plan to share the results of different algorithms I have developed to gain an edge in the market, trade more efficiently, and learn how the market really works. I do not expect to talk much about <a href=\"http://en.wikipedia.org/wiki/High-frequency_trading\">high frequency trading</a> (HFT) because it’s not really my thing. (I make this disclaimer because people often associate HFT with algorithms and computer-assisted trading.)
+</p>
+","<p>
+Welcome to the inaugural blog post of <a href=\"http://stockpeer.com\">Stockpeer.com</a>. To find out more about me, <a href=\"https://twitter.com/spicermatthews\">Spicer</a>, take a detour and check out the <a href=\"http://stockpeer.com/about\">About page</a>. To learn more about Stockpeer, read on.
+</p>
+
+<p>
+I have been investing and trading in the stock market for more than a decade and developing web and mobile software for <a href=\"https://cloudmanic.com/\">Cloudmanic Labs</a> since I founded the company in 1998. When a person has been doing something for 10 years I usually assume that he or she has reached expert status. I am not convinced, however, that anyone can be considered an expert in the wild and wooly worlds of investing and software development—so let’s just say I have learned a thing or two. I envision Stockpeer as a forum for sharing my experience and knowledge to help others create wealth and a place to document trading research and innovations. Though I intend to baby step Stockpeer initially, I have plans for much, much more—eventually.</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/newspaper-418919_128044_4.jpg\" style=\"width: 366.411371237458px; height: 259px; float: none; display: block; margin: 0px auto;\" alt=\"stock and options training online\">
+</p>
+
+<p>
+For now the focus of Stockpeer will be how I use custom software in my daily trading. I plan to share the results of different algorithms I have developed to gain an edge in the market, trade more efficiently, and learn how the market really works. I do not expect to talk much about <a href=\"http://en.wikipedia.org/wiki/High-frequency_trading\">high frequency trading</a> (HFT) because it’s not really my thing. (I make this disclaimer because people often associate HFT with algorithms and computer-assisted trading.) What I am most interested in is using software to process massive amounts of data to inform trading decisions. I tend to favor options trading; at least, I have the most to say on that topic. I might also touch upon bankroll management, real estate, and long-term equity investing.</p>Over time Stockpeer will expand, but initially I am broadcasting to the world whatever opinions and insights I have to offer via regular blog posts. Please bookmark this blog, add it to your RSS reader, and of course follow Stockpeer on <a href=\"https://www.facebook.com/stockpeer\">Facebook</a>, <a href=\"http://twitter.com/stockpeer\">Twitter</a>, and <a href=\"https://plus.google.com/b/102290166024113046526/102290166024113046526\"></a><a href=\" https://google.com/+Stockpeer\">Google+</a>.
+<p></p>
+","I have been investing and trading in the stock market for more than a decade and developing web and mobile software for Cloudmanic Labs since I founded the comp",4,"Active",1,"2014-11-17 11:45:51","2014-11-17 11:45:51"
+4,"Why I Am Sharing My Trades - October 2014 Trades","2014-11-19 00:00:00","trades","<p>
+Below you will find all of the trades I closed out in October 2014. I plan to post a summary of my complete (not cherry picked) credit spread portfolio each month, and in the future I will share trades as I make them. Why am I doing this? Because bragging about my winning trades strokes my ego, of course. :)
+</p>
+
+<p>
+Though that last statement might be partly true, I am really divulging my trades for more worthy reasons. For one, I want to share my successes and failures so others can see what I do every day—and hopefully we can start a conversation. You see, trading is a solo sport that results in a lot of second guessing of oneself. When I review the trades of others I feel less lonely and, more important, I learn. Which leads me to the second reason: through dialog with other traders I hope to become a better trader myself. Also, I enjoy helping new traders by explaining the rationale for my trades. Lastly, I am seeking a kind of validation by sharing my trades—particularly my successes. After all, this is a trading and investing blog and on Wall Street you live and die by your trades. I invite you to use my trading performance to help you decide whether you want to bookmark and share on social media my blog posts.
+</p>
+
+<h3>Shut Up and Show the Trades</h3>
+
+<div class=\"trade-table\">
+<table class=\"table\">
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Type</th>
+<th>Spread</th>
+<th>Expire Date</th>
+<th>Open Date</th>
+<th>Closed Date</th>
+<th>Open Credit</th>
+<th>Closed Debit</th>
+<th>Profit / Loss</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>SPY</td> <td>Put</td> <td>181 / 183</td> <td>11/22/14</td><td>10/8/14</td><td>10/30/14</td><td>$0.22</td><td>$0.03</td><td>10.67%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>179 / 181</td> <td>11/7/14</td><td>10/9/14</td><td>10/27/14</td><td>$0.18</td><td>$0.03</td><td>8.24%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>172 / 174</td> <td>11/22/14</td><td>10/12/14</td><td>10/27/14</td><td>$0.22</td><td>$0.03</td><td>10.67%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>168 / 170</td> <td>11/14/14</td><td>10/14/14</td><td>10/23/14</td><td>$0.27</td><td>$0.03</td><td>13.87%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>167 / 169</td> <td>11/22/14</td><td>10/14/14</td><td>10/23/14</td><td>$0.20</td><td>$0.03</td><td>9.44%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+As you can see, October was a great month of trading. Credit spread traders yearn for months like this. The <a href=\"http://finance.yahoo.com/q?s=%5EVIX\">VIX</a> spiked on fears related to the Ebola crisis, tensions between Russia and Ukraine, and suspicion that the market correction we have all been expecting was imminent. When volatility (VIX) &nbsp;spikes we can collect bigger amounts of premium when selling credit spreads.
+</p>
+","<p>
+Below you will find all of the trades I closed out in October 2014. I plan to post a summary of my complete (not cherry picked) credit spread portfolio each month, and in the future I will share trades as I make them. Why am I doing this? Because bragging about my winning trades strokes my ego, of course. :)
+</p>
+
+<p>
+Though that last statement might be partly true, I am really divulging my trades for more worthy reasons. For one, I want to share my successes and failures so others can see what I do every day—and hopefully we can start a conversation. You see, trading is a solo sport that results in a lot of second guessing of oneself. When I review the trades of others I feel less lonely and, more important, I learn. Which leads me to the second reason: through dialog with other traders I hope to become a better trader myself. Also, I enjoy helping new traders by explaining the rationale for my trades. Lastly, I am seeking a kind of validation by sharing my trades—particularly my successes. After all, this is a trading and investing blog and on Wall Street you live and die by your trades. I invite you to use my trading performance to help you decide whether you want to bookmark and share on social media my blog posts.
+</p>
+
+<h3>Shut Up and Show the Trades</h3>
+
+<div class=\"trade-table\">
+<table class=\"table\">
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Type</th>
+<th>Spread</th>
+<th>Expire Date</th>
+<th>Open Date</th>
+<th>Closed Date</th>
+<th>Open Credit</th>
+<th>Closed Debit</th>
+<th>Profit / Loss</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>SPY</td> <td>Put</td> <td>181 / 183</td> <td>11/22/14</td><td>10/8/14</td><td>10/30/14</td><td>$0.22</td><td>$0.03</td><td>10.67%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>179 / 181</td> <td>11/7/14</td><td>10/9/14</td><td>10/27/14</td><td>$0.18</td><td>$0.03</td><td>8.24%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>172 / 174</td> <td>11/22/14</td><td>10/12/14</td><td>10/27/14</td><td>$0.22</td><td>$0.03</td><td>10.67%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>168 / 170</td> <td>11/14/14</td><td>10/14/14</td><td>10/23/14</td><td>$0.27</td><td>$0.03</td><td>13.87%</td></tr>
+
+<tr><td>SPY</td> <td>Put</td> <td>167 / 169</td> <td>11/22/14</td><td>10/14/14</td><td>10/23/14</td><td>$0.20</td><td>$0.03</td><td>9.44%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+As you can see, October was a great month of trading. Credit spread traders yearn for months like this. The <a href=\"http://finance.yahoo.com/q?s=%5EVIX\">VIX</a> spiked on fears related to the Ebola crisis, tensions between Russia and Ukraine, and suspicion that the market correction we have all been expecting was imminent. When volatility (VIX) &nbsp;spikes we can collect bigger amounts of premium when selling credit spreads.
+</p>
+
+<p>
+It remains to be seen whether or not we are going to retest the lows we hit in October. I think the market will continue to rise or will flatten out. October marked the start of the last quarter of the year, and I believe that when the S&amp;P 500 hit its low fund managers started to buy. A spike often occurs in the last quarter because fund managers want to close out the year on a high note—that is, with profits.
+</p>
+
+<p>
+Corporate earnings have been great in 2014, Ebola seems to be under control (the media coverage was overblown), and the situation in Russia is not likely to have a major impact here at home. When the S&amp;P was falling I was selling put credit spreads all the way down—typically out 30 to 45 days—with the knowledge that the market would pick back up or at least not drop too far. Corrections <a href=\"http://video.cnbc.com/gallery/?video=3000321243\">typically pull back 10%</a> from their highs so I was watching the 180 level on the <a href=\"https://www.google.com/finance?q=NYSEARCA%3ASPY&amp;ei=Vp9SVMCRD9CziALp3ID4Dg\">SPY</a>, figuring that any put spreads I could sell below that would have a high chance of returns.
+</p>
+
+<p>
+When the fear sell-off was done the VIX came back, causing the put spread to have nice gains. Most of the trades I closed in October 2014 closed a week or two earlier than normal due to the swing in volatility.
+</p>
+","Here you will find all of the trades I closed out in October 2014. I plan to post a summary of my complete (not cherry picked) credit spread portfolio each mont",6,"Active",2,"2014-11-18 17:37:42","2014-11-18 17:37:42"
+5,"The Only Free Lunch in Trading Is a Consistent Strategy","2014-11-24 00:00:00","posts","<p>
+What I mean is this: if you build a smart trading strategy and stick to it you are almost certain to make money. I make this claim with such conviction because I assume that you <a href=\"http://www.investopedia.com/terms/b/backtesting.asp\">backtest</a> your strategy. That you factor in maximum drawdown periods (times when you lose money). And most critical, that you understand the importance of fidelity to your strategy—because inconsistent strategy is the road to a blown-out account.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/hearts-free-lunch_7.jpg\" style=\"width: 454.196392785571px; height: 303px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Build a Smart Strategy</b></p>
+<p>
+Go as far back as possible and <a href=\"http://en.wikipedia.org/wiki/Backtesting\">backtest</a> the heck out of your strategy to verify that it works. Acknowledged: past performance is not an indicator of future returns—but it is all you have to base your strategy on so I say stick with it. And remember to factor in drawdown periods. Don’t kid yourself—even the best strategy will periodically break down and you will lose money. A good backtest will give you an idea of how much you are likely to lose during big drawdowns, but be conservative and assume that the future might hold even bigger drawdowns. Also, make sure you are managing your cash so you can trade through drawdown periods. 
+</p>
+","<p>
+What I mean is this: if you build a smart trading strategy and stick to it you are almost certain to make money. I make this claim with such conviction because I assume that you <a href=\"http://www.investopedia.com/terms/b/backtesting.asp\">backtest</a> your strategy. That you factor in maximum drawdown periods (times when you lose money). And most critical, that you understand the importance of fidelity to your strategy—because inconsistent strategy is the road to a blown-out account.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/hearts-free-lunch_7.jpg\" style=\"width: 454.196392785571px; height: 303px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Build a Smart Strategy</b></p>
+
+<p>
+Go as far back as possible and <a href=\"http://en.wikipedia.org/wiki/Backtesting\">backtest</a> the heck out of your strategy to verify that it works. Acknowledged: past performance is not an indicator of future returns—but it is all you have to base your strategy on so I say stick with it. And remember to factor in drawdown periods. Don’t kid yourself—even the best strategy will periodically break down and you will lose money. A good backtest will give you an idea of how much you are likely to lose during big drawdowns, but be conservative and assume that the future might hold even bigger drawdowns. Also, make sure you are managing your cash so you can trade through drawdown periods. 
+</p>
+
+<p><b>Don’t Waver (Often)</b></p>
+
+<p>
+Every strategy needs to be monitored and adjusted—but resist the temptation to constantly tweak. If your strategy is not ready for prime time you should be <a href=\"http://www.investopedia.com/terms/p/papertrade.asp\">paper trading</a> or trading with a very small amount of money. The biggest mistake is making too many adjustments. Keep calm and carry on trading through drawdown periods. Do not panic. &nbsp;</p>
+
+<p><b>Enjoy Your Free Lunch</b></p>
+
+<p>
+If you backtest you will have confidence in your strategy, and if you are disciplined your strategy should succeed. With strategy-based trading the hard work is up front. Do not overthink things or get emotional about returns when you are finally implementing your strategy. Consistency is the only free lunch.
+</p>
+","If you backtest you will have confidence in your strategy, and if you are disciplined your strategy should succeed. With strategy-based trading the hard work is",7,"Active",3,"2014-11-23 13:39:35","2014-11-23 13:39:35"
+6,"November 2014 Trades","2014-11-28 00:00:00","trades","<div class=\"trade-table\">
+	<table class=\"table\">
+		<thead>
+			<tr>
+				<th>Ticker</th>
+				<th>Type</th>
+				<th>Spread</th>
+				<th>Expire Date</th>
+				<th>Open Date</th>
+				<th>Closed Date</th>
+				<th>Open Credit</th>
+				<th>Closed Debit</th>
+				<th>Profit / Loss</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>180 / 176</td>
+				<td>11/22/14</td>
+				<td>10/8/14</td>
+				<td>11/2/14</td>
+				<td>$0.40</td>
+				<td>$0.03</td>
+				<td>10.28%</td>					
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>185 / 187</td>
+				<td>12/5/14</td>				
+				<td>10/23/2014</td>
+				<td>11/9/2014</td>
+				<td>$0.27</td>
+				<td>$0.03</td>
+				<td>13.87%</td>						
+			</tr>
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>184 / 186</td>
+				<td>11/28/14</td>
+				<td>10/26/14</td>
+				<td>11/6/14</td>
+				<td>$0.19</td>	
+				<td>$0.03</td>	
+				<td>8.84%</td>										
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>185 / 187</td>
+				<td>11/28/14</td>
+				<td>10/27/2014</td>
+				<td>11/6/2014</td>
+				<td>$0.17</td>	
+				<td>$0.03</td>	
+				<td>7.65%</td>										
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>186 / 188</td>
+				<td>12/5/14</td>				
+				<td>10/28/2014</td>
+				<td>11/10/2014</td>
+				<td>$0.22</td>
+				<td>$0.03</td>
+				<td>10.67%</td>						
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>186.5 / 188.5</td>
+				<td>12/5/14</td>				
+				<td>10/29/2014</td>
+				<td>11/16/2014</td>
+				<td>$0.19</td>
+				<td>$0.03</td>
+				<td>8.84%</td>						
+			</tr>									
+		</tbody>
+	</table>
+</div>
+
+<p>
+Another successful month. Mostly closing out trades made during the high volatility we saw in <a href=\"https://stockpeer.com/blog/4/why-i-am-sharing-my-trades-october-2014-trades\">October</a>. The trades that we put on in November (which will be reported in December) are taking much longer to close out because volatility has dropped. This month our trades took an average of 15.66 days to close. Our trades next month will take longer because of the low volatility. We made an average profit of 10.03% on our trades this month. Pretty good. 
+</p>","<div class=\"trade-table\">
+	<table class=\"table\">
+		<thead>
+			<tr>
+				<th>Ticker</th>
+				<th>Type</th>
+				<th>Spread</th>
+				<th>Expire Date</th>
+				<th>Open Date</th>
+				<th>Closed Date</th>
+				<th>Open Credit</th>
+				<th>Closed Debit</th>
+				<th>Profit / Loss</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>180 / 176</td>
+				<td>11/22/14</td>
+				<td>10/8/14</td>
+				<td>11/2/14</td>
+				<td>$0.40</td>
+				<td>$0.03</td>
+				<td>10.28%</td>					
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>185 / 187</td>
+				<td>12/5/14</td>				
+				<td>10/23/2014</td>
+				<td>11/9/2014</td>
+				<td>$0.27</td>
+				<td>$0.03</td>
+				<td>13.87%</td>						
+			</tr>
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>184 / 186</td>
+				<td>11/28/14</td>
+				<td>10/26/14</td>
+				<td>11/6/14</td>
+				<td>$0.19</td>	
+				<td>$0.03</td>	
+				<td>8.84%</td>										
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>185 / 187</td>
+				<td>11/28/14</td>
+				<td>10/27/2014</td>
+				<td>11/6/2014</td>
+				<td>$0.17</td>	
+				<td>$0.03</td>	
+				<td>7.65%</td>										
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>186 / 188</td>
+				<td>12/5/14</td>				
+				<td>10/28/2014</td>
+				<td>11/10/2014</td>
+				<td>$0.22</td>
+				<td>$0.03</td>
+				<td>10.67%</td>						
+			</tr>	
+			
+			<tr>
+				<td>SPY</td>
+				<td>Put</td>
+				<td>186.5 / 188.5</td>
+				<td>12/5/14</td>				
+				<td>10/29/2014</td>
+				<td>11/16/2014</td>
+				<td>$0.19</td>
+				<td>$0.03</td>
+				<td>8.84%</td>						
+			</tr>									
+		</tbody>
+	</table>
+</div>
+
+<p>
+Another successful month. Mostly closing out trades made during the high volatility we saw in <a href=\"https://stockpeer.com/blog/4/why-i-am-sharing-my-trades-october-2014-trades\">October</a>. The trades that we put on in November (which will be reported in December) are taking much longer to close out because volatility has dropped. This month our trades took an average of 15.66 days to close. Our trades next month will take longer because of the low volatility. We made an average profit of 10.03% on our trades this month. Pretty good. 
+</p>
+
+<p>
+You will notice a trade with a wider spread than normal this month (SPY Put Spread 180 / 176 Nov 22 2014). This was not a wise trade. We took more risk for almost the same return as our normal 2 dollar wide spreads. It took longer to close this trade as well.  
+</p>
+
+<p>
+In the second half of November volatility was low and the <a href=\"http://www.investopedia.com/terms/r/rsi.asp\">RSI</a> reading as been high we did not place many trades. We need the market to pull back a bit before placing more trades. We might not make many trades in the coming weeks. Only time will tell.
+</p>","My November 2014 Trades - Another successful month. Mostly closing out trades made during the high volatility we saw in October.",8,"Active",4,"2014-11-28 14:04:26","2014-11-28 14:04:26"
+7,"What’s the Difference Between Trading and Investing?","2014-12-02 00:00:00","posts","<p>
+Wall Street is the domain of traders and investors. Typically we envision traders sitting in front of rows of monitors looking to make a quick buck by continually getting into and out of financial positions. In contrast, investors are the Warren Buffett types who buy and hold stocks for long periods of time. Traditionally, you are one or the other because traders and investors often disagree, maintaining that the strategy of the other is a recipe for underperformance. Despite their differences, I use the terms trader and investor interchangeably because all incumbent strategies include a trading component (making money on short-duration trades) and an investment component (buying and holding).
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/Tortoise-and-the-Hare_jpg_9.png\" style=\"width: 596.092544987147px; height: 310px; float: none; display: block; margin: 0px auto;\" alt=\"Trading vs. Investing\">
+</p>
+
+
+<p><b>Should I Trade or Invest?</b></p>
+
+<p>
+Whether to trade or invest comes down to the opportunities offered and your bias. The stock market exhibits different themes over time (e.g., bull, bear, flat, fearful, bubble). Currently we appear to have been in a bull market since March 2009, and in a bull market buy and hold is a great strategy: stocks are appreciating while dividends increase. The problem is that you never know when a bull market will end—and when it does, whether it will flatten out or pull back aggressively. By the time you know the answer you might have given up a fair amount of gains. Although your positions might be profitable, your year-over-year total returns might suffer.
+</p>
+
+<p>
+So how do you protect against ending bull markets? Trading. Trades are opportunities to make a few bucks quickly. A trade might be driven by an event such as an earnings announcement or based on the probability of selling credit spreads or any other strategy you might come up with. A trade is nothing more than leveraging the market’s movements—or lack thereof—to increase the gains of your overall core portfolio. And when a bull market ends your trading proceeds can offset gains lost as the market settles.
+</p>","<p>
+Wall Street is the domain of traders and investors. Typically we envision traders sitting in front of rows of monitors looking to make a quick buck by continually getting into and out of financial positions. In contrast, investors are the Warren Buffett types who buy and hold stocks for long periods of time. Traditionally, you are one or the other because traders and investors often disagree, maintaining that the strategy of the other is a recipe for underperformance. Despite their differences, I use the terms trader and investor interchangeably because all incumbent strategies include a trading component (making money on short-duration trades) and an investment component (buying and holding).
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/Tortoise-and-the-Hare_jpg_9.png\" style=\"width: 596.092544987147px; height: 310px; float: none; display: block; margin: 0px auto;\" alt=\"Trading vs. Investing\">
+</p>
+
+<p><b>Should I Trade or Invest?</b></p>
+
+<p>
+Whether to trade or invest comes down to the opportunities offered and your bias. The stock market exhibits different themes over time (e.g., bull, bear, flat, fearful, bubble). Currently we appear to have been in a bull market since March 2009, and in a bull market buy and hold is a great strategy: stocks are appreciating while dividends increase. The problem is that you never know when a bull market will end—and when it does, whether it will flatten out or pull back aggressively. By the time you know the answer you might have given up a fair amount of gains. Although your positions might be profitable, your year-over-year total returns might suffer.
+</p>
+
+<p>
+So how do you protect against ending bull markets? Trading. Trades are opportunities to make a few bucks quickly. A trade might be driven by an event such as an earnings announcement or based on the probability of selling credit spreads or any other strategy you might come up with. A trade is nothing more than leveraging the market’s movements—or lack thereof—to increase the gains of your overall core portfolio. And when a bull market ends your trading proceeds can offset gains lost as the market settles.
+</p>
+
+<p><b>Pick Your Bias</b></p>
+
+<p>
+Trading to defend your core invested portfolio assumes that you are fundamentally biased toward being an investor. You can flip that approach if you are biased toward being a trader. That is, your core money-making activity could be short-duration trades in the market that you pair with an invested backstop to help maintain margin requirements while growing your portfolio over time.
+</p>
+
+<p>
+Every day the market presents opportunities for trading and opportunities for investing. Not taking advantage of both is a form of not being diversified, which puts at risk your overall yearly returns.
+</p>","Trading vs. Investing : Despite their differences, I use the terms trader and investor interchangeably because all incumbent strategies include a trading compon",9,"Active",5,"2014-12-02 08:49:31","2014-12-02 08:49:31"
+8,"Step 1: Pick a Smart Trading Strategy","2014-12-04 00:00:00","posts","<p>
+The difference between success, failure, and mediocrity on Wall Street is your ability to pick a smart trading or investing strategy and stick to it. Jumping into the market without first carefully defining your strategy is akin to driving a car with a blindfold on—and, likewise, you will crash at some point. Just as critical is remaining faithful to your strategy during drawdowns—because you will reap the benefits of constancy in the long run.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/chess_png_10.png\" style=\"width: 588.818181818182px; height: 381px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+<b>How to Pick a Smart Trading Strategy</b>
+</p>
+
+<p>
+I use a 3-step process: brainstorm, backtest, analyze. The objective of the brainstorming step is to identify big-picture concepts to backtest such as these:
+</p>
+
+<p>
+<ul>
+
+<li>
+Over a 45-day period what was the maximum up or down movement of the S&amp;P 500 over the last 12 years?
+</li>
+
+<li>
+During the last 10 years what was the typical stock move the day after Home Depot’s earnings report?
+</li>
+
+<li>
+What are the most actively traded stock options by year for the last 10 years?
+</li>
+
+<li>
+Does a spike in the put/call ratio for the SPY have any predicating ability for its future movement?
+</li>
+</ul>
+</p>
+
+<p>
+If I am stuck for ideas I might surf <a href=\"http://seekingalpha.com/\">seekingalpha.com</a>, <a href=\"http://stocktwits.com/\">stocktwits.com</a>, or <a href=\"https://twitter.com/\">twitter.com</a>.
+</p>
+
+<p>
+Once I have a diverse list of 10 or so questions I start backtesting. Typically I do some sampling in Excel and then use a backtesting tool such as <a href=\"https://www.quantopian.com/\">Quantopian</a> or write my own software scripts. Brokers typically offer tools as well. 
+</p>","<p>
+The difference between success, failure, and mediocrity on Wall Street is your ability to pick a smart trading or investing strategy and stick to it. Jumping into the market without first carefully defining your strategy is akin to driving a car with a blindfold on—and, likewise, you will crash at some point. Just as critical is remaining faithful to your strategy during drawdowns—because you will reap the benefits of constancy in the long run.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/chess_png_10.png\" style=\"width: 588.818181818182px; height: 381px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+<b>How to Pick a Smart Trading Strategy</b>
+</p>
+
+<p>
+I use a 3-step process: brainstorm, backtest, analyze. The objective of the brainstorming step is to identify big-picture concepts to backtest such as these:
+</p>
+
+<p>
+<ul>
+
+<li>
+Over a 45-day period what was the maximum up or down movement of the S&amp;P 500 over the last 12 years?
+</li>
+
+<li>
+During the last 10 years what was the typical stock move the day after Home Depot’s earnings report?
+</li>
+
+<li>
+What are the most actively traded stock options by year for the last 10 years?
+</li>
+
+<li>
+Does a spike in the put/call ratio for the SPY have any predicating ability for its future movement?
+</li>
+</ul>
+</p>
+
+<p>
+If I am stuck for ideas I might surf <a href=\"http://seekingalpha.com/\">seekingalpha.com</a>, <a href=\"http://stocktwits.com/\">stocktwits.com</a>, or <a href=\"https://twitter.com/\">twitter.com</a>.
+</p>
+
+<p>
+Once I have a diverse list of 10 or so questions I start backtesting. Typically I do some sampling in Excel and then use a backtesting tool such as <a href=\"https://www.quantopian.com/\">Quantopian</a> or write my own software scripts. Brokers typically offer tools as well. 
+</p>
+
+<p>
+Through analysis of the big-picture backtesting results I narrow my list to a few concepts worth digging into further to more precisely define my trading strategy. For example, I might find out that over a 45-day period the S&amp;P 500 dropped more than 5% only 3% of the time. Those odds are good—so maybe my strategy would be to sell put options 5% out of the money expiring in 45 days.
+</p>
+
+<p>
+I then backtest my refined strategy and analyze those results in terms of probability of success (wins vs. losses), total risk per trade, estimated return on capital, and difficulty to execute (i.e., Do I need to be glued to my computer all day?).
+</p>
+
+<p>
+<b>Implementing Your Strategy</b>
+</p>
+
+<p>
+After you have settled on a trading strategy compatible with your financial goals, risk tolerance, and skills it’s time to roll—virtually, at least. Typically I suggest paper trading for a while, less to see if your strategy works than to practice executing trades and managing your emotions. Trust me—it’s an important, time-honored step toward getting your head in the game. 
+</p>
+
+<p>
+When you’re ready to commit hard, cold capital I suggest starting with a small account, typically $2,000. If you can demonstrate success in different market conditions with a small account, your odds of success with a larger account are good. At this point you should step back and let your strategy do its thing. Monitor performance but refrain from adjusting your strategy too often—backtesting is your proof that your trading strategy works.
+</p>","",10,"Active",6,"2014-12-04 09:01:01","2014-12-04 09:01:01"
+9,"What Is a Call Option?","2014-12-10 00:00:00","posts","<p>
+Let’s imagine that I have a tractor I am offering for sale for $20,000—which is a smoking deal because the same tractor is selling elsewhere for $25,000. My neighbor realizes that I am unaware of the fair market price and concludes that my tractor would be a good investment for him. What’s more, he has come into an inheritance—but he has to wait 6 months to get the money while the courts probate the will. Because he doesn’t want to lose this auspicious opportunity, he asks if I would sell him a call option.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/tractor_for_sale_jpg_11.png\" style=\"width: 527.770034843206px; height: 405px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p>
+
+<p>
+A call option is just a fancy term for a contract related to selling an asset in the future. My neighbor offers me $1,000 to take the tractor off the market and store it until he is ready to buy it in 6 months. This $1,000 does not apply to the cost of the tractor—he still has to pay me $20,000 at the time of the sale. If he does not keep his end of the bargain I can keep the $1,000 and sell the tractor to someone else.
+</p>
+
+<p><b>Call Options Carry Risk</b></p>
+
+<p>
+After selling the call option I might discover that my tractor is really worth $25,000. Worse, perhaps demand goes up and 6 months from now my tractor is worth $30,000. Because I sold my neighbor the call option I am contractually obligated to hold onto the tractor and sell it to him for $20,000—and he could turn around and sell the tractor to someone else for $9,000 profit.
+</p>
+
+<p>
+But that scenario is not the only possible outcome. The tractor could lose value over those 6 months. Maybe a serious defect is discovered in this model and as a result the tractor’s market value drops to $15,000. My neighbor might decide not to buy the tractor from me either because he can buy it from someone else for $15,000 rather than the $20,000 he agreed to pay me—or because he prefers a tractor that is not prone to blowing up. In either case I keep the $1,000 and the tractor but lose the $5,000 extra I would have made if I had sold the tractor outright 6 months earlier even though it was underpriced at $20,000.
+</p>","<p>
+Let’s imagine that I have a tractor I am offering for sale for $20,000—which is a smoking deal because the same tractor is selling elsewhere for $25,000. My neighbor realizes that I am unaware of the fair market price and concludes that my tractor would be a good investment for him. What’s more, he has come into an inheritance—but he has to wait 6 months to get the money while the courts probate the will. Because he doesn’t want to lose this auspicious opportunity, he asks if I would sell him a call option.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/tractor_for_sale_jpg_11.png\" style=\"width: 527.770034843206px; height: 405px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p>
+
+<p>
+A call option is just a fancy term for a contract related to selling an asset in the future. My neighbor offers me $1,000 to take the tractor off the market and store it until he is ready to buy it in 6 months. This $1,000 does not apply to the cost of the tractor—he still has to pay me $20,000 at the time of the sale. If he does not keep his end of the bargain I can keep the $1,000 and sell the tractor to someone else.
+</p>
+
+<p><b>Call Options Carry Risk</b></p>
+
+<p>
+After selling the call option I might discover that my tractor is really worth $25,000. Worse, perhaps demand goes up and 6 months from now my tractor is worth $30,000. Because I sold my neighbor the call option I am contractually obligated to hold onto the tractor and sell it to him for $20,000—and he could turn around and sell the tractor to someone else for $9,000 profit.
+</p>
+
+<p>
+But that scenario is not the only possible outcome. The tractor could lose value over those 6 months. Maybe a serious defect is discovered in this model and as a result the tractor’s market value drops to $15,000. My neighbor might decide not to buy the tractor from me either because he can buy it from someone else for $15,000 rather than the $20,000 he agreed to pay me—or because he prefers a tractor that is not prone to blowing up. In either case I keep the $1,000 and the tractor but lose the $5,000 extra I would have made if I had sold the tractor outright 6 months earlier even though it was underpriced at $20,000.
+</p>
+
+<p>
+Call options can be used with any asset—tractors, stocks, real estate. The key is that both parties assume the potential for risk and reward. If the price of the underlying asset moves up or down while the call option is in effect one side will lose money. The buyer of the call option can tie up an asset by spending only a fraction of the asset’s value to do so.
+</p>
+
+<p><b>Want to Know More?</b></p>
+
+<p>
+The following links are good resources for learning more about call options:
+</p>
+
+<p>
+<a href=\"http://www.investopedia.com/terms/c/calloption.asp\">http://www.investopedia.com/terms/c/calloption.asp</a>
+</p>
+
+<p>
+<a href=\"https://www.tradeking.com/education/options/strategies/long-call\">https://www.tradeking.com/education/options/strategies/long-call</a>
+</p>
+
+<p>
+<a href=\"https://www.tastytrade.com/tt/shows/know-your-options\">https://www.tastytrade.com/tt/shows/know-your-options</a></p><a href=\"http://www.investopedia.com/university/options/option.asp\">http://www.investopedia.com/university/options/option.asp</a>
+<p></p>","Call options can be used with any asset—tractors, stocks, real estate. The key is that both parties assume the potential for risk and reward. If the price of th",11,"Active",7,"2014-12-10 09:46:47","2014-12-10 09:46:47"
+10,"What Is a Put Option?","2014-12-12 00:00:00","posts","<p>
+A put option is the opposite of a call option—and if you don’t know what that is, see my previous post <a href=\"https://stockpeer.com/blog/9/what-is-a-call-option\">What Is a Call Option?</a> This post uses a fictional scenario to illustrate the basics of what a put option is. I do not get super detailed here, but links to more in-depth resources can be found at the end of the post.
+</p>
+
+<p><b>Lets Get Started</b></p>
+
+<p>
+I have a nice Apple laptop with all the bells and whistles that I paid up for in part because Apple products are known to have good resale value. I plan to retire within a year (woot!) and because I will not need the laptop anymore I hope to sell it and recoup most of my money. My target is to sell the laptop for 80% of the price I paid for it—but I am afraid that Apple might release a new line of laptops, which would accelerate my laptop’s value decline such that I could only get 50% or less. I consult with my investor friend Tim and he does not think a new line of laptops is likely in the next year. Though Tim believes I am safe, I am still not sure and wonder if there is a way to protect myself.
+</p>
+
+<p>
+It turns out that Tim is very confident in his prediction and sees an opportunity to make some money so he offers me a deal: if I pay him a $100 fee today he will buy the laptop from me anytime in the next year for $1,600—or 80% of the $2,000 I paid. This deal (or contract) is called a put option and it gives you the right to sell something at a set price in the future in exchange for a fee.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/puts_12.png\" style=\"width: 506.51968503937px; height: 344px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>The Put Option Details</b></p>
+
+<p>
+Tim is betting that the value of the laptop will not drop by 20% within the next year. If the value drops by only 10% to $1,800, I will choose not to exercise my put option to sell the laptop to Tim for $1,600 because I can sell it to someone else for $1,800. I would, however, lose the $100 I paid Tim—which he would pocket as profit—and our put option would expire.</p><p>But as in the case of the call option, more than one scenario is possible. If Tim is wrong and Apple does announce a new line of laptops, overnight the value of my laptop might drop by 50% to $1,000. The good news is that because I have a put option contract with Tim, he would be obligated to buy it from me for $1,600—which is $600 more than it is worth. And though I would pocket $600 more than I could have gotten if I had sold it to someone else, my total profit would be $500 ($600 less the $100 fee I paid)—that is, the gain over the market value minus what I paid for the option.
+</p>","<p>
+A put option is the opposite of a call option—and if you don’t know what that is, see my previous post <a href=\"https://stockpeer.com/blog/9/what-is-a-call-option\">What Is a Call Option?</a> This post uses a fictional scenario to illustrate the basics of what a put option is. I do not get super detailed here, but links to more in-depth resources can be found at the end of the post.
+</p>
+
+<p><b>Lets Get Started</b></p>
+
+<p>
+I have a nice Apple laptop with all the bells and whistles that I paid up for in part because Apple products are known to have good resale value. I plan to retire within a year (woot!) and because I will not need the laptop anymore I hope to sell it and recoup most of my money. My target is to sell the laptop for 80% of the price I paid for it—but I am afraid that Apple might release a new line of laptops, which would accelerate my laptop’s value decline such that I could only get 50% or less. I consult with my investor friend Tim and he does not think a new line of laptops is likely in the next year. Though Tim believes I am safe, I am still not sure and wonder if there is a way to protect myself.
+</p>
+
+<p>
+It turns out that Tim is very confident in his prediction and sees an opportunity to make some money so he offers me a deal: if I pay him a $100 fee today he will buy the laptop from me anytime in the next year for $1,600—or 80% of the $2,000 I paid. This deal (or contract) is called a put option and it gives you the right to sell something at a set price in the future in exchange for a fee.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/puts_12.png\" style=\"width: 506.51968503937px; height: 344px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>The Put Option Details</b></p>
+
+<p>
+Tim is betting that the value of the laptop will not drop by 20% within the next year. If the value drops by only 10% to $1,800, I will choose not to exercise my put option to sell the laptop to Tim for $1,600 because I can sell it to someone else for $1,800. I would, however, lose the $100 I paid Tim—which he would pocket as profit—and our put option would expire.</p><p>But as in the case of the call option, more than one scenario is possible. If Tim is wrong and Apple does announce a new line of laptops, overnight the value of my laptop might drop by 50% to $1,000. The good news is that because I have a put option contract with Tim, he would be obligated to buy it from me for $1,600—which is $600 more than it is worth. And though I would pocket $600 more than I could have gotten if I had sold it to someone else, my total profit would be $500 ($600 less the $100 fee I paid)—that is, the gain over the market value minus what I paid for the option.
+</p>
+
+<p><b>Want to Know More?</b></p>
+
+<p>
+Put options are mostly used in the stock market against a stock (rather than a laptop), but they can be used in any type of transaction. The following links are good resources for learning more about put options:
+</p>
+
+<p>
+
+<a href=\"https://www.tradeking.com/education/options/put-options-explained\">https://www.tradeking.com/education/options/put-options-explained</a>
+<br>
+
+<a href=\"http://www.theoptionsguide.com/put-option.aspx\">http://www.theoptionsguide.com/put-option.aspx</a>
+<br>
+
+<a href=\"http://www.investinganswers.com/financial-dictionary/optionsderivatives/put-option-1824\">http://www.investinganswers.com/financial-dictionary/optionsderivatives/put-option-1824</a><br>
+
+</p>","Tim is betting that the value of the laptop will not drop by 20% within the next year. If the value drops by only 10% to $1,800, I will choose not to exercise m",12,"Active",8,"2014-12-12 11:29:52","2014-12-12 11:29:52"
+11,"What Is a Put Credit Spread?","2014-12-16 00:00:00","posts","<p>
+In the options trading world there is a type of trade called a put credit spread. The goal of this trade is to collect money and hope the market does not move against you. Let me explain with an analogy we all understand: car insurance. Every month you cough up a hundred bucks or so for coverage, and your insurance company makes a calculated bet that you will not get in a car accident. If you are a safe driver, the insurance company keeps your 100 bucks. But if you drive off the road while checking stock quotes on your phone, the insurance company has to pay out to fix the damage.
+</p>
+
+
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/Safety-copy_jpg__2240%C3%972500__13.png\" style=\"width: 366.315789473684px; height: 290px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p><p>
+In other words, if you are a safe driver the insurance company profits—and if you are not, it takes a loss. The key is that the insurance company collects a small fee from you up front and is at risk for some length of time.
+</p>
+
+<p><b>Hey—This Is a Stock Blog, not Insurance Broker Monthly!</b></p>
+
+<p>
+Getting back on track... How does selling put credit spreads relate to the insurance example? Well, the idea is the same. As a trader you collect a fee that you keep if the market goes your way—but if the market goes against you, you pay out. The way it works is you sell a put option and then buy another put option to limit your risk to the spread between the puts.
+</p>","<p>
+In the options trading world there is a type of trade called a put credit spread. The goal of this trade is to collect money and hope the market does not move against you. Let me explain with an analogy we all understand: car insurance. Every month you cough up a hundred bucks or so for coverage, and your insurance company makes a calculated bet that you will not get in a car accident. If you are a safe driver, the insurance company keeps your 100 bucks. But if you drive off the road while checking stock quotes on your phone, the insurance company has to pay out to fix the damage.
+</p>
+
+
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/Safety-copy_jpg__2240%C3%972500__13.png\" style=\"width: 366.315789473684px; height: 290px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p><p>
+In other words, if you are a safe driver the insurance company profits—and if you are not, it takes a loss. The key is that the insurance company collects a small fee from you up front and is at risk for some length of time.
+</p>
+
+<p><b>Hey—This Is a Stock Blog, not Insurance Broker Monthly!</b></p>
+
+<p>
+Getting back on track... How does selling put credit spreads relate to the insurance example? Well, the idea is the same. As a trader you collect a fee that you keep if the market goes your way—but if the market goes against you, you pay out. The way it works is you sell a put option and then buy another put option to limit your risk to the spread between the puts.
+</p>
+
+<p>
+Say the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> (S&amp;P 500 index ETF) is trading at $200. We could sell a put option with a strike price of $190 for a credit of $100 ($1 * 100). The put option expires in 30 days, and in the meantime we put that $100 in our account as cold, hard cash.</p><p>Our risk is that if the SPY drops below $190 within the next 30 days, we will have to pay out the difference below $190. That’s because by selling a put option contract we guarantee delivery of a stock at a certain price—in this case $190. And so, if in 30 days the SPY were at $185 we would lose $500 ($5 * 100), though because we collected that fee of $100 we would really lose only $400.</p><p>Our hope is that the SPY stays above $190 so that the put option expires worthless and we keep the $100 collected as profit. In this case the SPY staying above $190 is like the insurance company customer not getting in a car accident.
+</p>
+
+<p><b>But What Is a Put Credit Spread Really?</b></p>
+
+<p>
+What I just described was the sale of a <a href=\"http://www.optionseducation.org/strategies_advanced_concepts/strategies/naked_put.html\">naked put</a>, for which the seller assumes a massive amount of risk. For example, if the SPY were to plunge to $0 in 30 days (unlikely, but something to consider) we would be on the hook for $19,000. Obviously, we need to protect ourselves and we can do so by turning our naked put into a <a href=\"http://www.theoptionsguide.com/bull-put-spread.aspx\">put credit spread</a> and capping our potential losses.
+</p>
+
+<p>
+Say that we bought a put that expires in 30 days at a strike price of $188 for $65 ($.65 * 100). If the SPY were to drop below $188, our lower strike price put option would save us because we would only be at risk for $200—the difference in price between the $190 put that we sold and the $188 put that we purchased ($2 * 100).
+</p>
+
+<p>
+Of course, we would also take a hit in terms of our credit. We collected $100 when we sold the $190 put, but we paid $65 for the $188 put so we only have $35 new dollars in our account—but we risked losing only $200 instead of $19,000. The real risk reward is $165 to make $35.
+</p>
+
+<p><b>Be Your Own Little Insurance Company</b></p>
+
+<p>
+As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes things will go against you, you protect your losses with a lower out of the money put. Put credit spreads have a much better risk and reward quotient than a naked put.
+</p>","As you can see, selling put credit spreads is a great way to collect a fee at regular intervals just like your car insurance company does. Because sometimes thi",13,"Active",9,"2014-12-16 12:55:37","2014-12-16 12:55:37"
+12,"What Is So Special About Option Credit Spreads?","2014-12-18 00:00:00","posts","<p>
+When considering an investment opportunity you examine 3 factors: potential return, risk of losing money, and effort required to maintain the investment. For example, when buying a stock you put a fair amount of effort into finding the best company to buy into, and you check up on the company every quarter to ensure that your strategy remains sound. Before buying, you estimate your overall return based on your assumptions, and you prudently consider how much you might lose if the trade goes against you. When comparing investment opportunities you leverage your experience to estimate values for the 3 factors—but these estimates are subjective.
+</p><p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/6551525739_cea94562f0_jpg__500%C3%97500__14.png\" alt=\"profit is good - credit spreads are good\" style=\"float: none; display: block; margin: 0px auto;\"><br></p>
+
+<p><b>Why Are Option Credit Spreads So Great?</b></p>
+
+<p>
+In contrast, upon placing an option credit spread trade your 3 factors are pretty clearly defined. Your return is dictated by the credit you receive, and due to the very nature of an option credit spread your risk is defined by the difference between the lower strike and the higher strike minus the credit. The effort, too, is defined if you have a consistent strategy. In other words, there is almost nothing subjective about trading option credit spreads. Very few investment opportunities allow you to define all 3 factors up front.</p><p><b>What’s the Catch?</b></p>
+
+<p>
+The catch is if your strategy is not well planned or implemented with discipline. Meaning that what makes the 3 factors so definitive when trading credit spreads is implementing a brilliant strategy with fidelity. Yes, you will lose money on some trades, but your strategy should be properly backtested so you can account for those losses.
+</p>","<p>
+When considering an investment opportunity you examine 3 factors: potential return, risk of losing money, and effort required to maintain the investment. For example, when buying a stock you put a fair amount of effort into finding the best company to buy into, and you check up on the company every quarter to ensure that your strategy remains sound. Before buying, you estimate your overall return based on your assumptions, and you prudently consider how much you might lose if the trade goes against you. When comparing investment opportunities you leverage your experience to estimate values for the 3 factors—but these estimates are subjective.
+</p><p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/6551525739_cea94562f0_jpg__500%C3%97500__14.png\" alt=\"profit is good - credit spreads are good\" style=\"float: none; display: block; margin: 0px auto;\"><br></p>
+
+<p><b>Why Are Option Credit Spreads So Great?</b></p>
+
+<p>
+In contrast, upon placing an option credit spread trade your 3 factors are pretty clearly defined. Your return is dictated by the credit you receive, and due to the very nature of an option credit spread your risk is defined by the difference between the lower strike and the higher strike minus the credit. The effort, too, is defined if you have a consistent strategy. In other words, there is almost nothing subjective about trading option credit spreads. Very few investment opportunities allow you to define all 3 factors up front.</p><p><b>What’s the Catch?</b></p>
+
+<p>
+The catch is if your strategy is not well planned or implemented with discipline. Meaning that what makes the 3 factors so definitive when trading credit spreads is implementing a brilliant strategy with fidelity. Yes, you will lose money on some trades, but your strategy should be properly backtested so you can account for those losses.
+</p>
+
+<p><b>A Word on Effort  </b></p>
+
+<p>
+Credit spreads are not without effort, though most of the effort is up front when you are developing your strategy. For example, I like to sell credit spreads on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> because I have already spent a great deal of time perfecting when to buy and sell the spreads and how much to risk in each trade—that’s my upfront work. Now I need to devote only a few minutes a day to actually executing these trades. In one of my accounts I even have custom software I wrote to do the work for me so the effort to maintain the strategy is almost nil. This characteristic distinguishes a credit spread strategy from typical investment opportunities, which usually require more intensive ongoing effort.
+</p>
+
+<p><b>The Magic of Options</b></p>
+
+<p>
+The magic of options trading is that you can craft a strategy that synthetically mirrors any type of investment. I dislike relying on subjective reasoning to make investment decisions—which is why I favor option credit spreads. I can build an option strategy that has the same risk and reward of just buying stock. Or, I can build an option strategy that mimics buying rental property. Option credit spreads are just one example of an investment strategy you can craft to meet your needs.
+</p>","When considering an investment opportunity you examine 3 factors: potential return, risk of losing money, and effort required to maintain the investment.",15,"Active",10,"2014-12-18 10:02:36","2014-12-18 10:02:36"
+13,"Happy Holidays the Stockpeer Way","2014-12-24 00:00:00","posts","<p>
+I love this time of year: vacation, family, drinks, parties, gifts, Santa, and the rest are all great. Almost equally I love this time of year because I am reminded to take time to reflect on the past year, which gives me an opportunity to map a game plan for the coming year. I feel like I am coming up for air and can look at the big picture once again.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/happy-holidays_16.png\" style=\"width: 448.718162839248px; height: 401px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Reviewing the Past Year</b></p>
+
+<p>
+I make notes about every trade I make. In 2014 I generated more than 200 trade notes, and in the coming weeks I will be reviewing each and every one. About 80% will be tossed without another thought because they refer to standard trades that adhere to my strategy. The other 20% are more interesting—and instructive. I will dive deep into each of these trades, trying to figure out what went right and what went wrong. Each year I strive to fine-tune my trading, and keeping a trade log and reviewing it is one of the best practices a trader can have.</p>
+
+<p><b>Preparing for the Year to Come </b></p>
+
+<p>After reviewing the past year I start thinking about the year to come and make basic predictions about how the overall market is going to preform. As of this writing I think that in 2015 the S&amp;P 500 will be up and might close out the year up by 5% (but not much more). Our bull market is starting to lose steam and <a href=\"http://www.investopedia.com/terms/p/price-earningsratio.asp\">price-to-earnings ratios</a> are at their highs.
+</p>","<p>
+I love this time of year: vacation, family, drinks, parties, gifts, Santa, and the rest are all great. Almost equally I love this time of year because I am reminded to take time to reflect on the past year, which gives me an opportunity to map a game plan for the coming year. I feel like I am coming up for air and can look at the big picture once again.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/happy-holidays_16.png\" style=\"width: 448.718162839248px; height: 401px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Reviewing the Past Year</b></p>
+
+<p>
+I make notes about every trade I make. In 2014 I generated more than 200 trade notes, and in the coming weeks I will be reviewing each and every one. About 80% will be tossed without another thought because they refer to standard trades that adhere to my strategy. The other 20% are more interesting—and instructive. I will dive deep into each of these trades, trying to figure out what went right and what went wrong. Each year I strive to fine-tune my trading, and keeping a trade log and reviewing it is one of the best practices a trader can have.</p>
+
+<p><b>Preparing for the Year to Come </b></p>
+
+<p>After reviewing the past year I start thinking about the year to come and make basic predictions about how the overall market is going to preform. As of this writing I think that in 2015 the S&amp;P 500 will be up and might close out the year up by 5% (but not much more). Our bull market is starting to lose steam and <a href=\"http://www.investopedia.com/terms/p/price-earningsratio.asp\">price-to-earnings ratios</a> are at their highs.
+</p>
+
+<p>With some basic predictions in place I turn my consideration to bankroll management. As you know, probability-based trading requires discipline: you do not want to change your strategy often because doing so can skew your probabilities. That said, this is the time of year I reconsider my strategy and how I can tweak it to reduce risk and increase profits. How much capital do I want to risk in every trade? How much do I want to keep in cash? How much of my personal nontrading earnings do I want to add to my trading accounts?</p><p>If you read this far I am sure you want more details. What am I changing? What are my plans? Frankly, I don’t know yet because I am just getting started with my review, but I plan to share my findings and decisions in future posts.</p><p><b>What About Stockpeer?</b></p><p>I am really excited about the possibilities for Stockpeer.com in the coming year. Beyond blogging I hope to release several technical tools: How about an options backtester? A tool for picking the perfect brokers, anyone? Or real-time trade alerts? Lots of ideas and progress toward realizing them. Please share with me anything you want to see.</p>
+
+<p><b>Happy Holidays!!!</b></p>
+
+<p>
+All work and no play makes Johnny very boring! Please, put down your laptops at some point and enjoy life for awhile. Relax and refresh your mind, body, and soul. Thanks to everyone for the early support of Stockpeer and happy holidays! Be safe and have fun.
+</p>","I love this time of year: vacation, family, drinks, parties, gifts, Santa, and the rest are all great. Almost equally I love this time of year because I am remi",16,"Active",11,"2014-12-24 08:48:30","2014-12-24 08:48:30"
+14,"December 2014 Trades","2015-01-03 00:00:00","posts","{{BlogTrades start=\"12/1/2014\" end=\"12/31/2014\"}}
+
+<br>
+
+<p>
+Another successful month. This month was a little different from others. You will notice there were a handful of trades that took over 30 days to close and there were a handful of trades that closed pretty quickly. This shows the power of&nbsp;<a href=\"http://en.wikipedia.org/wiki/Volatility_%28finance%29\">volatility</a>. Volatility was very low in early November and then increased in December.
+</p>
+","{{BlogTrades start=\"12/1/2014\" end=\"12/31/2014\"}}
+
+<br>
+<p>
+Another successful month. This month was a little different from others. You will notice there were a handful of trades that took over 30 days to close and there were a handful of trades that closed pretty quickly. This shows the power of <a href=\"http://en.wikipedia.org/wiki/Volatility_%28finance%29\">volatility</a>. Volatility was very low in early November and then increased in December. The higher the volatility the more premium we are able to sell and the faster the options decay in value (which is what we are hoping for).
+</p>
+
+<p>
+You will also notice some <a href=\"http://finance.yahoo.com/q?s=IWM\">IWM</a>&nbsp;(iShares Russell 2000) trades. This is new from our standard <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> trades. I will use the IWM from time to time as well. More on trading the IWM vs. SPY in future blog posts.
+</p>
+","My December 2014 Trades - Another successful month. This month was a little different from others. You will notice there were a handful of trades that took over",17,"Active",12,"2015-01-03 09:21:59","2015-01-03 09:21:59"
+15,"The Importance of a Multiple Strategy Approach","2015-01-06 00:00:00","posts","<p>
+Anyone who manages their own money should use a multiple strategy approach—a form of diversification, if you will. I personally maintain 4 strategies: buying &amp; holding stocks, investing in real estate, index option credit spread trading, and directional option trading.
+</p>
+
+<ul><li><p>I typically hold stocks (and some bitcoin) for 18 months or more and enjoy dividend returns. I sell a stock when the upside story changes, though I have owned some stocks for years.</p></li><li><p>My real estate investments are mostly rental properties. After enhancing the properties with remodeling I typically hold them, collecting rent, until it make sense to sell.</p></li><li><p>Each week I make multiple index option credit spread trades, mostly using the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> and the <a href=\"http://finance.yahoo.com/q?s=IWM\">IWM</a>. I like indexes because they require only a broad understanding of the market rather than intimate knowledge of a particular company—in other words, less risk and little effort. With each trade I aim to bring in a 10% return on capital and I shoot for a 92% (or more) win rate.</p></li><li><p>My directional option trades involve buying puts or calls depending on where I think a stock is going in the near term. I use <a href=\"http://www.investopedia.com/university/fundamentalanalysis/\">fundamental analysis</a> to pick my stocks and <a href=\"http://www.investopedia.com/university/technical/\">technical analysis</a> to identify entry points. For each trade I seek a profit of 30% to 50% or a stop out no lower than a 10% loss.</p></li></ul>
+
+<div><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/jugglingdogg_18.png\" alt=\"\" style=\"float: none; display: block; margin: 0px auto; width: 392.869402985075px; height: 499px;\"><br></div>
+
+<p><b>Are You Just Bragging or Is There a Point Here?</b></p>
+
+<p>
+Utilizing multiple strategies has two important benefits: you stay engaged and, typically, at all times you have at least one strategy that is performing really well. Engagement is key because when we are bored we check out. To be a good investor, however, you must always be engaged, so if you slack off when times are meh your investing and trading skills will suffer—with predictably dismal results. One failsafe of the multiple strategy approach is that when one strategy dogs it you can focus your attention and enthusiasm on the ones that are smoking.
+</p>
+","<p>
+Anyone who manages their own money should use a multiple strategy approach—a form of diversification, if you will. I personally maintain 4 strategies: buying &amp; holding stocks, investing in real estate, index option credit spread trading, and directional option trading.
+</p>
+
+<ul><li><p>I typically hold stocks (and some bitcoin) for 18 months or more and enjoy dividend returns. I sell a stock when the upside story changes, though I have owned some stocks for years.</p></li><li><p>My real estate investments are mostly rental properties. After enhancing the properties with remodeling I typically hold them, collecting rent, until it make sense to sell.</p></li><li><p>Each week I make multiple index option credit spread trades, mostly using the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> and the <a href=\"http://finance.yahoo.com/q?s=IWM\">IWM</a>. I like indexes because they require only a broad understanding of the market rather than intimate knowledge of a particular company—in other words, less risk and little effort. With each trade I aim to bring in a 10% return on capital and I shoot for a 92% (or more) win rate.</p></li><li><p>My directional option trades involve buying puts or calls depending on where I think a stock is going in the near term. I use <a href=\"http://www.investopedia.com/university/fundamentalanalysis/\">fundamental analysis</a> to pick my stocks and <a href=\"http://www.investopedia.com/university/technical/\">technical analysis</a> to identify entry points. For each trade I seek a profit of 30% to 50% or a stop out no lower than a 10% loss.</p></li></ul>
+
+<div><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/jugglingdogg_18.png\" alt=\"\" style=\"float: none; display: block; margin: 0px auto; width: 392.869402985075px; height: 499px;\"><br></div>
+<p><b>Are You Just Bragging or Is There a Point Here?</b></p>
+
+<p>
+Utilizing multiple strategies has two important benefits: you stay engaged and, typically, at all times you have at least one strategy that is performing really well. Engagement is key because when we are bored we check out. To be a good investor, however, you must always be engaged, so if you slack off when times are meh your investing and trading skills will suffer—with predictably dismal results. One failsafe of the multiple strategy approach is that when one strategy dogs it you can focus your attention and enthusiasm on the ones that are smoking.
+</p>
+
+<p>
+Diversification is also essential because no one strategy returns consistent (high) returns over time. Most strategies have good years and bad years, but by designing your overall approach will perform well in various market conditions. In the recent real estate boom, for example, you could make tons of money flipping houses. During the bust that followed you could do well collecting dividends or selling volatility via options, and in our current bull market being a buy-and-hold investor is pretty exciting.
+</p>
+
+<p>
+I am not suggesting that you shift strategies based on the vagaries of the market because you can’t predict exactly what will happen. Rather, you should maintain multiple strategies so that as the market changes different strategies will emerge as your best performers. Strong personal engagement and consistent portfolio returns are integral to being a good investor and multiple strategies are the means to both.</p>","Anyone who manages their own money should use a multiple strategy approach—a form of diversification, if you will. I personally maintain 4 strategies: buying & ",18,"Active",13,"2015-01-06 08:30:45","2015-01-06 08:30:45"
+16,"How Much Do You Spend Each Year?","2015-01-08 00:00:00","posts","<p>
+By my best calculations, going back to my piggy bank years, my personal spending has increased by 10% annually—and my assumption is that I will continue shelling out at this rate well into the future. Sure, I am a spender, but when you really think about it 10% is not crazy. Both hidden costs such as rising property taxes and obvious money pits such as kids factor into my 10%. Though I have only been tracking my spending in recent years, I suspect that subconsciously I have been aware of my rate because I have always managed my career and investments to accommodate it. What’s your number?
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/growth_19.png\" style=\"width: 446.56338028169px; height: 332px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>So When Can I Retire?</b></p>
+
+<p>
+When planning for retirement, I have to make sure I have enough income-producing assets to provide a monthly income that grows annually by my 10% spending increase rate. Traditionally retirees give up their monthly paycheck and start living off their assets—so why am I planning to continue growing my assets in retirement? The answer, my friend, is simple: I hope to opt out of the rat race quite a bit earlier than the typical retirement age of 65 (and beyond). And with rising life expectancy rates, in spite of my stubborn refusal to eat anything green and leafy I anticipate being only about halfway down the road when I retire—which means that I cannot afford to start drawing down my retirement assets on Day One.
+</p>","<p>
+By my best calculations, going back to my piggy bank years, my personal spending has increased by 10% annually—and my assumption is that I will continue shelling out at this rate well into the future. Sure, I am a spender, but when you really think about it 10% is not crazy. Both hidden costs such as rising property taxes and obvious money pits such as kids factor into my 10%. Though I have only been tracking my spending in recent years, I suspect that subconsciously I have been aware of my rate because I have always managed my career and investments to accommodate it. What’s your number?
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/growth_19.png\" style=\"width: 443.87323943662px; height: 330px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>So When Can I Retire?</b></p>
+
+<p>When planning for retirement, I have to make sure I have enough income-producing assets to provide a monthly income that grows annually by my 10% spending increase rate. Traditionally retirees give up their monthly paycheck and start living off their assets—so why am I planning to continue growing my assets in retirement? The answer, my friend, is simple: I hope to opt out of the rat race quite a bit earlier than the typical retirement age of 65 (and beyond). And with rising life expectancy rates, in spite of my stubborn refusal to eat anything green and leafy I anticipate being only about halfway down the road when I retire—which means that I cannot afford to start drawing down my retirement assets on Day One.
+</p>
+
+<p><b>WTF What Is Your Point?</b></p>
+
+<p>
+My point is that your retirement nest egg might need to be bigger than you think to maintain your lifestyle. I believe that tracking your spending increase each year and making projections into the future is a productive activity that will help you make career choices and investments to support your financial needs. Be warned, however, that factoring in this increase when thinking about retirement savings can be overwhelming—particularly if your rate is high like 10%—because the upshot is that you have to earn more each year while also increasing your investing and saving. Your 3% yearly raise is not going to be enough, but careful planning and smart decision making can keep you on track financially. How you live your life is up to you.
+</p>","By my best calculations, going back to my piggy bank years, my personal spending has increased by 10% annually—and my assumption is that I will continue shellin",19,"Active",14,"2015-01-08 10:28:30","2015-01-08 10:28:30"
+17,"How Often the SPY Falls More Than 5% in a 30-Day Period and Why You Should Care","2015-01-13 00:00:00","posts","<p>
+During any 30-day period from 1993 through 2014 the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> (the Exchange Traded Funds, or ETFs, tracking the S&amp;P 500) closed down 5% or more 11% of the time. I know this obscure fact because for every one of the 5,502 trading days during that period I compared the SPY closing price with the closing price 30 trading days later. (My results can be found <a href=\"https://docs.google.com/spreadsheets/d/1TNooY3MmdzifXzMxKlj_r9moC9XhOygA_ps7vezKw6w/edit?pli=1#gid=0\">here</a>.)
+</p>
+
+<p>
+And that’s not all: Further examination of 30-day periods that closed down more than 5% within shorter time frames (say 3 years) revealed rates as high as 20% during extreme bear markets (hello real estate meltdown) and as low as 3% during bull markets. That said, the 11% number was pretty consistent during most time periods.
+</p>
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/woot_20.png\" style=\"width: 487.037288135593px; height: 307px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p>
+
+
+<p><b>Why Is This Interesting?</b></p>
+
+<p>
+Knowing that the SPY is more or less predictable in terms of how it performs over a random 30-day period and understanding the bear and bull market extremes form a great basis for building a <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent trading strategy</a>. How about selling <a href=\"https://stockpeer.com/blog/10/what-is-a-put-option\">puts</a> 30 days to expiration 5% out of the money on the SPY?</p><p>I choose to study the 5% down and 30-day parameters because they match up nicely with selling put options on the SPY.
+</p>","<p>
+During any 30-day period from 1993 through 2014 the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> (the Exchange Traded Funds, or ETFs, tracking the S&amp;P 500) closed down 5% or more 11% of the time. I know this obscure fact because for every one of the 5,502 trading days during that period I compared the SPY closing price with the closing price 30 trading days later. (My results can be found <a href=\"https://docs.google.com/spreadsheets/d/1TNooY3MmdzifXzMxKlj_r9moC9XhOygA_ps7vezKw6w/edit?pli=1#gid=0\">here</a>.)
+</p>
+
+<p>
+And that’s not all: Further examination of 30-day periods that closed down more than 5% within shorter time frames (say 3 years) revealed rates as high as 20% during extreme bear markets (hello real estate meltdown) and as low as 3% during bull markets. That said, the 11% number was pretty consistent during most time periods.
+</p>
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/woot_20.png\" style=\"width: 472.766917293233px; height: 298px; float: none; display: block; margin: 0px auto;\" alt=\"\"><br></p>
+
+<p><b>Why Is This Interesting?</b></p>
+
+<p>
+Knowing that the SPY is more or less predictable in terms of how it performs over a random 30-day period and understanding the bear and bull market extremes form a great basis for building a <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent trading strategy</a>. How about selling <a href=\"https://stockpeer.com/blog/10/what-is-a-put-option\">puts</a> 30 days to expiration 5% out of the money on the SPY?</p><p>I choose to study the 5% down and 30-day parameters because they match up nicely with selling put options on the SPY. You could conduct similar research using different parameters optimized for your product of choice. The important takeaway is that this type of investigation is a strong starting point for crafting an effective trading strategy.
+</p>
+
+<p><b>I Am Still Losing Money —What Gives?</b></p>
+
+<p>
+Let’s say you sold $2-wide SPY credit spreads 5% out of the money 30 days to expiration and collected a premium of $20 per lot. We know that 89% of the time you would keep the full premium and 11% of the time you would lose the $180 risked. By making this trade 100 times you would collect $1,780 (89 * 20) and lose $1,980 ($180 * 11)—for a total account loss of $128. Understandably, you would want to know why you are losing money on these credit spreads.
+</p>
+
+<p>
+More to the point, you should be asking how you could build your edge to develop a successful trading strategy. Simple observations of the past often can get you close to breaking even, and fine tuning can make you profitable. So if you were able to predict when your credit spreads would fall into the 11% zone or space the timing of your trades to increase your odds, you might be able to increase your overall returns. Imagine if you were able to go from 11% of failing trades to only 5%—that is the very heart of building your edge.</p>In future blog posts I will share how I build my edge by wisely managing bankroll, integrating other metrics such as the <a href=\"http://en.wikipedia.org/wiki/VIX\">VIX</a> and <a href=\"http://www.investopedia.com/terms/r/rsi.asp\">RSI</a> readings, and properly spacing out trades. Stay tuned!
+<p></p>","During any 30-day period from 1993 through 2014 the SPY (the Exchange Traded Funds, or ETFs, tracking the S&P 500) closed down 5% or more 11% of the time. I kno",20,"Active",15,"2015-01-13 10:27:30","2015-01-13 10:27:30"
+18,"Making Volatility Your Bitch","2015-01-15 00:00:00","posts","<p style=\"margin: auto; width: 75%; margin-bottom: 20px;\">
+<i>“If you're ignoring volatility, you may only have yourself to blame for negative surprises.”&nbsp;</i><i style=\"line-height: 1.45em; background-color: initial;\">~ John Summa - <a href=\"http://www.investopedia.com/university/optionvolatility\">http://investopedia.com</a></i></p>
+
+<p>
+The day I learned to pay attention to volatility was the day I started to be <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistently profitable</a> in options trading. Most options traders start out trading stocks and they learn that if a stock is associated with good news its value often increases, whereas bad news sends a stock down. It’s that simple. The problem is that new options traders tend to think in the same terms, but options are different.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/vol_21.png\" style=\"width: 497.289134438306px; height: 361px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+A trader who thinks a stock is going to go up might use options to place a leveraged bet rather than buy the stock directly—which could be a mistake because an underlying stock might go up in value while the corresponding option goes down in value. What’s happening? Volatility is contracting, that’s what. That is, the premium in the option is reducing in value. As a new options trader this phenomenon is maddening. How could your <a href=\"https://stockpeer.com/blog/9/what-is-a-call-option\">call option</a> go down in value when the underlying stock is going up in value?
+</p>
+
+<p><b>What Is Volatility?</b></p>
+
+<p>
+Simply put volatility is a measurement of how expensive it is to buy an option. Of course the conventional definition is different, but this is the best way to think about it. To dive deeper into what volatility is read <a href=\"http://www.investopedia.com/university/optionvolatility/\">Option Volatility: Introduction by John Summa</a>.
+</p>
+","<p style=\"margin: auto; width: 75%; margin-bottom: 20px;\">
+<i>“If you're ignoring volatility, you may only have yourself to blame for negative surprises.”&nbsp;</i><i style=\"line-height: 1.45em; background-color: initial;\">~ John Summa - <a href=\"http://www.investopedia.com/university/optionvolatility\">http://investopedia.com</a></i></p>
+
+<p>
+The day I learned to pay attention to volatility was the day I started to be <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistently profitable</a> in options trading. Most options traders start out trading stocks and they learn that if a stock is associated with good news its value often increases, whereas bad news sends a stock down. It’s that simple. The problem is that new options traders tend to think in the same terms, but options are different.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/vol_21.png\" style=\"width: 497.289134438306px; height: 361px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+A trader who thinks a stock is going to go up might use options to place a leveraged bet rather than buy the stock directly—which could be a mistake because an underlying stock might go up in value while the corresponding option goes down in value. What’s happening? Volatility is contracting, that’s what. That is, the premium in the option is reducing in value. As a new options trader this phenomenon is maddening. How could your <a href=\"https://stockpeer.com/blog/9/what-is-a-call-option\">call option</a> go down in value when the underlying stock is going up in value?
+</p>
+
+<p><b>What Is Volatility?</b></p>
+
+<p>
+Simply put volatility is a measurement of how expensive it is to buy an option. Of course the conventional definition is different, but this is the best way to think about it. To dive deeper into what volatility is read <a href=\"http://www.investopedia.com/university/optionvolatility/\">Option Volatility: Introduction by John Summa</a>.
+</p>
+
+<p>
+In my example where the call option is losing value while the underlying stock is increasing in value, volatility is dropping. The premium is dropping faster than the underlying stock is moving up, which causes the option price to lose value. A good example of this situation is after an earning announcement by a company. An option might have high volatility because the market is preparing for the announcement. Under such circumstances people are willing to pay a premium to be involved before an announcement they expect to be big. Once the announcement has been made investors have no reason to pay a premium to own the option. That is, volatility is high before the announcement because of uncertainty and lower after that uncertainty has been resolved.
+</p>
+
+<p><b>How Do You Profit From Volatility?</b></p>
+
+<p>
+Being aware of volatility is the most important factor when trading options. If you buy a call option because you think a stock is going to go up, you want volatility to be as low as possible because you will profit if volatility increases or if the stock goes up in value—meaning that two market forces have the potential to be in your favor.
+</p>
+
+<p>
+The trades I talk most about (and <a href=\"https://twitter.com/hashtag/StockpeerTrades?src=hash\">share on twitter</a>) are <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">put credit spreads</a>. When you place a put credit spread the speed it takes for the trade to profit is based on volatility. If you open a trade when volatility is high and it subsequently decreases, you often carry the trade for 15 days. Conversely, if you open a trade when volatility is low you might have to carry the trade for 30 or more days. With put credit spreads volatility can be used to reduce risk in a trade because the longer a trade is on the more chances you have to lose money.
+</p>
+
+<p>
+Volatility is the single most important measurement when trading options. Make it your bitch—or it will own you.
+</p>
+","The day I learned to pay attention to volatility was the day I started to be consistently profitable in options trading. Most options traders start out trading ",21,"Active",16,"2015-01-15 10:23:18","2015-01-15 10:23:18"
+19,"Mechanical vs. Emotional Trading","2015-01-20 00:00:00","posts","<p>
+Like most traders I got started as a stock picker following the most basic of rules: do your homework and have a diversified portfolio. This credo is sound, and it’s the approach I use for <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">some of my accounts</a>. The key to this more traditional approach is understanding that your emotions do play a factor in your investing decisions—and that learning how to manage your emotions can be the pivot between success and failure.
+</p>
+
+
+
+<p><a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/balls_22.png\"><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/balls_22.png\" style=\"width: 570.048387096774px; height: 189px; float: none; display: block; margin: 0px auto;\" alt=\"\"></a><br></p><p>
+The reason I don’t often discuss trading and emotions is that even after 10 years I have not learned to truly tame my emotions. For this very reason I tend to focus on mechanical trading, which involves <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistently</a> implementing a strategy that I craft using measured probabilities, shooting for high occurrences to increase my odds. It’s zero emotion, all math.</p>
+
+<p><b>Why Do I Say Stock Picking Is Emotional?</b></p>
+
+<p>
+Stock pricing (the price at which a trader is willing to buy and sell a stock) is based on similar stocks. For example, when deciding whether to invest in <a href=\"http://www.homedepot.com/\">Home Depot</a> I would typically compare the company to <a href=\"http://www.lowes.com/\">Lowe’s</a> and other such retailers, not <a href=\"http://www.microsoft.com/\">Microsoft</a>. But we are all affected by brands—even a logo can influence you in ways you might not realize, and so it follows that when comparing one company to another you are likely biased.
+</p>
+
+<p>
+Yeah, yeah, I know: you’re comparing numbers such as <a href=\"http://www.investopedia.com/terms/p/price-earningsratio.asp\">P/E</a> ratios, not logos, and numbers don’t lie. Or do they? I think they can. You pick which numbers you compare, you decide how to weight each number. Though some of your decisions are informed by experience, some are based on emotions.</p><p>Have you ever watched <a href=\"http://www.cnbc.com/id/15838459\">Mad Money with Jim Cramer</a> or read any of his <a href=\"http://www.amazon.com/Jim-Cramer/e/B001H6NZUS/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;qid=1421197024&amp;sr=8-2-ent&amp;tag=spicematth-20&amp;linkId=KCTFAECGZYJDGCNX\">books</a>? Cramer’s father was in retail, and he tells a lot of stories about how he learned retail at a young age. He is clearly knowledgeable about the sector, but also very emotional about it. Though he exhibits the most excitement over retail, his retail stock recommendations tend to underperform his other recommendations.
+</p>","<p>
+Like most traders I got started as a stock picker following the most basic of rules: do your homework and have a diversified portfolio. This credo is sound, and it’s the approach I use for <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">some of my accounts</a>. The key to this more traditional approach is understanding that your emotions do play a factor in your investing decisions—and that learning how to manage your emotions can be the pivot between success and failure.
+</p>
+
+
+
+<p><a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/balls_22.png\"><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/balls_22.png\" style=\"width: 570.048387096774px; height: 189px; float: none; display: block; margin: 0px auto;\" alt=\"\"></a><br></p><p>
+The reason I don’t often discuss trading and emotions is that even after 10 years I have not learned to truly tame my emotions. For this very reason I tend to focus on mechanical trading, which involves <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistently</a> implementing a strategy that I craft using measured probabilities, shooting for high occurrences to increase my odds. It’s zero emotion, all math.</p>
+
+<p><b>Why Do I Say Stock Picking Is Emotional?</b></p>
+
+<p>
+Stock pricing (the price at which a trader is willing to buy and sell a stock) is based on similar stocks. For example, when deciding whether to invest in <a href=\"http://www.homedepot.com/\">Home Depot</a> I would typically compare the company to <a href=\"http://www.lowes.com/\">Lowe’s</a> and other such retailers, not <a href=\"http://www.microsoft.com/\">Microsoft</a>. But we are all affected by brands—even a logo can influence you in ways you might not realize, and so it follows that when comparing one company to another you are likely biased.
+</p>
+
+<p>
+Yeah, yeah, I know: you’re comparing numbers such as <a href=\"http://www.investopedia.com/terms/p/price-earningsratio.asp\">P/E</a> ratios, not logos, and numbers don’t lie. Or do they? I think they can. You pick which numbers you compare, you decide how to weight each number. Though some of your decisions are informed by experience, some are based on emotions.</p><p>Have you ever watched <a href=\"http://www.cnbc.com/id/15838459\">Mad Money with Jim Cramer</a> or read any of his <a href=\"http://www.amazon.com/Jim-Cramer/e/B001H6NZUS/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;qid=1421197024&amp;sr=8-2-ent&amp;tag=spicematth-20&amp;linkId=KCTFAECGZYJDGCNX\">books</a>? Cramer’s father was in retail, and he tells a lot of stories about how he learned retail at a young age. He is clearly knowledgeable about the sector, but also very emotional about it. Though he exhibits the most excitement over retail, his retail stock recommendations tend to underperform his other recommendations.
+</p>
+
+<p>
+I can’t quantify the pervasiveness of the phenomenon, but emotions can get the best of a public stock picking sage like Jim Cramer and I know they can get the best of me. It’s something we all need to be aware of when stock picking.
+</p>
+
+<p><b>The Mechanical Way</b></p>
+
+<p>
+Mechanical trading is a different beast. The approach removes all emotion and relies heavily on math, statistics, and probabilities. Mechanical trading pretty much flies in the face of everything <a href=\"http://en.wikipedia.org/wiki/Warren_Buffett\">Warren Buffett </a>has ever taught us about making money—it’s an altogether different way of thinking about the market.
+</p>
+
+<p>
+Whereas a value investor says, “I believe that sometime in the future XYZ company will be worth more,” a mechanical trader proclaims, “XYZ company has a 63% chance of profit within 3 months.” The mechanical trader typically defines when to enter and exit a trade and the statistical chance of success based on clear mathematical rules, leaving all subjective feelings at the door.
+</p>
+
+<p>
+Every trading strategy has its pros and cons, and choosing strategies that play on your strengths is important. I am an optimist. I am also greedy. And I get distracted by flashing lights. That is, I am emotional—which is why mechanical trading works best for me.
+</p>"," Like most traders I got started as a stock picker following the most basic of rules: do your homework and have a diversified portfolio. This credo is sound, an",22,"Active",17,"2015-01-20 10:42:54","2015-01-20 10:42:54"
+20,"How to Use the RSI Indicator to Trade the SPY","2015-01-21 00:00:00","posts","<p>
+Every great trader has a bag of tricks. Each of these opportunities, if you will, is a predefined market condition signaling when to enter a trade and when to close it. One that has been in my bag for awhile is buying the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> when the <a href=\"http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:relative_strength_index_rsi\">Relative Strength Index (RSI)</a> indicator hits 30. My MO is to keep a tight stop and refrain from getting too greedy. Which means what, exactly? I have always based my approach to this trade on a hazy amalgam of instinct and experience, but in the name of maximizing the return I decided to systematically explore the possibilities.
+</p>
+
+<p>
+So I backtested (of course) the following study. With a balance of $10,000 I purchased the SPY every time the RSI hit 30 from 1993 to the present. I then played with different closing trades, first setting the stop loss at 3% and varying the profit gain (see the top table) and then varying the stop loss and setting the profit gain at 11% (bottom table).
+</p>
+
+
+<div class=\"trade-table\">
+
+<table class=\"table\">
+
+<thead>
+<tr>
+<th style=\"text-align: center;\">&nbsp;</th>
+<th style=\"text-align: center;\">3% Stop / 7% Close</th>
+<th style=\"text-align: center;\">3% Stop / 11% Close</th>
+<th style=\"text-align: center;\">3% Stop / 15% Close</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style=\"text-align: center;\"><b>Success Rate</b></td>
+<td style=\"text-align: center;\">55.26%</td>
+<td style=\"text-align: center;\">51.35%</td>
+<td style=\"text-align: center;\">42.42%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Occurrences</b></td>
+<td style=\"text-align: center;\">38</td>
+<td style=\"text-align: center;\">37</td>
+<td style=\"text-align: center;\">33</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>CAGR</b></td>
+<td style=\"text-align: center;\">3.83%</td>
+<td style=\"text-align: center;\">5.94%</td>
+<td style=\"text-align: center;\">-3.17%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Profit &amp; Loss</b></td>
+<td style=\"text-align: center;\">$12,841.55</td>
+<td style=\"text-align: center;\">$25,568.21</td>
+<td style=\"text-align: center;\">$-9,871.17</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<div class=\"trade-table\">
+
+<table class=\"table\">
+
+<thead>
+<tr>
+<th style=\"text-align: center;\">&nbsp;</th>
+<th style=\"text-align: center;\">1% Stop / 11% Close</th>
+<th style=\"text-align: center;\">2% Stop / 11% Close</th>
+<th style=\"text-align: center;\">5% Stop / 11% Close</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style=\"text-align: center;\"><b>Success Rate</b></td>
+<td style=\"text-align: center;\">29.31%</td>
+<td style=\"text-align: center;\">51.35%</td>
+<td style=\"text-align: center;\">55.88%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Occurrences</b></td>
+<td style=\"text-align: center;\">58</td>
+<td style=\"text-align: center;\">46</td>
+<td style=\"text-align: center;\">34</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>CAGR</b></td>
+<td style=\"text-align: center;\">4.20%</td>
+<td style=\"text-align: center;\">3.84%</td>
+<td style=\"text-align: center;\">4.93%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Profit &amp; Loss</b></td>
+<td style=\"text-align: center;\">$14,735.41</td>
+<td style=\"text-align: center;\">$12,894.22</td>
+<td style=\"text-align: center;\">$18,826.06</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<p>
+I also included in the study the <a href=\"http://www.investopedia.com/terms/c/cagr.asp\">Compound Annual Growth Rate (CAGR)</a> of the trades to allow for comparison, though most of the trades only lasted a few weeks. Using the RSI indicator to trade the SPY is not a comprehensive, long-term strategy—it’s merely an opportunity to capitalize on when certain conditions arise.
+</p>","<p>
+Every great trader has a bag of tricks. Each of these opportunities, if you will, is a predefined market condition signaling when to enter a trade and when to close it. One that has been in my bag for awhile is buying the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> when the <a href=\"http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:relative_strength_index_rsi\">Relative Strength Index (RSI)</a> indicator hits 30. My MO is to keep a tight stop and refrain from getting too greedy. Which means what, exactly? I have always based my approach to this trade on a hazy amalgam of instinct and experience, but in the name of maximizing the return I decided to systematically explore the possibilities.
+</p>
+
+<p>
+So I backtested (of course) the following study. With a balance of $10,000 I purchased the SPY every time the RSI hit 30 from 1993 to the present. I then played with different closing trades, first setting the stop loss at 3% and varying the profit gain (see the top table) and then varying the stop loss and setting the profit gain at 11% (bottom table).
+</p>
+
+
+<div class=\"trade-table\">
+
+<table class=\"table\">
+
+<thead>
+<tr>
+<th style=\"text-align: center;\">&nbsp;</th>
+<th style=\"text-align: center;\">3% Stop / 7% Close</th>
+<th style=\"text-align: center;\">3% Stop / 11% Close</th>
+<th style=\"text-align: center;\">3% Stop / 15% Close</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style=\"text-align: center;\"><b>Success Rate</b></td>
+<td style=\"text-align: center;\">55.26%</td>
+<td style=\"text-align: center;\">51.35%</td>
+<td style=\"text-align: center;\">42.42%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Occurrences</b></td>
+<td style=\"text-align: center;\">38</td>
+<td style=\"text-align: center;\">37</td>
+<td style=\"text-align: center;\">33</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>CAGR</b></td>
+<td style=\"text-align: center;\">3.83%</td>
+<td style=\"text-align: center;\">5.94%</td>
+<td style=\"text-align: center;\">-3.17%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Profit &amp; Loss</b></td>
+<td style=\"text-align: center;\">$12,841.55</td>
+<td style=\"text-align: center;\">$25,568.21</td>
+<td style=\"text-align: center;\">$-9,871.17</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class=\"trade-table\">
+
+<table class=\"table\">
+
+<thead>
+<tr>
+<th style=\"text-align: center;\">&nbsp;</th>
+<th style=\"text-align: center;\">1% Stop / 11% Close</th>
+<th style=\"text-align: center;\">2% Stop / 11% Close</th>
+<th style=\"text-align: center;\">5% Stop / 11% Close</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style=\"text-align: center;\"><b>Success Rate</b></td>
+<td style=\"text-align: center;\">29.31%</td>
+<td style=\"text-align: center;\">51.35%</td>
+<td style=\"text-align: center;\">55.88%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Occurrences</b></td>
+<td style=\"text-align: center;\">58</td>
+<td style=\"text-align: center;\">46</td>
+<td style=\"text-align: center;\">34</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>CAGR</b></td>
+<td style=\"text-align: center;\">4.20%</td>
+<td style=\"text-align: center;\">3.84%</td>
+<td style=\"text-align: center;\">4.93%</td>
+</tr>
+
+<tr>
+<td style=\"text-align: center;\"><b>Profit &amp; Loss</b></td>
+<td style=\"text-align: center;\">$14,735.41</td>
+<td style=\"text-align: center;\">$12,894.22</td>
+<td style=\"text-align: center;\">$18,826.06</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<p>
+I also included in the study the <a href=\"http://www.investopedia.com/terms/c/cagr.asp\">Compound Annual Growth Rate (CAGR)</a> of the trades to allow for comparison, though most of the trades only lasted a few weeks. Using the RSI indicator to trade the SPY is not a comprehensive, long-term strategy—it’s merely an opportunity to capitalize on when certain conditions arise.
+</p>
+
+<p>
+In terms of profit and loss, I got the best results when I had a stop loss of 3% and a profit gain of 11% (you can view the trades <a href=\"https://docs.google.com/spreadsheets/d/1ccM7uYeXX4BK3P4srk2HbKCX9R0nWjTMZqoWKd2RtXo/edit?usp=sharing\">here</a>). If I had been greedy and held out for 15% I would have lost a lot of money. You will also notice that—as is the case with most directional trading—my success rate was darn close to 50% for every trade. Good directional traders understand that their probability of success is always 50-50, and they make their money by knowing when to cut off a losing trade and when to close out a winning trade.
+</p>
+
+<p><b>Some Basic Observations </b></p>
+
+<p>
+I also tried backtesting the short side of the RSI. That is, selling short the SPY when the RSI reading crossed the upper limit of 70. Though I know this trick works in some cases, I could not make it work for the SPY and every test ended in a loss. I suspect that this approach might work best for <a href=\"http://www.investopedia.com/terms/h/highbetaindex.asp\">high beta</a> individual stocks.
+</p>
+
+<p>
+Most of you know me as an options trader, but I conducted this study for two reasons: (a) to inform one of my less public strategies (I like to trade <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategies</a>) and (b) to see if I could use a naked RSI number in my <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">put credit spread</a> trading. As for the latter, I could not identify any easy ways to use the RSI number in credit spread trading strategies though I do use the general trend of the RSI to increase the odds of success—more on that in a different post. The gang over at <a href=\"https://www.tastytrade.com/tt/\">Tastytrade</a> did a nice study on RSI and options trading and the following video is worth a watch.
+</p>
+
+<iframe width=\"100%\" height=\"500\" src=\"//www.youtube.com/embed/umWnDTNoT14\" frameborder=\"0\" allowfullscreen=\"\"></iframe>
+
+<br><br>
+
+<p>
+The RSI indicator trade is one you might make only a few times a year. Think of it as an easy way to pick up a few percentage points in your portfolio in a few weeks. You just need to watch for the right market condition and then seize the day.</p><p>Another one for the bag of tricks. Enjoy.
+</p>
+","Every great trader has a bag of tricks. Each of these opportunities, if you will, is a predefined market condition signaling when to enter a trade and when to c",0,"Active",18,"2015-01-21 22:57:24","2015-01-21 22:57:24"
+21,"Being Hyperfocused on the SPY","2015-01-27 00:00:00","posts","<p>
+Almost all of my <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">credit spread trading</a> is focused on the S&amp;P 500 via the <a href=\"http://finance.yahoo.com/q;_ylt=Am8D.cM4hnyWoRrbzGOgBWYByr0F?uhb=uhb2&amp;fr=uh3_finance_vert_gs&amp;type=2button&amp;s=spy\">SPY</a> or S&amp;P 500 futures. Why am I hyperfocused on the SPY? So I can sleep at night (well, try to sleep—I do have a young son and a daughter on the way). The S&amp;P 500 is such a big index that it generally doesn’t move dramatically. In contrast, <a href=\"https://www.google.com/finance?q=NASDAQ%3ANFLX&amp;ei=FWTBVNDTE6b2sQfXsIHYDw\">Netflix</a> recently posted a 31% change in a single week, which is just too much for me to handle. Things really have to go haywire for the S&amp;P 500 to experience such a massive swing—something like the <a href=\"http://en.wikipedia.org/wiki/2010_Flash_Crash\">flash crash</a>. Though some traders make tons of money betting on volatility in individual companies, I would rather <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">win small and win often</a>, taking as little risk as possible.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/focus_24.png\" style=\"width: 588.877721943049px; height: 470px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+I also know that a lot of traders consider either the technicals or the fundamentals, but I am a strong believer in studying both. If I actively trade 10 individual stocks, therefore, I need to do the homework 10 times over: 10 conference calls to pay attention to, 10 earnings reports to review. Accordingly, the money I make per hour of effort goes way down. With the S&amp;P 500 I only have to keep tabs on the market as a whole. So instead of tracking how well Home Depot beat its earnings expectations, for example, I track how many companies in the S&amp;P 500 beat theirs—and lots of services are available to do the heavy lifting for me.
+</p>
+
+<p><b>Da SPY Is Superliquid</b></p>
+
+<p>
+By superliquid I mean tons of people trade the SPY every day, and as a result the spread between the bid and the ask price is small. Superliquidity allows a trader to get in and out of the trade very easily, which is a very good thing—there is nothing worse than being unable to make a great trade because there isn’t anyone on the other end of it. Lots of money has been lost trading illiquid products.
+</p>","<p>
+Almost all of my <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">credit spread trading</a> is focused on the S&amp;P 500 via the <a href=\"http://finance.yahoo.com/q;_ylt=Am8D.cM4hnyWoRrbzGOgBWYByr0F?uhb=uhb2&amp;fr=uh3_finance_vert_gs&amp;type=2button&amp;s=spy\">SPY</a> or S&amp;P 500 futures. Why am I hyperfocused on the SPY? So I can sleep at night (well, try to sleep—I do have a young son and a daughter on the way). The S&amp;P 500 is such a big index that it generally doesn’t move dramatically. In contrast, <a href=\"https://www.google.com/finance?q=NASDAQ%3ANFLX&amp;ei=FWTBVNDTE6b2sQfXsIHYDw\">Netflix</a> recently posted a 31% change in a single week, which is just too much for me to handle. Things really have to go haywire for the S&amp;P 500 to experience such a massive swing—something like the <a href=\"http://en.wikipedia.org/wiki/2010_Flash_Crash\">flash crash</a>. Though some traders make tons of money betting on volatility in individual companies, I would rather <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">win small and win often</a>, taking as little risk as possible.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/focus_24.png\" style=\"width: 588.877721943049px; height: 470px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+I also know that a lot of traders consider either the technicals or the fundamentals, but I am a strong believer in studying both. If I actively trade 10 individual stocks, therefore, I need to do the homework 10 times over: 10 conference calls to pay attention to, 10 earnings reports to review. Accordingly, the money I make per hour of effort goes way down. With the S&amp;P 500 I only have to keep tabs on the market as a whole. So instead of tracking how well Home Depot beat its earnings expectations, for example, I track how many companies in the S&amp;P 500 beat theirs—and lots of services are available to do the heavy lifting for me.
+</p>
+
+<p><b>Da SPY Is Superliquid</b></p>
+
+<p>
+By superliquid I mean tons of people trade the SPY every day, and as a result the spread between the bid and the ask price is small. Superliquidity allows a trader to get in and out of the trade very easily, which is a very good thing—there is nothing worse than being unable to make a great trade because there isn’t anyone on the other end of it. Lots of money has been lost trading illiquid products.
+</p>
+
+<p><b>Backtesting, Domain Knowledge, and Experience</b></p>
+
+<p>
+A friend recently put on one of my <a href=\"https://twitter.com/hashtag/StockpeerTrades?f=realtime&amp;src=hash\">credit spread trades</a>. The next morning the SPY opened much lower, leading him to believe he had made a big mistake. With near certainty I reassured this friend that the trade would succeed. I don’t have a crystal ball but I do have enough experience to have a strong sense of how the SPY is going to behave. Countless hours of <a href=\"https://stockpeer.com/blog/17/how-often-the-spy-falls-more-than-5-in-a-30-day-period-and-why-you-should-care\">backtesting</a> underpin my understanding of the probabilities at stake.
+</p>
+
+<p>
+Though the trade hasn’t closed yet, at this point a profit looks likely. Having backtested results, domain knowledge, and experience can help you stay calm when times are worrisome. When you trade many different products you simply cannot maintain the confidence that a hyperfocus gives you. &nbsp;</p>To be clear, I am merely highlighting the benefits of being hyperfocused on one product, not arguing against diversification. In your longer term investing portfolios you want to invest in multiple products.
+<p></p>","Almost all of my credit spread trading is focused on the S&P 500 via the SPY or S&P 500 futures. Why am I hyperfocused on the SPY? So I can sleep at night (well",24,"Active",19,"2015-01-27 11:12:50","2015-01-27 11:12:50"
+22,"Should I Consider Delta When Opening SPY Put Credit Spreads?","2015-01-29 00:00:00","posts","<p>
+<a href=\"http://www.macroption.com/delta-calls-puts-probability-expiring-itm/\"><span>Delta</span></a> is a metric that options traders use to predict how the price of an option will change when the underlying stock moves by one dollar. If, for example, a call option has a delta of .3 and the underlying stock value increases from $100 to $101, then theoretically that call option would increase in value by $0.30.
+</p>
+
+<p>
+Delta is also a probability proxy. You can think of delta as the probability the option will expire in the money—so in other words that call option with a delta of .3 has a 30% chance of expiring in the money. The question is, should you consider the value of delta before opening a put credit spread on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a>? That is, before placing an order should you estimate the probability that your short leg will expire in the money, causing you to lose money?
+</p>
+
+<p><b>Backtesting (...)</b></p>
+
+<p>
+To study how delta affects an opening trade I did—of course—some backtesting. I took a $10,000 account and placed put credit spread trades from 2011 to current. I opened up spreads that were $2 wide, at least 4% out of the money, and no more than 45 days to expiration. I then ran the test only opening trades when delta was less than certain values. Below are my backtested results.
+</p>
+
+<div class=\"trade-table\">
+<table class=\"table\">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>No Delta Filter</th>
+<th>Delta &lt;= 0.10</th>
+<th>Delta &lt;= 0.15</th>
+<th>Delta &lt;= 0.20</th>
+<th>Delta &lt;= 0.25</th>
+<th>Delta &lt;= 0.30</th>
+<th>Delta &lt;= 0.35</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Total Trades</td><td>398</td><td>3</td><td>68</td><td>377</td><td>363</td><td>363</td><td>397</td></tr><tr><td>Success Rate</td><td>94.72%</td><td>100%</td><td>100%</td><td>95.23%</td><td>94.21%</td><td>94.21%</td><td>94.71%</td></tr><tr><td>Percent Gain</td><td>210.78%</td><td>3.01%</td><td>62.64%</td><td>202.74%</td><td>168.78%</td><td>168.78%</td><td>208.96%</td></tr><tr><td>Profit</td><td>$21,078</td><td>$301</td><td>$6,264</td><td>$20,274</td><td>$16,878</td><td>$16,878</td><td>$20,895</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+As you can see, considering delta before opening SPY put credit spreads is a waste of time. I was expecting to find a perfect delta value for opening trades and was surprised to learn that you get better results by simply ignoring it.
+</p>
+","<p>
+<a href=\"http://www.macroption.com/delta-calls-puts-probability-expiring-itm/\"><span>Delta</span></a> is a metric that options traders use to predict how the price of an option will change when the underlying stock moves by one dollar. If, for example, a call option has a delta of .3 and the underlying stock value increases from $100 to $101, then theoretically that call option would increase in value by $0.30.
+</p>
+
+<p>
+Delta is also a probability proxy. You can think of delta as the probability the option will expire in the money—so in other words that call option with a delta of .3 has a 30% chance of expiring in the money. The question is, should you consider the value of delta before opening a put credit spread on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a>? That is, before placing an order should you estimate the probability that your short leg will expire in the money, causing you to lose money?
+</p>
+
+<p><b>Backtesting (...)</b></p>
+
+<p>
+To study how delta affects an opening trade I did—of course—some backtesting. I took a $10,000 account and placed put credit spread trades from 2011 to current. I opened up spreads that were $2 wide, at least 4% out of the money, and no more than 45 days to expiration. I then ran the test only opening trades when delta was less than certain values. Below are my backtested results.
+</p>
+
+<div class=\"trade-table\">
+<table class=\"table\">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>No Delta Filter</th>
+<th>Delta &lt;= 0.10</th>
+<th>Delta &lt;= 0.15</th>
+<th>Delta &lt;= 0.20</th>
+<th>Delta &lt;= 0.25</th>
+<th>Delta &lt;= 0.30</th>
+<th>Delta &lt;= 0.35</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Total Trades</td><td>398</td><td>3</td><td>68</td><td>377</td><td>363</td><td>363</td><td>397</td></tr><tr><td>Success Rate</td><td>94.72%</td><td>100%</td><td>100%</td><td>95.23%</td><td>94.21%</td><td>94.21%</td><td>94.71%</td></tr><tr><td>Percent Gain</td><td>210.78%</td><td>3.01%</td><td>62.64%</td><td>202.74%</td><td>168.78%</td><td>168.78%</td><td>208.96%</td></tr><tr><td>Profit</td><td>$21,078</td><td>$301</td><td>$6,264</td><td>$20,274</td><td>$16,878</td><td>$16,878</td><td>$20,895</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+As you can see, considering delta before opening SPY put credit spreads is a waste of time. I was expecting to find a perfect delta value for opening trades and was surprised to learn that you get better results by simply ignoring it.
+</p>
+
+<p><b>Delta This, Delta That</b></p>
+
+<p>
+So why does every other options trader seem to natter on about how important delta is? For one thing, delta is more important for other underlying stocks (I will show some backtest results demonstrating as much in future posts). Delta is also very important for choosing when to exit a trade. If a trade starts to go south you can monitor the change in delta and decide whether to cut your losses or remain in the trade (more on this in future posts as well).
+</p>
+
+<p>
+One of the reasons I especially like trading the SPY is the practicality of keeping things simple. You don’t need to crunch hundreds of inputs, such as delta, to make wise trade decisions—this study demonstrates that reassuring fact.
+</p>","To study how delta affects an opening trade I did—of course—some backtesting. I took a $10,000 account and placed put credit spread trades from 2011 to current.",26,"Active",20,"2015-01-29 11:48:43","2015-01-29 11:48:43"
+23,"January 2015 Trades","2015-02-04 00:00:00","trades","<p>{{BlogTrades start=\"1/1/2015\" end=\"1/31/2015\"}}</p>
+
+<p>
+January has been an odd month. Volatility has been high with the <a href=\"http://finance.yahoo.com/echarts?s=SPY\">SPY</a> staying in a trading range (200 - 206 ish). Due to this market condition many of the put credit spread trades have not closed. Currently I have 6 open trades. You can follow the trades in real-time using <a href=\"https://twitter.com/hashtag/stockpeertrades?f=realtime&src=hash\">#StockpeerTrades</a>.
+</p>
+
+<p>
+Beware this higher volatility might be a new normal. I think 2015 is going to have a fair amount of volatility. This is great for premium sellers. I am looking forward to trading this year.
+</p>","<p>{{BlogTrades start=\"1/1/2015\" end=\"1/31/2015\"}}</p>
+
+<p>
+January has been an odd month. Volatility has been high with the <a href=\"http://finance.yahoo.com/echarts?s=SPY\">SPY</a> staying in a trading range (200 - 206 ish). Due to this market condition many of the put credit spread trades have not closed. Currently I have 6 open trades. You can follow the trades in real-time using <a href=\"https://twitter.com/hashtag/stockpeertrades?f=realtime&src=hash\">#StockpeerTrades</a>.
+</p>
+
+<p>
+Beware this higher volatility might be a new normal. I think 2015 is going to have a fair amount of volatility. This is great for premium sellers. I am looking forward to trading this year.
+</p>","January has been an odd month. Volatility has been high with the SPY staying in a trading range (200 - 206 ish). Due to this market condition many of the put cr",27,"Active",21,"2015-02-04 09:14:02","2015-02-04 09:14:02"
+24,"Scaling Your Investments via Overflow","2015-02-05 00:00:00","posts","<p>
+When I talk to people about <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">my credit spread trading strategy</a> I often hear the claim that credit spread trading works great for 5, 10, or 20 thousand dollars, but the strategy can’t be scaled up. Are these skeptics suggesting a lack of liquidity to fill bigger orders? Or that trades in the 100 thousand range have the power to move markets? Bunkum. When trading an underlying such as the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> or SPX there is plenty of <a href=\"http://www.investopedia.com/ask/answers/138.asp\">liquidity</a>. And you most likely need to be trading an account over 100 million before liquidity and put credit spreads are issues.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/water_28.jpg\" style=\"width: 436px; height: 436px; float: none; display: block; margin: 0px auto; cursor: nw-resize;\" alt=\"\">
+</p>
+
+<p>
+Maybe my friends are suggesting something else when they say my credit spread trading strategy doesn’t scale. If you are only trading a $25,000 account an annual return of 40% or more is fairly common. Returning 40% on a $200,000 account is more difficult—but not because of market mechanics. It’s more difficult because of the emotional risk involved. If something goes wrong and you lose most of your $25,000 account it’s not the end of the world. Blowing up your $200,000 account hurts a lot more, and it might take many years to recoup such a big loss.
+</p>
+
+<p>
+Bankroll management conventional wisdom suggests that you risk less per trade as your account gets bigger—both to defend against emotional risk and to protect your nest egg. And small trades on a big account yield a lower return rate than the same number of winning big trades on a small account.
+
+</p>
+
+<p><b>Scaling Via Overflow</b></p>
+
+<p>
+I like to trade many <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategies</a> so I think about scaling all of my strategies as a whole. I call this the overflow method. Imagine 3 buckets mounted above each other. The top bucket is small, the middle bucket is bigger, and the bottom bucket is the biggest. If you fill the top bucket with water it will eventually overflow and fill the bucket below it, which will likewise overflow and fill the biggest bucket on the the bottom. 
+</p>
+","<p>
+When I talk to people about <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">my credit spread trading strategy</a> I often hear the claim that credit spread trading works great for 5, 10, or 20 thousand dollars, but the strategy can’t be scaled up. Are these skeptics suggesting a lack of liquidity to fill bigger orders? Or that trades in the 100 thousand range have the power to move markets? Bunkum. When trading an underlying such as the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> or SPX there is plenty of <a href=\"http://www.investopedia.com/ask/answers/138.asp\">liquidity</a>. And you most likely need to be trading an account over 100 million before liquidity and put credit spreads are issues.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/water_28.jpg\" style=\"width: 436px; height: 436px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+Maybe my friends are suggesting something else when they say my credit spread trading strategy doesn’t scale. If you are only trading a $25,000 account an annual return of 40% or more is fairly common. Returning 40% on a $200,000 account is more difficult—but not because of market mechanics. It’s more difficult because of the emotional risk involved. If something goes wrong and you lose most of your $25,000 account it’s not the end of the world. Blowing up your $200,000 account hurts a lot more, and it might take many years to recoup such a big loss.
+</p>
+
+<p>
+Bankroll management conventional wisdom suggests that you risk less per trade as your account gets bigger—both to defend against emotional risk and to protect your nest egg. And small trades on a big account yield a lower return rate than the same number of winning big trades on a small account.
+
+</p>
+
+<p><b>Scaling Via Overflow</b></p>
+
+<p>
+I like to trade many <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategies</a> so I think about scaling all of my strategies as a whole. I call this the overflow method. Imagine 3 buckets mounted above each other. The top bucket is small, the middle bucket is bigger, and the bottom bucket is the biggest. If you fill the top bucket with water it will eventually overflow and fill the bucket below it, which will likewise overflow and fill the biggest bucket on the the bottom. 
+</p>
+
+<p>
+Now, replace those buckets with your trading and investing strategies and the water with the money in your accounts. Let's assume the smallest strategy is day trading (buying and selling on a single day) and the account has $10,000. The midsize strategy might be put credit spread trading with an account of $50,000, and the granddaddy strategy is buy and hold with an account of $500,000. As the accounts grow your profits overflow to the next bigger account and less risky strategy.
+</p>
+
+<p><b>Why Does the Overflow Method Scale?</b></p>
+
+<p>
+In other words, with the overflow method you scale by channeling capital from your smallest, most risky accounts to your biggest, least risk-affected account. The key is making sure the account size matches the risk you put on it. Smaller accounts can take on more risk, and bigger accounts should take on less. Done right, the overflow method ensures that all of your accounts grow. Some day I hope my put credit spread account is trading many millions of dollars, but for that to happen my buy and hold (least risky) account will have to be almost 10 times that. My strategies scale based on risk.
+</p>
+","When I talk to people about my credit spread trading strategy I often hear the claim that credit spread trading works great for 5, 10, or 20 thousand dollars, b",28,"Active",22,"2015-02-05 09:22:20","2015-02-05 09:22:20"
+25,"Baseline Strategy for Trading SPY Put Credit Spreads","2015-02-17 00:00:00","posts","<p>
+When I got interested in trading credit spreads, like most I harbored some <a href=\"https://www.tastytrade.com/tt/shows/truth-or-skepticism-with-dylan-ratigan\">skepticism</a>. A credit spread trade seemed to be the type that works—until rather dramatically it does not. More than once I put on a series of successful trades and then Dr. Jeckyll transformed into his evil alter ego Mr. Hyde and suddenly I was blowing up my account. Clearly, I did not know what I was doing. On the verge of giving up, I convinced myself that I was just missing something. And so a quest was born, my friends. 
+</p>
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/baseline_29.jpg\" style=\"width: 600.486055776892px; height: 403px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+I set off to figure out the correct way to trade SPY put credit spreads. The path was familiar: backtesting. I knew that I needed to build a reliable trading strategy using past data. But even backtesting offered little hope of success until I discovered my baseline strategy.
+</p>
+
+<p><b>What’s a Baseline Strategy?</b></p>
+
+<p>
+What I call a baseline strategy is a set of simple restraints (or signals) that I apply to a backtest to verify that a trading strategy is profitable (and beats the S&amp;P 500). When I first devised my baseline strategy I did not think about <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">credit spreads</a> or options. Rather, I identified a trend to inform the thesis of my strategy. I focused on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> (an ETF tracking the S&amp;P 500 index), a safe place to start because the price movement is pretty stable compared to individual stocks (in contrast, take a look at <a href=\"https://www.netflix.com/\">Netflix</a> after an earnings announcement). Because credit spread trades expire I examined 30- and 45-day windows, which revealed that the movement of the SPY is pretty predictable (at least downward movement; see <a href=\"https://stockpeer.com/blog/17/how-often-the-spy-falls-more-than-5-in-a-30-day-period-and-why-you-should-care\">How Often the SPY Falls More Than 5% in a 30-Day Period and Why You Should Care</a>). With this information about how the SPY moves I was able to form my thesis and start backtesting.
+</p>
+
+
+
+<p><b>My Baseline Strategy</b></p>
+
+<p>
+My put credit spread baseline strategy is pretty simple. I look for 2 dollars-wide SPY spreads that are at least 4% from the current stock price. I do not consider any spreads that expire more than 45 days out, and I make sure the credit received is at least $0.18. Typically you can choose from about 10 credit spreads with different expirations, strikes, and credits received. For my baseline strategy I always choose the spread with the least risk—that is, the credit spread whose short strike is furthest below the current stock price.</p><p>In terms of trade frequency I have two other restraints: I only make one trade per day, and I never have two spreads that share the same short strike price (though two spreads might have different expiration dates). All of these restraints were born out of trial and error and guided by a mission to keep the baseline strategy as simple as possible.
+</p>","<p>
+When I got interested in trading credit spreads, like most I harbored some <a href=\"https://www.tastytrade.com/tt/shows/truth-or-skepticism-with-dylan-ratigan\">skepticism</a>. A credit spread trade seemed to be the type that works—until rather dramatically it does not. More than once I put on a series of successful trades and then Dr. Jeckyll transformed into his evil alter ego Mr. Hyde and suddenly I was blowing up my account. Clearly, I did not know what I was doing. On the verge of giving up, I convinced myself that I was just missing something. And so a quest was born, my friends. 
+</p>
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/baseline_29.jpg\" style=\"width: 600.486055776892px; height: 403px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p>
+I set off to figure out the correct way to trade SPY put credit spreads. The path was familiar: backtesting. I knew that I needed to build a reliable trading strategy using past data. But even backtesting offered little hope of success until I discovered my baseline strategy.
+</p>
+
+<p><b>What’s a Baseline Strategy?</b></p>
+
+<p>
+What I call a baseline strategy is a set of simple restraints (or signals) that I apply to a backtest to verify that a trading strategy is profitable (and beats the S&amp;P 500). When I first devised my baseline strategy I did not think about <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">credit spreads</a> or options. Rather, I identified a trend to inform the thesis of my strategy. I focused on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> (an ETF tracking the S&amp;P 500 index), a safe place to start because the price movement is pretty stable compared to individual stocks (in contrast, take a look at <a href=\"https://www.netflix.com/\">Netflix</a> after an earnings announcement). Because credit spread trades expire I examined 30- and 45-day windows, which revealed that the movement of the SPY is pretty predictable (at least downward movement; see <a href=\"https://stockpeer.com/blog/17/how-often-the-spy-falls-more-than-5-in-a-30-day-period-and-why-you-should-care\">How Often the SPY Falls More Than 5% in a 30-Day Period and Why You Should Care</a>). With this information about how the SPY moves I was able to form my thesis and start backtesting.
+</p>
+
+<p><b>My Baseline Strategy</b></p>
+
+<p>
+My put credit spread baseline strategy is pretty simple. I look for 2 dollars-wide SPY spreads that are at least 4% from the current stock price. I do not consider any spreads that expire more than 45 days out, and I make sure the credit received is at least $0.18. Typically you can choose from about 10 credit spreads with different expirations, strikes, and credits received. For my baseline strategy I always choose the spread with the least risk—that is, the credit spread whose short strike is furthest below the current stock price.</p>
+
+<p>In terms of trade frequency I have two other restraints: I only make one trade per day, and I never have two spreads that share the same short strike price (though two spreads might have different expiration dates). All of these restraints were born out of trial and error and guided by a mission to keep the baseline strategy as simple as possible.
+</p>
+
+<p>
+When I backtested my baseline strategy from 2005 through 2014 I got the following results:
+</p>
+
+<div class=\"trade-table\">
+<table class=\"table\">
+<thead>
+<tr>
+<th>Number of Trades</th>
+<th>Success Rate</th>
+<th>Baseline % Gain</th>
+<th>S&amp;P % Gain</th>
+</tr>
+</thead>
+
+
+<tbody>
+<tr>
+<td>485</td>
+<td>93.2%</td>
+<td>82.78%</td>
+<td>72.45%</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+<p>
+Simply purchasing the SPY and holding it during the same period would have returned 72.45%. In contrast, my baseline strategy returned 82.78%. If you are thinking, “Why bother?” I urge you to remember that the strategy is only a baseline. The next step is bringing in all the fancy signals (e.g., RSI, MACD, volatility rank, delta) to optimize the strategy. The beauty of the baseline is always having something to compare against as you optimize the trading strategy.
+</p>
+
+<p>
+(It’s worth noting that the weekly SPY options did not become popular until early <a href=\"http://www.investopedia.com/articles/optioninvestor/11/intro-weekly-options.asp\">2011</a>, and if I backtest my baseline strategy starting in 2011 I beat the SPY by roughly 17%; this figure is approximate because I ignored dividends when comparing the SPY to the baseline strategy.)</p>A simple baseline strategy serves two very important functions: it confirms whether your strategy is effective and serves as a benchmark you can use later when optimizing your strategy with additional, more sophisticated signals. Most of the battle with a trading strategy lies in the preliminary development and subsequent optimization. A baseline is a great way to organize yourself in that critical phase to ensure that you end up deploying a SPY put credit spread trading strategy that’s more Dr. Jeckyll and less Mr. Hyde.
+<p></p>","What I call a baseline strategy is a set of simple restraints (or signals) that I apply to a backtest to verify that a trading strategy is profitable (and beats",29,"Active",23,"2015-02-17 13:42:47","2015-02-17 13:42:47"
+26,"Broker Finder—Find the Cheapest Broker for Options Trading","2015-02-26 00:00:00","posts","<p>
+I treat my trading and investing as a business, and like any prudent business manager I am constantly seeking to trim costs while growing revenue. With options trading the biggest costs are the commissions your broker charges for every trade. So in the interest of taming those fees I built a tool to help you find the cheapest broker for particular options trading strategies: say hello to <a href=\"https://stockpeer.com/options-broker-picker\">Broker Finder</a>.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/broker-finder_32.jpg\" alt=\"\" style=\"float: none; display: block; margin: 0px auto; width: 646.787878787879px; height: 368px;\">
+</p>
+
+<p>
+I routinely review and compare the broker commissions I pay, and I have realized that no one broker is the cheapest for every transaction. It comes down to the strategy you trade and how many lots per trade you place, which is why you need Broker Finder. You simply select your options strategy along with the lot size per trade and Broker Finder lists all of the popular brokers and their commissions for the trade. 
+</p>","<p>
+I treat my trading and investing as a business, and like any prudent business manager I am constantly seeking to trim costs while growing revenue. With options trading the biggest costs are the commissions your broker charges for every trade. So in the interest of taming those fees I built a tool to help you find the cheapest broker for particular options trading strategies: say hello to <a href=\"https://stockpeer.com/options-broker-picker\">Broker Finder</a>.
+</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/broker-finder_32.jpg\" alt=\"\" style=\"float: none; display: block; margin: 0px auto; width: 646.787878787879px; height: 368px;\">
+</p>
+
+<p>
+I routinely review and compare the broker commissions I pay, and I have realized that no one broker is the cheapest for every transaction. It comes down to the strategy you trade and how many lots per trade you place, which is why you need Broker Finder. You simply select your options strategy along with the lot size per trade and Broker Finder lists all of the popular brokers and their commissions for the trade. 
+</p>
+
+<p>
+If you are a new investor with a small account, the broker that meets your needs now most likely won’t be the best choice as your account grows. Broker Finder can help you make the switch. Or if you are a trader who puts on many trades to open (maybe you dollar cost average into your trades), a broker with a per contract commission might be better for you than one with a flat ticket charge. Options broker commissions are far more complex than typical stock purchase commissions, and Broker Finder can help you make the right choice. 
+</p>
+
+<p>
+Broker Finder is all about finding the cheapest broker—not comparing trading tools or features. You might, for example, decide to pay more in commissions to have better tools at your disposal. </p>
+
+<p>
+Do you have suggestions for making Broker Finder better? Tweet your ideas to <a href=\"https://twitter.com/stockpeer\">@stockpeer</a> or post on the Stockpeer <a href=\"https://www.facebook.com/stockpeer\">Facebook fan page</a>.
+</p>","I routinely review and compare the broker commissions I pay, and I have realized that no one broker is the cheapest for every transaction. It comes down to the ",32,"Active",24,"2015-02-26 11:37:30","2015-02-26 11:37:30"
+27,"eOption.com - Hands Down The Cheapest Trading Commissions","2015-03-03 00:00:00","posts","<p>
+If you're anything like me you already have a <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent</a> trading strategy figured out. You’re just placing the same trades repeatedly, trying to rack up as many occurrences throughout the year as you can. But the more you trade, the more commissions impact your performance—which is why <a href=\"http://www.eoption.com/\">eOption.com</a> is one of my favorite brokers for trading <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">credit spreads</a>.
+</p>
+
+<p>
+That’s because eOption.com is all about price—no frills, just trading at a very low cost. The best way to illustrate the massive savings is to compare eOption.com to other brokers (and if you haven’t already, check out <a href=\"https://stockpeer.com/options-broker-picker\">Broker Finder</a>, the super cool tool I built for comparing brokers). Let’s say I make 100 ten lot vertical credit spread trades a year. Because I am opening and closing these trades, I rack up 200 opportunities to pay commissions. Below is a breakdown of the yearly commissions I would pay to each potential broker of these trades.
+</p>
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/broker-comare-for-options_33.jpg\" alt=\"\" style=\"float: none; display: block; margin: 0px auto;\"><br></p><p>
+The cost difference between eOption.com and the other brokers is no joke—the closest competitor comes in $1,000 higher! What’s more, I haven’t had any execution issues and I find the no-frills approach of eOption.com to be easier and faster to navigate than that of other brokers. Plus, I have had very good customer service experiences. 
+</p>
+
+<p><b>So What’s the Catch?</b></p>
+
+<p>
+In the case of eOption.com the catch is tools. Or more precisely, the lack thereof: eOption.com has almost no useful tools for discovering, quoting, and monitoring trades. And though eOption.com has a mobile app it isn’t very good (it appears to be software the company purchased instead of building in house). Lastly, eOption.com does not have an <a href=\"http://en.wikipedia.org/wiki/Application_programming_interface\">API</a> for public use (I like to write custom software to use with brokers, but not everyone rolls that way).
+</p>","<p>
+If you're anything like me you already have a <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent</a> trading strategy figured out. You’re just placing the same trades repeatedly, trying to rack up as many occurrences throughout the year as you can. But the more you trade, the more commissions impact your performance—which is why <a href=\"http://www.eoption.com/\">eOption.com</a> is one of my favorite brokers for trading <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">credit spreads</a>.
+</p>
+
+<p>
+That’s because eOption.com is all about price—no frills, just trading at a very low cost. The best way to illustrate the massive savings is to compare eOption.com to other brokers (and if you haven’t already, check out <a href=\"https://stockpeer.com/options-broker-picker\">Broker Finder</a>, the super cool tool I built for comparing brokers). Let’s say I make 100 ten lot vertical credit spread trades a year. Because I am opening and closing these trades, I rack up 200 opportunities to pay commissions. Below is a breakdown of the yearly commissions I would pay to each potential broker of these trades.
+</p>
+
+<p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/broker-comare-for-options_33.jpg\" alt=\"\" style=\"float: none; display: block; margin: 0px auto;\"><br></p><p>
+The cost difference between eOption.com and the other brokers is no joke—the closest competitor comes in $1,000 higher! What’s more, I haven’t had any execution issues and I find the no-frills approach of eOption.com to be easier and faster to navigate than that of other brokers. Plus, I have had very good customer service experiences. 
+</p>
+
+<p><b>So What’s the Catch?</b></p>
+
+<p>
+In the case of eOption.com the catch is tools. Or more precisely, the lack thereof: eOption.com has almost no useful tools for discovering, quoting, and monitoring trades. And though eOption.com has a mobile app it isn’t very good (it appears to be software the company purchased instead of building in house). Lastly, eOption.com does not have an <a href=\"http://en.wikipedia.org/wiki/Application_programming_interface\">API</a> for public use (I like to write custom software to use with brokers, but not everyone rolls that way).
+</p>
+
+<p>
+About these shortcomings I say, “Who cares?” At one time the difference between brokers was the tools they provide, but today most tools are available free on sites such as <a href=\"http://finance.yahoo.com/\">Yahoo! Finance</a>. Meaning you can use the tools from another provider and execute your trades with eOption.com. I love the tools <a href=\"https://www.thinkorswim.com/\">thinkorswim</a> (Ameritrade) has. I also think that <a href=\"https://www.tradeking.com/\">TradeKing</a> has a great public API, and <a href=\"https://us.etrade.com/\">E*Trade</a> has the best mobile app. I keep buy-and-hold or retirement accounts with all of these brokers. In addition, I often use <a href=\"https://www.tdameritrade.com/\">Ameritrade</a> to test new trading strategies in small quantities, and I want to support what <a href=\"https://www.dough.com/\">Dough</a> is building so I place trades with them as much as possible. But when it comes to the bulk of my yearly trading eOption.com gets my business. The point is that you can—no, should—have multiple broker accounts to leverage the best from each.
+</p>
+
+<p>
+As the commissions graph above demonstrates, the difference in commission expenses can add some extra <a href=\"http://www.investopedia.com/terms/a/alpha.asp\">alpha</a> to your yearly returns. You are in the business of making money when you trade, right? Lowering your commissions is a risk-free trade.
+</p>
+
+","That’s because eOption.com is all about price—no frills, just trading at a very low cost. The best way to illustrate the massive savings is to compare eOption.c",33,"Active",25,"2015-03-03 12:45:40","2015-03-03 12:45:40"
+28,"February 2015 Trades","2015-03-05 00:00:00","trades","<p>{{BlogTrades start=\"2/1/2015\" end=\"2/31/2015\"}}</p>
+
+<p>
+Volatility has been odd lately. Mostly low but a few spikes here and there. When&nbsp;volatility spikes you got to jump in and place trades. Trades are taking much longer to close as well. Since&nbsp;volatility has been low I have not placed many trades to close in March. Lets hope that changes.
+</p>
+","<p>{{BlogTrades start=\"2/1/2015\" end=\"2/31/2015\"}}</p>
+
+<p>
+Volatility has been odd lately. Mostly low but a few spikes here and there. When volatility spikes you got to jump in and place trades. Trades are taking much longer to close as well. Since volatility has been low I have not placed many trades to close in March. Lets hope that changes.
+</p>
+","Volatility has been odd lately. Mostly low but a few spikes here and there. When volatility spikes you got to jump in and place trades.",34,"Active",26,"2015-03-05 12:57:51","2015-03-05 12:57:51"
+29,"How I Day Trade the SPY","2015-03-10 00:00:00","posts","<p>
+Many people think day trading is gambling: you might win for awhile, but eventually you will blow up your account. I agree—yet I day trade the SPY almost every day. Day trading is part of my <a href=\"https://stockpeer.com/blog/24/scaling-your-investments-via-overflow\">overflow method</a> and <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategy approach</a> to managing my portfolio. I day trade very little capital, and I direct the profits into my less risky accounts.
+</p>
+
+<p>
+So why bother if day trading is gambling? Simply put, I can increase my odds of a successful return using money management techniques. I fully expect to some day lose all of the money in my day trading account—the goal is to multiply the capital I started with many times over before that happens. This strategy works because I day trade with a tiny percentage of my entire investment portfolio, and the amount I am willing to risk remains constant—meaning that I do not attempt to compound my returns; profits are removed from the account right away.
+</p>
+
+<p>
+Already this year I have doubled the money in my day trading account (not bad considering that we are only 8 weeks into the year). And because this profit has been redirected, even if I made only losing trades from now on I would have nothing to lose because I am, so to speak, &nbsp;playing with the house’s money. This is what I mean by money management: acknowledging that at any time you could blow up your account and protecting your base by resisting the temptation to compound. </p>
+
+<p><b>Don’t Compound, Got It. But How Do You Trade?</b></p>
+
+<p>
+Though day trading is gambling, you can leverage technical indicators and your own expertise to enter and exit trades with higher success rates. Here’s my formula for setting up daily trades:</p>","<p>
+Many people think day trading is gambling: you might win for awhile, but eventually you will blow up your account. I agree—yet I day trade the SPY almost every day. Day trading is part of my <a href=\"https://stockpeer.com/blog/24/scaling-your-investments-via-overflow\">overflow method</a> and <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategy approach</a> to managing my portfolio. I day trade very little capital, and I direct the profits into my less risky accounts.
+</p>
+
+<p>
+So why bother if day trading is gambling? Simply put, I can increase my odds of a successful return using money management techniques. I fully expect to some day lose all of the money in my day trading account—the goal is to multiply the capital I started with many times over before that happens. This strategy works because I day trade with a tiny percentage of my entire investment portfolio, and the amount I am willing to risk remains constant—meaning that I do not attempt to compound my returns; profits are removed from the account right away.
+</p>
+
+<p>
+Already this year I have doubled the money in my day trading account (not bad considering that we are only 8 weeks into the year). And because this profit has been redirected, even if I made only losing trades from now on I would have nothing to lose because I am, so to speak, &nbsp;playing with the house’s money. This is what I mean by money management: acknowledging that at any time you could blow up your account and protecting your base by resisting the temptation to compound. </p>
+
+<p><b>Don’t Compound, Got It. But How Do You Trade?</b></p>
+
+<p>
+Though day trading is gambling, you can leverage technical indicators and your own expertise to enter and exit trades with higher success rates. Here’s my formula for setting up daily trades:</p>
+
+<ul>
+<li><p>I only trade the SPY, which I have monitored for so long that my gut often predicts how it will move. No joke. When you’re <a href=\"https://stockpeer.com/blog/21/being-hyperfocused-on-the-spy\">hyperfocused</a>, investing with your gut can be effective.</p></li>
+
+<li><p>I use weekly options to add leverage and reduce the capital required. I always trade at the money call or put that’s going to expire at the end of the week. This option normally has a delta around .50, which means that if the SPY moves a $1.00 the option will increase (or decrease) in value by $0.50—a 50% return if the option you are buying costs $1.00.
+</p></li>
+
+<li><p>I buy only calls and puts—no fancy spreads. </p></li>
+
+<li><p>I try to be in a trade for 40 minutes max. Sure, sometimes a trade lasts a few hours, but I always close the trade at the end of the day no matter what.</p></li>
+
+<li><p>I like to enter my trades around 1:00 pm EST when more often than not trading is flat; the news from the morning has already been traded on, and many traders are taking a lunch break. By 1:30 or 2:00 the SPY is moving and shaking again. </p></li>
+
+<li><p>I enter a trade knowing whether the SPY is bullish or bearish on that day, and I never buck the trend: if the SPY is pushing up I trade calls; if the SPY is going down I trade puts.</p></li>
+
+<li><p>If the market seems flat—the <a href=\"https://stockpeer.com/blog/20/how-to-use-the-rsi-indicator-to-trade-the-spy\">RSI</a> and <a href=\"http://www.investopedia.com/terms/m/macd.asp\">MACD</a> indicators are not hitting extremes throughout the day—I just stay out. </p></li>
+
+<li><p>I make only one trade per day. If I am trading more than that most likely I am either cocky and think I can make more money or I am trying to fix a loss trade—both are bad ideas.</p></li>
+
+<li><p>I never risk more than 30% of my trading account’s capital in any one trade. Yes, this percentage is high, but I am only risking money I’m willing to lose. That said, the SPY is stable so in reality the risk is more like 15%.</p></li>
+
+<li><p>If the conditions are right I scale into a trade up to 4 times the dollar-cost average. I only scale down, never up—meaning I buy more as the price drops, and when I close the trade I sell everything (I do not scale out). </p></li>
+
+<li><p>I time my entry by waiting for the RSI to cross 70 or 30 and then wait for the MACD lines to cross and proceed in the other direction. I also make sure the MACD histogram bars clearly resemble rolling hills, an indicator that the SPY is not flat. At this point I enter, and if the SPY continues to drop I buy more on the way down.</p></li>
+
+<li><p>After entering a trade I always set a closing trade price, typically 20% higher than the option purchase price. Doing so protects me in the case of an upward spike in the market and frees me from being glued to the computer screen. </p></li>
+
+<li><p>I do not set <a href=\"http://www.investopedia.com/terms/s/stop-lossorder.asp\">stop losses</a>. The SPY is not crazy volatile and almost always I have some money left if a trade goes against me. Plus, I never risk more than I can handle losing. Stop losses are bad because sometimes the market really has to fall before it can pick back up. I have been down 50% only to be up 20% 10 minutes later. </p></li>
+
+<li><p>I rely on my gut to time my exit (one of the reasons I have not automated this trading style). I always set out aiming for a 20% return, but if the market is not accelerating I will lower my goal until it corresponds to the reality of what the market is yielding. If a trade goes against me I simply wait for an uptick and use that opportunity to close the losing trade. Almost every day some buyer comes in and pushes the SPY up or down faster than normal in one big trade, but if not I sell at 3:59 and go all cash.</p></li>
+</ul>
+
+<p>
+I have set these rules for myself over many years of day trading. To get a sense of how they play out in the real world, let’s walk through a trade I made on February 23, 2015.
+</p><p><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/MACD-RSI-Trading-Graph_31.jpg\" style=\"width: 764.319444444445px; height: 487px; float: none; display: block; margin: 0px auto;\" alt=\"\"></p><p></p><p><span>(*Note. The times in the graph are PST.)</span></p>
+
+<ol>
+<li><p>From the start of the day the market was bullish—notice how the chart is pushing up rather than down—so I was looking to trade calls.</p></li>
+
+<li><p>At 12:35 EST the RSI crossed the 30 line—meaning the SPY was most likely going to start moving up again. I didn’t make a move yet, but turned my attention to the MACD.</p></li>
+
+<li><p>About 15 minutes later the MACD lines crossed, confirming that the SPY was ready to move up. Notice that the MACD histogram bars clearly resemble rolling hills.</p></li>
+
+<li><p>At 1:00 EST I entered a trade by buying SPY Feb 27 2015 210 Calls for $1.19. I benefitted from a big seller coming in right before I entered the trade, pushing the SPY down. If this event had happened later I might have scaled in and purchased more calls, but on this day one open and one closing trade did the trick.</p></li>
+
+<li><p>I set a limit order to sell all the options at a price of $1.43 (a 20% gain).</p></li>
+
+<li><p>At 1:30 EST I lowered my limit order to $1.37 (a 15% gain) because the market was bouncing around too much for me to be confident.</p></li>
+
+<li><p>At 1:40 EST a big buyer came in and pushed the SPY up in price. My limit order hit, the trade was closed for a 15% gain.</p></li>
+
+</ol>
+
+<p>
+Most winning days play out just like this example. Though I don’t count on big buyers or sellers moving the SPY and helping me enter or exit a trade at better prices, it happens frequently and it sure is nice when it does.
+</p>
+
+<p><b>Don’t Just Be a Day Trader</b></p>
+
+<p>
+I just painted you a pretty rosy picture of how you can generate outsized returns day trading. The thing is, every day is different and a few bad days will certainly wipe out your account. &nbsp;But if you adhere to the overflow method you can use day trading profits to juice the returns of a less risky trading strategy. Day trading is also a good way to stay engaged with the market every day and sharpen your trading skills. Such experience and knowledge make you to a better <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">credit spread</a> trader or buy-and-hold investor. And, of course, day trading is a fun rush.
+</p>
+
+
+
+
+","Many people think day trading is gambling: you might win for awhile, but eventually you will blow up your account. I agree—yet I day trade the SPY almost every ",35,"Active",27,"2015-03-10 16:48:49","2015-03-10 16:48:49"
+30,"What Size Trades Should You Put on When Trading SPY Put Credit Spreads?","2015-03-24 00:00:00","posts","<p>
+How much money should you risk with each trade? Trade size is one of the most important considerations of an active trading strategy, and maintaining optimal trade size over time involves technique. In this post we will examine 3 methods for determining trade size and how they fared when they were backtested against my <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent</a> put <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">credit spread</a> strategy on the SPY. In each backtest I started with a balance of $50,000 and tested from 2010 through 2014.
+</p>
+
+<p><b>Trading a Fixed Amount</b></p>
+
+<p>
+One method is to risk the same number of contracts for every trade. In this case returns are not compounded. This method is popular among traders who live on trading income and therefore need to take money out of their account for expenses. For this backtest I traded a fixed lot size of 25.</p>
+
+<div class=\"table-blocks\">
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>406</td>
+			<td>$66,947</td>
+			<td>133.89%</td>
+			<td>18.52%</td>						
+		</tr>						
+	</tbody>
+</table>
+
+</div>
+
+<p><b>Trading a Percentage of Account Balance</b></p>
+
+<p>
+Another popular method sizes each trade as a percentage of the account balance. In this backtest the maximum risk for every trade was 10% of the account balance (minus credit received). With this method returns are compounded.
+</p>","<p>
+How much money should you risk with each trade? Trade size is one of the most important considerations of an active trading strategy, and maintaining optimal trade size over time involves technique. In this post we will examine 3 methods for determining trade size and how they fared when they were backtested against my <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">consistent</a> put <a href=\"https://stockpeer.com/blog/12/what-is-so-special-about-option-credit-spreads\">credit spread</a> strategy on the SPY. In each backtest I started with a balance of $50,000 and tested from 2010 through 2014.
+</p>
+
+<p><b>Trading a Fixed Amount</b></p>
+
+<p>
+One method is to risk the same number of contracts for every trade. In this case returns are not compounded. This method is popular among traders who live on trading income and therefore need to take money out of their account for expenses. For this backtest I traded a fixed lot size of 25.</p>
+
+<div class=\"table-blocks\">
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>406</td>
+			<td>$66,947</td>
+			<td>133.89%</td>
+			<td>18.52%</td>						
+		</tr>						
+	</tbody>
+</table>
+
+</div>
+
+<p><b>Trading a Percentage of Account Balance</b></p>
+
+<p>
+Another popular method sizes each trade as a percentage of the account balance. In this backtest the maximum risk for every trade was 10% of the account balance (minus credit received). With this method returns are compounded.
+</p>
+
+<div class=\"table-blocks\">
+
+<table>
+	<thead>
+		<tr>
+			<th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>385</td>
+			<td>$121,368</td>
+			<td>242.74%</td>
+			<td>27.94%</td>						
+		</tr>						
+	</tbody>
+</table>
+
+</div>
+
+<p><b>Trading a Fixed Ratio</b></p>
+
+<p>
+The fixed ratio method uses a mathematical formula to indicate when you should increase to the next lot size as your account grows. The formula is based on your largest expected drawdown—that is, how much you expect to lose when your strategy goes against you: 
+</p>
+
+<p>
+<i style=\"margin-left: 50px;\">Current Trade Size * (½ * Largest Expected Drawdown) + Previous Account Size<i>
+</i></i></p><i style=\"margin-left: 50px;\"><i>
+
+<p>
+If, for example, you are currently trading 1 lot, your account size is $5,000, and your largest expected drawdown is $1,000—then you should start trading 2 lots when your account grows to $5,500 in value.
+</p>
+
+<p>
+<i style=\"margin-left: 50px;\">1 * (½ * $1,000) + $5,000</i>
+</p>
+
+<div class=\"table-blocks\">
+
+<table>
+	<thead>
+		<tr>
+			<th>Trades</th>
+			<th>Profit</th>
+			<th>Return</th>
+			<th>CAGR</th>									
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>407</td>
+			<td>$43,487</td>
+			<td>86.97%</td>
+			<td>13.33%</td>						
+		</tr>						
+	</tbody>
+</table>
+
+</div>
+
+<p><b>It’s a Personal Thing</b></p>
+
+<p>A smart trade size strategy is one way to ensure that your active trading outperforms the SPY. To wit: over the same time period as these backtests the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a> returned (before dividends) 16.89% CAGR—3.56 percentage points more than the CAGR achieved with the fixed ratio method. Obviously there’s no point bothering with the added risk and effort of trading credit spreads if you don’t do better than just buying the SPY directly. </p>
+
+<p>
+I am not suggesting that one of the methods I backtested is better than another—the comparison is not, in fact, apples to apples. The real takeaway is how different the results can be and the importance of studying this aspect of credit spread trading. Trade size management is highly personal because each strategy carries a different risk profile. Also, when and how you need to access the money from your investments is personal. A compounding strategy might not be best for someone who needs the profits each month to pay bills. 
+</p>
+
+<p>
+Managing how you use your funds to deploy your strategy is often more important than the strategy itself but it’s often overlooked by traders. Outperform the chumps by putting as much thought into your bankroll as you do your trading strategy.  
+</p>","How much money should you risk with each trade? Trade size is one of the most important considerations of an active trading strategy, and maintaining optimal tr",36,"Active",28,"2015-03-24 11:49:15","2015-03-24 11:49:15"
+31,"Picking an Investment Style That Suits You","2015-04-14 00:00:00","posts","<p>
+Anyone who knows me knows that I often offer unsolicited advice in the form of some statement like “You should [fill in the blank].” For example, I pretty much tell anyone I see “You should trade put credit spreads on the SPY!” The truth is, I have no business telling people what they should do—not for the obvious reason that getting up in someone’s grill is not cool, but because investing and trading are personal. What makes sense to one person might not make sense to another. Likewise, what keeps me up at night might not keep you up at night.
+</p>
+
+<p>
+<a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/signs_jpg_37.jpg\"><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/signs_jpg_37.jpg\" style=\"width: 531.826086956522px; height: 278px; float: none; display: block; margin: 0px auto;\" alt=\"\"></a></p>
+
+<p>
+What I write about on <a href=\"http://stockpeer.com\">Stockpeer</a> is my trading style. And I hope that by sharing I can inspire you to refine your own trading strategy. I am not expecting you to copy me directly; crafting your own strategy to meet your needs is key.
+</p>
+
+<p>
+Traders who beat the indexes are engaged. They love what they do, and most likely they do not really care how much money they make because the trading itself excites them. Warren Buffett often says that he tap dances to work. He has found a method of trading that gets him high. I, however, would be bored to tears if I invested the way Buffett invests: I need more action, which is why I like to trade <a href=\"https://stockpeer.com/blog/25/baseline-strategy-for-trading-spy-put-credit-spreads\">credit spreads</a> and <a href=\"https://stockpeer.com/blog/29/how-i-day-trade-the-spy\">day trade the SPY</a>. When picking a strategy you should first consider what will make you tap dance, and then worry about how to maximize returns.
+</p>","<p>
+Anyone who knows me knows that I often offer unsolicited advice in the form of some statement like “You should [fill in the blank].” For example, I pretty much tell anyone I see “You should trade put credit spreads on the SPY!” The truth is, I have no business telling people what they should do—not for the obvious reason that getting up in someone’s grill is not cool, but because investing and trading are personal. What makes sense to one person might not make sense to another. Likewise, what keeps me up at night might not keep you up at night.
+</p>
+
+<p>
+<a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/signs_jpg_37.jpg\"><img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/signs_jpg_37.jpg\" style=\"width: 531.826086956522px; height: 278px; float: none; display: block; margin: 0px auto;\" alt=\"\"></a></p>
+
+<p>
+What I write about on <a href=\"http://stockpeer.com\">Stockpeer</a> is my trading style. And I hope that by sharing I can inspire you to refine your own trading strategy. I am not expecting you to copy me directly; crafting your own strategy to meet your needs is key.
+</p>
+
+<p>
+Traders who beat the indexes are engaged. They love what they do, and most likely they do not really care how much money they make because the trading itself excites them. Warren Buffett often says that he tap dances to work. He has found a method of trading that gets him high. I, however, would be bored to tears if I invested the way Buffett invests: I need more action, which is why I like to trade <a href=\"https://stockpeer.com/blog/25/baseline-strategy-for-trading-spy-put-credit-spreads\">credit spreads</a> and <a href=\"https://stockpeer.com/blog/29/how-i-day-trade-the-spy\">day trade the SPY</a>. When picking a strategy you should first consider what will make you tap dance, and then worry about how to maximize returns.
+</p>","Warren Buffett often says that he tap dances to work. He has found a method of trading that gets him high. I, however, would be bored to tears if I invested the",37,"Active",29,"2015-04-14 11:12:36","2015-04-14 11:12:36"
+32,"March 2015 Trades","2015-04-01 00:00:00","trades","<p>{{BlogTrades start=\"3/1/2015\" end=\"3/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"3/1/2015\" end=\"3/31/2015\"}}<br></p>","March 2015 Put Credit Spread Trades",38,"Active",30,"2015-09-05 19:45:29","2015-09-05 19:45:29"
+33,"April 2015 Trades","2015-05-01 00:00:00","trades","<p>{{BlogTrades start=\"4/1/2015\" end=\"4/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"4/1/2015\" end=\"4/31/2015\"}}<br></p>","April 2015 Put Credit Spread Trades",39,"Active",31,"2015-09-05 19:48:23","2015-09-05 19:48:23"
+34,"May 2015 Trades","2015-06-01 00:00:00","trades","<p>{{BlogTrades start=\"5/1/2015\" end=\"5/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"5/1/2015\" end=\"5/31/2015\"}}<br></p>","May 2015 Put Credit Spread Trades",40,"Active",32,"2015-09-05 19:50:47","2015-09-05 19:50:47"
+35,"June 2015 Trades","2015-07-01 00:00:00","trades","<p>{{BlogTrades start=\"6/1/2015\" end=\"6/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"6/1/2015\" end=\"6/31/2015\"}}<br></p>","June 2015 Put Credit Spread Trades",41,"Active",33,"2015-09-05 19:52:53","2015-09-05 19:52:53"
+36,"July 2015 Trades","2015-08-01 00:00:00","trades","<p>{{BlogTrades start=\"7/1/2015\" end=\"7/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"7/1/2015\" end=\"7/31/2015\"}}<br></p>","Put Credit Spreads For July 2015",42,"Active",34,"2015-09-05 19:56:11","2015-09-05 19:56:11"
+37,"August 2015 Trades","2015-09-05 00:00:00","trades","<p>{{BlogTrades start=\"8/1/2015\" end=\"8/31/2015\"}}<br></p>","<p>{{BlogTrades start=\"8/1/2015\" end=\"8/31/2015\"}}<br></p>","Put Credit Spread Trades Aug. 2015",43,"Active",35,"2015-09-05 20:00:28","2015-09-05 20:00:28"
+38,"September 2015 Trades","2015-10-12 00:00:00","trades","<p>{{BlogTrades start=\"9/1/2015\" end=\"9/31/2015\"}}<br></p><p>September was a tough month. The market took a major pull back. I lost a fair amount of money. I think if the next 3 months are good I should be able to recoup the losses. Some of the trades were rolled trades (the ones with high credits). I plan to talk more about rolling in future blog posts.</p>
+","<p>{{BlogTrades start=\"9/1/2015\" end=\"9/31/2015\"}}<br></p><p><span style=\"line-height: 1.45em; background-color: initial;\">September was a tough month. The market took a major pull back. I lost a fair amount of money. I think if the next 3 months are good I should be able to recoup the losses. Some of the trades were rolled trades (the ones with high credits). I plan to talk more about rolling in future blog posts.</span><br></p>
+","Here are my trades that closed in September 2015",44,"Active",36,"2015-10-13 10:20:25","2015-10-13 10:20:25"
+39,"I Took a Blogging Sabbatical and Didn’t Even Get You a Lousy T-Shirt","2015-10-13 00:00:00","posts","<p>
+I’m baaaaaack! But that’s not to say I am returning empty handed. . . You did notice that I took a nearly 5-month sabbatical from Stockpeer blogging—right? The catalyst was the arrival of my second child, a dangerously sweet little girl who has tipped life into the super busy zone. But a secondary reason for taking a break is that I have been exploring some new types of investment. Though I’m still experimenting, I am ready to share the low-down on what I have been playing with, starting with an overview.</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/sab_45.png\" style=\"width: 696.265px; height: 323px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Peer-to-Peer Lending</b></p>
+
+<p>
+Before I get into what Peer-to-Peer (P2P) lending is, I should explain why I was looking for a new asset class. Although I mostly blog about options trading, I do invest in <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategies</a> via my <a href=\"https://stockpeer.com/blog/24/scaling-your-investments-via-overflow\">investment overflow plan</a>. I predict that stocks as an asset class are likely to be flat to bearish over the next 3 years—making it tough to achieve a good return via a buy-and-hold strategy—so I have been seeking other asset classes. Enter P2P lending. Companies such as <a href=\"https://www.lendingclub.com\">Lending Club</a> and <a href=\"https://www.prosper.com/\">Prosper</a> have built marketplaces that match people looking for personal loans with investors willing to lend money for a return.
+</p>
+
+<p>
+I believe the timing for this type of investment is perfect—and I am shooting for a 10 to 15% annual return with this strategy. Main street is doing great: employment is on the rise and in the foreseeable future I anticipate that the stock market will be more affected by international issues than domestic, meaning that downturns should not have a major effect on borrowers’ ability to pay back their loans. More details on P2P lending in a future post, but for now here are two great resources to check out: <a href=\"http://www.lendingmemo.com/\">LendingMemo</a> and an episode of the <a href=\"http://optionalpha.com/show-024-why-peer-to-peer-lending-is-comparable-to-options-trading-17545.html\">Option Alpha Podcast</a>.
+</p>","<p>
+I’m baaaaaack! But that’s not to say I am returning empty handed. . . You did notice that I took a nearly 5-month sabbatical from Stockpeer blogging—right? The catalyst was the arrival of my second child, a dangerously sweet little girl who has tipped life into the super busy zone. But a secondary reason for taking a break is that I have been exploring some new types of investment. Though I’m still experimenting, I am ready to share the low-down on what I have been playing with, starting with an overview.</p>
+
+<p>
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/sab_45.png\" style=\"width: 696.265px; height: 323px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</p>
+
+<p><b>Peer-to-Peer Lending</b></p>
+
+<p>
+Before I get into what Peer-to-Peer (P2P) lending is, I should explain why I was looking for a new asset class. Although I mostly blog about options trading, I do invest in <a href=\"https://stockpeer.com/blog/15/the-importance-of-a-multiple-strategy-approach\">multiple strategies</a> via my <a href=\"https://stockpeer.com/blog/24/scaling-your-investments-via-overflow\">investment overflow plan</a>. I predict that stocks as an asset class are likely to be flat to bearish over the next 3 years—making it tough to achieve a good return via a buy-and-hold strategy—so I have been seeking other asset classes. Enter P2P lending. Companies such as <a href=\"https://www.lendingclub.com\">Lending Club</a> and <a href=\"https://www.prosper.com/\">Prosper</a> have built marketplaces that match people looking for personal loans with investors willing to lend money for a return.
+</p>
+
+<p>
+I believe the timing for this type of investment is perfect—and I am shooting for a 10 to 15% annual return with this strategy. Main street is doing great: employment is on the rise and in the foreseeable future I anticipate that the stock market will be more affected by international issues than domestic, meaning that downturns should not have a major effect on borrowers’ ability to pay back their loans. More details on P2P lending in a future post, but for now here are two great resources to check out: <a href=\"http://www.lendingmemo.com/\">LendingMemo</a> and an episode of the <a href=\"http://optionalpha.com/show-024-why-peer-to-peer-lending-is-comparable-to-options-trading-17545.html\">Option Alpha Podcast</a>.
+</p>
+
+<p><b>Trading Weekly Put Credit Spreads</b></p>
+
+<p>
+As many of you know, I like to <a href=\"https://stockpeer.com/blog/29/how-i-day-trade-the-spy\">day trade the SPY</a> and have been developing a way to backtest the strategy so I can automate trading. What I have figured out is that drawing on my judgment—that is, my personal experience combined with a steady flow of information via <a href=\"http://www.cnbc.com/\">CNBC</a>—elevates day trading to profitability. And this truth is problematic for me because I hate allowing emotion to enter into trading: I prefer using backtested systems that control when to buy and sell.</p><p>And so, in an effort to cut back on day trading I turned to trading weekly options on the SPY. The basic tenets are the same as those for my <a href=\"https://stockpeer.com/blog/25/baseline-strategy-for-trading-spy-put-credit-spreads\">monthly put credit spread trading activities</a> but within a much narrower timeframe. I sell a put credit spread on a Friday or a Monday and I let it expire the following Friday, keeping the credit. This strategy involves risk, but it can be predictable and returns as much as my SPY day trading. Tons more on this topic soon.</p><p><b>Investing in Real Estate With Crowdfunding</b></p><p>My friend <a href=\"http://www.epicinvestor.com/\">Eduardo Pinheiro</a> turned me on to crowdfunding real estate investments through <a href=\"https://www.realtyshares.com/\">Realtyshares</a>. The basic concept is very similar to P2P lending: an operator raises money via equity or debt for a real estate investment and passive investors cover a portion in hopes of reaping an annual return around 15%. Realtyshares is a marketplace for connecting operators with investors. I will have much more to say on this topic in the future, but in the meantime check out Dr. Pinheiros’ blog posts: </p><ul><li><p><a href=\"http://www.epicinvestor.com/2015/06/real-estate-investing-online-part-i.html\">Real Estate Investing Online - Part I: The Basics</a></p></li><li><p><a href=\"http://www.epicinvestor.com/2015/06/real-estate-blog-post-part-ii-triaging.html\">Real Estate Investing Online Part II: Triaging Deals Online</a></p></li><li><p><a href=\"http://www.epicinvestor.com/2015/08/real-estate-investing-online-part-iii.html\">Real Estate Investing Online Part III: Tips, Tricks, Caveats and Final Considerations</a></p></li></ul><p><b>Is the Stock Picker Dead? Should I Spray and Pray?</b></p><p>In my nearly 15 years of investing a certain trend has become more pronounced each year: namely, the extra alpha your portfolio can return by your being a wise stock picker is decreasing. Stocks move as a herd. The market as a whole controls the value of stocks, and in general everything goes up on good news and down on bad news.</p><p>A concurrent trend is “spray and pray,” a strategy I first encountered in the venture capital world. The idea is to invest a little money in every startup out there based on the assumption that 33% will wither and die, 33% will yield small returns, and 33% will cha-ching. Spray and pray investors strip judgment, emotion, and expensive due diligence out of investment—they are simply playing probabilities, utilizing an approach similar to my credit spread trading. &nbsp;</p><p>Given the demise of the stock picker and the rise of spray and pray, why bother doing tons of research on a company? Why spend time poring over quarterly reports? Why not manage 100 stocks rather than 15? How is spray and pray different from an index fund? Stay tuned because these are questions I am exploring.</p><p><b>Onward!</b></p>
+
+<p>
+I wrote this post to assure you that I am still alive and so is the Stockpeer blog. And to give you a preview of the investments I plan to cover in depth in posts to come. If you have any interest in or experience with these topics, message me—I would love to chat.
+</p>
+","I’m baaaaaack! But that’s not to say I am returning empty handed. . . You did notice that I took a nearly 5-month sabbatical from Stockpeer blogging—right?",46,"Active",37,"2015-10-13 10:36:33","2015-10-13 10:36:33"
+40,"Trading Weekly Put Credit Spreads","2016-01-27 00:00:00","posts","<p>
+Want day trading returns without the headache of sitting in front of 26 big-ass monitors all day? You’re in luck because today we are going to discuss trading weekly put credit spreads on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a>. The idea is pretty basic. I sell a put credit spread on the SPY that expires in 7 days or less. If the SPY does not drop to my short strike price I let the spread expire, keeping the credit. But before I get too detailed let’s make a detour to talk about why I started trading weekly put credit spreads—“weeklies” in hipster trader lingo—in the first place.
+</p>
+
+<p>
+I like to <a href=\"https://stockpeer.com/blog/29/how-i-day-trade-the-spy\">day trade the SPY</a>, but it has always bothered me that I could not backtest my strategy. I noticed that the difference between breaking even and being profitable was my personal experience and my judgement honed by keeping up with the market throughout the day. But this style of investing does not speak to me. I like probability-based trading. I like to know what my odds of success are if I put on the same trade throughout the year. And day trading the SPY does not fall into this bucket. So I started trading weeklies with the goal of returns similar to those obtained from my day trading activities. I have not given up on day trading the SPY— I am just less focused on the strategy.
+</p>
+
+<h3>How Does Trading Weeklies Differ From the Core Put Credit Spread Strategy?</h3>
+
+<p>
+My setup for weeklies is predefined. I open a credit spread on Friday or Monday and let it expire on the following Friday. I am seeking to have my short leg 2.5% away from the current SPY price with the goal of collecting 10 to 20 cents of credit for a 2-dollar-wide spread. If the SPY does not fall 2.5% within 7 days I collect the entire credit.
+</p>","<p>
+Want day trading returns without the headache of sitting in front of 26 big-ass monitors all day? You’re in luck because today we are going to discuss trading weekly put credit spreads on the <a href=\"http://finance.yahoo.com/q?s=SPY\">SPY</a>. The idea is pretty basic. I sell a put credit spread on the SPY that expires in 7 days or less. If the SPY does not drop to my short strike price I let the spread expire, keeping the credit. But before I get too detailed let’s make a detour to talk about why I started trading weekly put credit spreads—“weeklies” in hipster trader lingo—in the first place.
+</p>
+
+<p>
+I like to <a href=\"https://stockpeer.com/blog/29/how-i-day-trade-the-spy\">day trade the SPY</a>, but it has always bothered me that I could not backtest my strategy. I noticed that the difference between breaking even and being profitable was my personal experience and my judgement honed by keeping up with the market throughout the day. But this style of investing does not speak to me. I like probability-based trading. I like to know what my odds of success are if I put on the same trade throughout the year. And day trading the SPY does not fall into this bucket. So I started trading weeklies with the goal of returns similar to those obtained from my day trading activities. I have not given up on day trading the SPY— I am just less focused on the strategy.
+</p>
+
+<h3>How Does Trading Weeklies Differ From the Core Put Credit Spread Strategy?</h3>
+
+<p>
+My setup for weeklies is predefined. I open a credit spread on Friday or Monday and let it expire on the following Friday. I am seeking to have my short leg 2.5% away from the current SPY price with the goal of collecting 10 to 20 cents of credit for a 2-dollar-wide spread. If the SPY does not fall 2.5% within 7 days I collect the entire credit.
+</p>
+
+<p>
+Clearly, this strategy has risk. Investors need to plan for occasionally getting whipped out. I combat big losses with disciplined money management—not compounding and keeping a set amount of funds in reserve. As you can see in my backtest (below) I started out with $5,000 but only traded with $4,000 and never increased my trade size. This strategy yielded a 40.78% CAGR return.
+</p>
+
+<p>
+
+<a href=\"https://stockpeer.com/backtests/option-spreads/7e888f5599503cf6e7c4212939c31e23\">
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/Stockpeer_com_47.png\" />
+</a>
+
+</p>
+
+<h3>But Will It Work in a Bear Market?</h3>
+
+<p>
+How trading weeklies will perform in a bear market is the big question. The ability to trade weekly options this way has only been around since 2011. What I do know is this: typically in a bear market volatility is higher, which means I will be able to put on trades that are further out of the money and with higher credits. I hope I can manage risk by putting on trades where the short strike is further from the current SPY price. I have been trading this strategy consistently for the past 5 months, and I plan to keep checking in from time to time to share my results.
+</p>","Want day trading returns without the headache of sitting in front of 26 big-ass monitors all day? You’re in luck because today we are going to discuss trading w",47,"Active",38,"2016-01-27 12:52:31","2016-01-27 12:52:31"
+41,"The Importance of Grading Your Trades","2016-03-18 00:00:00","posts","<p>
+To start I want to point out 2 things: this idea is not originally mine, and though I talk mostly about trading I think the concept applies to all forms of investing (buy-and-hold, real estate, fixed income, and so on). From time to time I attend a meetup group called <a href=\"http://www.meetup.com/Options-for-Income/\">Options for Income</a> in the Portland area, and the tactic I am about to describe comes from Mike, the group leader.
+</p>
+
+<p>
+<a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/rpc_jpeg_48.jpg\">
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/rpc_jpeg_48.jpg\" style=\"width: 370.175px; height: 523px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</a>
+</p>
+
+<p>
+I have been trading and investing for over a decade now, and though I have always reviewed my trades I never graded them. Until now. Recently I went a step further and started assigning grades to my trades. This act has taken my post-trade review from subjective to objective, and I am a major advocate of removing subjective aspects from trading. My grading rubric is pretty straightforward: pass, fail, and meh. I grade completely against my trading plan—not whether I made money or not. Meaning that if I kept to my trading plan I get a pass, and if I diverted from my plan I get a fail—but if I diverted with good reason the mark is upgraded to meh. It’s that simple.
+</p>
+
+<h3>Why Grade Against the Trading Plan?</h3>
+
+<p>
+I come from the school of thought that you need to have a predefined trading plan. You need clearly defined rules on how, when, and where you enter or exit a trade or investment. Though a trading plan can change, ideally that happens infrequently. And the plan should be backtested, not drawn from thin air—it should have basic benchmarks for returns based on past performance data. 
+</p>
+","<p>
+To start I want to point out 2 things: this idea is not originally mine, and though I talk mostly about trading I think the concept applies to all forms of investing (buy-and-hold, real estate, fixed income, and so on). From time to time I attend a meetup group called <a href=\"http://www.meetup.com/Options-for-Income/\">Options for Income</a> in the Portland area, and the tactic I am about to describe comes from Mike, the group leader.
+</p>
+
+
+<p>
+<a href=\"https://dukitbr4wfrx2.cloudfront.net/blog/rpc_jpeg_48.jpg\">
+<img src=\"https://dukitbr4wfrx2.cloudfront.net/blog/rpc_jpeg_48.jpg\" style=\"width: 370.175px; height: 523px; float: none; display: block; margin: 0px auto;\" alt=\"\">
+</a>
+</p>
+
+<p>
+I have been trading and investing for over a decade now, and though I have always reviewed my trades I never graded them. Until now. Recently I went a step further and started assigning grades to my trades. This act has taken my post-trade review from subjective to objective, and I am a major advocate of removing subjective aspects from trading. My grading rubric is pretty straightforward: pass, fail, and meh. I grade completely against my trading plan—not whether I made money or not. Meaning that if I kept to my trading plan I get a pass, and if I diverted from my plan I get a fail—but if I diverted with good reason the mark is upgraded to meh. It’s that simple.
+</p>
+
+<h3>Why Grade Against the Trading Plan?</h3>
+
+<p>
+I come from the school of thought that you need to have a predefined trading plan. You need clearly defined rules on how, when, and where you enter or exit a trade or investment. Though a trading plan can change, ideally that happens infrequently. And the plan should be backtested, not drawn from thin air—it should have basic benchmarks for returns based on past performance data. 
+</p>
+
+<p>
+In the case of the stock market, trends tend to repeat themselves as patterns. If your plan is backtested over enough time you most likely have backtested it through the current market conditions. I find it risky business to think “this time is different” and veer from my trading plan—hence a failing grade for not sticking to the plan even if I make money. And a passing grade if I stick to my plan and still lose money.
+</p>
+
+<p>
+But sometimes changing course makes sense under the circumstances. I think most of these instances have a personal component. Maybe you have had a family emergency and need to raise money quickly. Or maybe you're on vacation and can’t get an Internet connection so you close trades early. In such cases I give my trades a score of meh. One or 2 mehs is no big deal, but if I review my grades and see a higher than usual number of mehs then I know that I need to figure out what is going on.
+</p>
+
+<p>
+In a nutshell, grading your trades is not about performance but about fidelity to your trading plan. On paper it seems so easy: develop a plan and stick to it. But in reality that is not so easy. We are humans, full of emotions that sometimes lead us astray. Grading your trades is an effective way to monitor and measure your emotional wherewithal.
+</p>","To start I want to point out 2 things: this idea is not originally mine, and though I talk mostly about trading I think the concept applies to all forms of inve",48,"Active",39,"2016-03-18 14:38:49","2016-03-18 14:38:49"
+42,"Trading Futures as a Hedge","2016-10-05 00:00:00","posts","<p>
+Recently I have been playing around with something new: trading the futures market as a hedge against <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">my options trading strategy</a>. Why hedge a good bet you ask? Though the <a href=\"https://stockpeer.com/blog/40/trading-weekly-put-credit-spreads\">strategy</a> I rely on the most—trading <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">put credit spreads</a> on a consistent basis—is pretty reliable, it does occasionally break down, causing a big drawdown in capital. In 2015, for example, I earned profit every month except August and September. The market pulled back hard and fast during those 2 months, and major drawdowns ensued. Had it not been for those losses I would have ended the year with a gain of nearly 90%. But that’s not what happened, and I ended the year with a low double-digit return. This experience sent me searching for a way to protect against such blows.
+</p>  
+
+<h2>Hello Futures Trading!</h2>
+
+<p>
+Buckle up because the futures market is the Wild West. If you’re not careful you can lose all your capital in the blink of an eye—or in that same blink your wealth can blow up. The futures market is by design highly leveraged. For instance, $500 in down payment (margin requirement) can give you access to around $100,000 in the case of the <a href=\"http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500.html\">ES</a> (S&P 500 index). A $0.25 move in the S&P 500 (future) is equal to $12.50. Translation: massive leverage. 
+</p>
+
+<p>
+  <a href=\"https://s3-us-west-2.amazonaws.com/stockpeer/blog/futures-trading.jpg\">
+    <img src=\"https://s3-us-west-2.amazonaws.com/stockpeer/blog/futures-trading.jpg\" style=\"float: none; display: block; margin: 0px auto;\" alt=\"futures\">
+  </a>  
+</p>
+
+<p>
+What’s more, most futures brokers are stuck in the 1990s; the trading software stinks. Transferring money in and out of your account is painful and too often there are no safeguards to stop you from doing something dumb (like buying a future when you don’t have proper money—yeah, that crazy!). 
+</p> 
+","<p>
+Recently I have been playing around with something new: trading the futures market as a hedge against <a href=\"https://stockpeer.com/blog/5/the-only-free-lunch-in-trading-is-a-consistent-strategy\">my options trading strategy</a>. Why hedge a good bet you ask? Though the <a href=\"https://stockpeer.com/blog/40/trading-weekly-put-credit-spreads\">strategy</a> I rely on the most—trading <a href=\"https://stockpeer.com/blog/11/what-is-a-put-credit-spread\">put credit spreads</a> on a consistent basis—is pretty reliable, it does occasionally break down, causing a big drawdown in capital. In 2015, for example, I earned profit every month except August and September. The market pulled back hard and fast during those 2 months, and major drawdowns ensued. Had it not been for those losses I would have ended the year with a gain of nearly 90%. But that’s not what happened, and I ended the year with a low double-digit return. This experience sent me searching for a way to protect against such blows.
+</p>  
+
+<h2>Hello Futures Trading!</h2>
+
+<p>
+Buckle up because the futures market is the Wild West. If you’re not careful you can lose all your capital in the blink of an eye—or in that same blink your wealth can blow up. The futures market is by design highly leveraged. For instance, $500 in down payment (margin requirement) can give you access to around $100,000 in the case of the <a href=\"http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500.html\">ES</a> (S&P 500 index). A $0.25 move in the S&P 500 (future) is equal to $12.50. Translation: massive leverage. 
+</p>
+
+<p>
+  <a href=\"https://s3-us-west-2.amazonaws.com/stockpeer/blog/futures-trading.jpg\">
+    <img src=\"https://s3-us-west-2.amazonaws.com/stockpeer/blog/futures-trading.jpg\" style=\"float: none; display: block; margin: 0px auto;\" alt=\"futures\">
+  </a>  
+</p>
+
+<p>
+What’s more, most futures brokers are stuck in the 1990s; the trading software stinks. Transferring money in and out of your account is painful and too often there are no safeguards to stop you from doing something dumb (like buying a future when you don’t have proper money—yeah, that crazy!). 
+</p> 
+
+<p>
+The futures market is for experienced investors and people willing to put in the time to learn the ins and outs. Rubes and slackers beware.
+</p>
+
+<h2>How Futures Can Hedge You</h2> 
+
+<p>
+Options are already a highly leveraged investment vehicle, so to hedge against an option’s position you need something even more leveraged to ensure that the cost of your hedge does not cut into your profits too much. That’s why futures are a great place to look for hedging opportunities.
+</p> 
+
+<p>
+I am still in the experimental mode, but when I am more confident I will share the lowdown on how I am hedging my options trading. For now, just the highlights. I created an algorithm to trade the S&P 500 index (ES) that produces about what I expect to lose in options trading each year. Meaning this algorithm should offset any losses I experience in options trades. The good news is this algorithm uses about 10% of my planned capital. That is, I can set aside 10% and run it through this algorithm to protect against all of my projected losses.
+</p>
+
+<p>
+The other great thing about the algorithm is its tendency to perform well when my options are failing and remain relatively flat when my options are profitable. Did you get that? It kicks in when times are bad and chills out when times are good. I have been running this algorithm only for some weeks, but I have backtested it to 2009 (it’s the backtesting results I am referring to, which is one reason I am not ready to share the nuts and bolts of this approach). 
+</p>
+
+<p>
+One thing to keep in mind is that I am more or less day trading futures. I find times in the market that seem oversold or overbought and I place a trade assuming the market will revert back to the mean. Through backtesting I can identify conditions with a high probability of being right for placing bets. Given how wild futures markets are I highly recommend automating your strategy. Lots of brokers have tools that allow you to create an algorithm and write some basic software code to instruct the system to autotrade for you. My pick is <a href=\"http://ninjatrader.com/\">NinjaTrader</a>. Yes, a computer programming background is helpful, but if you are willing to learn writing an algorithm doesn’t take much. [You don’t need a computer science degree, trust me.] Other tools are more of the point-and-click ilk. My point is this: I do not recommend trading futures by hand unless your strategy is so optimized. 
+</p>
+
+<h2>Just a Tease</h2>
+
+<p>
+I am still kicking the tires of this idea of trading futures to hedge my options trading. But I am logging the hours to figure this thing out and I intend to share my discoveries. I also want to start a conversation so if anyone out there wants to collaborate on this endeavor drop me a line.
+</p>","Recently I have been playing around with something new: trading the futures market as a hedge against my options trading strategy.",37,"Active",0,"2016-10-05 00:00:00","2016-10-05 00:00:00"
