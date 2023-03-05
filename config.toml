@@ -4,6 +4,15 @@ title = 'Options Cafe'
 publishDir = "docs"
 disableHugoGeneratorInject = true
 
+[taxonomies]
+  blog_tag = "blog_tags"
+  category = "categories"
+  supportCategory = "supportCategories"
+
+[permalinks]
+  blog_tags = "/related-topics/:slug/"
+  categories = "/blog/:slug/"
+
 [params]
     copyRightYear = 2023
     newsletterHeader = false
@@ -14,3 +23,4 @@ disableHugoGeneratorInject = true
     facebookPageId = '730529083708603'
     facebookLink = 'https://www.facebook.com/optionscafetrading'
     appSignUpLink = 'https://options.cafe/actions/options-cafe/signup'
+    blogCategories = ['Education', 'Random Fun', "Spicer's Trades", "Spicer's Soapbox", 'Company Updates']

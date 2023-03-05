@@ -1,1 +1,75 @@
-{{ define "main" }} hhhh {{ end }}
+{{ define "main" }}
+
+<div class="shell">
+  <div class="container__inner">
+    {{- partial "blog/intro.html" . -}}
+
+    <div class="main main--flex">
+      <div class="content">
+        <article class="article article--single">
+          <header class="article__head">
+            <h1>{{ .Title }}</h1>
+
+            <div class="article__meta">
+              <p>
+                {{range .Params.categories}}
+                <a href="{{ "/blog/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                {{end}}
+                
+                <em>{{ dateFormat "January 2, 2006" .Date }}</em>
+
+                <em>{{ .Params.author }}</em>
+              </p>
+
+            <div class="socials socials--small">
+                {{- partial "social/share.html" . -}}
+            </div>
+            </div>
+          </header>
+
+          <div class="article__body">
+            {{ .Content }}
+            {{- partial "blog/must-reads.html" . -}}
+            {{- partial "blog/related-topics.html" . -}}
+          </div>
+
+          <div class="article__actions">
+            <div class="widget widget--socials widget--secondary">
+              <div class="widget__head">
+                <h5 class="widget__title">Like what you read? Please Share!</h5>
+              </div>
+
+              <div class="widget__body">
+                <div class="socials">{{- partial "social/share.html" . -}}</div>
+              </div>
+            </div>
+          </div>
+
+          {{- partial "blog/comments.html" . -}}
+        </article>
+
+        {{/*
+        <div class="paging">
+          {% if prevEntry %}
+          <a href="{{ prevEntry.url }}" class="paging__prev">
+            <i class="ico-arrow-left"></i>
+            Prev
+          </a>
+          {% else %} &nbsp; {% endif %} {% if nextEntry %}
+          <a href="{{ nextEntry.url }}" class="paging__next">
+            Next
+            <i class="ico-arrow-right"></i>
+          </a>
+          {% endif %}
+        </div>
+        */}}
+      </div>
+
+      {{- partial "blog/sidebar.html" . -}}
+    </div>
+  </div>
+</div>
+
+{{- partial "shared/newsletter.html" . -}}
+
+{{ end }}

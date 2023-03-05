@@ -22,8 +22,13 @@ foreach ($rss_obj->channel->item as $item) {
     $page .= "author: \"$item->author\"\n";
     $page .= "categories: [\"$item->category\"]\n";
     $page .= "image: \"" . str_replace("https://cdn.options.cafe/", "", $item->image) . "\"\n";
-    //$page .= "summary: '" . trim($item->summary) . "'\n";
     $page .= "description: \"" . trim($item->blogDesc) . "\"\n";
+
+    $page .= "blog_tags: [\n";
+    foreach ($item->tags->item as $row) {
+        $page .= "\"" . $row->title . "\"," . "\n";
+    }
+    $page .= "]\n";
 
     $page .= "must_reads: [\n";
     foreach ($item->mustReads->item as $row) {

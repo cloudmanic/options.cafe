@@ -1,5 +1,8 @@
 <div class="section-registration">
-  <div class="shell" style="background-image: url({{ "css/images/temp/section-img.png" | absURL }})">
+  <div
+    class="shell"
+    style="background-image: url({{ "css/images/temp/section-img.png" | absURL }})"
+  >
     <div class="form-login">
       <form action="{{ .Site.Params.appSignUpLink }}" method="post">
         <div class="form__head">
@@ -12,18 +15,34 @@
             <label class="form__label hidden" for="subscribe-name">email</label>
 
             <div class="form__controls">
-              <input type="text" class="subscribe__field field hidden" name="name" id="subscribe-name" placeholder="Name..." />
+              <input
+                type="text"
+                class="subscribe__field field hidden"
+                name="name"
+                id="subscribe-name"
+                placeholder="Name..."
+              />
             </div>
 
             <label class="form__label hidden" for="subscribe-mail">email</label>
 
             <div class="form__controls">
-              <input type="text" class="subscribe__field field" name="email" id="subscribe-mail" placeholder="Email" />
+              <input
+                type="text"
+                class="subscribe__field field"
+                name="email"
+                id="subscribe-mail"
+                placeholder="Email"
+              />
             </div>
           </div>
 
           <div class="form__actions">
-            <input type="submit" value="GET STARTED" class="btn btn--medium subscribe__btn" />
+            <input
+              type="submit"
+              value="GET STARTED"
+              class="btn btn--medium subscribe__btn"
+            />
           </div>
         </div>
 
@@ -34,5 +53,5 @@
     </div>
   </div>
 
-  {{- partial "shared/newletter.html" . -}} 
+  {{- partial "shared/newsletter.html" . -}}
 </div>

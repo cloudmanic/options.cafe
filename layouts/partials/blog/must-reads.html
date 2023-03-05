@@ -1,0 +1,14 @@
+{{ if .Params.must_reads }}
+<div class="blog-must-reads">
+  <b>Enjoyed this post? Here are some must reads.</b>
+  <ul>
+    {{ range $row := .Params.must_reads }}
+    <li>
+      {{ with $.Site.GetPage $row }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </li>
+    {{end}}
+  </ul>
+</div>
+{{end}}

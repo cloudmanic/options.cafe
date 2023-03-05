@@ -1,0 +1,41 @@
+<ol class="articles">
+  {{ range .Pages }}
+    <li class="article article--small">
+      <figure class="article__image">
+        <a href="{{ .URL }}">
+          <img
+            src="{{ .Site.BaseURL }}{{ .Params.image }}"
+            alt="{{ .Title }}"
+          />
+        </a>
+      </figure>
+
+      <div class="article__content">
+        <div class="article__head">
+          <a href="{{ .URL }}"><h1>{{ .Title }}</h1></a>
+
+          <div class="article__meta">
+            {{ range .Params.categories }}
+              <a href="{{ "/blog/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            <em>{{ dateFormat "January 2, 2006" .Date }}</em>
+          </div>
+        </div>
+
+        <div class="article__body">
+          {{ $partialPath := printf "blog/summaries/%s.html" .Title | urlize }}
+          {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+            {{ partial $partialPath . }}
+          {{ else }}
+            {{ .Summary | safeHTML }}
+          {{ end }}
+        </div>
+
+        <div class="article__actions">
+          <a href="{{ .URL }}">Read More</a>
+        </div>
+      </div>
+    </li>
+  {{ end }}
+
+</ol>
