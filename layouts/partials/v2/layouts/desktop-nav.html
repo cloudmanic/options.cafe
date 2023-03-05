@@ -1,0 +1,42 @@
+<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+  <!-- Current: "border-indigo-500 text-gray-900", Default: "" -->
+  <a
+    href="{{ "" | absURL }}"
+    class="{{ if eq .Section "" }}
+      border-indigo-500 text-gray-900
+    {{ else }}
+      border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700
+    {{ end }} inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+    >Home</a
+  >
+
+  <a
+    href="{{ "options-trading-course" | absURL }}"
+    class="{{ if eq .Section "options-trading-course" }}
+      border-indigo-500 text-gray-900
+    {{ else }}
+      border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700
+    {{ end }} inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+    >Trading Course</a
+  >
+
+  <a
+    href="{{ "blog" | absURL }}"
+    class="{{ if eq .Section "blog" }}
+      border-indigo-500 text-gray-900
+    {{ else }}
+      border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700
+    {{ end }} inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+    >Blog</a
+  >
+
+  <a
+    href="{{ "help" | absURL }}"
+    class="{{ if eq .Section "help" }}
+      border-indigo-500 text-gray-900
+    {{ else }}
+      border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700
+    {{ end }} inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+    >Support</a
+  >
+</div>
