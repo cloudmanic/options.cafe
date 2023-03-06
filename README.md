@@ -15,4 +15,4 @@
 
 * Make sure you put your images in the `assets` folder not the `static` folder. This is so we can resize images.
 * If you want to use an image you can use this short tag `{{< img src="/blog/img.jpg" width="1000" alt="options cafe is sunsetting its trading platform" >}}`.
-* Place `<!--more-->` where you want to split your summary text. Or put your summaries in `partials/v1/blog/summaries`.
+* Place `<!--more-->` where you want to split your summary text. Or put your summaries in `partials/v1/blog/summaries`. If you use `<!--more-->` you have to duplicate the content. The content above more will not show up in the post https://cs.clabs.io/kJd8MptK.
