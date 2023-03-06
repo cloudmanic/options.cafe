@@ -1,3 +1,2 @@
 {{- $image := resources.GetMatch (.Get "src") -}}
-{{- $width := (int (.Get "width")) -}}
-<img src="{{ ($image.Resize (printf "%dx" $width)).RelPermalink }}" {{ with .Get "alt" }}alt="{{ . }}"{{ else }}alt=""{{ end }} class="" />
+{{- $width := (int (.Get "width")) -}} <img src="{{ ($image.Resize (printf "%dx" $width)).Permalink }}" {{ with .Get "alt" }}alt="{{ . }}"{{ else }}alt=""{{ end }} class="" />

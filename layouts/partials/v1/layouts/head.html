@@ -4,35 +4,32 @@
 {{- $vue := resources.Get "vendor/vue.min.js" -}}
 {{- $jquery := resources.Get "vendor/jquery-1.12.4.min.js" -}}
 {{- $detectmobilebrowser := resources.Get "vendor/detectmobilebrowser.js" -}}
-{{- $shareImg := resources.Get "blog/options-cafe-cover.png" -}}
+{{- $shareImg := resources.Get $.Site.Params.defaultShareImage -}}
+{{- $description := .Site.Params.defaultDescription -}}
+
+{{- if (resources.GetMatch ($.Param "image")) }}
+  {{- $shareImg = resources.GetMatch ($.Param "image") -}}
+{{ end }}
+
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- end -}}
+
+
 <head>
   <meta charset="UTF-8" />
   <title>{{ .Title }} - Options Cafe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="shortcut icon" type="image/png" href="{{ "css/images/favicon.ico" | absURL }}" />
-  <meta
-    name="description"
-    content="{{- if .Description -}}
-      {{- .Description -}}
-    {{- else -}}
-      {{- .Site.Params.description -}}
-    {{- end -}}
-    "
-  />
+  <meta name="description" content="{{- $description -}}" />
 
   {{/* Twitter stuff */}}
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ .Site.Params.twitterHandle }}" />
   <meta name="twitter:title" content="{{ .Title }} - Options Cafe" />
-  <meta
-    name="twitter:description"
-    content="{{- if .Description -}}
-      {{- .Description -}}
-    {{- else -}}
-      {{- .Site.Params.description -}}
-    {{- end -}}"
-  />
+  <meta name="twitter:image" content="{{- ($shareImg.Fill "1200x675").Permalink -}}" />
+  <meta name="twitter:description" content="{{- $description -}}" />
 
   {{/* Facebook stuff */}}
   <meta property="og:site_name" content="{{ .Site.Title }} - Best Place For Options Trading" />
@@ -41,26 +38,9 @@
   <meta property="og:type" content="article" />
   <meta property="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
   <meta property="fb:pages" content="{{ .Site.Params.facebookPageId }}" />
-  <meta
-    name="og:description"
-    content="{{- if .Description -}}
-      {{- .Description -}}
-    {{- else -}}
-      {{- .Site.Params.description }}
-    {{- end -}}"
-  />
-
-  {{/* Image stuff */}}
-  {{ if $.Param "image" }}
-    <meta property="twitter:image" content="{{ $.Param "image" | absURL }}" />
-    <meta property="og:image" content="{{ $.Param "image" | absURL }}" />
-    <meta property="og:image:secure_url" content="{{ $.Param "image" | absURL }}" />
-  {{ else }}
-    <meta property="twitter:image" content="{{ $shareImg.Permalink }}" />
-    <meta property="og:image" content="{{ $shareImg.Permalink }}" />
-    <meta property="og:image:secure_url" content="{{ $shareImg.Permalink }}" />
-  {{ end }}
-
+  <meta property="og:image" content="{{ ($shareImg.Fill "1200x630").Permalink }}" />
+  <meta property="og:image:secure_url" content="{{ ($shareImg.Fill "1200x630").Permalink }}" />
+  <meta property="og:description" content="{{- $description -}}" />
 
   <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}" />
   <link href="//fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet" />
