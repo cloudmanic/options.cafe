@@ -20,6 +20,7 @@ disableHugoGeneratorInject = true
     defaultShareImage = 'blog/options-cafe-cover.png'
     appLogin = 'https://app.options.cafe/login'
     twitterHandle = 'options_cafe'
+    defaultTitle = 'Helping You Succeed With Options Trading!'
     defaultDescription = 'Options Cafe is a free options screener and trading platform. We provide a free options screener, a free options trading platform, and a free options trading community.'
     twitterLink = 'https://twitter.com/options_cafe'
     facebookAppId = '1512164148794908'

@@ -5,6 +5,7 @@
 {{- $jquery := resources.Get "vendor/jquery-1.12.4.min.js" -}}
 {{- $detectmobilebrowser := resources.Get "vendor/detectmobilebrowser.js" -}}
 {{- $shareImg := resources.Get $.Site.Params.defaultShareImage -}}
+{{- $title := .Site.Params.defaultTitle -}}
 {{- $description := .Site.Params.defaultDescription -}}
 
 {{- if (resources.GetMatch ($.Param "image")) }}
@@ -15,10 +16,14 @@
   {{- $description = .Description -}}
 {{- end -}}
 
+{{- if .Title -}}
+  {{- $title = .Title -}}
+{{- end -}}
+
 
 <head>
   <meta charset="UTF-8" />
-  <title>{{ .Title }} - Options Cafe</title>
+  <title>{{ $title }} - Options Cafe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="shortcut icon" type="image/png" href="{{ "css/images/favicon.ico" | absURL }}" />
