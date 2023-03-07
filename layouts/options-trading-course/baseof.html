@@ -2,8 +2,11 @@
 <html lang="en">
   {{- partial "v2/layouts/head.html" . -}}
   <body>
-    {{- partial "v2/layouts/header-nav.html" . -}}
-    {{ block "main" . }}{{ end }}
+    <div class="min-h-screen bg-[url('/css/images/temp/bg.jpg')]">
+      {{- partial "v2/layouts/header-nav.html" . -}}
+      {{ block "main" . }}{{ end }}
+      {{- partial "v2/layouts/footer.html" . -}}
+    </div>
     {{- partial "shared/footer-js.html" . -}}
   </body>
 </html>

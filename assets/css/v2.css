@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+    .border-standard {
+        @apply border-2 border-gray-200 rounded-lg;
+    }
+
+    .wrapper {
+        @apply relative min-h-screen max-w-6xl mx-auto my-6 py-10 px-12 border-separate border-standard bg-white;
+    }
+}

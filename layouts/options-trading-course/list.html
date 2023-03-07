@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <div class="container">
-    <h1 class="w-[600px] mx-auto mt-44 font-bold text-lg">Our "Zero to Hero" options trading course is coming soon!</h1>
+  <div class="wrapper">
+    {{- partial "v2/courses/hero.html" . -}}
+    {{- partial "v2/courses/video-break.html" . -}}
   </div>
 {{ end }}
