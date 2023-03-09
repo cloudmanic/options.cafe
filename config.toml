@@ -23,6 +23,7 @@ disableHugoGeneratorInject = true
     defaultTitle = 'Helping You Succeed With Options Trading!'
     defaultDescription = 'Options Cafe is a free options screener and trading platform. We provide a free options screener, a free options trading platform, and a free options trading community.'
     twitterLink = 'https://twitter.com/options_cafe'
+    youtubeLink = 'https://www.youtube.com/@optionscafe'
     facebookAppId = '1512164148794908'
     facebookPageId = '730529083708603'
     facebookLink = 'https://www.facebook.com/optionscafetrading'
