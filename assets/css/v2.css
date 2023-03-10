@@ -16,6 +16,6 @@
     }
 
     .wrapper {
-        @apply relative min-h-screen max-w-6xl mx-auto my-6 py-10 px-12 border-separate border-standard bg-white;
+        @apply relative min-h-screen max-w-6xl mx-auto my-6 py-10 px-6 md:px-12 border-separate border-standard bg-white;
     }
 }

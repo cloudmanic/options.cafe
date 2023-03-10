@@ -1,13 +1,13 @@
 {{ $vidImg := resources.Get "images/intro-to-course-marketing-video-01.jpg" }}
 <div x-data="{ promoVideoModal: false }" @keydown.escape="promoVideoModal = false">
-  <div class="bg-blue-550 h-28 inset-x-0 mt-20 absolute">
-    <div class="flex justify-center">
-      <div class="relative w-48">
+  <div class="relative md:bg-blue-550 md:h-28 md:inset-x-0 md:mt-20 md:absolute">
+    <div class="md:flex justify-center">
+      <div class="relative mt-10 md:mt-0 md:w-48 md:h-auto">
         <button
           @click.prevent="promoVideoModal = true"
-          class="modal-open absolute cursor-pointer shadow-lg brightness-90 hover:brightness-100  hover:border-gray-600 left-[-55px] top-[-15px] bottom-[-25px] bg-white border-standard border-gray-400 w-[255px] bg-cover bg-[url('http://localhost:1313/images/intro-to-course-marketing-video-01_hu15e93ac0f88bf4e32ecf9c8bed30153a_634808_0x400_resize_q75_box.jpg')]"
+          class="md:absolute h-[200px] md:h-auto cursor-pointer shadow-lg brightness-90 hover:brightness-100  hover:border-gray-600 left-[-55px] top-[-15px] bottom-[-25px] bg-white border-standard border-gray-400 w-full md:w-[255px] bg-cover bg-[url('http://localhost:1313/images/intro-to-course-marketing-video-01_hu15e93ac0f88bf4e32ecf9c8bed30153a_634808_0x400_resize_q75_box.jpg')]"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 mx-auto mt-6 text-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 mx-auto mt-4 text-gray-700">
             <path
               fill-rule="evenodd"
               d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
@@ -16,8 +16,9 @@
           </svg>
         </button>
       </div>
-      <div class=" md:ml-10 text-center sm:text-left py-6">
-        <p class="md:text-2xl text-white font-semibold">Watch this intro. It explains everything.</p>
+
+      <div class="md:ml-10 text-center sm:text-left py-6">
+        <p class="text-grey-700 md:text-2xl md:text-white font-semibold">Watch this intro. It explains everything.</p>
         <p class="md:text-base text-black">(It's about what this course teaches you.)</p>
       </div>
     </div>
@@ -49,15 +50,7 @@
             class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full md:max-w-[1050px] sm:h-[735px] sm:p-6"
           >
             <div class="w-full" @click.away="promoVideoModal = false">
-              <iframe
-                width="1000"
-                height="562.5"
-                src="https://www.youtube.com/embed/K8KiFGSdEqo?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              {{- partial "videos/intro-to-course.html" . -}}
             </div>
 
             <div class="mt-8">
