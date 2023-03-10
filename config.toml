@@ -15,6 +15,8 @@ disableHugoGeneratorInject = true
   categories = "/blog/:slug/"
 
 [params]
+    coursePrice = 150.00
+    cousreSalePrice = 150.00    
     copyRightYear = 2023
     newsletterHeader = false
     defaultShareImage = 'blog/options-cafe-cover.png'
