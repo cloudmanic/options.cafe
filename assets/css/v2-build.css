@@ -1050,6 +1050,10 @@ video {
   background-image: url('http://localhost:1313/images/intro-to-course-marketing-video-01_hu15e93ac0f88bf4e32ecf9c8bed30153a_634808_0x400_resize_q75_box.jpg');
 }
 
+.bg-\[url\(\'\/images\/video-thumbnail-intro\.jpg\'\)\] {
+  background-image: url('/images/video-thumbnail-intro.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1646,6 +1650,10 @@ video {
 
   .md\:mt-40 {
     margin-top: 10rem;
+  }
+
+  .md\:mt-48 {
+    margin-top: 12rem;
   }
 
   .md\:flex {
