@@ -4,6 +4,7 @@ title = 'Options Cafe'
 publishDir = "docs"
 paginate = 10
 disableHugoGeneratorInject = true
+summaryLength = 50
 
 [taxonomies]
   blog_tag = "blog_tags"
