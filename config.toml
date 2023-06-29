@@ -181,3 +181,20 @@ summaryLength = 50
 
 [[params.courseModules.lectures]]
   title = "Show backtesting results (maybe say they are real trades)"
+
+# Earnings Trading Strategies
+[[params.courseModules]]
+  title = "Earnings Trading Strategies"
+  description = "Discover earnings trading strategies, profit from company earnings, review past earnings, and analyze backtested results over multiple periods."
+
+[[params.courseModules.lectures]]
+  title = "Why do company earnings create trading opportunities?"
+
+[[params.courseModules.lectures]]
+  title = "Different options trading strategies for profiting on company earnings."
+
+[[params.courseModules.lectures]]
+  title = "Reviewing past earnings and exploring possible trades we could have made."
+
+[[params.courseModules.lectures]]
+  title = "Looking at backtested results from different strategies over many earnings periods."
