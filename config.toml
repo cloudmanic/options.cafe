@@ -33,3 +33,151 @@ summaryLength = 50
     appSignUpLink = 'https://v1.options.cafe/register'
     helpCategories = ['Getting Started', 'Broker Support', 'Options Screener']
     blogCategories = ['Education', 'Random Fun', "Spicer's Trades", "Spicer's Soapbox", 'Company Updates']
+    
+
+# Introduction to the Course
+[[params.courseModules]]
+  title = "Introduction to the Course"
+  description = "Begin your options trading journey with an introduction, strategy teaser, and broker overview."
+
+[[params.courseModules.lectures]]
+  title = "Intro To This Options Trading Course"
+  video = ""
+
+[[params.courseModules.lectures]]
+  title = "Disclaimer: This is not a get rich quick course"
+
+[[params.courseModules.lectures]]
+  title = "How Best To Navigate This Course"
+
+[[params.courseModules.lectures]]
+  title = "Teaser: An Options Strategy in Action"
+
+[[params.courseModules.lectures]]
+  title = "The Difference Between Investing and Trading"
+
+[[params.courseModules.lectures]]
+  title = "Learning About Different Options Brokers"
+
+# A Primer on Trading Stocks
+[[params.courseModules]]
+  title = "A Primer on Trading Stocks"
+  description = "Uncover the basics of stock trading, from buying stocks, understanding earnings, dividends, valuation, sectors, ETFs, to price fluctuations."
+
+[[params.courseModules.lectures]]
+  title = "What is a stock?"
+
+[[params.courseModules.lectures]]
+  title = "How to buy a stock"
+
+[[params.courseModules.lectures]]
+  title = "What are company earnings?"
+
+[[params.courseModules.lectures]]
+  title = "What goes into valuing a stock?"
+
+[[params.courseModules.lectures]]
+  title = "What makes a stock price go up and down?"
+
+# Options Basics
+[[params.courseModules]]
+  title = "Options Basics"
+  description = "Explore the essentials of options, including Call and Put options, selling options, their history, and the difference between Weeklies and Monthlies."
+
+[[params.courseModules.lectures]]
+  title = "What is an option?"
+
+[[params.courseModules.lectures]]
+  title = "What is a Call option?"
+
+[[params.courseModules.lectures]]
+  title = "What is a Put option?"
+
+[[params.courseModules.lectures]]
+  title = "Selling options (or writing)"
+
+[[params.courseModules.lectures]]
+  title = "Quick history on options"
+
+[[params.courseModules.lectures]]
+  title = "Weeklies vs Monthlies"
+
+# Selling Options Against Stock Owned
+[[params.courseModules]]
+  title = "Selling Options Against Stock Owned"
+  description = "Learn strategies for selling options against owned stock, hedging positions, earning monthly income, and letting the market decide risk-free."
+
+[[params.courseModules.lectures]]
+  title = "How to sell calls against stock already owned"
+
+[[params.courseModules.lectures]]
+  title = "How to sell puts against stock already owned"
+
+[[params.courseModules.lectures]]
+  title = "Hedging a stock position by buying Puts"
+
+[[params.courseModules.lectures]]
+  title = "Earning monthly income selling options"
+
+[[params.courseModules.lectures]]
+  title = "Selling Calls against your stock and let the market decide for you risk free?"
+
+# Multi Leg Options
+[[params.courseModules]]
+  title = "Multi Leg Options"
+  description = "Delve into multi-leg options, forming trades, and examples like Put/Call Credit Spreads, Iron Condors, and Straddles."
+
+[[params.courseModules.lectures]]
+  title = "Combining options to form trades"
+
+[[params.courseModules.lectures]]
+  title = "First Example: Put Credit Spreads"
+
+[[params.courseModules.lectures]]
+  title = "Second Example: Call Credit Spread"
+
+[[params.courseModules.lectures]]
+  title = "Third Example: Iron Condors"
+
+[[params.courseModules.lectures]]
+  title = "Fourth Example: Straddles"
+
+# Options Pricing & The 'Greeks'
+[[params.courseModules]]
+  title = "Options Pricing & The \"Greeks\""
+  description = "Understand options pricing and \"Greeks\" - Delta, Gamma, Vega, Theta, and Rho, key to effective options trading."
+
+[[params.courseModules.lectures]]
+  title = "What are option greeks"
+
+[[params.courseModules.lectures]]
+  title = "What is Delta?"
+
+[[params.courseModules.lectures]]
+  title = "What is Gamma?"
+
+[[params.courseModules.lectures]]
+  title = "What is Vega?"
+
+[[params.courseModules.lectures]]
+  title = "What is Theta?"
+
+[[params.courseModules.lectures]]
+  title = "What is Rho?"
+
+# Trading Strategies for Monthly Income
+[[params.courseModules]]
+  title = "Strategies for Monthly Income"
+  description = "Master strategies for monthly income through put credit spreads, managing losses, choosing strikes, deltas, expiry dates, and reviewing backtests."
+
+[[params.courseModules.lectures]]
+  title = "Learn how to sell put credit spreads every week to make monthly income"
+
+[[params.courseModules.lectures]]
+  title = "It is not all profit all the time. Drawdowns and managing loss"
+
+[[params.courseModules.lectures]]
+  title = "Talk about what strikes, deltas, and expiry dates to pick when doing strategy"
+
+[[params.courseModules.lectures]]
+  title = "Show backtesting results (maybe say they are real trades)"
