@@ -35,3 +35,11 @@
         @apply text-gray-700 text-base mb-4;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    .footer .footer__nav li+li:before {
+        content: '•';
+        display: inline-block;
+        padding: 0 8px 0 11px;
+    }
+}
