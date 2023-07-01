@@ -854,6 +854,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -1920,6 +1924,10 @@ video {
 
   .md\:mt-48 {
     margin-top: 12rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:flex {
