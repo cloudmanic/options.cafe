@@ -1,10 +1,15 @@
 {{ define "main" }}
-  <div class="wrapper">
+  <div
+    class="wrapper"
+    x-data="{ signupEmailModal: false, promoVideoModal: false }"
+    @keydown.escape="alert('asdf'); signupEmailModal = false; promoVideoModal = false;"
+  >
     {{- partial "v2/courses/hero.html" . -}}
     {{- partial "v2/courses/video-break.html" . -}}
     {{- partial "v2/courses/no-tricks-pricing.html" . -}}
     {{- partial "v2/courses/modules.html" . -}}
     {{- partial "v2/courses/reviews.html" . -}}
     {{- partial "v2/courses/pricing.html" . -}}
+    {{- partial "v2/courses/signup-modal.html" . -}}
   </div>
 {{ end }}
