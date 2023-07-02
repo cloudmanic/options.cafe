@@ -1,6 +1,18 @@
 // Kick start alpine
 document.addEventListener("alpine:init", () => {
   //
+  // Deal with Nav section of the site.
+  //
+  Alpine.data("nav", () => ({
+    mobileNav: false,
+
+    // Toggle the mobile nav menu.
+    mobileNavToggle: function () {
+      this.mobileNav = !this.mobileNav;
+    },
+  }));
+
+  //
   // Course landing page.
   //
   Alpine.data("course", () => ({

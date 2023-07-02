@@ -814,28 +814,31 @@ select {
 }
 
 .wrapper {
-  border-radius: 0.5rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   min-height: 100vh;
   max-width: 72rem;
-  border-collapse: separate;
+  border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .wrapper {
+    border-radius: 0.5rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-collapse: separate;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -994,11 +997,6 @@ select {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .-mt-2 {
@@ -1247,10 +1245,6 @@ select {
 
 .grow {
   flex-grow: 1;
-}
-
-.border-separate {
-  border-collapse: separate;
 }
 
 .scale-100 {
@@ -1925,6 +1919,15 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:border-standard {
+    border-radius: 0.5rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  }
+}
+
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2199,6 +2202,11 @@ select {
     right: 0px;
   }
 
+  .md\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
@@ -2280,6 +2288,10 @@ select {
     max-width: 1050px;
   }
 
+  .md\:border-separate {
+    border-collapse: separate;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2304,6 +2316,11 @@ select {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:py-24 {
