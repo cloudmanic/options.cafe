@@ -34,6 +34,10 @@
     .p2 {
         @apply text-gray-700 text-base mb-4;
     }
+
+    .link {
+        @apply text-red-550 cursor-pointer hover:text-red-850;
+    }
 }
 
 @media only screen and (min-width: 600px) {

@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="wrapper">
+    <p class="p2 italic text-lg">Howdy!</p>
+    <p class="p2 italic text-lg">
+      Thank you for expressing interest in our upcoming <a href="{{ "options-trading-course" | absURL }}" class="link">Options Trading Course</a>!
+      We're excited to have you on board.
+    </p>
+
+    <p class="p2 italic text-lg">
+      We're currently putting the finishing touches on the course, and it will be ready in the coming weeks. As a token of our appreciation for your
+      early support, we'd like to offer you an exclusive coupon code.
+    </p>
+
+    <p class="p2 italic text-lg">
+      By confirming your email address (email was just sent), we'll send you a coupon code that will make the course available to you for just
+      <b>$50</b> instead of the regular price of <b>$150</b>.
+    </p>
+
+    <p class="p2 italic text-lg">Stay tuned for updates and the official course launch announcement!</p>
+
+    <p class="p2 italic text-lg">
+      In the meantime be sure to checkout our <a href="{{ "blog" | absURL }}" class="link">Blog</a> and follow us on
+      <a href="{{ .Site.Params.twitterLink }}" class="link">Twitter</a> or <a href="{{ .Site.Params.facebookLink }}" class="link">Facebook</a>.
+    </p>
+
+    <p class="p2 italic text-lg">
+      Should you have any questions, now or in the future, you can always email me at
+      <a href="mailto:spicer@options.cafe" class="link">spicer@options.cafe</a>.
+    </p>
+
+    <p class="p2 italic text-lg">
+      I look forward to having you join us on this exciting journey of gaining the knowledge and skills to excel in options trading.
+    </p>
+
+    <p class="p2 italic text-lg">Best regards,</p>
+
+    <img src="/images/spicer-signature.png" alt="Spicer Matthews" />
+    <p class="p2 italic">Course Instructor</p>
+  </div>
+{{ end }}

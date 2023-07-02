@@ -1,9 +1,5 @@
 {{ define "main" }}
-  <div
-    class="wrapper"
-    x-data="{ signupEmailModal: false, promoVideoModal: false }"
-    @keydown.escape="alert('asdf'); signupEmailModal = false; promoVideoModal = false;"
-  >
+  <div class="wrapper" x-data="course" @keydown.escape="signupEmailModal = false; promoVideoModal = false;">
     {{- partial "v2/courses/hero.html" . -}}
     {{- partial "v2/courses/video-break.html" . -}}
     {{- partial "v2/courses/no-tricks-pricing.html" . -}}
@@ -12,4 +8,20 @@
     {{- partial "v2/courses/pricing.html" . -}}
     {{- partial "v2/courses/signup-modal.html" . -}}
   </div>
+
+  <script>
+    document.addEventListener("alpine:init", () => {
+      Alpine.data("course", () => ({
+        email: "",
+        signupEmailModal: false,
+        promoVideoModal: false,
+
+        // When a user enter's there password to sign
+        onSignup: function () {
+          this.signupEmailModal = false;
+          window.location.href = "/options-trading-course/coming-soon";
+        },
+      }));
+    });
+  </script>
 {{ end }}

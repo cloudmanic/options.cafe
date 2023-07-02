@@ -893,6 +893,17 @@ select {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.link {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(214 69 97 / var(--tw-text-opacity));
+}
+
+.link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(149 48 67 / var(--tw-text-opacity));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
