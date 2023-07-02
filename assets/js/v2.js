@@ -29,9 +29,9 @@ document.addEventListener("alpine:init", () => {
         .then(function (response) {
           // Log events.
           plausible("newsletter-signup");
-          _paq.push(["trackGoal", 1]);
-          _paq.push(["trackEvent", "Newsletter", "Subscribe", "Course"]);
-          ga("send", "event", "Newsletter", "Subscribe", "Course");
+          // _paq.push(["trackGoal", 1]);
+          // _paq.push(["trackEvent", "Newsletter", "Subscribe", "Course"]);
+          // ga("send", "event", "Newsletter", "Subscribe", "Course");
         })
         .catch(function (error) {
           this.signupEmailModal = false;
