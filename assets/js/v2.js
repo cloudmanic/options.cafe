@@ -15,13 +15,20 @@ document.addEventListener("alpine:init", () => {
           email: this.email,
         })
         .then(function (response) {
-          this.signupEmailModal = false;
-          window.location.href = "/options-trading-course/coming-soon";
+          // Log events.
+          plausible("newsletter-signup");
+          _paq.push(["trackGoal", 1]);
+          _paq.push(["trackEvent", "Newsletter", "Subscribe", "Course"]);
+          ga("send", "event", "Newsletter", "Subscribe", "Course");
         })
         .catch(function (error) {
           this.signupEmailModal = false;
           alert("Sorry there was an error. Please try again.");
           console.log(error);
+        })
+        .finally(function () {
+          this.signupEmailModal = false;
+          window.location.href = "/options-trading-course/coming-soon";
         });
     },
   }));
