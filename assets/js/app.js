@@ -102,8 +102,6 @@
       // Track event
       plausible("trading-platform-signup");
       plausible("newsletter-signup");
-      _paq.push(["trackGoal", 1]);
-      _paq.push(["trackEvent", "Newsletter", "Subscribe", "Trading Platform"]);
       ga("send", "event", "Newsletter", "Subscribe", "Trading Platform");
 
       $.ajax({
