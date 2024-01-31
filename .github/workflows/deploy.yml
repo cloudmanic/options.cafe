@@ -13,8 +13,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.5.0
         with:
-          hugo-version: '0.111.1'
-        
+          hugo-version: "0.111.1"
+
       - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
@@ -25,10 +25,10 @@ jobs:
       - name: Build Website
         run: hugo --minify
 
-      - name: Deploy Website
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          cname: options.cafe
+      # - name: Deploy Website
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   if: ${{ github.ref == 'refs/heads/master' }}
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./docs
+      #     cname: options.cafe

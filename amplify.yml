@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - hugo version
+    build:
+      commands:
+        - hugo --minify
+  artifacts:
+    baseDirectory: docs
+    files:
+      - "**/*"
