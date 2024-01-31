@@ -1,7 +1,6 @@
 baseURL = 'https://options.cafe/'
 languageCode = 'en-us'
 title = 'Options Cafe'
-publishDir = "docs"
 paginate = 10
 disableHugoGeneratorInject = true
 summaryLength = 50
